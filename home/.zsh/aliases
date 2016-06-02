@@ -10,6 +10,7 @@ alias gbpurge='git-bpurge'
 alias ghc='git-hc'
 alias ghpr='git-hpr'
 alias gmove='git-move'
+alias gwtf='git-wtf'
 
 # Copy contents of file to clipboard
 alias cb='cat "$1" | pbcopy' 
@@ -19,3 +20,6 @@ alias calc='/Applications/Calculator.app/Contents/MacOS/Calculator &'
 
 # Lame settings for podcast quality output
 alias lame-podcast='lame -V6 --vbr-new --resample 22 -m m'
+
+# Pipe my public key to my clipboard.
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to clipboard.'"

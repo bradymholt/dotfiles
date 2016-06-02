@@ -2,7 +2,7 @@
 	email = brady.holt@gmail.com
 	name = Brady Holt
 [push]
-	default = current
+	default = simple
 [core]
 	excludesfile = $HOME/.gitignore_global
 [difftool "sourcetree"]

@@ -50,6 +50,7 @@ plugins=(git)
 # User configuration
 
 source ~/.zsh/aliases
+source ~/.zsh/path
 source ~/.zsh/config
 
 source $ZSH/oh-my-zsh.sh

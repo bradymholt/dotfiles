@@ -39,6 +39,7 @@ When setting up an OS X system initially, the following steps should be performe
   - [LICEcap](http://www.cockos.com/licecap/)
   - [MySQL Workbench](https://www.mysql.com/products/workbench/)
   - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+  - [Android Studio](https://developer.android.com/studio/index.html)
   - Node 4 - `nvm install 4 && nvm use 4`
   - Ruby 2.1.1 - `rvm install 2.1.1 && rvm --default use 2.1.1`
 4. Configure:
