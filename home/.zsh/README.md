@@ -1,0 +1,1 @@
+After making changes to files in this directory, you need to run `source ~/.zshrc` to reload them
