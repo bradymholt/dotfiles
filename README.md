@@ -39,3 +39,5 @@ When setting up an OS X system initially, the following steps should be performe
   - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 4. Configure
   - [Honukai Theme for iTerm](https://github.com/oskarkrawczyk/honukai-iterm-zsh/)
+  - `nvm use 4`
+  - `rvm install 2.1.1 && rvm --default use 2.1.1`
