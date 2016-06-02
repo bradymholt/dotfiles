@@ -3,6 +3,13 @@ alias gp='git push -u'
 alias gs='git status'
 alias gsb='git fetch && git rebase -i origin/develop'
 alias gmod='git merge origin/develop'
+# The following Git aliases point to scripts in {dotfiles}/home/bin
+alias gac='git-ac'
+alias gbc='git-bc'
+alias gbpurge='git-bpurge'
+alias ghc='git-hc'
+alias ghpr='git-hpr'
+alias gmove='git-move'
 
 # Copy contents of file to clipboard
 alias cb='cat "$1" | pbcopy' 
