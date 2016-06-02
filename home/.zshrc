@@ -26,7 +26,7 @@ ZSH_THEME="honukai"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+ COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -48,8 +48,6 @@ ZSH_THEME="honukai"
 plugins=(git)
 
 # User configuration
-
-export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 source ~/.zsh/aliases
 source ~/.zsh/config
@@ -80,4 +78,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#alias git=hub

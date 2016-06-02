@@ -1,4 +1,6 @@
 #!/bin/bash
 set -x
 
+# Prune (Delete) local branches that have already been merged into (master|develop|staging|production)
+ 
 git branch --merged | grep -v "\*" | grep -Ev "(\*|master|develop|staging|production)" | xargs -n 1 git branch -d

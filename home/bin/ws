@@ -1,6 +1,9 @@
 #!/bin/bash
 set -x
 
+# Start webserver in current directory and open browser pointing to server URL
+
+# Open browser first b/c python blocks
 open http://localhost:9880
 # open /Applications/Google\ Chrome.app --args --disable-web-security
 python -m SimpleHTTPServer 9880

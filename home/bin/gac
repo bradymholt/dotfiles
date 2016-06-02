@@ -1,6 +1,10 @@
 #!/bin/bash
 set -x
 
+# Add and commit all changes on current branch
+# $1 - The commit message
+# $2 - If "-p" is specified, git push -u will also push to remote
+
 git add --all :/
 git commit -m "${1}"
 
