@@ -1,0 +1,9 @@
+# Git aliases
+alias gp='git push -u'
+alias gs='git status'
+alias gsb='git fetch && git rebase -i origin/develop'
+alias gmod='git merge origin/develop'
+
+# Misc aliases
+alias cb='cat "$1" | pbcopy' #Copy contents of file to clipboard
+alias calc='/Applications/Calculator.app/Contents/MacOS/Calculator &' #Open additional calculators

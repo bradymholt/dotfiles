@@ -1,0 +1,6 @@
+#!/bin/bash
+set -x
+
+open http://localhost:9880
+# open /Applications/Google\ Chrome.app --args --disable-web-security
+python -m SimpleHTTPServer 9880

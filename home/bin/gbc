@@ -1,0 +1,7 @@
+#!/bin/bash
+set -x
+
+# Show commits on current branch not on another branch
+
+CURRENT_BRANCH=$(git branch | grep ^* | sed 's/* //' )
+git log --cherry-pick --no-merges --left-only ${CURRENT_BRANCH}...${1}

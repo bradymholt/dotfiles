@@ -1,0 +1,9 @@
+#!/bin/bash
+set -x
+
+git add --all :/
+git commit -m "${1}"
+
+if [ ! -z "$2" ] && [ "${2}" == "-p" ]; then
+  git push -u
+fi

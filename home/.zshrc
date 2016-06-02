@@ -1,11 +1,11 @@
-# Path to your oh-my-zsh installation.
-export ZSH=/Users/bholt/.oh-my-zsh
+
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="avit"
+ZSH_THEME="honukai"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -45,14 +45,14 @@ ZSH_THEME="avit"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx sublime atom)
+plugins=(git)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export PATH="/Users/bholt/dev/scripts/bash:/Users/bholt/dev/evergreen/.scripts:$PATH"
-export PATH="/Users/bholt/Library/Android/sdk/platform-tools:$PATH"
-# export MANPATH="/usr/local/man:$MANPATH"
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+source ~/.zsh/aliases
+source ~/.zsh/config
 
 source $ZSH/oh-my-zsh.sh
 
@@ -81,21 +81,3 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #alias git=hub
-
-export NVM_DIR="/Users/bholt/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-source dnvm.sh
-
-function code {  
-    if [[ $# = 0 ]]
-    then
-        open -a "Visual Studio Code"
-    else
-        local argPath="$1"
-        [[ $1 = /* ]] && argPath="$1" || argPath="$PWD/${1#./}"
-        open -a "Visual Studio Code" "$argPath"
-    fi
-}

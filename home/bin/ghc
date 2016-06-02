@@ -1,0 +1,8 @@
+#!/bin/bash
+set -x
+
+# Compares two branches on GitHub UI
+
+URL="https://github.$(git config remote.origin.url | cut -f2 -d. | tr ':' /)/compare/${1}...${2}"
+echo $URL
+open $URL

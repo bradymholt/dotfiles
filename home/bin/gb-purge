@@ -1,0 +1,4 @@
+#!/bin/bash
+set -x
+
+git branch --merged | grep -v "\*" | grep -Ev "(\*|master|develop|staging|production)" | xargs -n 1 git branch -d

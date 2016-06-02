@@ -1,0 +1,22 @@
+-- Display how long commands take
+\timing on
+
+-- Expanded output (on|off|auto)
+-- \x auto
+
+-- Configure history to ignore commands starting with a space and sequential duplicate commands
+\set HISTCONTROL ignorespace
+\set HISTCONTROL ignoredups
+-- Configure history file per db
+\set HISTFILE ~/.psql_history- :DBNAME
+-- Configure history size limit
+\set HISTSIZE 2000
+
+-- Autocomplete keywords (like SELECT) in upper-case, even if you started typing them in lower case.
+\set COMP_KEYWORD_CASE upper
+
+-- Show NULL values as [NULL]
+\pset null '[NULL]'
+
+-- Verbose error reports.
+\set VERBOSITY verbose

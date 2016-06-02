@@ -1,0 +1,24 @@
+[user]
+	email = brady.holt@gmail.com
+	name = Brady Holt
+[push]
+	default = current
+[core]
+	excludesfile = $HOME/.gitignore_global
+[difftool "sourcetree"]
+	cmd = /usr/local/bin/bcomp -ro $LOCAL $REMOTE
+	path = 
+[mergetool "sourcetree"]
+	cmd = /usr/local/bin/bcomp $LOCAL $REMOTE $BASE $MERGED
+	trustExitCode = true
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[merge]
+	tool = bc3
+[mergetool]
+	bc3 = trustExitCode
+	bc3 = trustExitCode
+[diff]
+	tool = bc3
