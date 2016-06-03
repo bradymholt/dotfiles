@@ -27,9 +27,9 @@ When setting up an OS X system initially, the following steps should be performe
 3. Install the following apps:
   - [LastPass](https://lastpass.com/)
   - [BetterSnapTool](https://itunes.apple.com/us/app/bettersnaptool/id417375580?mt=12) - Already purchased; install from Mac App Store
+  - [Day-O](http://shauninman.com/archive/2011/10/20/day_o_mac_menu_bar_clock)
   - [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12)
   - Xcode Command Line Tools - `xcode-select --install`
-  - [Day-O](http://shauninman.com/archive/2011/10/20/day_o_mac_menu_bar_clock)
   - [iTerm2](https://www.iterm2.com/downloads.html)
   - [Zsh and Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
   - [VS Code](https://code.visualstudio.com/docs?dv=osx)
