@@ -2,7 +2,7 @@
 \timing on
 
 -- Expanded output (on|off|auto)
--- \x auto
+\x auto
 
 -- Configure history to ignore commands starting with a space and sequential duplicate commands
 \set HISTCONTROL ignorespace
