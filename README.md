@@ -44,3 +44,7 @@ When setting up an OS X system initially, the following steps should be performe
   - Ruby 2.1.1 - `rvm install 2.1.1 && rvm --default use 2.1.1`
 4. Configure:
   - [Honukai Theme for iTerm](https://github.com/oskarkrawczyk/honukai-iterm-zsh/)
+
+## Desktop Screenshot
+
+![desktop screenshot](https://cloud.githubusercontent.com/assets/759811/15767420/60dd2f24-290d-11e6-88c7-301d1aa46813.png "Desktop Screenshot")
