@@ -3,8 +3,8 @@ git add -A
 git commit -m "Backup"
 git push
 
-echo "Backing up secure files"
-cd ~/secure
+echo "Backing up secrets"
+cd ./home/secrets
 git add -A
 git commit -m "Backup"
 git push
