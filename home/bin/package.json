@@ -1,0 +1,15 @@
+{
+  "name": "bin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "wallpaper.js",
+  "scripts": {},
+  "author": "Brady Holt",
+  "license": "MIT",
+  "dependencies": {
+    "got": "^6.3.0",
+    "request": "^2.72.0",
+    "tempfile": "^1.1.1",
+    "wallpaper": "^2.1.1"
+  }
+}

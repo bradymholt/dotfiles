@@ -52,6 +52,7 @@ plugins=(git)
 source ~/.zsh/aliases
 source ~/.zsh/path
 source ~/.zsh/config
+source ~/secure/var
 
 source $ZSH/oh-my-zsh.sh
 
