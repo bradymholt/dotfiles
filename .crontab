@@ -8,4 +8,4 @@
 # └───────────────────────── min (0 - 59)
 
 25 11 * * TUE,FRI ~/dev/evergreen/.scripts/eg-standup
-*/30 * * * * python ~/bin/background-changer.py
+* * * * * . ~/.zshrc; ~/bin/change-wallpaper > ~/cronout 2>&1

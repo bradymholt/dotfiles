@@ -8,6 +8,7 @@ This is my system configuration for OS X, consisting of config "dotfiles" and sh
 - Run `./setup.sh` (idempotent) - this will:
   - symlink everything in `/home`
   - run `/other/setup.sh` to setup other config that resides outside of $HOME and/or requires special handling
+  - Clone 
 - If there are files in $HOME that you would like to be moved to the "dotfiles" configuration, you can run `dotfiles-link.sh` and pass in the name of the file that resides in $HOME.  This will move the file to `/home` and create a symlink to it. 
 
 ## Fresh OS X Setup

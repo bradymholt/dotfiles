@@ -71,6 +71,6 @@ function setGooglePhoto() {
 }
 
 //setBing();
-setUnsplash();
+//setUnsplash();
 //setChromecast();
-//setGooglePhoto();
+setGooglePhoto();
