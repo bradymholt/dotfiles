@@ -1,0 +1,7 @@
+#!/bin/bash
+set -x
+
+# Add, commit, and push all changes on current branch
+# $1 - The commit message
+
+git-ac "${1}" -p

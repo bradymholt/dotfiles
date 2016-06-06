@@ -5,6 +5,7 @@ alias gsb='git fetch && git rebase -i origin/develop'
 alias gmod='git merge origin/develop'
 # The following Git aliases point to scripts in {dotfiles}/home/bin
 alias gac='git-ac'
+alias gacp='git-acp'
 alias gbc='git-bc'
 alias gbpurge='git-bpurge'
 alias ghc='git-hc'
