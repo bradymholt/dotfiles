@@ -1,3 +1,5 @@
+MAILTO=""
+
 # * * * * *  command to execute
 # │ │ │ │ │
 # │ │ │ │ │
@@ -8,4 +10,4 @@
 # └───────────────────────── min (0 - 59)
 
 25 11 * * TUE,FRI ~/dev/evergreen/.scripts/eg-standup
-* * * * * . ~/.zshrc; ~/bin/change-wallpaper > ~/cronout 2>&1
+* * * * * . ~/secrets/var; /usr/local/bin/node ~/bin/change-wallpaper
