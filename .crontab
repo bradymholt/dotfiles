@@ -10,4 +10,4 @@ MAILTO=""
 # └───────────────────────── min (0 - 59)
 
 25 11 * * TUE,FRI ~/dev/evergreen/.scripts/eg-standup
-* * * * * . ~/secrets/var; /usr/local/bin/node ~/bin/change-wallpaper
+*/3 * * * * . ~/secrets/var; /usr/local/bin/node ~/bin/change-wallpaper
