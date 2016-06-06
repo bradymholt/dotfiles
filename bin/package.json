@@ -10,6 +10,7 @@
     "got": "^6.3.0",
     "request": "^2.72.0",
     "tempfile": "^1.1.1",
-    "wallpaper": "^2.1.1"
+    "wallpaper": "^2.1.1",
+    "weighted": "^0.3.0"
   }
 }
