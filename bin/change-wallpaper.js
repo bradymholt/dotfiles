@@ -74,8 +74,10 @@ function setChromecast() {
 function setGooglePhoto() {
   console.log("Using Source: Picasa Web Album");
 
+  var userId = "108862440783718909111";
+  var albumId = "6217521077777661025";
   request({
-    url: "https://picasaweb.google.com/data/feed/base/user/108862440783718909111/albumid/6217521077777661025?alt=json&kind=photo&max-results=100&hl=en_US&imgmax=1600",
+    url: "https://picasaweb.google.com/data/feed/base/user/" + userId + "/albumid/" + albumId + "?alt=json&kind=photo&max-results=100&hl=en_US&imgmax=1600",
     json: true
   }, function (error, response, body) {
 
