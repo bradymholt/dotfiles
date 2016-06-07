@@ -13,5 +13,25 @@
     {
         "key": "cmd+k cmd+d",
         "command": "editor.action.format"
+    },
+    {
+        "key": "shift+cmd+g",
+        "command": "workbench.view.git",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+;",
+        "command": "workbench.action.debug.stepInto",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "cmd+'",
+        "command": "workbench.action.debug.stepOver",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "cmd+\"",
+        "command": "workbench.action.debug.continue",
+        "when": "inDebugMode"
     }
 ]
