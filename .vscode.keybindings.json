@@ -20,6 +20,11 @@
         "when": "editorFocus"
     },
     {
+        "key": "cmd+g cmd+p",
+        "command": "workbench.action.git.push",
+        "when": "editorTextFocus"
+    },
+    {
         "key": "cmd+\\",
         "command": "workbench.action.splitEditor",
         "when": "!inDebugMode"
