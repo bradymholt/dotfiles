@@ -20,6 +20,11 @@
         "when": "editorFocus"
     },
     {
+        "key": "cmd+\\",
+        "command": "workbench.action.splitEditor",
+        "when": "!inDebugMode"
+    },
+    {
         "key": "cmd+;",
         "command": "workbench.action.debug.stepInto",
         "when": "inDebugMode"
@@ -30,7 +35,7 @@
         "when": "inDebugMode"
     },
     {
-        "key": "cmd+\"",
+        "key": "cmd+\\",
         "command": "workbench.action.debug.continue",
         "when": "inDebugMode"
     }
