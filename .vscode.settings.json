@@ -2,6 +2,4 @@
 {
     "editor.fontSize": 14,
     "editor.wrappingColumn": 0,
-    "tslint.validateWithDefaultConfig": true,
-    "tslint.configFile": "tslint.json"
 }
