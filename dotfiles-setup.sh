@@ -44,7 +44,7 @@ ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/.vscode.keybindings.json" "${HOME}
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/.BetterSnapTool" "${HOME}/Library/Preferences/com.hegenberg.BetterSnapTool.plist"
 
 echo ""
-echo "STEP 3: symlink ssh key to ${HOME}/secrets/id_rsa[.pub]"
+echo "STEP 4: symlink ssh key to ${HOME}/secrets/id_rsa[.pub]"
 #Key pairs
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/secrets/id_rsa" "${HOME}/.ssh/id_rsa"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/secrets/id_rsa.pub" "${HOME}/.ssh/id_rsa.pub"
