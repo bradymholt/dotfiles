@@ -1,0 +1,17 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "cmd+d",
+        "command": "editor.action.goToDeclaration",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+t",
+        "command": "workbench.action.tasks.test",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+k cmd+d",
+        "command": "editor.action.format"
+    }
+]
