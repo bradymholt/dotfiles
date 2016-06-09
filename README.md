@@ -27,6 +27,7 @@ When setting up an OS X system initially, the following steps should be performe
   - wget
   - imagemagick
   - gawk
+  - vim
 2. Install the shell helpers:
   - [RVM](https://rvm.io/rvm/install)
   - [NVM](https://github.com/creationix/nvm)
