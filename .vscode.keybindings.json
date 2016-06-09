@@ -27,7 +27,7 @@
     {
         "key": "cmd+'",
         "command": "workbench.action.git.sync",
-        "when": "editorTextFocus && !inDebugMode"
+        "when": "editorTextFocus"
     },
     {
         "key": "cmd+\\",
