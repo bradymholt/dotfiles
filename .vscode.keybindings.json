@@ -6,6 +6,11 @@
         "when": "editorTextFocus"
     },
     {
+        "key": "cmd+r",
+        "command": "editor.action.rename",
+        "when": "editorTextFocus"
+    },
+    {
         "key": "shift+cmd+t",
         "command": "workbench.action.tasks.test",
         "when": "editorTextFocus"

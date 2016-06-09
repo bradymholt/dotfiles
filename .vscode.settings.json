@@ -1,5 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
     "editor.fontSize": 14,
-    "editor.wrappingColumn": 0
+    "editor.wrappingColumn": 0,
+    "openvim.execFile": "/usr/bin/vim"
 }
