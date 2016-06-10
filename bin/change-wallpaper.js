@@ -20,9 +20,6 @@ function setWallpaper(url) {
     .on('finish', () => {
       wallpaper.set(file);
     });
-
-  //delete temp file (we wait 3 seconds so OSX has time to grab the file and set the wallpaper)
-  setTimeout(fs.unlinkSync, 3000, file)
 }
 
 function setBing() {
