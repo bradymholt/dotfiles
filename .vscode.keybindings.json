@@ -22,12 +22,12 @@
     {
         "key": "shift+cmd+g",
         "command": "workbench.view.git",
-        "when": "!inDebugMode"
+        "when": "editorFocus"
     },
     {
         "key": "cmd+'",
         "command": "workbench.action.git.sync",
-        "when": "editorFocus"
+        "when": "!inDebugMode"
     },
     {
         "key": "cmd+\\",
