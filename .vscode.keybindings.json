@@ -22,7 +22,7 @@
     {
         "key": "shift+cmd+g",
         "command": "workbench.view.git",
-        "when": "editorFocus"
+        "when": "!inDebugMode"
     },
     {
         "key": "cmd+'",
