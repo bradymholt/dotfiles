@@ -22,3 +22,4 @@
 	bc3 = trustExitCode
 [diff]
 	tool = bc3
+	compactionHeuristic = true
