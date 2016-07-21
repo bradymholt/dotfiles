@@ -1,0 +1,5 @@
+#!/bin/bash
+set -x
+
+# Copy contents of file to clipboard
+cat "${1}" | pbcopy 
