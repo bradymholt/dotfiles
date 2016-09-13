@@ -23,3 +23,9 @@ alias lame-podcast='lame -V6 --vbr-new --resample 22 -m m'
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to clipboard.'"
 
 alias cls='printf "\033c"'
+alias hg='history | grep'
+
+# Docker
+alias drm='docker rm $(docker ps -a -q) && docker rm $(docker ps -a -q)' # Delete all containers
+alias drmi='docker rmi $(docker images -q)'
+alias dexec='docker exec -ti'

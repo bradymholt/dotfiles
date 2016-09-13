@@ -16,6 +16,10 @@
         "when": "editorTextFocus"
     },
     {
+        "key": "shift+cmd+r",
+        "command": "workbench.action.tasks.runTask"
+    },
+    {
         "key": "cmd+k cmd+d",
         "command": "editor.action.format"
     },

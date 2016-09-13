@@ -3,5 +3,6 @@
     "editor.fontSize": 14,
     "editor.wrappingColumn": 0,
     "editor.formatOnType": true,
-    "workbench.editor.showTabs": false    
+    "workbench.editor.showTabs": false,
+    "openvim.executablePath": "/usr/local/bin/vim"
 }
