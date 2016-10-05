@@ -1,3 +1,5 @@
+# Documentation: https://www.kernel.org/pub/software/scm/git/docs/git-config.html
+
 [user]
 	email = brady.holt@gmail.com
 	name = Brady Holt
