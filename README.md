@@ -53,7 +53,7 @@ When setting up an OS X system initially, the following steps should be performe
   - Ruby 2.1.1 - `rvm install 2.1.1 && rvm --default use 2.1.1`
 4. Configure:
   - [Honukai Theme for iTerm](https://github.com/oskarkrawczyk/honukai-iterm-zsh/)
-  - Screenshots
+  - Screenshots Folder
     - `mkdir ~/Screenshots`
     - `defaults write com.apple.screencapture location ~/Screenshots/`
     - `killall SystemUIServer`
