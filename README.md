@@ -48,7 +48,12 @@ When setting up an OS X system initially, the following steps should be performe
   - [MySQL Workbench](https://www.mysql.com/products/workbench/)
   - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
   - [Android Studio](https://developer.android.com/studio/index.html)
+  - [CloudApp](https://www.getcloudapp.com/)
   - Node 4 - `nvm install 4 && nvm use 4`
   - Ruby 2.1.1 - `rvm install 2.1.1 && rvm --default use 2.1.1`
 4. Configure:
   - [Honukai Theme for iTerm](https://github.com/oskarkrawczyk/honukai-iterm-zsh/)
+  - Screenshots
+    - `mkdir ~/Screenshots`
+    - `defaults write com.apple.screencapture location ~/Screenshots/`
+    - `killall SystemUIServer`
