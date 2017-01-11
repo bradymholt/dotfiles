@@ -25,3 +25,5 @@
 [diff]
 	tool = bc3
 	compactionHeuristic = true
+[pull]
+	rebase = true

@@ -21,7 +21,8 @@
     },
     {
         "key": "cmd+k cmd+d",
-        "command": "editor.action.format"
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
     },
     {
         "key": "shift+cmd+g",
