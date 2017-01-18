@@ -30,3 +30,6 @@ alias hg='history | grep'
 alias drm='docker rm $(docker ps -a -q) && docker rm $(docker ps -a -q)' # Delete all containers
 alias drmi='docker rmi $(docker images -q)'
 alias dexec='docker exec -ti'
+
+# MAMP
+alias mamp-restart-nginx='/Applications/MAMP/Library/bin/nginxctl restart'
