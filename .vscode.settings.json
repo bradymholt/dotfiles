@@ -5,5 +5,7 @@
     "editor.formatOnType": true,
     "workbench.editor.showTabs": false,
     "window.zoomLevel": 0,
-    "git.confirmSync": false
+    "git.confirmSync": false,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true
 }
