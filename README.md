@@ -52,7 +52,8 @@ When setting up an OS X system initially, the following steps should be performe
   - Node 4 - `nvm install 4 && nvm use 4`
   - Ruby 2.1.1 - `rvm install 2.1.1 && rvm --default use 2.1.1`
 4. Configure:
-  - [Honukai Theme for iTerm](https://github.com/oskarkrawczyk/honukai-iterm-zsh/)
+  - [Honukai Theme for iTerm](https://github.com/bradyholt/honukai-iterm-zsh)
+    - iTerm font: https://github.com/powerline/fonts/blob/master/Meslo/Meslo%20LG%20M%20DZ%20Regular%20for%20Powerline.otf
   - Screenshots Folder
     - `mkdir ~/Screenshots`
     - `defaults write com.apple.screencapture location ~/Screenshots/`
