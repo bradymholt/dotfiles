@@ -1,11 +1,13 @@
 // Place your settings in this file to overwrite the default settings
 {
     "editor.fontSize": 14,
-    "editor.wrappingColumn": 0,
     "editor.formatOnType": true,
     "workbench.editor.showTabs": false,
     "window.zoomLevel": 0,
     "git.confirmSync": false,
     "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnPaste": true,
+    "typescript.check.tscVersion": false,
+    "workbench.iconTheme": "vs-seti"
 }
