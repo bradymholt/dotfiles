@@ -15,7 +15,7 @@ alias gmove='git-move'
 alias gwtf='git-wtf'
 
 # Open additional calculators
-alias calc='/Applications/Calculator.app/Contents/MacOS/Calculator &' 
+alias calc='/Applications/Calculator.app/Contents/MacOS/Calculator &'
 
 # Lame settings for podcast quality output
 alias lame-podcast='lame -V6 --vbr-new --resample 22 -m m'
@@ -33,3 +33,6 @@ alias dexec='docker exec -ti'
 
 # MAMP
 alias mamp-restart-nginx='/Applications/MAMP/Library/bin/nginxctl restart'
+
+# PostgreSQL related
+alias psql2md=" sed 's/+/|/g' | sed 's/^/|/' | sed 's/$/|/' |  grep -v rows | grep -v '||'"
