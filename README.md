@@ -35,7 +35,7 @@ When setting up an OS X system initially, the following steps should be performe
   - [LastPass](https://lastpass.com/)
   - [BetterSnapTool](https://itunes.apple.com/us/app/bettersnaptool/id417375580?mt=12) - Already purchased; install from Mac App Store
   - [FinderPath](https://bahoom.com/finderpath/)
-  - [Day-O](http://shauninman.com/archive/2011/10/20/day_o_mac_menu_bar_clock)
+  - [Itsycal](https://www.mowglii.com/itsycal/)
   - [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12)
   - Xcode Command Line Tools - `xcode-select --install`
   - [iTerm2](https://www.iterm2.com/downloads.html)
