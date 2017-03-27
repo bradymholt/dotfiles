@@ -36,6 +36,7 @@ When setting up an OS X system initially, the following steps should be performe
   - [BetterSnapTool](https://itunes.apple.com/us/app/bettersnaptool/id417375580?mt=12) - Already purchased; install from Mac App Store
   - [FinderPath](https://bahoom.com/finderpath/)
   - [Itsycal](https://www.mowglii.com/itsycal/)
+  - [Status Clock](https://itunes.apple.com/us/app/status-clock/id552792489?mt=12)
   - [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12)
   - Xcode Command Line Tools - `xcode-select --install`
   - [iTerm2](https://www.iterm2.com/downloads.html)
