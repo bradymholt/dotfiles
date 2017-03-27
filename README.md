@@ -33,7 +33,7 @@ When setting up an OS X system initially, the following steps should be performe
   - [NVM](https://github.com/creationix/nvm)
 3. Install the following apps:
   - [LastPass](https://lastpass.com/)
-  - [BetterSnapTool](https://itunes.apple.com/us/app/bettersnaptool/id417375580?mt=12) - Already purchased; install from Mac App Store
+  - [Spectacle](https://www.spectacleapp.com/)
   - [FinderPath](https://bahoom.com/finderpath/)
   - [Itsycal](https://www.mowglii.com/itsycal/)
   - [Status Clock](https://itunes.apple.com/us/app/status-clock/id552792489?mt=12)
