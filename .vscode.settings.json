@@ -9,5 +9,6 @@
     "files.trimTrailingWhitespace": true,
     "editor.formatOnPaste": true,
     "typescript.check.tscVersion": false,
-    "workbench.iconTheme": "vs-seti"
+    "workbench.iconTheme": "vs-seti",
+    "editor.codeLens": false
 }

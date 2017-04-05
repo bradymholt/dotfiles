@@ -27,3 +27,5 @@
 	compactionHeuristic = true
 [pull]
 	rebase = true
+[mergetool "bc3"]
+	trustExitCode = true

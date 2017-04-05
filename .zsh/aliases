@@ -4,6 +4,7 @@ alias gs='git status'
 alias gsb='git fetch && git rebase -i origin/develop'
 alias gmod='git merge origin/develop'
 alias gdt='git difftool -y'
+
 # The following Git aliases point to scripts in {dotfiles}/home/bin
 alias gac='git-ac'
 alias gacp='git-acp'
@@ -23,9 +24,6 @@ alias lame-podcast='lame -V6 --vbr-new --resample 22 -m m'
 # Pipe my public key to my clipboard.
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to clipboard.'"
 
-alias cls='printf "\033c"'
-alias hg='history | grep'
-
 # Docker
 alias drm='docker rm $(docker ps -a -q) && docker rm $(docker ps -a -q)' # Delete all containers
 alias drmi='docker rmi $(docker images -q)'
@@ -36,3 +34,8 @@ alias mamp-restart-nginx='/Applications/MAMP/Library/bin/nginxctl restart'
 
 # PostgreSQL related
 alias psql2md=" sed 's/+/|/g' | sed 's/^/|/' | sed 's/$/|/' |  grep -v rows | grep -v '||'"
+
+# Other
+alias cls='printf "\033c"'
+alias hg='history | grep'
+alias y='yarn'
