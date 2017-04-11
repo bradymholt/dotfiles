@@ -30,11 +30,6 @@
         "when": "editorFocus"
     },
     {
-        "key": "cmd+'",
-        "command": "workbench.action.git.sync",
-        "when": "!inDebugMode"
-    },
-    {
         "key": "cmd+\\",
         "command": "workbench.action.splitEditor",
         "when": "!inDebugMode"
@@ -52,6 +47,11 @@
     {
         "key": "cmd+\\",
         "command": "workbench.action.debug.continue",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "cmd+'",
+        "command": "git.sync",
         "when": "inDebugMode"
     }
 ]
