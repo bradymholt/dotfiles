@@ -52,6 +52,6 @@
     {
         "key": "cmd+'",
         "command": "git.sync",
-        "when": "inDebugMode"
+        "when": "!inDebugMode"
     }
 ]
