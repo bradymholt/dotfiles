@@ -4,3 +4,4 @@ export PATH="/usr/local/share/dotnet:$PATH"
 export PATH="$HOME/dev/evergreen/.scripts:$PATH"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/opt/apache-maven-3.3.9/bin:$PATH
+export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"

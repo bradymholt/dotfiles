@@ -2,13 +2,16 @@
 {
     "editor.fontSize": 14,
     "editor.formatOnType": true,
-    "workbench.editor.showTabs": false,
     "window.zoomLevel": 0,
     "git.confirmSync": false,
-    "files.insertFinalNewline": true,
+    "files.insertFinalNewline": false,
     "files.trimTrailingWhitespace": true,
     "editor.formatOnPaste": true,
     "typescript.check.tscVersion": false,
     "workbench.iconTheme": "vs-seti",
-    "editor.codeLens": false
+    "editor.codeLens": false,
+    "window.nativeTabs": true,
+    "vim.disableAnnoyingNeovimMessage": true,
+    "vim.useCtrlKeys": false,
+    "vim.useSystemClipboard": true
 }

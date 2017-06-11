@@ -6,7 +6,7 @@
 [push]
 	default = current
 [core]
-	excludesfile = $HOME/.gitignore_global
+	excludesfile = /Users/bholt/.gitignore_global
 [difftool "sourcetree"]
 	cmd = /usr/local/bin/bcomp -ro $LOCAL $REMOTE
 	path = 
@@ -30,3 +30,5 @@
 	rebase = true
 [mergetool "bc3"]
 	trustExitCode = true
+[commit]
+	template = /Users/bholt/.stCommitMsg

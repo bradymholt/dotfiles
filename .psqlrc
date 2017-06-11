@@ -1,5 +1,5 @@
 -- Display how long commands take
---\timing on
+\timing on
 
 -- Expanded output (on|off|auto)
 \x auto
