@@ -10,8 +10,5 @@
     "typescript.check.tscVersion": false,
     "workbench.iconTheme": "vs-seti",
     "editor.codeLens": false,
-    "window.nativeTabs": true,
-    "vim.disableAnnoyingNeovimMessage": true,
-    "vim.useCtrlKeys": false,
-    "vim.useSystemClipboard": true
+    "window.nativeTabs": true
 }

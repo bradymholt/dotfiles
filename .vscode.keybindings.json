@@ -53,5 +53,9 @@
         "key": "cmd+'",
         "command": "git.sync",
         "when": "!inDebugMode"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.tasks.terminate"
     }
 ]
