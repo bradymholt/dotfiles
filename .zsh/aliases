@@ -1,4 +1,6 @@
 # Git aliases
+alias gco='git checkout'
+alias gcb='git checkout -b'
 alias gp='git push -u'
 alias gl='git pull'
 alias glg='git log'
