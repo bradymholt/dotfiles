@@ -1,18 +1,21 @@
 # Git aliases
 alias gp='git push -u'
+alias gl='git pull'
+alias glg='git log'
 alias gs='git status'
-alias gsb='git fetch && git rebase -i origin/develop'
+alias grh='git reset --hard HEAD'
 alias gmod='git merge origin/develop'
+alias gd='git dif'
 alias gdt='git difftool -y'
 
 # The following Git aliases point to scripts in {dotfiles}/home/bin
-alias gac='git-ac'
-alias gacp='git-acp'
-alias gbc='git-bc'
-alias gbpurge='git-bpurge'
-alias ghc='git-hc'
-alias ghpr='git-hpr'
-alias gmove='git-move'
+alias gac='git-add-commit'
+alias gacp='git-add-commit-push'
+alias gbc='git-branch-compare'
+alias gbpurge='git-branch-purge'
+alias ghc='git-github-compare'
+alias ghpr='git-github-open-pr'
+alias gmove='git-move-commits-new-branch'
 alias gwtf='git-wtf'
 
 # Open additional calculators
@@ -26,11 +29,8 @@ alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to cl
 
 # Docker
 alias drm='docker rm $(docker ps -a -q) && docker rm $(docker ps -a -q)' # Delete all containers
-alias drmi='docker rmi $(docker images -q)'
+alias drmi='docker rmi $(docker images -q)' # Deletes all images
 alias dexec='docker exec -ti'
-
-# MAMP
-alias mamp-restart-nginx='/Applications/MAMP/Library/bin/nginxctl restart'
 
 # PostgreSQL related
 alias psql2md=" sed 's/+/|/g' | sed 's/^/|/' | sed 's/$/|/' |  grep -v rows | grep -v '||'"
@@ -39,3 +39,4 @@ alias psql2md=" sed 's/+/|/g' | sed 's/^/|/' | sed 's/$/|/' |  grep -v rows | gr
 alias cls='printf "\033c"'
 alias hg='history | grep'
 alias y='yarn'
+alias n='npm'
