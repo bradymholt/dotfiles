@@ -24,38 +24,27 @@ When setting up an OS X system initially, the following steps should be performe
   - mysql
   - node
   - postgresql
-  - wget
-  - imagemagick
   - gawk
   - vim
 2. Install the shell helpers:
   - [RVM](https://rvm.io/rvm/install)
   - [NVM](https://github.com/creationix/nvm)
 3. Install the following apps:
-  - [LastPass](https://lastpass.com/)
   - [Spectacle](https://www.spectacleapp.com/)
-  - [FinderPath](https://bahoom.com/finderpath/)
   - [Itsycal](https://www.mowglii.com/itsycal/)
   - [Status Clock](https://itunes.apple.com/us/app/status-clock/id552792489?mt=12)
   - [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12)
   - Xcode Command Line Tools - `xcode-select --install`
   - [iTerm2](https://www.iterm2.com/downloads.html)
   - [Zsh and Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
-  - [VS Code](https://code.visualstudio.com/docs?dv=osx)
   - [Beyond Compare 4](http://www.scootersoftware.com/download.php) - Activation key in LastPass
   - [Navicat Essentials for PostgreSQL](https://www.navicat.com/download/navicat-essentials) - Activation key in LastPass
   - [Navicat Essentials for SQLite](https://www.navicat.com/download/navicat-essentials) - Activation key in LastPass
-  - [LICEcap](http://www.cockos.com/licecap/)
-  - [MySQL Workbench](https://www.mysql.com/products/workbench/)
-  - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-  - [Android Studio](https://developer.android.com/studio/index.html)
-  - [CloudApp](https://www.getcloudapp.com/)
-  - Node 4 - `nvm install 4 && nvm use 4`
-  - Ruby 2.1.1 - `rvm install 2.1.1 && rvm --default use 2.1.1`
 4. Configure:
-  - [Honukai Theme for iTerm](https://github.com/bradyholt/honukai-iterm-zsh)
+  - [Honukai Theme for iTerm (forked)](https://github.com/bradyholt/honukai-iterm-zsh)
     - iTerm font: https://github.com/powerline/fonts/blob/master/Meslo/Meslo%20LG%20M%20DZ%20Regular%20for%20Powerline.otf
   - Screenshots Folder
     - `mkdir ~/Screenshots`
     - `defaults write com.apple.screencapture location ~/Screenshots/`
     - `killall SystemUIServer`
+5. [Use ⌥ ← and ⌥→ to jump forwards / backwards words in iTerm 2, on OS X](https://coderwall.com/p/h6yfda/use-and-to-jump-forwards-backwards-words-in-iterm-2-on-os-x)
