@@ -19,32 +19,32 @@ This is my system configuration for OS X consisting of config "dotfiles" and she
 When setting up an OS X system initially, the following steps should be performed to get a base system setup.  **NOTE:** These steps should be performed before running `./setup.sh`
  
 1. Install [Homebrew](http://brew.sh/) and then `brew install` the following packages:
-  - git
-  - lame
-  - mysql
-  - node
-  - postgresql
-  - gawk
-  - vim
+   - git
+   - lame
+   - mysql
+   - node
+   - postgresql
+   - gawk
+   - vim
 2. Install the shell helpers:
-  - [RVM](https://rvm.io/rvm/install)
-  - [NVM](https://github.com/creationix/nvm)
+   - [RVM](https://rvm.io/rvm/install)
+   - [NVM](https://github.com/creationix/nvm)
 3. Install the following apps:
-  - [Spectacle](https://www.spectacleapp.com/)
-  - [Itsycal](https://www.mowglii.com/itsycal/)
-  - [Status Clock](https://itunes.apple.com/us/app/status-clock/id552792489?mt=12)
-  - [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12)
-  - Xcode Command Line Tools - `xcode-select --install`
-  - [iTerm2](https://www.iterm2.com/downloads.html)
-  - [Zsh and Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
-  - [Beyond Compare 4](http://www.scootersoftware.com/download.php) - Activation key in LastPass
-  - [Navicat Essentials for PostgreSQL](https://www.navicat.com/download/navicat-essentials) - Activation key in LastPass
-  - [Navicat Essentials for SQLite](https://www.navicat.com/download/navicat-essentials) - Activation key in LastPass
+   - [Spectacle](https://www.spectacleapp.com/)
+   - [Itsycal](https://www.mowglii.com/itsycal/)
+   - [Status Clock](https://itunes.apple.com/us/app/status-clock/id552792489?mt=12)
+   - [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12)
+   - Xcode Command Line Tools - `xcode-select --install`
+   - [iTerm2](https://www.iterm2.com/downloads.html)
+   - [Zsh and Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
+   - [Beyond Compare 4](http://www.scootersoftware.com/download.php) - Activation key in LastPass
+   - [Navicat Essentials for PostgreSQL](https://www.navicat.com/download/navicat-essentials) - Activation key in LastPass
+   - [Navicat Essentials for SQLite](https://www.navicat.com/download/navicat-essentials) - Activation key in LastPass
 4. Configure:
-  - [Honukai Theme for iTerm (forked)](https://github.com/bradyholt/honukai-iterm-zsh)
-    - iTerm font: https://github.com/powerline/fonts/blob/master/Meslo/Meslo%20LG%20M%20DZ%20Regular%20for%20Powerline.otf
-  - Screenshots Folder
-    - `mkdir ~/Screenshots`
-    - `defaults write com.apple.screencapture location ~/Screenshots/`
-    - `killall SystemUIServer`
-  - [Use ⌥ ← and ⌥→ to jump forwards / backwards words in iTerm 2, on OS X](https://coderwall.com/p/h6yfda/use-and-to-jump-forwards-backwards-words-in-iterm-2-on-os-x)
+   - [Honukai Theme for iTerm (forked)](https://github.com/bradyholt/honukai-iterm-zsh)
+     - iTerm font: https://github.com/powerline/fonts/blob/master/Meslo/Meslo%20LG%20M%20DZ%20Regular%20for%20Powerline.otf
+   - Screenshots Folder
+     - `mkdir ~/Screenshots`
+     - `defaults write com.apple.screencapture location ~/Screenshots/`
+     - `killall SystemUIServer`
+   - [Use ⌥ ← and ⌥→ to jump forwards / backwards words in iTerm 2, on OS X](https://coderwall.com/p/h6yfda/use-and-to-jump-forwards-backwards-words-in-iterm-2-on-os-x)
