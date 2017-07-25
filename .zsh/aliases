@@ -7,7 +7,7 @@ alias glg='git log'
 alias gs='git status'
 alias grh='git reset --hard HEAD'
 alias gmod='git merge origin/develop'
-alias gd='git dif'
+alias gd='git diff'
 alias gdt='git difftool -y'
 # The following Git aliases point to scripts in {dotfiles}/home/bin
 alias gac='git-add-commit'
