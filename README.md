@@ -42,7 +42,7 @@ When setting up an OS X system initially, the following steps should be performe
    - [Navicat Essentials for SQLite](https://www.navicat.com/download/navicat-essentials) - Activation key in LastPass
 4. Configure:
    - [Honukai Theme for iTerm (forked)](https://github.com/bradyholt/honukai-iterm-zsh)
-     - iTerm font: http://github.com/andreberg/Meslo-Font/archive/master.zip
+     - iTerm font [Meslo LG L DZ](http://github.com/andreberg/Meslo-Font/archive/master.zip)
    - Screenshots Folder
      - `mkdir ~/Screenshots`
      - `defaults write com.apple.screencapture location ~/Screenshots/`
