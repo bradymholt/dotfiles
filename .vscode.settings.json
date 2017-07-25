@@ -10,5 +10,6 @@
     "typescript.check.tscVersion": false,
     "workbench.iconTheme": "vs-seti",
     "editor.codeLens": false,
-    "window.nativeTabs": true
+    "window.nativeTabs": true,
+    "extensions.ignoreRecommendations": false
 }

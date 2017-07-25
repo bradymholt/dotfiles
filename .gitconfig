@@ -8,10 +8,10 @@
 [core]
 	excludesfile = /Users/bholt/.gitignore_global
 [difftool "sourcetree"]
-	cmd = /usr/local/bin/bcomp -ro $LOCAL $REMOTE
-	path = 
+	cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\"
+	path = -ro
 [mergetool "sourcetree"]
-	cmd = /usr/local/bin/bcomp $LOCAL $REMOTE $BASE $MERGED
+	cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
 	trustExitCode = true
 [filter "lfs"]
 	clean = git-lfs clean %f
