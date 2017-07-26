@@ -16,7 +16,7 @@ This is my system configuration for OS X consisting of config "dotfiles" and she
 
 ## Fresh OS X Setup
 
-When setting up an OS X system initially, the following steps should be performed to get a base system setup.  **NOTE:** These steps should be performed before running `./setup.sh`
+When setting up an OS X system initially, the following steps should be performed to get a base system setup.  **NOTE:** These steps should be performed before running `./dotfiles-setup.sh`
 
 1. Install [Homebrew](http://brew.sh/) and then `brew install` the following packages:
    - git
@@ -50,3 +50,5 @@ When setting up an OS X system initially, the following steps should be performe
      - `defaults write com.apple.screencapture location ~/Screenshots/`
      - `killall SystemUIServer`
    - [Use ⌥ ← and ⌥→ to jump forwards / backwards words in iTerm 2, on OS X](https://coderwall.com/p/h6yfda/use-and-to-jump-forwards-backwards-words-in-iterm-2-on-os-x)
+5. Drivers
+     - [AX88179 - USB3.0 to 10/100/1000M Gigabit Ethernet Controller](http://www.asix.com.tw/products.php?op=pItemdetail&PItemID=131;71;112)
