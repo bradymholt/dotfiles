@@ -10,6 +10,7 @@ alias gmod='git merge origin/develop'
 alias gmom='git merge origin/master'
 alias gd='git diff'
 alias gdt='git difftool -y'
+alias gmt='git mergetool'
 alias gst='git stash'
 alias gstp='git stash pop'
 
