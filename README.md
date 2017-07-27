@@ -43,6 +43,5 @@ When setting up an OS X system initially, the following steps should be performe
      - `mkdir ~/Screenshots`
      - `defaults write com.apple.screencapture location ~/Screenshots/`
      - `killall SystemUIServer`
-   - [Use ⌥ ← and ⌥→ to jump forwards / backwards words in iTerm 2, on OS X](https://coderwall.com/p/h6yfda/use-and-to-jump-forwards-backwards-words-in-iterm-2-on-os-x)
 5. Drivers
      - [AX88179 - USB3.0 to 10/100/1000M Gigabit Ethernet Controller](http://www.asix.com.tw/products.php?op=pItemdetail&PItemID=131;71;112)
