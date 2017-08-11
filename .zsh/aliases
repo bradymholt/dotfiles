@@ -1,6 +1,7 @@
 # git
 alias gco='git checkout'
 alias gcb='git checkout -b'
+alias gb='git branch'
 alias gp='git push -u'
 alias gl='git pull'
 alias gf='git fetch'
