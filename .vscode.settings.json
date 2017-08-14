@@ -6,7 +6,6 @@
     "git.confirmSync": false,
     "files.insertFinalNewline": false,
     "files.trimTrailingWhitespace": true,
-    "typescript.check.tscVersion": false,
     "workbench.iconTheme": "vs-seti",
     "editor.codeLens": false,
     "window.nativeTabs": true,
