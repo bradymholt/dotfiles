@@ -24,7 +24,7 @@ SECRETS_FOLDER="${DOTFILES_PATH}/secrets"
 if [ -d "${SECRETS_FOLDER}" ]; then
   echo "The secrets repo has already initialized!"
 else
-  read -p "$(echo -e 'The secrets repo needs to be initialized.\nEnter the secrets repo URL (i.e. https://gist.github.com/bradyholt/123456): ')" SECRETS_REPO_URL
+  read -p "$(echo -e 'The secrets repo needs to be initialized.\nEnter the secrets SSH repo URL (i.e. git@gist.github.com:fc1c4b.git): ')" SECRETS_REPO_URL
   git clone $SECRETS_REPO_URL $SECRETS_FOLDER
 fi
 
@@ -45,6 +45,10 @@ echo "STEP 4: symlink ssh key to ${HOME}/secrets/id_rsa[.pub]"
 #Key pairs
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/secrets/id_rsa" "${HOME}/.ssh/id_rsa"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/secrets/id_rsa.pub" "${HOME}/.ssh/id_rsa.pub"
+
+echo ""
+echo "STEP 5: Running npm install in bin/ folder to install Node dependencies"
+npm --prefix "$DOTFILES_PATH/bin" install "$DOTFILES_PATH/bin"
 
 echo ""
 echo "STEP 4: Setup crontab"
