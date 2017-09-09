@@ -9,4 +9,4 @@ MAILTO=""
 # │ └──────────────────── hour (0 - 23)
 # └───────────────────────── min (0 - 59)
 
-*/3 * * * * . ~/secrets/var; /usr/local/bin/node ~/bin/change-wallpaper
+#*/3 * * * * . ~/secrets/var; /usr/local/bin/node ~/bin/change-wallpaper
