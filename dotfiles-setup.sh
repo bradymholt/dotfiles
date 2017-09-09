@@ -34,29 +34,23 @@ echo ""
 echo "STEP 2: symlink files from ${HOME} to ${DOTFILES_PATH}/"
 find $DOTFILES_PATH -maxdepth 1 -mindepth 1 \( ! -iname "dotfiles*" ! -iname ".git" ! -iname ".gitignore" ! -iname "README.md" \) -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} $HOME ';'
 
+# [Re]create symbolic links from ~/Library/LaunchAgents to ./LaunchAgents/*
 echo ""
-echo "STEP 3: symlink external config"
+echo "STEP 3: Setup LaunchAgents by symlinking files from ~/Library/LaunchAgent to ${DOTFILES_PATH}/LaunchAgents"
+find $DOTFILES_PATH/LaunchAgents -maxdepth 1 -mindepth 1 -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} ~/Library/LaunchAgents ';'
+
+echo ""
+echo "STEP 4: symlink external config"
 # VS Code
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/.vscode.settings.json" "${HOME}/Library/Application Support/Code/User/settings.json"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/.vscode.keybindings.json" "${HOME}/Library/Application Support/Code/User/keybindings.json"
 
 echo ""
-echo "STEP 4: symlink ssh key to ${HOME}/secrets/id_rsa[.pub]"
+echo "STEP 5: symlink ssh key to ${HOME}/secrets/id_rsa[.pub]"
 #Key pairs
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/secrets/id_rsa" "${HOME}/.ssh/id_rsa"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/secrets/id_rsa.pub" "${HOME}/.ssh/id_rsa.pub"
 
 echo ""
-echo "STEP 5: Running npm install in bin/ folder to install Node dependencies"
+echo "STEP 6: Running npm install in bin/ folder to install Node dependencies"
 npm --prefix "$DOTFILES_PATH/bin" install "$DOTFILES_PATH/bin"
-
-echo ""
-echo "STEP 4: Setup crontab"
-echo "backing up user crontab to /tmp/crontab.bk"
-crontab -l > /tmp/crontab.bk
-echo "Replacing user crontab with contents of ${HOME}/.crontab"
-crontab ${HOME}/.crontab
-echo "NOTE: Because of an OS X security block, you will need to manually make a material change to your crontab before it will be installed."
-echo "Your crontab will be opened next; you should make a material change (i.e. add a comment on a new line) and save it"
-read -p "Press any key to continue"
-crontab -e
