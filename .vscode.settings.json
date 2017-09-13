@@ -1,14 +1,15 @@
-// Place your settings in this file to overwrite the default settings
 {
-    "editor.fontSize": 14,
-    "editor.formatOnSave": false,
-    "window.zoomLevel": 0,
-    "git.confirmSync": false,
-    "files.insertFinalNewline": false,
-    "files.trimTrailingWhitespace": true,
-    "workbench.iconTheme": "vs-seti",
-    "editor.codeLens": true,
-    "window.nativeTabs": true,
-    "extensions.ignoreRecommendations": false,
-    "vim.disableAnnoyingNeovimMessage": true
+  // Place your settings in this file to overwrite the default settings
+  "editor.fontSize": 14,
+  "editor.formatOnSave": false,
+  "window.zoomLevel": 0,
+  "git.confirmSync": false,
+  "files.insertFinalNewline": false,
+  "files.trimTrailingWhitespace": true,
+  "workbench.iconTheme": "vs-seti",
+  "editor.codeLens": true,
+  "window.nativeTabs": true,
+  "extensions.ignoreRecommendations": false,
+  "vim.disableAnnoyingNeovimMessage": true,
+  "prettier.printWidth": 120
 }
