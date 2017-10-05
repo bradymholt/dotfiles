@@ -457,8 +457,10 @@
 	</dict>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
+	<key>NSFontPanelAttributes</key>
+	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Desktop</string>
+	<string>~/Documents</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -493,11 +495,13 @@
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1409 37 445 77 0 0 1920 1177 </string>
+	<string>-1075 701 445 103 -1715 424 1440 2537 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>684 174 796 473 0 0 1920 1177 </string>
+	<string>-1728 786 937 512 -1895 474 1440 2537 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>3 25 954 1152 0 0 1920 1177 </string>
+	<string>3 5 1434 1170 0 0 1920 1177 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>247 132 650 577 0 0 1920 1177 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1166,7 +1170,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>5000</integer>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1227,16 +1231,56 @@
 			<string>/Users/bholt</string>
 		</dict>
 	</array>
+	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>6D3F80FE-1579-4133-99EF-CE3982CED108</string>
+	<string>61B0205A-B5AF-478D-BB3D-0356CD2E4083</string>
+	<key>NoSyncLastTipTime</key>
+	<real>531267718.81484902</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>522262106.01603198</real>
+	<real>522814583.95799297</real>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+		<string>0000</string>
+		<string>0001</string>
+		<string>0002</string>
+		<string>0003</string>
+		<string>0004</string>
+		<string>0005</string>
+		<string>0006</string>
+		<string>0007</string>
+		<string>0008</string>
+		<string>0009</string>
+		<string>0010</string>
+		<string>0011</string>
+		<string>0012</string>
+		<string>0013</string>
+		<string>0014</string>
+		<string>0015</string>
+		<string>0016</string>
+		<string>0017</string>
+		<string>0018</string>
+		<string>0019</string>
+		<string>0020</string>
+		<string>0021</string>
+		<string>0022</string>
+		<string>0023</string>
+		<string>0024</string>
+		<string>0025</string>
+		<string>0026</string>
+		<string>0027</string>
+		<string>0028</string>
+		<string>0029</string>
+	</array>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1271,17 +1315,17 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>~/.iterm</string>
+	<string>~/.iterm/</string>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=20</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=85</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-07-24T18:28:36Z</date>
+	<date>2017-10-02T15:40:14Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>WordCharacters</key>
