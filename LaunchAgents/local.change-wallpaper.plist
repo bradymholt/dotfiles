@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>local.job</string>
+	<string>local.change-wallpaper</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/usr/local/bin/node</string>
@@ -19,3 +19,8 @@
 	<integer>180</integer>
 </dict>
 </plist>
+
+<!--
+launchctl unload ~/Library/LaunchAgents/local.change-wallpaper.plist
+launchctl load ~/Library/LaunchAgents/local.change-wallpaper.plist
+-->
