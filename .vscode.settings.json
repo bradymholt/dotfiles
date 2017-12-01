@@ -7,9 +7,9 @@
   "files.insertFinalNewline": false,
   "files.trimTrailingWhitespace": true,
   "workbench.iconTheme": "vs-seti",
-  "editor.codeLens": true,
-  "window.nativeTabs": true,
-  "extensions.ignoreRecommendations": false,
-  "vim.disableAnnoyingNeovimMessage": true,
-  "prettier.printWidth": 120
+  "files.associations": {
+    "*.hbs": "html"
+  },
+  "html.format.wrapLineLength": 120,
+  "workbench.panel.location": "bottom"
 }
