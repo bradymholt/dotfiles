@@ -356,6 +356,8 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>71EE8A3E-62C0-4F96-BED5-9FA7339E96EB</string>
+	<key>DimOnlyText</key>
+	<false/>
 	<key>GlobalKeyMap</key>
 	<dict>
 		<key>0x19-0x60000</key>
@@ -464,7 +466,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Documents</string>
+	<string>~/Pictures</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -498,16 +500,23 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>-1075 701 445 103 -1715 424 1440 2537 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>-1525 1910 700 622 -1895 474 1440 2537 </string>
+	<string>610 417 700 622 0 0 1920 1177 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>291 139 796 473 0 0 1920 1177 </string>
+	<string>-1621 962 937 512 -1717 420 1440 2538 </string>
+	<key>NSWindow Frame UKCrashReporter</key>
+	<string>-1618 2374 592 584 -1717 420 1440 2538 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1895 1725 1440 1282 -1895 474 1440 2537 </string>
+	<string>3 27 954 1151 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>-1732 -642 1274 1173 -1895 474 1440 2537 </string>
+	<string>-1554 420 650 577 -1717 420 1440 2538 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -724,7 +733,7 @@
 				<real>0.88426637649536133</real>
 			</dict>
 			<key>BM Growl</key>
-			<true/>
+			<false/>
 			<key>Background Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1203,12 +1212,21 @@
 				<key>Red Component</key>
 				<real>0.1812402755022049</real>
 			</dict>
+			<key>Semantic History</key>
+			<dict>
+				<key>action</key>
+				<string>command</string>
+				<key>editor</key>
+				<string>com.sublimetext.3</string>
+				<key>text</key>
+				<string>echo '\1' | pbcopy</string>
+			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
@@ -1230,7 +1248,7 @@
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
-			<true/>
+			<false/>
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
@@ -1244,7 +1262,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>61B0205A-B5AF-478D-BB3D-0356CD2E4083</string>
 	<key>NoSyncLastTipTime</key>
-	<real>531267718.81484902</real>
+	<real>535929959.838485</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1286,9 +1304,25 @@
 		<string>0027</string>
 		<string>0028</string>
 		<string>0029</string>
+		<string>0030</string>
+		<string>0031</string>
+		<string>0032</string>
+		<string>0033</string>
+		<string>0034</string>
+		<string>0035</string>
+		<string>0036</string>
+		<string>0037</string>
+		<string>0038</string>
+		<string>0039</string>
+		<string>0040</string>
+		<string>0041</string>
+		<string>0042</string>
+		<string>0043</string>
 	</array>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
+	<key>PasteTabToStringTabStopSize</key>
+	<integer>2</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1335,9 +1369,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-31T18:55:51Z</date>
+	<date>2017-12-01T07:59:37Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>SmartPlacement</key>
+	<false/>
+	<key>UKCrashReporterLastCrashReportDate</key>
+	<real>1511995136</real>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>findIgnoreCase_iTerm</key>
@@ -1347,6 +1385,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.4</string>
+	<string>3.1.5</string>
 </dict>
 </plist>

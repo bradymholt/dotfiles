@@ -20,3 +20,6 @@
 
 -- Verbose error reports.
 \set VERBOSITY verbose
+
+-- Customize prompt
+\set PROMPT1 '%n@%M/%/%R%#%x '

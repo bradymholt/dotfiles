@@ -1,61 +1,65 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-    {
-        "key": "cmd+d",
-        "command": "editor.action.goToDeclaration",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+r",
-        "command": "editor.action.rename",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+cmd+t",
-        "command": "workbench.action.tasks.test",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+cmd+r",
-        "command": "workbench.action.tasks.runTask"
-    },
-    {
-        "key": "cmd+k cmd+d",
-        "command": "editor.action.formatDocument",
-        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+cmd+g",
-        "command": "workbench.view.git",
-        "when": "editorFocus"
-    },
-    {
-        "key": "cmd+\\",
-        "command": "workbench.action.splitEditor",
-        "when": "!inDebugMode"
-    },
-    {
-        "key": "cmd+;",
-        "command": "workbench.action.debug.stepInto",
-        "when": "inDebugMode"
-    },
-    {
-        "key": "cmd+'",
-        "command": "workbench.action.debug.stepOver",
-        "when": "inDebugMode"
-    },
-    {
-        "key": "cmd+\\",
-        "command": "workbench.action.debug.continue",
-        "when": "inDebugMode"
-    },
-    {
-        "key": "cmd+'",
-        "command": "git.sync",
-        "when": "!inDebugMode"
-    },
-    {
-        "key": "cmd+t",
-        "command": "workbench.action.tasks.terminate"
-    }
+  {
+    "key": "cmd+d",
+    "command": "editor.action.goToDeclaration",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+r",
+    "command": "editor.action.rename",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+t",
+    "command": "workbench.action.tasks.test",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "workbench.action.tasks.runTask"
+  },
+  {
+    "key": "cmd+k cmd+d",
+    "command": "editor.action.formatDocument",
+    "when":
+      "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+\\",
+    "command": "workbench.action.splitEditor",
+    "when": "!inDebugMode"
+  },
+  {
+    "key": "cmd+;",
+    "command": "workbench.action.debug.stepInto",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "cmd+'",
+    "command": "workbench.action.debug.stepOver",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "cmd+\\",
+    "command": "workbench.action.debug.continue",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "cmd+'",
+    "command": "git.sync",
+    "when": "!inDebugMode"
+  },
+  {
+    "key": "cmd+t",
+    "command": "workbench.action.tasks.terminate"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm"
+  }
 ]
