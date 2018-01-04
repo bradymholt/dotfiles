@@ -52,7 +52,6 @@ alias dexec='docker exec -ti'
 
 # Heroku
 alias h='heroku'
-alias hrc='heroku rails console'
 
 # PostgreSQL related
 alias psql2md=" sed 's/+/|/g' | sed 's/^/|/' | sed 's/$/|/' |  grep -v rows | grep -v '||'" # pg results to markdown table
@@ -60,3 +59,5 @@ alias psql2md=" sed 's/+/|/g' | sed 's/^/|/' | sed 's/$/|/' |  grep -v rows | gr
 # Other
 alias cls='printf "\033c"'
 alias hg='history | grep'
+
+alias eg='cd $YNAB_EVERGREEN_PATH'
