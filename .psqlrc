@@ -45,8 +45,3 @@
 \set missing_indexes 'SELECT relname, seq_scan-idx_scan AS too_much_seq, case when seq_scan-idx_scan > 0 THEN ''Missing Index?'' ELSE ''OK'' END, pg_relation_size(relname::regclass) AS rel_size, seq_scan, idx_scan FROM pg_stat_all_tables WHERE schemaname=''public'' AND pg_relation_size(relname::regclass) > 80000 ORDER BY too_much_seq DESC;'
 \set seq_scans 'SELECT relname AS name, seq_scan as count FROM pg_stat_user_tables ORDER BY seq_scan DESC;'
 \set cache_hit 'SELECT ''index hit rate'' as name, (sum(idx_blks_hit)) / sum(idx_blks_hit + idx_blks_read) as ratio FROM pg_statio_user_indexes union all SELECT ''cache hit rate'' as name, sum(heap_blks_hit) / (sum(heap_blks_hit) + sum(heap_blks_read)) as ratio FROM pg_statio_user_tables;'
-
-
-
-
-
