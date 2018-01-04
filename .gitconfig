@@ -7,7 +7,7 @@
 	default = current
 [core]
 	excludesfile = /Users/bholt/.gitignore_global
-  editor = code
+  editor = code --wait
 [difftool "sourcetree"]
 	cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\"
 	path = -ro
