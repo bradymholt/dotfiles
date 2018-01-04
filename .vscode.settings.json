@@ -11,5 +11,6 @@
     "*.hbs": "html"
   },
   "html.format.wrapLineLength": 120,
-  "workbench.panel.location": "bottom"
+  "workbench.panel.location": "bottom",
+  "workbench.colorTheme": "One Dark Pro"
 }

@@ -19,8 +19,3 @@
 	<integer>180</integer>
 </dict>
 </plist>
-
-<!--
-launchctl unload ~/Library/LaunchAgents/local.change-wallpaper.plist
-launchctl load ~/Library/LaunchAgents/local.change-wallpaper.plist
--->
