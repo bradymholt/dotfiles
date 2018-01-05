@@ -25,7 +25,7 @@
 \set PROMPT1 '%n@%M/%/%R%#%x '
 
 \set conn 'SELECT usename, COUNT(*) FROM pg_stat_activity GROUP BY usename;'
-\set dbsize 'SELECT datname, pg_size_pretty(pg_database_size(datname)) db_size FROM pg_database ORDER BY db_size;'
+\set db 'SELECT datname as name, pg_catalog.pg_get_userbyid(datdba) as owner, pg_size_pretty(pg_database_size(datname)) size FROM pg_database ORDER BY db_size;'
 
 -- Tables
 \set size 'SELECT table_name, pg_size_pretty(table_size) AS table_size, pg_size_pretty(indexes_size) AS indexes_size, pg_size_pretty(total_size) AS total_size FROM ( SELECT table_name, pg_table_size(table_name) AS table_size, pg_indexes_size(table_name) AS indexes_size, pg_total_relation_size(table_name) AS total_size FROM ( SELECT (\'"\' || table_schema || \'"."\' || table_name || \'"\') AS table_name FROM information_schema.tables ) AS all_tables ORDER BY total_size DESC ) AS pretty_sizes ORDER BY pg_total_relation_size(table_name) DESC;'
@@ -34,7 +34,7 @@
 -- Queries
 \set ps 'SELECT pid, usename, now() - query_start as duration, state, SUBSTRING(query, 0, 100) || \' ...\' as query FROM pg_stat_activity WHERE query_start IS NOT NULL AND state != \'idle\' ORDER BY duration DESC;'
 \set locks 'SELECT pg_stat_activity.pid, pg_class.relname, pg_locks.transactionid, pg_locks.granted, age(now(),pg_stat_activity.query_start) AS "age" FROM pg_stat_activity,pg_locks left OUTER JOIN pg_class ON (pg_locks.relation = pg_class.oid) WHERE pg_stat_activity.query <> \'<insufficient privilege>\' AND pg_locks.pid = pg_stat_activity.pid AND pg_locks.mode = \'ExclusiveLock\' AND pg_stat_activity.pid <> pg_backend_pid() order by query_start;'
-\set blocking 'SELECT bl.pid as blocked_pid, ka.query as blocking_statement, now() - ka.query_start as blocking_duration, kl.pid as blocking_pid, a.query as blocked_statement, now() - a.query_start as blocked_duration FROM pg_catalog.pg_locks bl JOIN pg_catalog.pg_stat_activity a on bl.pid = a.pid JOIN pg_catalog.pg_locks kl JOIN pg_catalog.pg_stat_activity ka on kl.pid = ka.pid ON bl.transactionid = kl.transactionid AND bl.pid != kl.pid WHERE not bl.granted;'
+\set blockseg 'SELECT bl.pid as blocked_pid, ka.query as blocking_statement, now() - ka.query_start as blocking_duration, kl.pid as blocking_pid, a.query as blocked_statement, now() - a.query_start as blocked_duration FROM pg_catalog.pg_locks bl JOIN pg_catalog.pg_stat_activity a on bl.pid = a.pid JOIN pg_catalog.pg_locks kl JOIN pg_catalog.pg_stat_activity ka on kl.pid = ka.pid ON bl.transactionid = kl.transactionid AND bl.pid != kl.pid WHERE not bl.granted;'
 \set slow 'SELECT pid, now() - pg_stat_activity.query_start AS duration, query AS query FROM pg_stat_activity WHERE pg_stat_activity.query <> ''''::text AND now() - pg_stat_activity.query_start > interval ''1 seconds'' ORDER BY now() - pg_stat_activity.query_start DESC;'
 
 -- Indexes
