@@ -24,7 +24,7 @@
 -- Customize prompt
 \set PROMPT1 '%n@%M/%/%R%#%x '
 
-\set conn 'select usename, count(*) from pg_stat_activity group by usename;'
+\set conn 'SELECT usename, count(*) FROM pg_stat_activity GROUP BY usename;'
 \set dbsize 'SELECT datname, pg_size_pretty(pg_database_size(datname)) db_size FROM pg_database ORDER BY db_size;'
 
 -- Tables
