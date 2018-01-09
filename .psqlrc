@@ -21,7 +21,7 @@
 -- Verbose error reports.
 \set VERBOSITY verbose
 
--- Customize prompt
+-- Customize prompt (username@host/dbname=#)
 \set PROMPT1 '%n@%M/%/%R%#%x '
 
 \set conn 'SELECT usename, COUNT(*) FROM pg_stat_activity GROUP BY usename;'
