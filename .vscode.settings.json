@@ -4,14 +4,10 @@
   "editor.formatOnSave": false,
   "window.zoomLevel": 0,
   "git.confirmSync": false,
-  "files.insertFinalNewline": false,
-  "files.trimTrailingWhitespace": true,
   "workbench.iconTheme": "vs-seti",
   "files.associations": {
     "*.hbs": "html"
   },
   "html.format.wrapLineLength": 120,
-  "workbench.panel.location": "bottom",
-  "workbench.colorTheme": "One Dark Pro",
-  "sqltools.telemetryUUID": "d22ae193-9195-4495-ad46-80a90c6867bb"
+  "workbench.colorTheme": "One Dark Pro"
 }
