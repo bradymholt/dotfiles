@@ -774,11 +774,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 318 599 459 0 0 1920 1178 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-1600 2262 918 452 -1717 420 1440 2538 </string>
+	<string>-1600 2334 918 401 -1717 420 1440 2538 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 594 592 584 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1717 1480 1440 1282 -1717 420 1440 2538 </string>
+	<string>-1717 1671 1440 1282 -1717 420 1440 2538 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>963 613 650 554 0 0 1920 1178 </string>
 	<key>New Bookmarks</key>
@@ -786,6 +786,8 @@
 		<dict>
 			<key>ASCII Anti Aliased</key>
 			<true/>
+			<key>ASCII Ligatures</key>
+			<false/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
