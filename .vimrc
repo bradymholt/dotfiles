@@ -1,8 +1,3 @@
-" Use the Solarized Dark theme
-set background=dark
-colorscheme solarized
-let g:solarized_termtrans=1
-
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
@@ -103,6 +98,8 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
 
-set clipboard+=unnamed  " use the clipboards of vim and win
 set paste               " Paste from a windows or from vim
 " set go+=a               " Visual selection automatically copied to the clipboard
+
+" in Git commit messages, highlight column 51 and 73 as length guides
+autocmd FileType gitcommit set colorcolumn=51,73
