@@ -38,10 +38,7 @@ When setting up an OS X system initially, the following steps should be performe
    - iTerm
      - [Honukai Theme for iTerm (forked)](https://github.com/bradyholt/honukai-iterm-zsh)
      - Font [Meslo LG L DZ](http://github.com/andreberg/Meslo-Font/archive/master.zip)
-     - In setting, tell iTerm to look at `~/.iterm` for settings
-   - Screenshots Folder
-     - `mkdir ~/Screenshots`
-     - `defaults write com.apple.screencapture location ~/Screenshots/`
-     - `killall SystemUIServer`
+     - In settings, tell iTerm to look at `~/.iterm` for settings
+   - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 5. Drivers
      - [AX88179 - USB3.0 to 10/100/1000M Gigabit Ethernet Controller](http://www.asix.com.tw/products.php?op=pItemdetail&PItemID=131;71;112)
