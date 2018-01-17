@@ -43,6 +43,10 @@ syntax on
 set cursorline
 " Make tabs as wide as two spaces
 set tabstop=2
+" Make the tab key insert spaces instead of tabs
+set expandtab
+set softtabstop=0
+set smarttab
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
