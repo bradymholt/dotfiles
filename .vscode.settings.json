@@ -7,7 +7,5 @@
   "workbench.iconTheme": "vs-seti",
   "files.associations": {
     "*.hbs": "html"
-  },
-  "html.format.wrapLineLength": 120,
-  "workbench.colorTheme": "One Dark Pro",
+  }
 }
