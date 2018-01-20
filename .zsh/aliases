@@ -38,15 +38,6 @@ alias nt='npm test'
 # yarn
 alias yi='yarn install'
 
-# Open additional calculators
-alias calc='/Applications/Calculator.app/Contents/MacOS/Calculator &'
-
-# Lame settings for podcast quality output
-alias lame-podcast='lame -V6 --vbr-new --resample 22 -m m'
-
-# Pipe my public key to my clipboard.
-alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to clipboard.'"
-
 # Docker
 alias drm='docker rm $(docker ps -a -q) && docker rm $(docker ps -a -q)' # Delete all containers
 alias drmi='docker rmi $(docker images -q)' # Deletes all images
@@ -55,10 +46,11 @@ alias dexec='docker exec -ti'
 # Heroku
 alias h='heroku'
 
-# PostgreSQL related
-alias psql2md=" sed 's/+/|/g' | sed 's/^/|/' | sed 's/$/|/' |  grep -v rows | grep -v '||'" # pg results to markdown table
-
 # Other
+alias calc='/Applications/Calculator.app/Contents/MacOS/Calculator &'                       # Open additional calculators
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to clipboard.'"  # Pipe my public key to my clipboard.
+alias lame-podcast='lame -V6 --vbr-new --resample 22 -m m'                                  # Lame settings for podcast quality output
+alias psql2md=" sed 's/+/|/g' | sed 's/^/|/' | sed 's/$/|/' |  grep -v rows | grep -v '||'" # pg results to markdown table
 alias cls='printf "\033c"'
 alias hg='history | grep'
 alias blog='cd ~/dev/geekytidbits.com && ./newpost.sh'
