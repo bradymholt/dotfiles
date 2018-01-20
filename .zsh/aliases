@@ -62,5 +62,4 @@ alias psql2md=" sed 's/+/|/g' | sed 's/^/|/' | sed 's/$/|/' |  grep -v rows | gr
 alias cls='printf "\033c"'
 alias hg='history | grep'
 alias blog='cd ~/dev/geekytidbits.com && ./newpost.sh'
-
 alias eg='cd $YNAB_EVERGREEN_PATH'
