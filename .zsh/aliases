@@ -47,11 +47,11 @@ alias dexec='docker exec -ti'
 alias h='heroku'
 
 # Other
-alias calc='/Applications/Calculator.app/Contents/MacOS/Calculator &'                       # Open additional calculators
-alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to clipboard.'"  # Pipe my public key to my clipboard.
-alias lame-podcast='lame -V6 --vbr-new --resample 22 -m m'                                  # Lame settings for podcast quality output
+alias cls='printf "\033c"'                                                                  # clear screen
+alias hg='history | grep'                                                                   # grep history
+alias calc='/Applications/Calculator.app/Contents/MacOS/Calculator &'                       # open additional calculators
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to clipboard.'"  # pipe my public key to my clipboard.
+alias lame-podcast='lame -V6 --vbr-new --resample 22 -m m'                                  # lame settings for podcast quality output
 alias psql2md=" sed 's/+/|/g' | sed 's/^/|/' | sed 's/$/|/' |  grep -v rows | grep -v '||'" # pg results to markdown table
-alias cls='printf "\033c"'
-alias hg='history | grep'
-alias blog='cd ~/dev/geekytidbits.com && ./newpost.sh'
+alias blog='cd ~/dev/geekytidbits.com && ./newpost.sh'                                      # create new blog post
 alias eg='cd $YNAB_EVERGREEN_PATH'
