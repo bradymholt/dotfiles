@@ -1,7 +1,7 @@
 {
   // Place your settings in this file to overwrite the default settings
   "editor.fontSize": 14,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "window.zoomLevel": 0,
   "git.confirmSync": false,
   "workbench.iconTheme": "vs-seti",
