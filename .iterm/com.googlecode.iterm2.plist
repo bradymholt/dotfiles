@@ -12,6 +12,8 @@
 	<integer>1</integer>
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
+	<key>CheckTestRelease</key>
+	<false/>
 	<key>CopyLastNewline</key>
 	<true/>
 	<key>Custom Color Presets</key>
@@ -616,10 +618,16 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>71EE8A3E-62C0-4F96-BED5-9FA7339E96EB</string>
-	<key>DimOnlyText</key>
+	<key>DimBackgroundWindows</key>
 	<false/>
+	<key>DimInactiveSplitPanes</key>
+	<false/>
+	<key>DimOnlyText</key>
+	<true/>
 	<key>EnableDivisionView</key>
 	<false/>
+	<key>FocusFollowsMouse</key>
+	<true/>
 	<key>GlobalKeyMap</key>
 	<dict>
 		<key>0x19-0x60000</key>
@@ -723,6 +731,8 @@
 	</dict>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>JobName</key>
+	<true/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSFontPanelAttributes</key>
@@ -772,17 +782,17 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>-1075 701 445 103 -1715 424 1440 2537 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>610 417 700 622 0 0 1920 1177 </string>
+	<string>-1347 1857 700 622 -1717 420 1440 2538 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 318 599 459 0 0 1920 1178 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-878 797 918 381 0 0 1920 1178 </string>
+	<string>-1578 2529 770 429 -1717 420 1440 2538 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 594 592 584 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1920 1178 0 0 1920 1178 </string>
+	<string>-1717 1694 1440 1260 -1717 420 1440 2538 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>426 427 650 576 0 0 1920 1178 </string>
+	<string>963 0 954 1178 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>755 167 650 576 0 0 1920 1178 </string>
 	<key>New Bookmarks</key>
@@ -1538,7 +1548,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>61B0205A-B5AF-478D-BB3D-0356CD2E4083</string>
 	<key>NoSyncLastTipTime</key>
-	<real>538184593.29946303</real>
+	<real>538926107.75308001</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1600,6 +1610,12 @@
 		<string>0047</string>
 		<string>0048</string>
 		<string>0049</string>
+		<string>0050</string>
+		<string>0051</string>
+		<string>0052</string>
+		<string>0053</string>
+		<string>0054</string>
+		<string>0055</string>
 	</array>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
@@ -1651,15 +1667,21 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-01-15T17:23:44Z</date>
+	<date>2018-01-29T13:48:23Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>ShowPaneTitles</key>
+	<false/>
 	<key>SmartPlacement</key>
+	<false/>
+	<key>StretchTabsToFillBar</key>
 	<false/>
 	<key>TabStyle</key>
 	<integer>1</integer>
 	<key>UKCrashReporterLastCrashReportDate</key>
 	<real>1513199104</real>
+	<key>WindowNumber</key>
+	<true/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>findIgnoreCase_iTerm</key>

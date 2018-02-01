@@ -14,7 +14,7 @@ alias gd='git diff'
 alias gdt='git difftool -y'
 alias gmt='git mergetool'
 alias gst='git stash'
-alias gsta='git stash apply'
+alias gsts='git stash list -p'
 alias gstp='git stash pop'
 
 # The following git aliases point to scripts in {dotfiles}/home/bin
