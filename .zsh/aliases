@@ -1,7 +1,7 @@
 # git
 alias gco='git checkout'
 alias gcb='git checkout -b'
-alias gb='git branch'
+alias gb="git for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) (%(color:green)%(committerdate:relative)%(color:reset))'"
 alias gp='git push -u'
 alias gl='git pull'
 alias gf='git fetch'
