@@ -53,5 +53,6 @@ alias calc='/Applications/Calculator.app/Contents/MacOS/Calculator &'           
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to clipboard.'"  # pipe my public key to my clipboard.
 alias lame-podcast='lame -V6 --vbr-new --resample 22 -m m'                                  # lame settings for podcast quality output
 alias psql2md=" sed 's/+/|/g' | sed 's/^/|/' | sed 's/$/|/' |  grep -v rows | grep -v '||'" # pg results to markdown table
+alias uuid="uuidgen | tr -d '\n' | pbcopy | echo '=> New UUID copied to clipboard.'"        # generate UUID and send to clipboard
 alias blog='cd ~/dev/geekytidbits.com && ./newpost.sh'                                      # create new blog post
 alias eg='cd $YNAB_EVERGREEN_PATH'

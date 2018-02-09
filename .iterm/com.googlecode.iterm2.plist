@@ -786,11 +786,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 318 599 459 0 0 1920 1178 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-1578 2529 770 429 -1717 420 1440 2538 </string>
+	<string>139 666 937 512 0 0 1920 1178 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 594 592 584 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1717 1694 1440 1260 -1717 420 1440 2538 </string>
+	<string>-1880 0 1920 1178 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>963 0 954 1178 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1518,7 +1518,7 @@
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
-			<false/>
+			<true/>
 			<key>Use Bold Font</key>
 			<false/>
 			<key>Use Bright Bold</key>
@@ -1548,7 +1548,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>61B0205A-B5AF-478D-BB3D-0356CD2E4083</string>
 	<key>NoSyncLastTipTime</key>
-	<real>538926107.75308001</real>
+	<real>539389206.28747404</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1616,6 +1616,10 @@
 		<string>0053</string>
 		<string>0054</string>
 		<string>0055</string>
+		<string>0056</string>
+		<string>0057</string>
+		<string>0058</string>
+		<string>0059</string>
 	</array>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
@@ -1667,7 +1671,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-01-29T13:48:23Z</date>
+	<date>2018-02-02T05:06:56Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowPaneTitles</key>
