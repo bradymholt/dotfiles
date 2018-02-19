@@ -19,7 +19,7 @@ This is my system configuration for OS X consisting of config "dotfiles" and she
 When setting up an OS X system initially, the following steps should be performed to get a base system setup.  **NOTE:** These steps should be performed before running `./dotfiles-setup.sh`
 
 1. Install [iTerm](https://www.iterm2.com/downloads.html) and then run it
-1. Install [Homebrew](http://brew.sh/) and then run `brew install git zsh vim` to install some base packages
+1. Install [Homebrew](http://brew.sh/) and then run `brew install git zsh vim jsonpp` to install some base packages
 1. Install [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 1. Install the shell helpers:
    - [RVM](https://rvm.io/rvm/install)
