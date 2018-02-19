@@ -30,7 +30,7 @@ When setting up an OS X system initially, the following steps should be performe
    - [Status Clock](https://itunes.apple.com/us/app/status-clock/id552792489?mt=12)
    - [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12)
    - Xcode Command Line Tools - `xcode-select --install`
-1.  Install the following licensed software (keys in "Software Licenses" Google Doc)
+1. Install the following licensed software (keys in "Software Licenses" Google Doc)
    - [Beyond Compare 4](http://www.scootersoftware.com/download.php) - Activation key in LastPass
    - [Navicat Essentials for PostgreSQL](https://www.navicat.com/download/navicat-essentials) - Activation key in LastPass
    - [Navicat Essentials for SQLite](https://www.navicat.com/download/navicat-essentials) - Activation key in LastPass
