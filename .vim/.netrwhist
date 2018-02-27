@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/bholt/dotfiles/secrets/.git'
-let g:netrw_dirhist_2='/Users/bholt/dotfiles/.git'
-let g:netrw_dirhist_3='/Users/bholt/dev/evergreen/.scripts'
-let g:netrw_dirhist_4='/Users/bholt/dev/cronstrue/.git'
-let g:netrw_dirhist_5='/Users/bholt/dev/ynab_marketing_site'
-let g:netrw_dirhist_6='/Users/bholt/.yarn-config'
-let g:netrw_dirhist_7='/Users/bholt/.yarn-config/global'
-let g:netrw_dirhist_8='/Users/bholt/dev/evergreen/.git'
-let g:netrw_dirhist_9='/Users/bholt'
+let g:netrw_dirhist_cnt =0

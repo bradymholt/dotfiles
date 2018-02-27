@@ -28,7 +28,7 @@
 	tool = bc3
 	compactionHeuristic = true
 [pull]
-	rebase = true
+#	rebase = true
 [mergetool "bc3"]
 	trustExitCode = true
 [commit]
