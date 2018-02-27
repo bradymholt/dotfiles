@@ -19,26 +19,27 @@ This is my system configuration for OS X consisting of config "dotfiles" and she
 When setting up an OS X system initially, the following steps should be performed to get a base system setup.  **NOTE:** These steps should be performed before running `./dotfiles-setup.sh`
 
 1. Install [iTerm](https://www.iterm2.com/downloads.html) and then run it
-2. Install [Homebrew](http://brew.sh/) and then run `brew install git zsh vim` to install some base packages
-3. Install [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
-4. Install the shell helpers:
+1. Install [Homebrew](http://brew.sh/) and then run `brew install git zsh vim jsonpp` to install some base packages
+1. Install [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
+1. Install the shell helpers:
    - [RVM](https://rvm.io/rvm/install)
    - [NVM](https://github.com/creationix/nvm)
-5. Install the following OS X apps:
+1. Install the following OS X apps:
    - [Spectacle](https://www.spectacleapp.com/)
    - [Itsycal](https://www.mowglii.com/itsycal/)
    - [Status Clock](https://itunes.apple.com/us/app/status-clock/id552792489?mt=12)
    - [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12)
    - Xcode Command Line Tools - `xcode-select --install`
+1. Install the following licensed software (keys in "Software Licenses" Google Doc)
    - [Beyond Compare 4](http://www.scootersoftware.com/download.php) - Activation key in LastPass
    - [Navicat Essentials for PostgreSQL](https://www.navicat.com/download/navicat-essentials) - Activation key in LastPass
    - [Navicat Essentials for SQLite](https://www.navicat.com/download/navicat-essentials) - Activation key in LastPass
-4. Configure:
+1. Configure:
    - Host name: `sudo scutil --set HostName name-you-want`
    - iTerm
      - [Honukai Theme for iTerm (forked)](https://github.com/bradyholt/honukai-iterm-zsh)
      - Font [Meslo LG L DZ](http://github.com/andreberg/Meslo-Font/archive/master.zip)
      - In settings, tell iTerm to look at `~/.iterm` for settings
    - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-5. Drivers
+1. Drivers
      - [AX88179 - USB3.0 to 10/100/1000M Gigabit Ethernet Controller](http://www.asix.com.tw/products.php?op=pItemdetail&PItemID=131;71;112)
