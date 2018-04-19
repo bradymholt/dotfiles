@@ -34,6 +34,7 @@ alias ni='npm install'
 alias ns='npm run start'
 alias nb='npm run build'
 alias nt='npm test'
+alias nu='ncu'
 
 # yarn
 alias yi='yarn install'

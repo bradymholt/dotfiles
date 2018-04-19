@@ -9,5 +9,6 @@
   "files.associations": {
     "*.hbs": "html"
   },
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
