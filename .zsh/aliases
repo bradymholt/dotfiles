@@ -42,7 +42,8 @@ alias yi='yarn install'
 # Docker
 alias drm='docker rm $(docker ps -a -q) && docker rm $(docker ps -a -q)' # Delete all containers
 alias drmi='docker rmi $(docker images -q)' # Deletes all images
-alias dexec='docker exec -ti'
+alias dps='docker ps' # List all containers
+alias dc='docker-compose'
 
 # Heroku
 alias h='heroku'
