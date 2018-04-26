@@ -55,5 +55,7 @@ alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to cl
 alias lame-podcast='lame -V6 --vbr-new --resample 22 -m m'                                  # lame settings for podcast quality output
 alias psql2md=" sed 's/+/|/g' | sed 's/^/|/' | sed 's/$/|/' |  grep -v rows | grep -v '||'" # pg results to markdown table
 alias uuid="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]' | pbcopy | echo '=> New UUID copied to clipboard.'"        # generate UUID and send to clipboard
+alias dus='du -d 1 -h | sort -h'
 alias blog='cd ~/dev/geekytidbits.com && ./newpost.sh'                                      # create new blog post
 alias eg='cd $YNAB_EVERGREEN_PATH'
+alias foo='$(tail $HISTFILE | sed -e "s/:.*;//")'
