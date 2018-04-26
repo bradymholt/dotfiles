@@ -7,10 +7,10 @@
   "author": "Brady Holt",
   "license": "MIT",
   "dependencies": {
-    "got": "^6.3.0",
-    "request": "^2.72.0",
-    "tempfile": "^1.1.1",
-    "wallpaper": "^2.1.1",
+    "got": "^8.3.0",
+    "request": "^2.85.0",
+    "tempfile": "^2.0.0",
+    "wallpaper": "^2.6.0",
     "weighted": "^0.3.0"
   }
 }
