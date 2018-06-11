@@ -99,3 +99,6 @@ if [ -s "$HOME/.nvm/nvm.sh" ] && [ ! "$(whence -w __init_nvm)" = function ]; the
   }
   for i in "${__node_commands[@]}"; do alias $i='__init_nvm && '$i; done
 fi
+
+# added by travis gem
+[ -f /Users/bholt/.travis/travis.sh ] && source /Users/bholt/.travis/travis.sh

@@ -59,4 +59,4 @@ alias uuid="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]' | pbcopy | echo '=
 alias dus='du -d 1 -h | sort -h'
 alias blog='cd ~/dev/geekytidbits.com && ./newpost.sh'                                      # create new blog post
 alias eg='cd $YNAB_EVERGREEN_PATH'
-alias foo='$(tail $HISTFILE | sed -e "s/:.*;//")'
+alias json=" jq -C '.' | less -R"
