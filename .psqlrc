@@ -21,15 +21,15 @@
 -- Verbose error reports.
 \set VERBOSITY verbose
 
--- Format file output as csv when using \o filename.csv
-\pset \a
-\pset \f ','
+-- Set field separator to ',' for CSV format output when using \o filename.csv
+\pset \f ',' 
 
 -- Customize prompt (username@host/dbname=#)
 \set PROMPT1 '%n@%M/%/%R%#%x '
 
+-- Database
 \set conn 'SELECT usename, COUNT(*) FROM pg_stat_activity GROUP BY usename;'
-\set db 'SELECT datname as name, pg_catalog.pg_get_userbyid(datdba) as owner, pg_size_pretty(pg_database_size(datname)) size FROM pg_database ORDER BY db_size;'
+\set db 'SELECT datname as name, pg_catalog.pg_get_userbyid(datdba) as owner, pg_size_pretty(pg_database_size(datname)) size FROM pg_database ORDER BY size;'
 
 -- Tables
 \set size 'SELECT table_name, pg_size_pretty(table_size) AS table_size, pg_size_pretty(indexes_size) AS indexes_size, pg_size_pretty(total_size) AS total_size FROM ( SELECT table_name, pg_table_size(table_name) AS table_size, pg_indexes_size(table_name) AS indexes_size, pg_total_relation_size(table_name) AS total_size FROM ( SELECT (\'"\' || table_schema || \'"."\' || table_name || \'"\') AS table_name FROM information_schema.tables ) AS all_tables ORDER BY total_size DESC ) AS pretty_sizes ORDER BY pg_total_relation_size(table_name) DESC;'
