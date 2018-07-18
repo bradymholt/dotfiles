@@ -21,6 +21,10 @@
 -- Verbose error reports.
 \set VERBOSITY verbose
 
+-- Format file output as csv when using \o filename.csv
+\pset \a
+\pset \f ','
+
 -- Customize prompt (username@host/dbname=#)
 \set PROMPT1 '%n@%M/%/%R%#%x '
 

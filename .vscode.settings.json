@@ -10,5 +10,7 @@
     "*.hbs": "html"
   },
   "editor.minimap.enabled": false,
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "terminal.integrated.rendererType": "dom",
+  "workbench.colorTheme": "Sapphire"
 }
