@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# Cloudflare CLI
-
 debug=0
 details=0
 quiet=0
@@ -978,3 +976,4 @@ json)
    show, add, delete, change, clear, invalidate, check"
 	;;
 esac
+

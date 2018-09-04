@@ -40,10 +40,11 @@ alias nu='ncu'
 alias yi='yarn install'
 
 # Docker
+alias d='docker'
+alias dc='docker ps -a'
 alias drm='docker rm $(docker ps -a -q) && docker rm $(docker ps -a -q)' # Delete all containers
 alias drmi='docker rmi $(docker images -q)' # Deletes all images
-alias dps='docker ps' # List all containers
-alias dc='docker-compose'
+alias dr='docker run --rm -it'
 
 # Heroku
 alias h='heroku'
