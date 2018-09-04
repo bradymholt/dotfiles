@@ -22,7 +22,7 @@
 \set VERBOSITY verbose
 
 -- Set field separator to ',' for CSV format output when using \o filename.csv
-\pset \f ',' 
+--\pset \f ',' 
 
 -- Customize prompt (username@host/dbname=#)
 \set PROMPT1 '%n@%M/%/%R%#%x '
