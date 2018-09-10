@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-"use strict";
-
 const got = require('got');
 const tempfile = require('tempfile');
 const wallpaper = require('wallpaper');
