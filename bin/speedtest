@@ -12,7 +12,7 @@
 # Takes the url as the first arg, and the number of tests as the
 # second arg
 #
-# Example usage: ./speedtest.sh www.mysite.com 20
+# Example usage: speedtest www.mysite.com 20
 ########################################################################
 
 url=$1

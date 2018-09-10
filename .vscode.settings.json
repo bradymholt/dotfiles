@@ -12,5 +12,12 @@
   "editor.minimap.enabled": false,
   "typescript.tsdk": "node_modules/typescript/lib",
   "terminal.integrated.rendererType": "dom",
-  "workbench.colorTheme": "Sapphire"
+  "workbench.colorTheme": "Sapphire",
+  "github.hosts": [
+    {
+      "host": "https://github.com",
+      "username": "oauth",
+      "token": "system"
+    }
+  ],  
 }
