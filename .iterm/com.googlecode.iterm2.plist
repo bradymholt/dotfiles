@@ -782,17 +782,17 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>-1255 643 445 77 -1895 474 1440 2538 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>-1525 1911 700 622 -1895 474 1440 2538 </string>
+	<string>610 417 700 622 0 0 1920 1178 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>269 318 599 459 0 0 1920 1178 </string>
+	<string>-1724 1402 606 469 -1895 474 1440 2538 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-1849 2490 918 401 -1895 474 1440 2538 </string>
+	<string>-1738 2380 937 512 -1784 404 1440 2538 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 594 592 584 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>3 0 954 1178 0 0 1920 1178 </string>
+	<string>-1784 1651 1440 1290 -1784 404 1440 2538 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>962 0 954 1178 0 0 1920 1178 </string>
+	<string>-1784 2068 650 526 -1784 404 1440 2538 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>755 167 650 576 0 0 1920 1178 </string>
 	<key>New Bookmarks</key>
@@ -1465,7 +1465,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>10000</integer>
+			<integer>0</integer>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1683,7 +1683,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-05-05T01:01:04Z</date>
+	<date>2018-09-24T22:19:09Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowPaneTitles</key>
@@ -1707,7 +1707,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.6</string>
+	<string>3.2.0</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>3</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
