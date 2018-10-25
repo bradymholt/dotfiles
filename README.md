@@ -22,12 +22,11 @@ When setting up an OS X system initially, the following steps should be performe
 1. Install [1Password X](https://chrome.google.com/webstore/detail/1password-x-%E2%80%93-password-ma/aeblfdkhhhdcdjpifhhbdiojplfjncoa?hl=en) Chrome Extension and login
 1. Find `id_rsa` file in 1Password and download to .ssh/id_rsa then run `chmod 600 ~/.ssh/id_rsa`
 1. Install:
-   - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+   - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" && git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
    - [RVM](https://rvm.io/rvm/install) - `\curl -sSL https://get.rvm.io | bash`
    - [Status Clock](https://itunes.apple.com/us/app/status-clock/id552792489?mt=12)
    - [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12)
 1. Configure:
    - Host name: `sudo scutil --set HostName name-you-want`
    - Tell iTerm2 to look at `~/.iterm` for settings
-   - zsh-autosuggestions - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
 1. Follow steps in "Usage" section above
