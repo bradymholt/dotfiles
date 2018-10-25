@@ -44,6 +44,7 @@ echo "STEP 4: symlink external config"
 # VS Code
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/.vscode.settings.json" "${HOME}/Library/Application Support/Code/User/settings.json"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/.vscode.keybindings.json" "${HOME}/Library/Application Support/Code/User/keybindings.json"
+ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/.zsh/oh-my-zsh-themes/honukai.zsh-theme" "${HOME}/.oh-my-zsh/themes/honukai.zsh-theme"
 
 echo ""
 echo "STEP 5: symlink ssh key to ${HOME}/secrets/id_rsa[.pub]"
