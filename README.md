@@ -20,7 +20,7 @@ When setting up an OS X system initially, the following steps should be performe
 
 1. Install [Homebrew](http://brew.sh/) and then install apps: `brew install git zsh bash vim jq node yarn heroku/brew/heroku postgres && brew tap caskroom/fonts && brew cask install font-meslo-lg iterm2 google-chrome visual-studio-code slack docker beyond-compare spectacle`
 1. Install [1Password X](https://chrome.google.com/webstore/detail/1password-x-%E2%80%93-password-ma/aeblfdkhhhdcdjpifhhbdiojplfjncoa?hl=en) Chrome Extension and login
-1. File `id_rsa` file in 1Password and download to .ssh/id_rsa
+1. File `id_rsa` file in 1Password and download to .ssh/id_rsa then run `chmod 600 ~/.ssh/id_rsa`
 1. Install these shell helpers:
    - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
    - [RVM](https://rvm.io/rvm/install) - `\curl -sSL https://get.rvm.io | bash`
