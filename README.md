@@ -18,15 +18,15 @@ This is my system configuration for OS X consisting of config "dotfiles" and she
 
 When setting up an OS X system initially, the following steps should be performed to get a base system setup.  **NOTE:** These steps should be performed before running `./dotfiles-setup.sh`
 
-1. Install [Homebrew](http://brew.sh/) and then install apps: `brew install git zsh bash vim jq node yarn heroku/brew/heroku postgres && brew tap caskroom/fonts && brew cask install font-meslo-lg iterm2 spectacle`
+1. Install [Homebrew](http://brew.sh/) and then install apps: `brew install git zsh bash vim jq node yarn heroku/brew/heroku postgres && brew tap caskroom/fonts && brew cask install font-meslo-lg iterm2 google-chrome visual-studio-code slack docker beyond-compare spectacle`
+1. Install [1Password X](https://chrome.google.com/webstore/detail/1password-x-%E2%80%93-password-ma/aeblfdkhhhdcdjpifhhbdiojplfjncoa?hl=en) Chrome Extension and login
+1. File `id_rsa` file in 1Password and download to .ssh/id_rsa
 1. Install these shell helpers:
    - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
    - [RVM](https://rvm.io/rvm/install) - `\curl -sSL https://get.rvm.io | bash`
 1. Install the following OS X apps:
    - [Status Clock](https://itunes.apple.com/us/app/status-clock/id552792489?mt=12)
    - [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12)
-   - Xcode Command Line Tools - `xcode-select --install`
-   - [Beyond Compare 4](http://www.scootersoftware.com/download.php) (key in 1Password)
    - [Navicat Essentials for PostgreSQL](https://www.navicat.com/download/navicat-essentials) - (key in "Software Licenses" Google Doc)
    - [Navicat Essentials for SQLite](https://www.navicat.com/download/navicat-essentials) - (key in "Software Licenses" Google Doc)
 1. Configure:
@@ -35,3 +35,4 @@ When setting up an OS X system initially, the following steps should be performe
      - [Honukai Theme for iTerm (forked)](https://github.com/bradyholt/honukai-iterm-zsh)
      - In settings, tell iTerm to look at `~/.iterm` for settings
    - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+1. Follow steps in "Usage" section above
