@@ -31,8 +31,6 @@ When setting up an OS X system initially, the following steps should be performe
    - [Navicat Essentials for SQLite](https://www.navicat.com/download/navicat-essentials) - (key in "Software Licenses" Google Doc)
 1. Configure:
    - Host name: `sudo scutil --set HostName name-you-want`
-   - iTerm
-     - [Honukai Theme for iTerm (forked)](https://github.com/bradyholt/honukai-iterm-zsh)
-     - In settings, tell iTerm to look at `~/.iterm` for settings
+   - Tell iTerm2 to look at `~/.iterm` for settings
    - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 1. Follow steps in "Usage" section above
