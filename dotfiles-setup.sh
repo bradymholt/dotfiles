@@ -32,26 +32,23 @@ fi
 # Only top level files/directories will be symlinked
 echo ""
 echo "STEP 2: symlink files from ${HOME} to ${DOTFILES_PATH}/"
-find $DOTFILES_PATH -maxdepth 1 -mindepth 1 \( ! -iname "dotfiles*" ! -iname ".git" ! -iname ".gitignore" ! -iname "README.md" \) -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} $HOME ';'
+find $DOTFILES_PATH -maxdepth 1 -mindepth 1 \( ! -iname "dotfiles*" ! -iname ".git" ! -iname ".gitignore" ! -iname "README.md" ! -iname "LaunchAgents" \) -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} $HOME ';'
 
-# [Re]create symbolic links from ~/Library/LaunchAgents to ./LaunchAgents/*
+# [Re]create specialized symbolic links
 echo ""
-echo "STEP 3: Setup LaunchAgents by symlinking files from ~/Library/LaunchAgent to ${DOTFILES_PATH}/LaunchAgents"
+echo "STEP 3: specialized symlinks" 
+# ~/Library/LaunchAgents to ./LaunchAgents/*¬
 find $DOTFILES_PATH/LaunchAgents -maxdepth 1 -mindepth 1 -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} ~/Library/LaunchAgents ';'
-
-echo ""
-echo "STEP 4: symlink external config"
 # VS Code
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/.vscode.settings.json" "${HOME}/Library/Application Support/Code/User/settings.json"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/.vscode.keybindings.json" "${HOME}/Library/Application Support/Code/User/keybindings.json"
-ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/.zsh/oh-my-zsh-themes/honukai.zsh-theme" "${HOME}/.oh-my-zsh/themes/honukai.zsh-theme"
-
-echo ""
-echo "STEP 5: symlink ssh key to ${HOME}/secrets/id_rsa[.pub]"
-#Key pairs
+# oh-my-zsh themes
+find $DOTFILES_PATH/.zsh/oh-my-zsh-themes -maxdepth 1 -mindepth 1 -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} ~/.oh-my-zsh/themes ';'
+# SSH keypair
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/secrets/id_rsa" "${HOME}/.ssh/id_rsa"
+chmod 600 "${HOME}/.ssh/id_rsa"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/secrets/id_rsa.pub" "${HOME}/.ssh/id_rsa.pub"
 
 echo ""
-echo "STEP 6: Running npm install in bin/ folder to install Node dependencies"
+echo "STEP 4: Running npm install in bin/ folder to install Node dependencies"
 npm --prefix "$DOTFILES_PATH/bin" install "$DOTFILES_PATH/bin"
