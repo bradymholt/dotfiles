@@ -18,14 +18,15 @@ This is my system configuration for OS X consisting of config "dotfiles" and she
 
 When setting up an OS X system initially, the following steps should be performed to get a base system setup.  **NOTE:** These steps should be performed before running `./dotfiles-setup.sh`
 
-1. Install [Homebrew] - `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-2. Install apps: `brew install git wget zsh bash vim jq node yarn heroku/brew/heroku postgres && brew tap caskroom/fonts && brew cask install font-meslo-lg iterm2 github google-chrome visual-studio-code fantastical slack docker beyond-compare spectacle franz`
+1. Install Homebrew - `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+2. Install apps: `brew install git wget zsh bash vim jq node yarn heroku/brew/heroku postgres && brew tap caskroom/fonts && brew cask install font-meslo-lg iterm2 github google-chrome visual-studio-code fantastical slack itsycal docker beyond-compare spectacle franz`
 1. Open Chrome and install [1Password X](https://chrome.google.com/webstore/detail/1password-x-%E2%80%93-password-ma/aeblfdkhhhdcdjpifhhbdiojplfjncoa?hl=en) Chrome Extension and login
 1. Find `id_rsa` file in 1Password and download to .ssh/id_rsa then run `chmod 600 ~/.ssh/id_rsa`
 1. Install:
    - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" && git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
    - [RVM](https://rvm.io/rvm/install) - `\curl -sSL https://get.rvm.io | bash`
    - [Status Clock](https://itunes.apple.com/us/app/status-clock/id552792489?mt=12)
+   - [Monosnap](https://://itunes.apple.com/ru/app/monosnap/id540348655)
    - [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12)
 1. Configure:
    - Host name: `sudo scutil --set HostName name-you-want`
