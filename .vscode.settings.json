@@ -1,24 +1,7 @@
 {
   // Place your settings in this file to overwrite the default settings
   "editor.fontSize": 14,
-  "editor.formatOnSave": false,
   "editor.tabSize": 2,
   "window.zoomLevel": 0,
-  "git.confirmSync": false,
-  "workbench.iconTheme": "vs-seti",
-  "files.associations": {
-    "*.hbs": "html"
-  },
-  "editor.minimap.enabled": false,
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "terminal.integrated.rendererType": "dom",
-  "workbench.colorTheme": "Sapphire",
-  "vetur.format.defaultFormatter.html": "js-beautify-html",
-  "github.hosts": [
-    {
-      "host": "https://github.com",
-      "username": "oauth",
-      "token": "system"
-    }
-  ]
+  "vetur.format.defaultFormatter.html": "js-beautify-html"
 }
