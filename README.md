@@ -26,6 +26,7 @@ When setting up an OS X system initially, the following steps should be performe
    - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" && git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
    - [RVM](https://rvm.io/rvm/install) - `\curl -sSL https://get.rvm.io | bash`
    - [Status Clock](https://itunes.apple.com/us/app/status-clock/id552792489?mt=12)
+   - [Monosnap](https://://itunes.apple.com/ru/app/monosnap/id540348655)
    - [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12)
 1. Configure:
    - Host name: `sudo scutil --set HostName name-you-want`
