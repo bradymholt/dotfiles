@@ -9,6 +9,7 @@
   "dependencies": {
     "got": "^8.3.0",
     "jbash": "^1.48.0",
+    "nodemailer": "^4.7.0",
     "request": "^2.85.0",
     "tempfile": "^2.0.0",
     "wallpaper": "^2.6.0",
