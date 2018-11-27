@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+// Sends a reminder email to myself
+// Usage:
+//   rem Release to production
+
+const nodemailer = require('nodemailer');
+const tranportConfig = process.env.SMTP_GMAIL // format: smtp://john.doe@gmail.com:paSSword@smtp.gmail.com:587
+const transporter = nodemailer.createTransport(tranportConfig);
+const email = tranportConfig.split(":")[1].replace("//", "");
+const reminder = process.argv.slice(2).join(" "); // all arguments as space delimited string
+(async function() {
+  await transporter.sendMail({
+    from: email,
+    to: email,
+    subject: reminder,
+    text: reminder  
+  });
+})();
