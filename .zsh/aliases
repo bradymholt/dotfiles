@@ -51,6 +51,7 @@ alias h='heroku'
 
 # Other
 alias l='ls -lAh'
+alias r='send-reminder-email'
 alias cls='printf "\033c"'                                                                  # clear screen
 alias hg='history | grep'                                                                   # grep history
 alias calc='/Applications/Calculator.app/Contents/MacOS/Calculator &'                       # open additional calculators
@@ -62,3 +63,7 @@ alias dus='du -d 1 -h | sort -h'                                                
 alias blog='cd ~/dev/geekytidbits.com && ./newpost.sh'                                      # create new blog post
 alias eg='cd $YNAB_EVERGREEN_PATH' 
 alias json=" jq -C '.' | less -R"                                                           # format piped JSON                                                           
+
+# YNAB
+alias eg='cd $YNAB_EVERGREEN_PATH'·
+alias ry='SMTP_GMAIL=$YNAB_SMTP_GMAIL send-reminder-email'
