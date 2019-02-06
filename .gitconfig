@@ -7,6 +7,7 @@
 	default = current
 [core]
 	excludesfile = /Users/bholt/.gitignore_global
+	editor = vim
 [difftool "sourcetree"]
 	cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\"
 	path = -ro
@@ -31,5 +32,3 @@
 #	rebase = true
 [mergetool "bc3"]
 	trustExitCode = true
-[commit]
-	template = /Users/bholt/.stCommitMsg

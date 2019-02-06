@@ -61,9 +61,8 @@ alias psql2md=" sed 's/+/|/g' | sed 's/^/|/' | sed 's/$/|/' |  grep -v rows | gr
 alias uuid="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]' | pbcopy | echo '=> New UUID copied to clipboard.'"        # generate UUID and send to clipboard
 alias dus='du -d 1 -h | sort -h'                                                            # file/directory size
 alias blog='cd ~/dev/geekytidbits.com && ./newpost.sh'                                      # create new blog post
-alias eg='cd $YNAB_EVERGREEN_PATH' 
 alias json=" jq -C '.' | less -R"                                                           # format piped JSON                                                           
 
 # YNAB
-alias eg='cd $YNAB_EVERGREEN_PATH'·
+alias eg='cd $YNAB_EVERGREEN_PATH'
 alias ry='SMTP_GMAIL=$YNAB_SMTP_GMAIL send-reminder-email'
