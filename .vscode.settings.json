@@ -8,4 +8,7 @@
   "terminal.integrated.shell.osx":"/bin/zsh",
   "editor.formatOnSave": false,
   "diffEditor.renderSideBySide": false,
+  "git.confirmSync": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.minimap.enabled": false,
 }

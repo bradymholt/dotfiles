@@ -20,6 +20,9 @@
 -- Show NULL values as [NULL]
 \pset null '[NULL]'
 
+-- Turn off pager
+\pset pager off
+
 -- Verbose error reports.
 \set VERBOSITY verbose
 
