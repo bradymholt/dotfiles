@@ -28,6 +28,7 @@ When setting up an OS X system initially, the following steps should be performe
    - [Status Clock](https://itunes.apple.com/us/app/status-clock/id552792489?mt=12)
    - [Monosnap](https://://itunes.apple.com/ru/app/monosnap/id540348655)
    - [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12)
+   - [Driver for AX88179 - USB3.0 to 10/100/1000M Gigabit Ethernet Controller](http://www.asix.com.tw/products.php?op=pItemdetail&PItemID=131;71;112)
 1. Configure:
    - Host name: `sudo scutil --set HostName name-you-want`
    - Tell iTerm2 to look at `~/.iterm` for settings
