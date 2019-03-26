@@ -1,6 +1,6 @@
 # dotfiles
 
-This is my system configuration for OS X consisting of config "dotfiles" and shell scripts.
+This is my system configuration for macOS consisting of config "dotfiles" and shell scripts.
 
 ## Usage
 
@@ -14,9 +14,9 @@ This is my system configuration for OS X consisting of config "dotfiles" and she
   - Replace current user crontab with contents of `/.crontab`
 - `dotfiles-link.sh` -  If there are files in $HOME that you would like to be moved to the dotfiles repo, you can run `dotfiles-link.sh` and pass in the name of the file that resides in $HOME.  This will move the file to `/home` and create a symlink to it.
 
-## Fresh OS X Setup
+## Fresh macOS Setup
 
-When setting up an OS X system initially, the following steps should be performed to get a base system setup.  **NOTE:** These steps should be performed before running `./dotfiles-setup.sh`
+When setting up an macOS system initially, the following steps should be performed to get a base system setup.  **NOTE:** These steps should be performed before running `./dotfiles-setup.sh`
 
 1. Install Homebrew - `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 2. Install apps: `brew install git wget zsh bash vim jq node yarn heroku/brew/heroku postgres && brew tap caskroom/fonts && brew cask install font-meslo-lg iterm2 github google-chrome visual-studio-code phantomjs phantomjs slack itsycal docker beyond-compare spectacle franz db-browser-for-sqlite`
