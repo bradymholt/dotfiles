@@ -5,10 +5,28 @@
   "window.zoomLevel": 0,
   "vetur.format.defaultFormatter.html": "js-beautify-html",
   "extensions.ignoreRecommendations": false,
-  "terminal.integrated.shell.osx":"/bin/zsh",
+  "terminal.integrated.shell.osx": "/bin/zsh",
   "editor.formatOnSave": false,
   "diffEditor.renderSideBySide": false,
   "git.confirmSync": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "editor.minimap.enabled": false,
+  "editor.smoothScrolling": true,
+  "explorer.openEditors.visible": 0,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
