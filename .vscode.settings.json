@@ -3,7 +3,6 @@
   "editor.fontSize": 14,
   "editor.tabSize": 2,
   "window.zoomLevel": 0,
-  "vetur.format.defaultFormatter.html": "js-beautify-html",
   "extensions.ignoreRecommendations": false,
   "terminal.integrated.shell.osx": "/bin/zsh",
   "editor.formatOnSave": false,
@@ -11,8 +10,6 @@
   "git.confirmSync": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "editor.minimap.enabled": false,
-  "editor.smoothScrolling": true,
-  "explorer.openEditors.visible": 0,
   "typescript.tsdk": "node_modules/typescript/lib",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -28,5 +25,7 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "spellright.documentTypes": [ "markdown" ],
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
 }
