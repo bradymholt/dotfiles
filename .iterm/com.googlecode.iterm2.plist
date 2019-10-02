@@ -742,8 +742,12 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/dotfiles/.iterm</string>
+	<string>~/Documents</string>
+	<key>NSNavLastUserSetHideExtensionButtonState</key>
+	<true/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
+	<string>{712, 448}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
@@ -787,11 +791,11 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>650 588 620 392 0 0 1920 1177 </string>
+	<string>-1519 2234 620 392 -1929 608 1440 2560 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>-1469 636 937 514 -1929 608 1440 2560 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1920 1177 0 0 1920 1177 </string>
+	<string>-1929 608 1920 1177 -1929 608 1440 2560 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 0 586 1177 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1466,7 +1470,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>0</integer>
+			<integer>2000</integer>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1507,7 +1511,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Show Status Bar</key>
-			<true/>
+			<false/>
 			<key>Silence Bell</key>
 			<false/>
 			<key>Space</key>
@@ -1637,6 +1641,8 @@
 							<dict>
 								<key>algorithm</key>
 								<integer>0</integer>
+								<key>font</key>
+								<string>.AppleSystemUIFont 12</string>
 							</dict>
 						</dict>
 					</dict>
@@ -1651,7 +1657,7 @@
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
-			<true/>
+			<false/>
 			<key>Use Bold Font</key>
 			<false/>
 			<key>Use Bright Bold</key>
@@ -1695,7 +1701,11 @@
 	<key>NoSyncLastTipTime</key>
 	<real>587395267.95975697</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>9</integer>
+	<integer>17</integer>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>586790075.47310197</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -2400,12 +2410,27 @@
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncSaveDocumentAsPathSet_saveDocumentAs:</key>
+	<true/>
 	<key>NoSyncSearchHistory</key>
 	<array>
 		<string>Tests.ts</string>
 		<string>Tests.js</string>
 		<string>HEY 2</string>
 		<string>PAPI</string>
+	</array>
+	<key>NoSyncSearchHistory2</key>
+	<array>
+		<string>BEFORE</string>
+		<string>HELLO</string>
+		<string>to_be_budgeted</string>
+		<string>to_by</string>
+		<string>manifest</string>
+		<string>manfe</string>
+		<string>t0_r0</string>
+		<string>entities_account_calculations</string>
+		<string>balance</string>
+		<string>ts-loader</string>
 	</array>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>563748749.11940098</real>
@@ -2541,11 +2566,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-19T15:46:33Z</date>
+	<date>2019-09-04T17:39:15Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
-	<false/>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<false/>
 	<key>SmartPlacement</key>

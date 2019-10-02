@@ -28,6 +28,11 @@ alias gmove='git-move-commits-new-branch'
 alias gwtf='git-wtf'
 
 alias gh='github' # Opens GitHub Desktop for current repo
+gh-api() {¬
+  # Example: eg-papi budgets/last-used¬
+  set -x¬ 
+  curl -H "Authorization: token $GITHUB_API_TOKEN" https://api.github.com/repos/$1
+}
 
 # npm
 alias ni='npm install'
@@ -66,3 +71,8 @@ alias json=" jq -C '.' | less -R"                                               
 # YNAB
 alias eg='cd $YNAB_EVERGREEN_PATH'
 alias ry='SMTP_GMAIL=$YNAB_SMTP_GMAIL send-reminder-email'
+eg-papi() {
+  # Example: eg-papi budgets/last-used
+  set -x
+  curl -H 'Authorization: Bearer '"$YNAB_API_ACCESS_TOKEN_DEV"'' -H 'Content-Type: application/json' ${@:2} http://localhost:3000/papi/v1/$1 | json
+}
