@@ -3,7 +3,7 @@
   "editor.fontSize": 14,
   "editor.tabSize": 2,
   "window.zoomLevel": 0,
-  "extensions.ignoreRecommendations": false,
+  "extensions.ignoreRecommendations": true,
   "terminal.integrated.shell.osx": "/bin/zsh",
   "editor.formatOnSave": false,
   "diffEditor.renderSideBySide": false,
@@ -28,4 +28,5 @@
   },
   "spellright.documentTypes": [ "markdown" ],
   "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "explorer.openEditors.visible":0
 }
