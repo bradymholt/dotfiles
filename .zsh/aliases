@@ -1,4 +1,4 @@
-# git
+# git / GitHub
 alias gco='git checkout'
 alias gcb='git checkout -b'
 alias gb="git for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) (%(color:green)%(committerdate:relative)%(color:reset))'"
@@ -29,9 +29,14 @@ alias gwtf='git-wtf'
 
 alias gh='github' # Opens GitHub Desktop for current repo
 gh-api() {
-  # Example: eg-papi budgets/last-used¬
-  set -x
-  curl -H "Authorization: token $GITHUB_API_TOKEN" https://api.github.com/repos/$1
+  set -x  
+  if (( $# == 1 )); then
+    # Example: gh-api bradymholt/myrepo/statuses
+    curl -H "Authorization: token $GITHUB_API_TOKEN" https://api.github.com/repos/$1
+  else
+    # Example: gh-api bradymholt/myrepo/statuses/ed94da '{"state":"success","description":"Tests","context":"Tests"}'
+    curl -H "Authorization: token $GITHUB_API_TOKEN" -H "Content-Type: application/json" -d $2 https://api.github.com/repos/$1
+  fi
 }
 
 # npm
