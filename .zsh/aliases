@@ -72,8 +72,7 @@ alias uuid="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]' | pbcopy | echo '=
 alias dus='du -d 1 -h | sort -h'                                                            # file/directory size
 alias blog='cd ~/dev/geekytidbits.com && ./newpost.sh'                                      # create new blog post
 alias json=" jq -C '.' | less -R"                                                           # format piped JSON                                                           
-alias display1='displayplacer "id:15C48A1D-FCF9-CEC0-72A1-F00465DB28FA res:1920x1200 color_depth:4 scaling:on origin:(0,0) degree:0" "id:88733A9D-FD53-D657-26C2-44A5AE004DEC res:2560x1440 hz:60 color_depth:8 scaling:off origin:(-489,-1440) degree:0" "id:2B06791D-98D8-0CF5-A627-06393098A398 res:1440x2560 hz:60 color_depth:8 scaling:off origin:(-1929,-1935) degree:270"'
-alias display2='displayplacer "id:15C48A1D-FCF9-CEC0-72A1-F00465DB28FA res:1920x1200 color_depth:4 scaling:on origin:(0,0) degree:0" "id:2B06791D-98D8-0CF5-A627-06393098A398 res:2560x1440 hz:60 color_depth:8 scaling:off origin:(-489,-1440) degree:0" "id:88733A9D-FD53-D657-26C2-44A5AE004DEC res:1440x2560 hz:60 color_depth:8 scaling:off origin:(-1929,-1935) degree:270"'
+alias fixdisplay='displayplacer "id:15C48A1D-FCF9-CEC0-72A1-F00465DB28FA res:1920x1200 color_depth:4 scaling:on origin:(0,0) degree:0" "id:88733A9D-FD53-D657-26C2-44A5AE004DEC res:2560x1440 hz:60 color_depth:8 scaling:off origin:(-489,-1440) degree:0" "id:2B06791D-98D8-0CF5-A627-06393098A398 res:1440x2560 hz:60 color_depth:8 scaling:off origin:(-1929,-1935) degree:270"'
 
 # YNAB
 alias eg='cd $YNAB_EVERGREEN_PATH'
