@@ -9,8 +9,7 @@
   "diffEditor.renderSideBySide": false,
   "git.confirmSync": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "editor.minimap.enabled": false,
-  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.minimap.enabled": false,  
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -28,5 +27,8 @@
   },
   "spellright.documentTypes": [ "markdown" ],
   "vetur.format.defaultFormatter.html": "js-beautify-html",
-  "explorer.openEditors.visible":0
+  "explorer.openEditors.visible": 0,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
