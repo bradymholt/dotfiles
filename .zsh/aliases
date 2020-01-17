@@ -18,7 +18,7 @@ alias gstp='git stash pop'
 # List branches with much better output format
 alias gb="git for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) (%(color:green)%(committerdate:relative)%(color:reset))'"
 # Delete local tags that do not exist in remote
-alias gtagpune='git fetch --prune origin "+refs/tags/*:refs/tags/*"
+alias gtagpune='git fetch --prune origin "+refs/tags/*:refs/tags/*"'
 
 # The following git aliases point to scripts in {dotfiles}/home/bin
 alias gac='git-add-commit'
