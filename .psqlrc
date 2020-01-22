@@ -32,7 +32,11 @@
 -- Customize prompt (username@host/dbname=#)
 \set PROMPT1 '%n@%M/%/%R%#%x '
 
+\unset QUIET
+
 \set h '\\i ~/.psql/helpers.psql'
 \set ynab '\\i ~/secrets/ynab.psql'
-
-\unset QUIET
+\echo '\033[1;35m[Canned Queries]\033[0m'
+\echo '\033[0;33m:h\033[0m - General Helper Queries'
+\echo '\033[0;33m:ynab\033[0m - YNAB Queries'
+\echo ''

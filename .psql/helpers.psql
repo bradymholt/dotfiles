@@ -1,4 +1,4 @@
-\echo '\033[1;35m### Helpers ###\033[0m'
+\echo '\033[1;35m[Helper Queries]\033[0m'
 \echo 'Database:'
 \echo '   :conn – List of connections'
 \echo '   :db – List of databases'
