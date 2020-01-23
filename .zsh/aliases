@@ -33,13 +33,9 @@ alias gwtf='git-wtf'
 alias gh='github' # Opens GitHub Desktop for current repo
 gh-api() {
   set -x  
-  if (( $# == 1 )); then
-    # Example: gh-api bradymholt/myrepo/statuses
-    curl -H "Authorization: token $GITHUB_API_TOKEN" https://api.github.com/repos/$1
-  else
-    # Example: gh-api bradymholt/myrepo/statuses/ed94da '{"state":"success","description":"Tests","context":"Tests"}'
-    curl -H "Authorization: token $GITHUB_API_TOKEN" -H "Content-Type: application/json" -d $2 https://api.github.com/repos/$1
-  fi
+  # Examples: gh-api bradymholt/myrepo/statuses
+  #           gh-api bradymholt/myrepo/statuses/ed94da '{"state":"success","description":"Tests","context":"Tests"}'
+  curl -H "Authorization: token $GITHUB_API_TOKEN" -H "Content-Type: application/json" ${@:2} https://api.github.com/repos/$1  
 }
 
 # npm
@@ -83,5 +79,5 @@ alias ry='SMTP_GMAIL=$YNAB_SMTP_GMAIL send-reminder-email'
 eg-papi() {
   # Example: eg-papi budgets/last-used
   set -x
-  curl -H 'Authorization: Bearer '"$YNAB_API_ACCESS_TOKEN_DEV"'' -H 'Content-Type: application/json' ${@:2} http://localhost:3000/papi/v1/$1 | json
+  curl -H "Authorization: Bearer $YNAB_API_ACCESS_TOKEN_DEV" -H ?Content-Type: application/json" ${@:2} http://localhost:3000/papi/v1/$1 | json
 }
