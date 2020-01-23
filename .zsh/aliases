@@ -79,5 +79,5 @@ alias ry='SMTP_GMAIL=$YNAB_SMTP_GMAIL send-reminder-email'
 eg-papi() {
   # Example: eg-papi budgets/last-used
   set -x
-  curl -H "Authorization: Bearer $YNAB_API_ACCESS_TOKEN_DEV" -H ?Content-Type: application/json" ${@:2} http://localhost:3000/papi/v1/$1 | json
+  curl -H "Authorization: Bearer $YNAB_API_ACCESS_TOKEN_DEV" -H "Content-Type: application/json" ${@:2} http://localhost:3000/papi/v1/$1 | json
 }
