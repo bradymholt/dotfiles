@@ -61,5 +61,9 @@
   {
     "key": "ctrl+shift+g",
     "command": "-workbench.view.scm"
+  },
+  {
+    "key": "ctrl+cmd+r",
+    "command": "workbench.action.tasks.reRunTask"
   }
 ]
