@@ -19,7 +19,7 @@ This is my system configuration for macOS consisting of config "dotfiles" and sh
 When setting up an macOS system initially, the following steps should be performed to get a base system setup.  **NOTE:** These steps should be performed before running `./dotfiles-setup.sh`
 
 1. Install Homebrew - `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-2. Install apps: `brew install git wget zsh bash vim jq node yarn heroku/brew/heroku postgres && brew tap homebrew/cask-fonts jakehilborn/jakehilborn && brew cask install font-meslo-lg iterm2 github google-chrome visual-studio-code phantomjs phantomjs slack itsycal docker beyond-compare spectacle franz db-browser-for-sqlite displayplacerbrew`
+2. Install apps: `brew install git wget zsh bash vim jq node yarn heroku/brew/heroku postgres && brew tap homebrew/cask-fonts jakehilborn/jakehilborn && brew cask install font-meslo-lg iterm2 github google-chrome visual-studio-code phantomjs phantomjs slack itsycal docker beyond-compare spectacle franz db-browser-for-sqlite displayplacer brew`
 1. Open Chrome and install [1Password X](https://chrome.google.com/webstore/detail/1password-x-%E2%80%93-password-ma/aeblfdkhhhdcdjpifhhbdiojplfjncoa?hl=en) Chrome Extension and login
 1. Find `id_rsa` file in 1Password and download to .ssh/id_rsa then run `chmod 600 ~/.ssh/id_rsa`
 1. Install:
