@@ -32,3 +32,5 @@
 #	rebase = true
 [mergetool "bc3"]
 	trustExitCode = true
+[credential]
+	helper = osxkeychain
