@@ -42,6 +42,7 @@ find $DOTFILES_PATH/LaunchAgents -maxdepth 1 -mindepth 1 -exec ln -sv${LINK_TARG
 # VS Code
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/.vscode.settings.json" "${HOME}/Library/Application Support/Code/User/settings.json"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/.vscode.keybindings.json" "${HOME}/Library/Application Support/Code/User/keybindings.json"
+ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/.vscode.code-snippets" "${HOME}/Library/Application Support/Code/User/snippets/code-snippets.code-snippets"
 # oh-my-zsh themes
 find $DOTFILES_PATH/.zsh/oh-my-zsh-themes -maxdepth 1 -mindepth 1 -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} ~/.oh-my-zsh/themes ';'
 # SSH keypair
