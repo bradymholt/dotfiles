@@ -75,7 +75,7 @@ alias fixdisplay='displayplacer "id:15C48A1D-FCF9-CEC0-72A1-F00465DB28FA res:192
 
 compress-video() {
   set -x
-  ffmpeg -i $1 -c:v libx264 -crf 23 compressed_${1}
+  ffmpeg -i $1 -c:v libx264 -crf 23 ${1}_compressed.mp4
 }
 compress-audio() {
   # lame settings for podcast quality output
