@@ -39,6 +39,8 @@ echo ""
 echo "STEP 3: specialized symlinks" 
 # ~/Library/LaunchAgents to ./LaunchAgents/*¬
 find $DOTFILES_PATH/LaunchAgents -maxdepth 1 -mindepth 1 -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} ~/Library/LaunchAgents ';'
+# ~/Library/Services to ./Services/*¬
+find $DOTFILES_PATH/Services -maxdepth 1 -mindepth 1 -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} ~/Library/Services ';'
 # VS Code
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/.vscode.settings.json" "${HOME}/Library/Application Support/Code/User/settings.json"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/.vscode.keybindings.json" "${HOME}/Library/Application Support/Code/User/keybindings.json"
