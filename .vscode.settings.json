@@ -1,9 +1,7 @@
 {
   // Place your settings in this file to overwrite the default settings
   "editor.fontSize": 14,
-  "editor.tabSize": 2,
-  "window.zoomLevel": 0,
-  "extensions.ignoreRecommendations": true,
+  "editor.tabSize": 2,    
   "terminal.integrated.shell.osx": "/bin/zsh",
   "editor.formatOnSave": false,
   "diffEditor.renderSideBySide": false,
@@ -24,11 +22,14 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "spellright.documentTypes": [ "markdown" ],
+  }, 
   "vetur.format.defaultFormatter.html": "js-beautify-html",
   "explorer.openEditors.visible": 0,
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "editor.multiCursorModifier": "ctrlCmd",
+  "timeline.showView": true,
+  "editor.renderWhitespace": "all",
+  
 }
