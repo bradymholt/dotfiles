@@ -30,6 +30,7 @@
   },
   "editor.multiCursorModifier": "ctrlCmd",
   "timeline.showView": true,
-  "editor.renderWhitespace": "all",
+  "editor.renderWhitespace": "none",
+  "window.zoomLevel": 0  
   
 }

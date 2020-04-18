@@ -1,7 +1,7 @@
 {
   "PL/pgSQL function template": {
     "scope": "sql",
-    "prefix": ["create", "function"],
+    "prefix": ["function"],
     "body": ["CREATE OR REPLACE FUNCTION my_function() RETURNS integer AS $$", "DECLARE", "    v_ret_val integer;", "BEGIN", "--", "END;", "$$ LANGUAGE plpgsql;"],
     "description": "PL/pgSQL function template"
   }
