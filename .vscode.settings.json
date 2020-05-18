@@ -1,13 +1,18 @@
 {
   // Place your settings in this file to overwrite the default settings
   "editor.fontSize": 14,
-  "editor.tabSize": 2,    
+  "editor.tabSize": 2,   
+  "window.zoomLevel": 0, 
+  "explorer.openEditors.visible": 0,
+  "editor.minimap.enabled": false,    
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderWhitespace": "selection",  
   "terminal.integrated.shell.osx": "/bin/zsh",
-  "editor.formatOnSave": false,
   "diffEditor.renderSideBySide": false,
   "git.confirmSync": false,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "editor.minimap.enabled": false,  
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  // Formatting
+  "editor.formatOnSave": false,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -23,14 +28,10 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }, 
-  "vetur.format.defaultFormatter.html": "js-beautify-html",
-  "explorer.openEditors.visible": 0,
+  
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.multiCursorModifier": "ctrlCmd",
-  "timeline.showView": true,
-  "editor.renderWhitespace": "none",
-  "window.zoomLevel": 0  
-  
+  // Extension settings
+  "vetur.format.defaultFormatter.html": "js-beautify-html",   
 }
