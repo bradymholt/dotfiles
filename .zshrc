@@ -52,7 +52,8 @@ plugins=(zsh-autosuggestions)
 source ~/.zsh/aliases
 source ~/.zsh/path
 source ~/.zsh/var
-source ~/secrets/var
+source ~/secrets/zsh
+source ~/secrets/ynab.zsh
 
 source $ZSH/oh-my-zsh.sh
 
