@@ -33,5 +33,5 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   // Extension settings
-  "vetur.format.defaultFormatter.html": "js-beautify-html",   
+  "vetur.format.defaultFormatter.html": "js-beautify-html"    
 }

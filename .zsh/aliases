@@ -82,15 +82,3 @@ compress-audio() {
   set -x
   lame -V6 --vbr-new --resample 22 -m m $1
 }
-
-
-# YNAB
-alias eg='cd $YNAB_EVERGREEN_PATH'
-alias ry='SMTP_GMAIL=$YNAB_SMTP_GMAIL send-reminder-email'
-eg-papi() {
-  set -x
-  # Examples: eg-papi budgets/last-used
-  #           eg-papi budgets/last-used -d '{"transaction": { "account_id": "ea0c0ace-1a8c-4692-9e1d-0a21fe67f10a", "date": "2019-08-16", "amount": 250000 } }'
-  
-  curl -H "Authorization: Bearer $YNAB_API_ACCESS_TOKEN_DEV" -H "Content-Type: application/json" ${@:2} http://localhost:3000/papi/v1/$1
-}
