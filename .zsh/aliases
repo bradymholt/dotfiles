@@ -12,13 +12,17 @@ alias gmom='git merge origin/master'
 alias gd='git diff'
 alias gdt='git difftool -y'
 alias gmt='git mergetool'
-alias gst='git stash --include-untracked'
-alias gstl='git stash list -p'
-alias gstp='git stash pop'
 # List branches with much better output format
 alias gb="git for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) (%(color:green)%(committerdate:relative)%(color:reset))'"
 # Delete local tags that do not exist in remote
 alias gtagpune='git fetch --prune origin "+refs/tags/*:refs/tags/*"'
+
+# Stash
+alias gst='git stash --include-untracked'
+# Checkout specific file(s) from the latest stash
+alias gstcf='git checkout stash@{0} --'
+alias gstl='git stash list -p'
+alias gstp='git stash pop'
 
 # The following git aliases point to scripts in {dotfiles}/home/bin
 alias gac='git-add-commit'
