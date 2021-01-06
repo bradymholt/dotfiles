@@ -2,6 +2,7 @@
   // Place your settings in this file to overwrite the default settings
   "editor.fontSize": 14,
   "editor.tabSize": 2,   
+  "editor.tabCompletion":"on",
   "window.zoomLevel": 0, 
   "explorer.openEditors.visible": 0,
   "editor.minimap.enabled": false,    
@@ -34,5 +35,7 @@
   },
   // Extension settings
   "vetur.format.defaultFormatter.html": "js-beautify-html",
-  "debug.javascript.usePreview":true
+  "debug.javascript.usePreview": true,
+  "extensions.ignoreRecommendations": false,
+  
 }
