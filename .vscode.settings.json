@@ -7,7 +7,7 @@
   "explorer.openEditors.visible": 0,
   "editor.minimap.enabled": false,    
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.renderWhitespace": "selection",  
+  "editor.renderWhitespace": "all",  
   "terminal.integrated.shell.osx": "/bin/zsh",
   "diffEditor.renderSideBySide": false,
   "git.confirmSync": false,

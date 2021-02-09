@@ -29,8 +29,8 @@
 	tool = bc3
 	compactionHeuristic = true
 [pull]
-	ff = only
-#	rebase = true
+# ff = only
+  rebase = false
 [mergetool "bc3"]
 	trustExitCode = true
 [credential]

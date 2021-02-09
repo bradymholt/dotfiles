@@ -59,7 +59,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>/usr/local/bin/displayplacer "id:15C48A1D-FCF9-CEC0-72A1-F00465DB28FA res:1920x1200 color_depth:4 scaling:on origin:(0,0) degree:0" "id:88733A9D-FD53-D657-26C2-44A5AE004DEC res:2560x1440 hz:60 color_depth:8 scaling:off origin:(-489,-1440) degree:0" "id:2B06791D-98D8-0CF5-A627-06393098A398 res:1440x2560 hz:60 color_depth:8 scaling:off origin:(-1929,-1935) degree:270" || true</string>
+					<string>/usr/local/bin/displayplacer "id:15C48A1D-FCF9-CEC0-72A1-F00465DB28FA res:1920x1200 color_depth:8 scaling:on origin:(0,0) degree:0" "id:2B06791D-98D8-0CF5-A627-06393098A398 res:2560x1440 hz:60 color_depth:8 scaling:off origin:(-431,-1440) degree:0" "id:88733A9D-FD53-D657-26C2-44A5AE004DEC res:1440x2560 hz:60 color_depth:8 scaling:off origin:(2129,-1782) degree:90" || true</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -172,7 +172,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>276.000000:305.000000</string>
+				<string>649.000000:305.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
