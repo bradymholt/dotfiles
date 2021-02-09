@@ -35,7 +35,7 @@ alias gpr='git-github-open-pr'
 alias gmove='git-move-commits-new-branch'
 alias gwtf='git-wtf'
 
-alias gh='github' # Opens GitHub Desktop for current repo
+alias ghd='github' # Opens GitHub Desktop for current repo
 gh-api() {
   set -x    
   # Examples: gh-api bradymholt/myrepo/statuses
