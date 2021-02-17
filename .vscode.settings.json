@@ -2,8 +2,8 @@
   // Place your settings in this file to overwrite the default settings
   "editor.fontSize": 14,
   "editor.tabSize": 2,   
-  "editor.tabCompletion":"on",
-  "window.zoomLevel": 0, 
+  "editor.tabCompletion": "on",
+  
   "explorer.openEditors.visible": 0,
   "editor.minimap.enabled": false,    
   "editor.multiCursorModifier": "ctrlCmd",
