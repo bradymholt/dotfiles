@@ -23,7 +23,8 @@ When setting up an macOS system initially, the following steps should be perform
     ```
     brew tap homebrew/cask-fonts && brew tap jakehilborn/jakehilborn && \
     brew install git wget zsh bash vim jq node yarn heroku/brew/heroku postgres displayplacer && \
-    brew install --cask font-meslo-lg iterm2 github google-chrome visual-studio-code slack docker beyond-compare rectangle franz db-browser-for-sqlite tablple cleanshot
+    brew install --cask font-meslo-lg iterm2 github google-chrome visual-studio-code slack docker beyond-compare rectangle franz db-browser-for-sqlite tablple cleanshot && \
+    npm install --global pure-prompt
     ```
 1. Find `id_rsa` file in 1Password and download to .ssh/id_rsa then run `chmod 600 ~/.ssh/id_rsa`
 1. Tell iTerm2 to look at `~/.iterm` for settings
