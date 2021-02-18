@@ -7,7 +7,6 @@ export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH=$HOME/Library/Python/2.7/bin:$PATH
 
 # current directory
-
 export PATH=".:$PATH";
 
 # evergreen scripts
