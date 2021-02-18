@@ -1,5 +1,10 @@
-export VLC_PATH=/Applications/VLC.app/Contents/MacOS/lib
-export VLC_PLUGIN_PATH=/Applications/VLC.app/Contents/MacOS/plugins
+export EDITOR=code
+export GIT_EDITOR=vim
+
 export NODE_PATH=/usr/local/lib/node_modules
-export PSQL_EDITOR="code -w"
+export PSQL_EDITOR="code -w" # Use VSCode as psql editor (\e)
 export ANSIBLE_HOST_KEY_CHECKING=false
+
+# Android
+export ANDROID_SDK=$HOME/Library/Android/sdk
+export PATH=$ANDROID_SDK/emulator:$ANDROID_SDK/tools:$PATH
