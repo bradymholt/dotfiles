@@ -23,7 +23,3 @@ source ~/.zsh/var
 source ~/secrets/zsh
 source ~/secrets/ynab.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-
-
-
