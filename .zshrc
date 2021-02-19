@@ -6,8 +6,11 @@ setopt share_history # Share history across terminals
 setopt HIST_IGNORE_SPACE # Prepend sensitive commands with a space so they are not in history
 
 # This binds Up and Down to a history search (backwards and forwards) based upon what has already been entered at the prompt.
-bindkey "^[[A" history-beginning-search-backward
-bindkey "^[[B" history-beginning-search-forward
+autoload -U history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "^[[A" history-beginning-search-backward-end
+bindkey "^[[B" history-beginning-search-forward-end
 
 # Prompt (Pure - https://github.com/sindresorhus/pure)
 autoload -U promptinit; promptinit
