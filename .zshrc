@@ -5,7 +5,8 @@ bindkey -e
 setopt share_history # Share history across terminals
 setopt HIST_IGNORE_SPACE # Prepend sensitive commands with a space so they are not in history
 
-# This binds Up and Down to a history search (backwards and forwards) based upon what has already been entered at the prompt.
+# Keybindings
+# This binds Up and Down to a history search (backwards and forwards) based upon what has already been entered at the prompt and places cursor at EOL.
 autoload -U history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
