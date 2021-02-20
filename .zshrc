@@ -1,13 +1,15 @@
 # History
 HISTSIZE=10000
 SAVEHIST=10000
-bindkey -e
 setopt share_history # Share history across terminals
 setopt HIST_IGNORE_SPACE # Prepend sensitive commands with a space so they are not in history
 
 # Keybindings
+bindkey -v # Make zle use vi mode
+bindkey "^[[1;9D" backward-word # [Option + <-] nagivates back a word
+bindkey "^[[1;9C" forward-word # [Option + ->] nagivates forward a word
 # This binds Up and Down to a history search (backwards and forwards) based upon what has already been entered at the prompt and places cursor at EOL.
-autoload -U history-search-end
+ autoload -U history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
 bindkey "^[[A" history-beginning-search-backward-end
