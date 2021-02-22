@@ -4,7 +4,7 @@ SAVEHIST=10000
 setopt share_history # Share history across terminals
 setopt HIST_IGNORE_SPACE # Prepend sensitive commands with a space so they are not in history
 
-# Keybindings
+# Key Bindings
 bindkey -v # Make zle use vi mode
 bindkey "^[[1;9D" backward-word # [Option + <-] nagivates back a word
 bindkey "^[[1;9C" forward-word # [Option + ->] nagivates forward a word
