@@ -5,7 +5,7 @@ setopt share_history # Share history across terminals
 setopt HIST_IGNORE_SPACE # Prepend sensitive commands with a space so they are not in history
 
 # Keybindings
-bindkey -v # Make zle use vi mode
+bindkey -e # Make zle use Emacs mode
 bindkey "^[[1;9D" backward-word # [Option + <-] nagivates back a word
 bindkey "^[[1;9C" forward-word # [Option + ->] nagivates forward a word
 # This binds Up and Down to a history search (backwards and forwards) based upon what has already been entered at the prompt and places cursor at EOL.
