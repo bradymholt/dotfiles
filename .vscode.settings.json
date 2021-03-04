@@ -33,9 +33,11 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // Extension settings
-  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  // Extension settings  
   "debug.javascript.usePreview": true,
   "extensions.ignoreRecommendations": false,
+  "cSpell.userWords": [
+    "ynab"
+  ],
   
 }
