@@ -12,6 +12,8 @@ zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
 bindkey "^[[A" history-beginning-search-backward-end
 bindkey "^[[B" history-beginning-search-forward-end
+# When jumping backward-word and forward-word stop at characters like '-' and '/' which is more like bash.
+export WORDCHARS=''
 
 # Prompt (Pure - https://github.com/sindresorhus/pure)
 autoload -U promptinit; promptinit

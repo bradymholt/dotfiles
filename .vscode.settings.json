@@ -37,6 +37,13 @@
   "debug.javascript.usePreview": true,
   "extensions.ignoreRecommendations": false,
   "cSpell.userWords": [
+    "POSTGRESQL",
+    "SIDEKIQ",
+    "dyno",
+    "jbash",
+    "postgres",
+    "psql",
+    "rollbar",
     "ynab"
   ],
   
