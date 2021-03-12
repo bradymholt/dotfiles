@@ -37,14 +37,28 @@
   "debug.javascript.usePreview": true,
   "extensions.ignoreRecommendations": false,
   "cSpell.userWords": [
+    "DOCKERHUB",
     "POSTGRESQL",
     "SIDEKIQ",
+    "YBOT",
+    "checkmark",
+    "crontogo",
     "dyno",
+    "dynos",
     "jbash",
     "postgres",
     "psql",
+    "psqlformat",
+    "rainforest",
     "rollbar",
-    "ynab"
+    "rspec",
+    "subtransactions",
+    "workdir",
+    "ynab",
+    "ynabbuild",
+    "ynabdev",
+    "youneedabudget"
   ],
+  "explorer.confirmDelete": false,
   
 }
