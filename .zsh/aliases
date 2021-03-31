@@ -14,8 +14,6 @@ alias gdt='git difftool -y'
 alias gmt='git mergetool'
 # List branches with much better output format
 alias gb="git for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) (%(color:green)%(committerdate:relative)%(color:reset))'"
-# Delete local tags that do not exist in remote
-alias gtagpune='git fetch --prune origin "+refs/tags/*:refs/tags/*"'
 # Stash
 alias gst='git stash --include-untracked'
 # Checkout specific file(s) from the latest stash
@@ -23,9 +21,9 @@ alias gstcf='git checkout stash@{0} --'
 alias gstl='git stash list --stat'
 alias gstd='git stash list -p'
 alias gstp='git stash pop'
+gac() { git add --all :/ && git commit -m "${1}" } # Add and commit all changes on current branch
+gacp() { gac $1 && git push -u } # Add and commit all changes on current branch and then push
 # The following git aliases point to scripts in {dotfiles}/home/bin
-alias gac='git-add-commit'
-alias gacp='git-add-commit-push'
 alias gbc='git-branch-compare'
 alias gbpurge='git-branch-purge'
 alias gc='git-github-compare'
