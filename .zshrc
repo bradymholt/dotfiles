@@ -33,4 +33,3 @@ source ~/.zsh/path
 source ~/.zsh/var
 source ~/secrets/zsh
 source ~/secrets/ynab.zsh
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

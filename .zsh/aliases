@@ -120,6 +120,7 @@ alias dus='du -d 1 -h | sort -h'                                                
 alias blog='cd ~/dev/geekytidbits.com && ./newpost.sh'                                      # create new blog post
 alias json=" jq -C '.' | less -R"                                                           # format piped JSON                                                           
 alias fixdisplay='displayplacer "id:15C48A1D-FCF9-CEC0-72A1-F00465DB28FA res:1920x1200 color_depth:4 scaling:on origin:(0,0) degree:0" "id:2B06791D-98D8-0CF5-A627-06393098A398 res:2560x1440 hz:60 color_depth:8 scaling:off origin:(-483,-1440) degree:0" "id:88733A9D-FD53-D657-26C2-44A5AE004DEC res:1440x2560 hz:60 color_depth:8 scaling:off origin:(2077,-1898) degree:90"'
+alias ip='curl -4 ifconfig.co && curl -6 ifconfig.co'
 compress-video() {
   set -x
   ffmpeg -i $1 -c:v libx264 -crf 23 ${1}_compressed.mp4
