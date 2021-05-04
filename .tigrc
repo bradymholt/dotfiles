@@ -1,4 +1,4 @@
 set refresh-mode = auto
-set vertical-split = no
+set vertical-split = yes
 
 bind status P !git push origin
