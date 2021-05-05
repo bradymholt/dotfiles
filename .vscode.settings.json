@@ -87,6 +87,7 @@
     "zxvf"
   ],
   "explorer.confirmDelete": false,
-  "prettier.printWidth": 120
+  "prettier.printWidth": 120,
+  "explorer.confirmDragAndDrop": false
   
 }

@@ -22,7 +22,7 @@ When setting up an macOS system initially, the following steps should be perform
 1. Install apps: 
     ```
     brew tap homebrew/cask-fonts && brew tap jakehilborn/jakehilborn && \
-    brew install git wget zsh zsh-syntax-highlighting zsh-autosuggestions bash vim jq node yarn heroku/brew/heroku postgres displayplacer switchaudio-osx && \
+    brew install git wget zsh zsh-syntax-highlighting zsh-autosuggestions bash vim jq node yarn heroku/brew/heroku postgres displayplacer switchaudio-osx tig && \
     brew install --cask font-meslo-lg iterm2 github google-chrome visual-studio-code slack docker beyond-compare rectangle franz db-browser-for-sqlite tablple cleanshot && \
     npm install --global pure-prompt
     ```
