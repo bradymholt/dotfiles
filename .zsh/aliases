@@ -108,6 +108,7 @@ alias dr='docker run --rm -it'
 alias h='heroku'
 
 # Other
+alias ts='tig status'
 alias cdh='cd $HOME'
 alias l='ls -lAh'
 alias r='send-reminder-email'

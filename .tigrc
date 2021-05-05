@@ -1,4 +1,11 @@
 set refresh-mode = auto
-set vertical-split = yes
+set vertical-split = no
 
+bind stage <Up>   move-up
+bind stage <Left> view-close
+bind stage <Down> move-down
+
+bind status A @git add -A
 bind status P !git push origin
+bind stage C !git commit
+
