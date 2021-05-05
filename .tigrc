@@ -1,5 +1,5 @@
 set refresh-mode = auto
-set vertical-split = no
+set vertical-split = yes
 
 bind stage <Up>   move-up
 bind stage <Left> view-close
