@@ -1,11 +1,18 @@
 set refresh-mode = auto
-set vertical-split = yes
+set vertical-split = auto
+set stage-view-line-number-display = yes
 
-bind stage <Up>   move-up
+set main-view-id = yes # Show commit SHA
+set main-view-date = custom
+set main-view-date-format = "%Y-%m-%d"
+
 bind stage <Left> view-close
-bind stage <Down> move-down
+# bind stage <Up>   move-up
+# bind stage <Down> move-down
 
-bind status A @git add -A
+bind status A @git add -A # Stage all file changes
 bind status P !git push origin
-bind stage C !git commit
+bind stage C <git commit
 
+bind main ! ?@git revert %(commit)
+bind main P !git push origin
