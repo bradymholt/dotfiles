@@ -39,6 +39,8 @@
   "cSpell.userWords": [
     "Configurer",
     "DOCKERHUB",
+    "Denormalization",
+    "Emberize",
     "Evented",
     "FTUE",
     "IYNAB",
@@ -47,6 +49,7 @@
     "POSTGRESQL",
     "Portation",
     "Recategorization",
+    "Renamer",
     "SIDEKIQ",
     "Timeframe",
     "Tombstoned",
@@ -55,16 +58,21 @@
     "Uncategorized",
     "YBOT",
     "YNABID",
+    "babyparse",
     "checkmark",
     "codegen",
     "crontogo",
     "dyno",
     "dynos",
+    "endregion",
+    "helpscout",
     "jbash",
     "maintenancemode",
+    "milliunits",
     "nocache",
     "paydown",
     "postgres",
+    "precompiled",
     "psql",
     "psqlformat",
     "rainforest",
@@ -77,6 +85,8 @@
     "subtransactions",
     "unformat",
     "unhide",
+    "untar",
+    "untarred",
     "victorops",
     "websql",
     "workdir",
@@ -88,6 +98,9 @@
   ],
   "explorer.confirmDelete": false,
   "prettier.printWidth": 120,
-  "explorer.confirmDragAndDrop": false
-  
+  "explorer.confirmDragAndDrop": false,
+  "[handlebars]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "security.workspace.trust.untrustedFiles": "open"
 }
