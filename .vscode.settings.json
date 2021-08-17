@@ -1,17 +1,25 @@
 {
-  // Place your settings in this file to overwrite the default settings
   "editor.fontSize": 14,
-  "editor.tabSize": 2,   
+  "editor.tabSize": 2,
   "editor.tabCompletion": "on",
-  
   "explorer.openEditors.visible": 0,
-  "editor.minimap.enabled": false,    
+  "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.renderWhitespace": "all",  
-  "terminal.integrated.shell.osx": "/bin/zsh",
+  "editor.renderWhitespace": "all",
+  "terminal.integrated.profiles.osx": {
+    "zsh": {
+      "path": "zsh",
+      "args": ["-l"]
+    }
+  },
+  "terminal.integrated.defaultProfile.osx": "zsh",
   "diffEditor.renderSideBySide": false,
   "git.confirmSync": false,
   "typescript.updateImportsOnFileMove.enabled": "never",
+  "explorer.confirmDelete": false,
+  "prettier.printWidth": 120,
+  "explorer.confirmDragAndDrop": false,
+  "security.workspace.trust.untrustedFiles": "open",
   // Formatting
   "editor.formatOnSave": false,
   "[typescript]": {
@@ -28,12 +36,15 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }, 
-  
+  },
+
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // Extension settings  
+  "[handlebars]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  // Extension settings
   "debug.javascript.usePreview": true,
   "extensions.ignoreRecommendations": false,
   "cSpell.userWords": [
@@ -95,12 +106,5 @@
     "ynabdev",
     "youneedabudget",
     "zxvf"
-  ],
-  "explorer.confirmDelete": false,
-  "prettier.printWidth": 120,
-  "explorer.confirmDragAndDrop": false,
-  "[handlebars]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "security.workspace.trust.untrustedFiles": "open"
+  ]
 }
