@@ -6,6 +6,7 @@
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "all",
+  "editor.bracketPairColorization.enabled": true,
   "terminal.integrated.profiles.osx": {
     "zsh": {
       "path": "zsh",
@@ -20,6 +21,7 @@
   "prettier.printWidth": 120,
   "explorer.confirmDragAndDrop": false,
   "security.workspace.trust.untrustedFiles": "open",
+  
   // Formatting
   "editor.formatOnSave": false,
   "[typescript]": {

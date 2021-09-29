@@ -33,3 +33,6 @@ source ~/.zsh/path
 source ~/.zsh/var
 source ~/secrets/zsh
 source ~/secrets/ynab.zsh
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
