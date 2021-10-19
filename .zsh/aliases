@@ -80,11 +80,17 @@ gmove() {
 }
 
 gh-api() {
-  # Calls the GitHub API ($1 is repo name and $2 is data to POST)  
-  # Examples: gh-api bradymholt/myrepo/statuses
-  #           gh-api bradymholt/myrepo/statuses/ed94da '{"state":"success","description":"Tests","context":"Tests"}'
+  # Calls the GitHub API ($1 is repo name and $2 is data to POST)    
+  if [ -z "$1" ]; then echo "Example usage:\n  gh-api bradymholt/myrepo/statuses\n  gh-api bradymholt/myrepo/statuses/ed94da '{\"state\":\"success\",\"description\":\"Tests\",\"context\":\"Tests\"}'"; return 1; fi
+  
   set -x
-  curl -H "Authorization: token $GITHUB_API_TOKEN" -H "Content-Type: application/json" ${@:2} https://api.github.com/repos/$1  
+
+  if [ -z "$2" ]
+  then
+    curl -H "Authorization: token $GITHUB_API_TOKEN" -H "Content-Type: application/json" https://api.github.com/repos/$1  
+  else
+    curl -H "Authorization: token $GITHUB_API_TOKEN" -H "Content-Type: application/json" -d '${@:2}' https://api.github.com/repos/$1  
+  fi
 }
 
 # npm
