@@ -8,12 +8,6 @@
 [core]
 	excludesfile = /Users/bholt/.gitignore_global
 	editor = vim
-[difftool "sourcetree"]
-	cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\"
-	path = -ro
-[mergetool "sourcetree"]
-	cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
-	trustExitCode = true
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
@@ -23,15 +17,12 @@
 	tool = bc3
 [mergetool]
 	bc3 = trustExitCode
-	bc3 = trustExitCode
 	keepBackup = false
 [diff]
 	tool = bc3
 	compactionHeuristic = true
 [pull]
-# ff = only
+	ff = only
   rebase = false
-[mergetool "bc3"]
-	trustExitCode = true
 [credential]
 	helper = osxkeychain
