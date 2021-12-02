@@ -7,6 +7,10 @@ echo "#######################"
 DOTFILES_PATH=$(cd `dirname $0` && pwd)
 CURRENT_SCRIPT_NAME=${0##*/}
 
+echo ""
+echo "STEP 1: Running `brew bundle` to install Homebrew packages"
+brew bundle
+
 LINK_TARGET_EXISTS_HANDLING=""
 while true; do
     read -p "$(echo -e 'If files exist or are already symlinked, do you want to replace?\nAnswer [y]es, [n]o, or [p]rompt: ')" yn
@@ -19,7 +23,7 @@ while true; do
 done
 
 echo ""
-echo "STEP 1: Initialize secrets repo"
+echo "STEP 2: Initialize secrets repo"
 SECRETS_FOLDER="${DOTFILES_PATH}/secrets"
 if [ -d "${SECRETS_FOLDER}" ]; then
   echo "The secrets repo has already initialized!"
@@ -31,12 +35,12 @@ fi
 # [Re]create symbolic links from $HOME to ./*
 # Only top level files/directories will be symlinked
 echo ""
-echo "STEP 2: symlink files from ${HOME} to ${DOTFILES_PATH}/"
+echo "STEP 3: symlink files from ${HOME} to ${DOTFILES_PATH}/"
 find $DOTFILES_PATH -maxdepth 1 -mindepth 1 \( ! -iname "dotfiles*" ! -iname ".git" ! -iname ".gitignore" ! -iname "README.md" ! -iname "LaunchAgents" \) -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} $HOME ';'
 
 # [Re]create specialized symbolic links
 echo ""
-echo "STEP 3: specialized symlinks" 
+echo "STEP 4: specialized symlinks" 
 # ~/Library/LaunchAgents to ./LaunchAgents/*¬
 find $DOTFILES_PATH/LaunchAgents -maxdepth 1 -mindepth 1 -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} ~/Library/LaunchAgents ';'
 # ~/Library/Services to ./Services/*¬
@@ -53,9 +57,5 @@ chmod 600 "${HOME}/.ssh/id_rsa"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/secrets/id_rsa.pub" "${HOME}/.ssh/id_rsa.pub"
 
 echo ""
-echo "STEP 4: Running npm install in bin/ folder to install Node dependencies"
+echo "STEP 5: Running npm install in bin/ folder to install Node dependencies"
 npm --prefix "$DOTFILES_PATH/bin" install "$DOTFILES_PATH/bin"
-
-echo ""
-echo "STEP 5: Running `brew bundle` to install Homebrew packages"
-brew bundle
