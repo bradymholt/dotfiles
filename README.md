@@ -4,12 +4,8 @@ This is my system configuration for macOS consisting of a Brewfile, config "dotf
 
 ## Setup
 
-1. Install [Homebrew](https://docs.brew.sh/Installation)
-1. Setup 1Password
-    - Run `brew install --cask 1password` to install 1Password
-    - Open 1Password Desktop and login using Emergency Kit QR Code    
-1. Run `brew install git && git config --global credential.helper osxkeychain` to install and initially configure Git
 1. Clone this repo: `TARGET_DIR=$HOME/dotfiles; git clone https://github.com/bradymholt/dotfiles.git $TARGET_DIR && cd $TARGET_DIR`
+1. Install [Homebrew](https://docs.brew.sh/Installation)
 1. Run setup script: `./setup.sh`
 ## Scripts
 
