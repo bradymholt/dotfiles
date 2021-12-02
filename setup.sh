@@ -55,6 +55,7 @@ ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/iterm2.plist" "${HOME}/Li
 mkdir -p "${HOME}/Library/Application Support/Code/User"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/vscode.settings.json" "${HOME}/Library/Application Support/Code/User/settings.json"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/vscode.keybindings.json" "${HOME}/Library/Application Support/Code/User/keybindings.json"
+mkdir -p "${HOME}/Library/Application Support/Code/User/snippets"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/vscode.code-snippets" "${HOME}/Library/Application Support/Code/User/snippets/code-snippets.code-snippets"
 # SSH keypair
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/secrets/id_rsa" "${HOME}/.ssh/id_rsa"
