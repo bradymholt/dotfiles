@@ -52,7 +52,7 @@ find $DOTFILES_PATH/Services -maxdepth 1 -mindepth 1 -exec ln -sv${LINK_TARGET_E
 # iTerm
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/iterm2.plist" "${HOME}/Library/Preferences/com.googlecode.iterm2.plist"
 # VS Code
-mkdir -p "${HOME}/Library/Application Support/Code"
+mkdir -p "${HOME}/Library/Application Support/Code/User"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/vscode.settings.json" "${HOME}/Library/Application Support/Code/User/settings.json"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/vscode.keybindings.json" "${HOME}/Library/Application Support/Code/User/keybindings.json"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/vscode.code-snippets" "${HOME}/Library/Application Support/Code/User/snippets/code-snippets.code-snippets"
