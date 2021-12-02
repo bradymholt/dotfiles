@@ -64,5 +64,9 @@ chmod 600 "${HOME}/.ssh/id_rsa"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/secrets/id_rsa.pub" "${HOME}/.ssh/id_rsa.pub"
 
 echo ""
-echo "STEP 6: Running npm install in bin/ folder to install Node dependencies"
+echo "STEP 6: Running misc commands needed for additional setup"
+compaudit | xargs chmod g-w
+
+echo ""
+echo "STEP 7: Running npm install in bin/ folder to install Node dependencies"
 npm --prefix "$DOTFILES_PATH/bin" install "$DOTFILES_PATH/bin"

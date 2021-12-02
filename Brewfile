@@ -18,6 +18,7 @@ brew "gh"
 brew "git"
 brew "jq"
 brew "node", link: false
+brew "nvm"
 brew "postgresql"
 brew "pure", link: false
 brew "redis"
