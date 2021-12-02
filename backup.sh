@@ -12,11 +12,11 @@ cd $DOTFILES_PATH;
 brew bundle dump --force
 
 echo ""
-echo "STEP 2: Commit and push dotfiles repo"
+echo "STEP 2: Commit and push dotfiles repo to origin"
 cd $DOTFILES_PATH;
-git add -A && git commit -m "Backup" && git push
+git add -A && git commit -m "Backup" && git push --quiet
 
 echo ""
-echo "STEP 3: Commit and push secrets repo"
+echo "STEP 3: Commit and push secrets repo to origin"
 cd $SECRETS_FOLDER;
-git add -A && git commit -m "Backup" && git push
+git add -A && git commit -m "Backup" && git push --quiet
