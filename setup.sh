@@ -8,7 +8,7 @@ DOTFILES_PATH=$(cd `dirname $0` && pwd)
 CURRENT_SCRIPT_NAME=${0##*/}
 
 echo ""
-echo "STEP 1: Running `brew bundle` to install Homebrew packages"
+echo "STEP 1: Running brew bundle to install Homebrew packages"
 brew bundle
 
 LINK_TARGET_EXISTS_HANDLING=""
