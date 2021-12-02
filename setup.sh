@@ -13,7 +13,7 @@ brew bundle
 
 echo ""
 echo "STEP 2: Configure macOS preferences"
-$DOTFILES_PATH/macos.sh
+$DOTFILES_PATH/macOS.sh
 
 
 echo ""
