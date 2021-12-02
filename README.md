@@ -4,8 +4,9 @@ This is my system configuration for macOS consisting of a Brewfile, config "dotf
 
 ## Setup
 
-1. Clone this repo: `TARGET_DIR=$HOME/dotfiles; git clone https://github.com/bradymholt/dotfiles.git $TARGET_DIR && cd $TARGET_DIR`
 1. Install [Homebrew](https://docs.brew.sh/Installation)
+1. Install Git: `brew install git`
+1. Clone this repo: `TARGET_DIR=$HOME/dotfiles; git clone https://github.com/bradymholt/dotfiles.git $TARGET_DIR && cd $TARGET_DIR`
 1. Run setup script: `./setup.sh`
 ## Scripts
 
