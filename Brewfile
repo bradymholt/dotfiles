@@ -17,7 +17,7 @@ brew "ffmpeg"
 brew "gh"
 brew "git"
 brew "jq"
-brew "node@14"
+brew "node", link: false
 brew "postgresql"
 brew "pure", link: false
 brew "redis"
