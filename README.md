@@ -2,7 +2,7 @@
 
 This is my system configuration for macOS consisting of a Brewfile, config "dotfiles", and misc and shell scripts.
 
-## Initial Setup
+## Setup
 
 1. Install [Homebrew](https://docs.brew.sh/Installation)
 1. Setup 1Password
