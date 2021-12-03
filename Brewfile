@@ -17,10 +17,11 @@ brew "ffmpeg"
 brew "gh"
 brew "git"
 brew "jq"
-brew "node", link: false
+brew "node"
+brew "node@14"
 brew "nvm"
 brew "postgresql"
-brew "pure", link: false
+brew "pure"
 brew "redis"
 brew "switchaudio-osx"
 brew "vim"
