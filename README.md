@@ -14,7 +14,7 @@ This is my system configuration for macOS consisting of a Brewfile, config "dotf
 
 ### Additional manual setup
 
-1. Configure Rectangle: Open Rectable and import settings from `RectangleConfig.json` from `dotfiles/`.
+1. Configure Rectangle: Open Rectable and import settings from  from `dotfiles/RectangleConfig.json`.
 
 ## Scripts
 
