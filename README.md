@@ -11,6 +11,11 @@ This is my system configuration for macOS consisting of a Brewfile, config "dotf
 1. Install Git: `brew install git`
 1. Clone this repo: `TARGET_DIR=$HOME/dotfiles; git clone https://github.com/bradymholt/dotfiles.git $TARGET_DIR && cd $TARGET_DIR`
 1. Run setup script: `./setup.sh`
+
+### Additional manual setup
+
+1. Configure Rectangle: Open Rectable and import settings from `RectangleConfig.json` from `dotfiles/`.
+
 ## Scripts
 
 - `backup.sh` - Backup dotfiles and secrets repos
