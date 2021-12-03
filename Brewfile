@@ -9,6 +9,7 @@ brew "python@3.9"
 brew "awscli"
 brew "bash"
 brew "coreutils"
+brew "docker", link: false
 brew "guile"
 brew "gnutls"
 brew "harfbuzz"
