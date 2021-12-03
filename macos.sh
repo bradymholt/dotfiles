@@ -2,6 +2,9 @@
 
 # Reference: https://github.com/mathiasbynens/dotfiles/blob/main/.macos
 
+# Ask for the administrator password upfront
+sudo -v
+
 # Set host name
 HOSTNAME=BradyHoltMBP
 sudo scutil --set ComputerName $HOSTNAME
@@ -10,6 +13,11 @@ sudo scutil --set LocalHostName $HOSTNAME
 
 # Trackpad: enable tap to click for this user and for the login screen
 defaults -currentHost write -globalDomain com.apple.mouse.tapBehavior -int 1
+
+# Use scroll gesture with the Ctrl (⌘) modifier key to zoom
+defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+defaults write com.apple.universalaccess closeViewSplitScreenRatio -string "0.2";
+defaults write com.apple.universalaccess closeViewScrollWheelModifiersInt -int 1048576
 
 # Save to disk (not to iCloud) by default
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
