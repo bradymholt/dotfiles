@@ -617,9 +617,6 @@
               "sha256": "2d9cb60cd75e22835f7d7b840168aa5a5d8999d82f0eea75315cb3193edc8c9e"
             }
           }
-        },
-        "options": {
-          "link": false
         }
       },
       "zsh": {
@@ -959,9 +956,6 @@
               "sha256": "7f1601c8205e9cddc66e8a409fd51cad74596aa029999666e6c71ef9dfd8714a"
             }
           }
-        },
-        "options": {
-          "link": true
         }
       },
       "nvm": {

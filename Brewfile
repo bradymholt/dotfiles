@@ -26,7 +26,7 @@ brew "redis"
 brew "switchaudio-osx"
 brew "vim"
 brew "wget"
-brew "yarn", link: false
+brew "yarn"
 brew "zsh"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
