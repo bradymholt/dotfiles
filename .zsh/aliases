@@ -137,3 +137,8 @@ compress-audio() {
   set -x
   lame -V6 --vbr-new --resample 22 -m m $1
 }
+clip() {  
+  cat "${1}" | pbcopy
+  echo "Copied contents of ${1} to clipboard."
+
+}
