@@ -47,6 +47,7 @@
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   // Extension settings
+
   "debug.javascript.usePreview": true,
   "extensions.ignoreRecommendations": false,
   "cSpell.userWords": [
