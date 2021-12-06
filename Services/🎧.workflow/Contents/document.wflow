@@ -59,7 +59,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>/usr/local/bin/SwitchAudioSource -t 'output' -s 'Jabra EVOLVE LINK' &amp;&amp; /usr/local/bin/SwitchAudioSource -t 'input' -s 'Jabra EVOLVE LINK'</string>
+					<string>/opt/homebrew/Cellar/switchaudio-osx/1.1.0/SwitchAudioSource -t 'output' -s 'Jabra EVOLVE LINK' &amp;&amp; /opt/homebrew/Cellar/switchaudio-osx/1.1.0/SwitchAudioSource -t 'input' -s 'Jabra EVOLVE LINK'</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>

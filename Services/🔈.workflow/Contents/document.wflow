@@ -59,7 +59,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>/usr/local/bin/SwitchAudioSource -t 'output' -s 'Built-in Output' &amp;&amp; /usr/local/bin/SwitchAudioSource -t 'input' -s 'Built-in Microphone'</string>
+					<string>/opt/homebrew/Cellar/switchaudio-osx/1.1.0/SwitchAudioSource -t 'output' -s 'MacBook Pro Speakers' &amp;&amp; /opt/homebrew/Cellar/switchaudio-osx/1.1.0/SwitchAudioSource -t 'input' -s 'MacBook Pro Microphone'</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
