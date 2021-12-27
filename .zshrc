@@ -8,10 +8,10 @@ setopt HIST_IGNORE_SPACE # Prepend sensitive commands with a space so they are n
 bindkey -e # Make zle use Emacs mode
 # This binds Up and Down to a history search (backwards and forwards) based upon what has already been entered at the prompt and places cursor at EOL.
 autoload -U history-search-end
-zle -N history-beginning-search-backward-end history-search-end
-zle -N history-beginning-search-forward-end history-search-end
-bindkey "^[[A" history-beginning-search-backward-end
-bindkey "^[[B" history-beginning-search-forward-end
+#zle -N history-beginning-search-backward-end history-search-end
+#xzle -N history-beginning-search-forward-end history-search-end
+#bindkey "^[[A" history-beginning-search-backward-end
+#bindkey "^[[B" history-beginning-search-forward-end
 # When jumping backward-word and forward-word stop at characters like '-' and '/' which is more like bash.
 export WORDCHARS=''
 
@@ -28,8 +28,14 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/opt/homebrew/share/zsh-syntax-highlighting/highl
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# asdf
-echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
+# Setup Homebrew managed completions
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
 
 # Source additional config
 source ~/.zsh/aliases
@@ -37,3 +43,6 @@ source ~/.zsh/path
 source ~/.zsh/var
 source ~/secrets/zsh
 source ~/secrets/ynab.zsh
+
+# Setup asdf
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
