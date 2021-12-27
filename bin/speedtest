@@ -72,3 +72,4 @@ echo $times | awk '{
     stddev = sqrt(sum2/NF);
     print "All units in seconds: min=" min ", max=" max ", avg=" sum/NF ", sum=" sum ", standard deviation=" stddev;
 }'
+ 
