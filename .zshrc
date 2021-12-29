@@ -44,5 +44,8 @@ source ~/.zsh/var
 source ~/.secrets/zsh
 source ~/.secrets/ynab.zsh
 
+# Setup Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Setup asdf
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
