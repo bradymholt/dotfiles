@@ -113,6 +113,9 @@ alias dr='docker run --rm -it'
 # Heroku
 alias h='heroku'
 
+# Suffix Aliases
+alias -s log="tail -f"
+
 # Other
 alias ts='tig status'
 alias cdh='cd $HOME'
