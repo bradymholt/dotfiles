@@ -28,14 +28,12 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/opt/homebrew/share/zsh-syntax-highlighting/highl
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Setup Homebrew managed completions
-if type brew &>/dev/null
-then
-  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+# Setup Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
-  autoload -Uz compinit
-  compinit
-fi
+# Turn on completions
+fpath+="$(brew --prefix)/share/zsh/site-functions"
+autoload -Uz compinit; compinit
 
 # Source additional config
 source ~/.zsh/aliases
@@ -43,9 +41,6 @@ source ~/.zsh/path
 source ~/.zsh/var
 source ~/.secrets/zsh
 source ~/.secrets/ynab.zsh
-
-# Setup Homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Setup asdf
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
