@@ -2,8 +2,15 @@
 
 # Reference: https://github.com/mathiasbynens/dotfiles/blob/main/.macos
 
+# Close any open System Preferences panes, to prevent them from overriding
+# settings we’re about to change
+osascript -e 'tell application "System Preferences" to quit'
+
 # Ask for the administrator password upfront
 sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Set host name
 HOSTNAME=BradyHoltMBP
@@ -15,9 +22,9 @@ sudo scutil --set LocalHostName $HOSTNAME
 defaults -currentHost write -globalDomain com.apple.mouse.tapBehavior -int 1
 
 # Use scroll gesture with the Ctrl (⌘) modifier key to zoom
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-defaults write com.apple.universalaccess closeViewSplitScreenRatio -string "0.2";
-defaults write com.apple.universalaccess closeViewScrollWheelModifiersInt -int 1048576
+sudo defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+sudo defaults write com.apple.universalaccess closeViewSplitScreenRatio -string "0.2";
+sudo defaults write com.apple.universalaccess closeViewScrollWheelModifiersInt -int 1048576
 
 # Save to disk (not to iCloud) by default
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false

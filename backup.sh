@@ -4,7 +4,7 @@
 
 CURRENT_SCRIPT_PATH=$(cd `dirname $0` && pwd -P)
 DOTFILES_PATH=$(cd ${CURRENT_SCRIPT_PATH}/ && pwd)
-SECRETS_FOLDER="${DOTFILES_PATH}/secrets"
+SECRETS_FOLDER="${DOTFILES_PATH}/.secrets"
 
 echo ""
 echo "STEP 1: Dumping Homebrew config to Brewfile"
