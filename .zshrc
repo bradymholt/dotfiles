@@ -41,8 +41,8 @@ fi
 source ~/.zsh/aliases
 source ~/.zsh/path
 source ~/.zsh/var
-source ~/secrets/zsh
-source ~/secrets/ynab.zsh
+source ~/.secrets/zsh
+source ~/.secrets/ynab.zsh
 
 # Setup asdf
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
