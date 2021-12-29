@@ -1,19 +1,20 @@
 # History
 HISTSIZE=10000
 SAVEHIST=10000
-setopt share_history # Share history across terminals
-setopt HIST_IGNORE_SPACE # Prepend sensitive commands with a space so they are not in history
+setopt SHARE_HISTORY      # share history across sessions
+setopt APPEND_HISTORY     # append to history file rather than replacing it
+setopt INC_APPEND_HISTORY # add to history as immediately rather than waiting for session exit
+setopt HIST_IGNORE_DUPS   # ignore duplicated commands history list
+setopt HIST_FIND_NO_DUPS  # ignore dupes when searchng history
+setopt HIST_REDUCE_BLANKS # prevents empty history entries
+setopt HIST_VERIFY        # show command with history expansion to user before running it
+setopt HIST_IGNORE_SPACE  # prepend sensitive commands with a space so they are not in history
 
-# Key Bindings
-bindkey -e # Make zle use Emacs mode
-# This binds Up and Down to a history search (backwards and forwards) based upon what has already been entered at the prompt and places cursor at EOL.
-autoload -U history-search-end
-#zle -N history-beginning-search-backward-end history-search-end
-#xzle -N history-beginning-search-forward-end history-search-end
-#bindkey "^[[A" history-beginning-search-backward-end
-#bindkey "^[[B" history-beginning-search-forward-end
-# When jumping backward-word and forward-word stop at characters like '-' and '/' which is more like bash.
-export WORDCHARS=''
+# Misc settings
+setopt CORRECT
+setopt CORRECT_ALL
+bindkey -e          # Make zle use Emacs mode
+export WORDCHARS='' # When jumping backward-word and forward-word stop at characters like '-' and '/' which is more like bash.
 
 # Prompt (Pure - https://github.com/sindresorhus/pure)
 fpath+=$HOME/.zsh/pure
