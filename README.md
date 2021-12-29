@@ -4,7 +4,7 @@ This is my system configuration for macOS consisting of a Brewfile, config "dotf
 
 ## Setup
 
-1. Install [Homebrew](https://docs.brew.sh/Installation)
+1. Install Homebrew - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && eval "$(/opt/homebrew/bin/brew shellenv)"`
 1. Setup 1Password
     - Run `brew install --cask 1password`
     - Open 1Password Desktop and login using Emergency Kit QR Code   
