@@ -14,7 +14,7 @@ This is my system configuration for macOS consisting of a Brewfile, config "dotf
 
 ## Scripts
 
-- `setup.sh` - This idempotent script bootstraps macOS (installs apps and configures preferences), ensures secrets repo is initialized, and symlinks dotfiles.
+- `setup.sh` - This idempotent script bootstraps macOS (installs apps and configures preferences), ensures secrets repo is initialized, and symlinks dotfiles
 - `backup.sh` - Backup dotfiles and secrets repos
 - `link.sh` -  If there are files in $HOME that you would like to be moved to the dotfiles repo, you can run this script and pass in the name of the file that resides in $HOME.  This will move the file to the dotfiles directory and create a symlink to it.
 
