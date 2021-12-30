@@ -21,8 +21,11 @@
 [diff]
 	tool = bc3
 	compactionHeuristic = true
+	colorMoved = zebra
 [pull]
-	ff = only
-  rebase = false
+	ff = true
+  rebase = true
 [credential]
 	helper = osxkeychain
+[fetch]
+	prune = true

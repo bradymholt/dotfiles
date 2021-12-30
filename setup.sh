@@ -14,7 +14,7 @@ echo -e "\nSTEP 1: Running brew bundle to install Homebrew packages"
 brew bundle install --no-upgrade
 
 echo -e "\nSTEP 2: Configure macOS preferences"
-$DOTFILES_PATH/macos-preferences.sh
+$DOTFILES_PATH/defaults.sh
 
 echo -e "\nSTEP 3: Initialize secrets repo"
 SECRETS_FOLDER="${DOTFILES_PATH}/.secrets"
