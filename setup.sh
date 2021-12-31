@@ -29,6 +29,8 @@ fi
 # Only top level files/directories will be symlinked
 echo -e "\nSTEP 4: symlink files from ${HOME} to ${DOTFILES_PATH}/"
 find $DOTFILES_PATH -maxdepth 1 -mindepth 1 -name '\.*' ! -iname ".git" -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} $HOME ';'
+# symlink bin/ although it is not not a "dot" directory
+ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/bin" "${HOME}/bin"
 
 # [Re]create specialized symbolic links
 echo -e "\nSTEP 5: specialized symlinks" 
