@@ -52,7 +52,6 @@ cask "iterm2"
 cask "monodraw"
 cask "rectangle"
 cask "slack"
-cask "stats"
 cask "tableplus"
 cask "visual-studio-code"
 mas "Dato", id: 1470584107
