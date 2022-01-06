@@ -33,6 +33,7 @@
 \set PROMPT1 '%n@%M/%/%R%#%x '
 
 \unset QUIET
+\set ECHO queries
 
 \set h '\\i ~/.psql/helpers.psql'
 \set ynab '\\i ~/.secrets/ynab.psql'
