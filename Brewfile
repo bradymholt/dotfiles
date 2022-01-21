@@ -55,3 +55,4 @@ cask "slack"
 cask "tableplus"
 cask "visual-studio-code"
 mas "Dato", id: 1470584107
+mas "Xcode", id: 497799835

@@ -9,7 +9,6 @@
 \echo '   :ps'
 \echo '   :blocks'
 \echo '   :slow'
-\echo '   :kill (run \\set pid [pid] first)'
 \echo 'Indexes:'
 \echo '   :index_size'
 \echo '   :index_usage'
@@ -18,6 +17,10 @@
 \echo '   :missing_indexes'
 \echo '   :seq_scans'
 \echo '   :cache_hit'
+\echo 'Utility:'
+\echo '   :kill - Kills a process (run \\set pid [pid] first)'
+\echo '   :export' - Export subsequent query results to CSV file /tmp/output.csv
+\echo '   :export_off' - Turn off exporting query results
 \echo
 
 -- Database
@@ -32,7 +35,6 @@
 \set ps 'SELECT pid, usename, now() - query_start as duration, state, CASE WHEN wait_event_type = \'Lock\' THEN true ELSE FALSE END as blocked, SUBSTRING(query, 0, 100) || \' ...\' as query FROM pg_stat_activity WHERE query_start IS NOT NULL AND state != \'idle\' ORDER BY duration DESC;'
 \set blocks 'SELECT bl.pid as blocked_pid, ka.query as blocking_statement, now() - ka.query_start as blocking_duration, kl.pid as blocking_pid, a.query as blocked_statement, now() - a.query_start as blocked_duration FROM pg_catalog.pg_locks bl JOIN pg_catalog.pg_stat_activity a on bl.pid = a.pid JOIN pg_catalog.pg_locks kl JOIN pg_catalog.pg_stat_activity ka on kl.pid = ka.pid ON bl.transactionid = kl.transactionid AND bl.pid != kl.pid WHERE not bl.granted;'
 \set slow 'SELECT pid, now() - pg_stat_activity.query_start AS duration, query AS query FROM pg_stat_activity WHERE pg_stat_activity.query <> ''''::text AND now() - pg_stat_activity.query_start > interval ''1 seconds'' ORDER BY now() - pg_stat_activity.query_start DESC;'
-\set kill 'SELECT pg_terminate_backend(:\'pid\');'
 
 -- Indexes
 \set index_size 'SELECT i.relname as index_name, t.relname as table_name, i.reltuples AS "entries", pg_size_pretty(i.relpages::bigint*8*1024) AS size from pg_class t INNER JOIN pg_index ix on t.oid = ix.indrelid INNER JOIN pg_class i ON i.oid = ix.indexrelid where t.relkind = \'r\' ORDER BY i.relpages DESC;'
@@ -42,3 +44,8 @@
 \set missing_indexes 'SELECT relname, seq_scan-idx_scan AS too_much_seq, case when seq_scan-idx_scan > 0 THEN ''Missing Index?'' ELSE ''OK'' END, pg_relation_size(relname::regclass) AS rel_size, seq_scan, idx_scan FROM pg_stat_all_tables WHERE schemaname=''public'' AND pg_relation_size(relname::regclass) > 80000 ORDER BY too_much_seq DESC;'
 \set seq_scans 'SELECT relname AS name, seq_scan as count FROM pg_stat_user_tables ORDER BY seq_scan DESC;'
 \set cache_hit 'SELECT ''index hit rate'' as name, (sum(idx_blks_hit)) / sum(idx_blks_hit + idx_blks_read) as ratio FROM pg_statio_user_indexes union all SELECT ''cache hit rate'' as name, sum(heap_blks_hit) / (sum(heap_blks_hit) + sum(heap_blks_read)) as ratio FROM pg_statio_user_tables;'
+
+-- Utility
+\set kill 'SELECT pg_terminate_backend(:\'pid\');'
+\set export '\\f , \\a \\o /tmp/output.csv'
+\set export_off '\\a \\o'

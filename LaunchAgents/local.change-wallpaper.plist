@@ -6,8 +6,8 @@
 	<string>local.change-wallpaper</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/bin/node</string>
-		<string>/Users/bholt/bin/change-wallpaper</string>
+		<string>/Users/bholt/.asdf/shims/node</string>
+		<string>/Users/bholt/.bin/change-wallpaper</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>
