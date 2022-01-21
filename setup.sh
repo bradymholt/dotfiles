@@ -33,7 +33,8 @@ find $DOTFILES_PATH -maxdepth 1 -mindepth 1 -name '\.*' ! -iname ".git" -exec ln
 # [Re]create specialized symbolic links
 echo -e "\nSTEP 5: specialized symlinks" 
 # LaunchAgents and Services
-find $DOTFILES_PATH/LaunchAgents -maxdepth 1 -mindepth 1 -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} ~/Library/LaunchAgents ';'
+mkdir -p ~/Library/LaunchAgents
+find $DOTFILES_PATH/LaunchAgents -maxdepth 1 -mindepth 1 -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} ~/Library/LaunchAgents/ ';'
 find $DOTFILES_PATH/Services -maxdepth 1 -mindepth 1 -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} ~/Library/Services ';'
 # VS Code
 mkdir -p "${HOME}/Library/Application Support/Code/User"
