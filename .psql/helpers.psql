@@ -7,7 +7,8 @@
 \echo '   :bloat'
 \echo 'Queries:'
 \echo '   :ps'
-\echo '   :blocks'
+\echo '   :blocks' - Queries that are blocked by another transaction
+\echo '   :vacuums' - Lists any active autovacuums
 \echo '   :slow'
 \echo 'Indexes:'
 \echo '   :index_size'
@@ -34,6 +35,7 @@
 -- Queries
 \set ps 'SELECT pid, usename, now() - query_start as duration, state, CASE WHEN wait_event_type = \'Lock\' THEN true ELSE FALSE END as blocked, SUBSTRING(query, 0, 100) || \' ...\' as query FROM pg_stat_activity WHERE query_start IS NOT NULL AND state != \'idle\' ORDER BY duration DESC;'
 \set blocks 'SELECT bl.pid as blocked_pid, ka.query as blocking_statement, now() - ka.query_start as blocking_duration, kl.pid as blocking_pid, a.query as blocked_statement, now() - a.query_start as blocked_duration FROM pg_catalog.pg_locks bl JOIN pg_catalog.pg_stat_activity a on bl.pid = a.pid JOIN pg_catalog.pg_locks kl JOIN pg_catalog.pg_stat_activity ka on kl.pid = ka.pid ON bl.transactionid = kl.transactionid AND bl.pid != kl.pid WHERE not bl.granted;'
+\set vacuums 'SELECT pid, query FROM pg_stat_activity WHERE backend_type = \'autovacuum worker\' AND state = \'active\'';
 \set slow 'SELECT pid, now() - pg_stat_activity.query_start AS duration, query AS query FROM pg_stat_activity WHERE pg_stat_activity.query <> ''''::text AND now() - pg_stat_activity.query_start > interval ''1 seconds'' ORDER BY now() - pg_stat_activity.query_start DESC;'
 
 -- Indexes
