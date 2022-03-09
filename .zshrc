@@ -24,13 +24,13 @@ zstyle :prompt:pure:git:branch color '#eada4a'
 zstyle ':prompt:pure:prompt:*' color '#e36743'
 prompt pure
 
-# Plugins
-ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/opt/homebrew/share/zsh-syntax-highlighting/highlighters
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 # Setup Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Plugins
+ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR="$(brew --prefix)/share/zsh-syntax-highlighting/highlighters"
+source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
 # Turn on completions
 fpath+="$(brew --prefix)/share/zsh/site-functions"
