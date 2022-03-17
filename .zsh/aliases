@@ -71,7 +71,7 @@ gpr() {
 
 gmove() {
   echo "Moving commits on current branch to a new branch..."
-  # This is useful if commits were mistakenly made on master and need to be move to a new branch.
+  # This is useful if commits were mistakenly made on main branch and need to be move to a new branch.
   # $1 - New target branch name 
   if [ -z "$1" ]; then echo "New branch name required!"; exit 0; fi
   CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
