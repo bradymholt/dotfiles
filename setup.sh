@@ -42,8 +42,9 @@ ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/vscode.settings.json" "${
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/vscode.keybindings.json" "${HOME}/Library/Application Support/Code/User/keybindings.json"
 mkdir -p "${HOME}/Library/Application Support/Code/User/snippets"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/vscode.code-snippets" "${HOME}/Library/Application Support/Code/User/snippets/code-snippets.code-snippets"
-# SSH keypair
+# SSH
 mkdir -p "${HOME}/.ssh"
+ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/.ssh/config" "${HOME}/.ssh/config"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/.secrets/id_rsa" "${HOME}/.ssh/id_rsa"
 chmod 600 "${HOME}/.ssh/id_rsa"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/.secrets/id_rsa.pub" "${HOME}/.ssh/id_rsa.pub"
