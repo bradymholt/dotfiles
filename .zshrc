@@ -12,7 +12,6 @@ setopt HIST_IGNORE_SPACE  # prepend sensitive commands with a space so they are 
 
 # Misc settings
 setopt CORRECT
-setopt CORRECT_ALL
 bindkey -e          # Make zle use Emacs mode
 export WORDCHARS='' # When jumping backward-word and forward-word stop at characters like '-' and '/' which is more like bash.
 
