@@ -14,7 +14,7 @@ echo -e "\nSTEP 1: Running brew bundle to install Homebrew packages"
 brew bundle install --no-upgrade
 
 echo -e "\nSTEP 2: Configure macOS preferences"
-$DOTFILES_PATH/defaults.sh
+$DOTFILES_PATH/macOS-defaults.sh
 
 echo -e "\nSTEP 3: Initialize secrets repo"
 SECRETS_FOLDER="${DOTFILES_PATH}/.secrets"
@@ -28,7 +28,7 @@ fi
 # [Re]create symbolic links from $HOME to ./*
 # Only top level files/directories will be symlinked
 echo -e "\nSTEP 4: symlink files from ${HOME} to ${DOTFILES_PATH}/"
-find $DOTFILES_PATH -maxdepth 1 -mindepth 1 -name '\.*' ! -iname ".git" -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} $HOME ';'
+find $DOTFILES_PATH -maxdepth 1 -mindepth 1 -name '\.*' ! -iname ".git" -iname ".ssh" -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} $HOME ';'
 
 # [Re]create specialized symbolic links
 echo -e "\nSTEP 5: specialized symlinks" 
