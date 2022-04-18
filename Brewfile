@@ -79,4 +79,5 @@ cask "tableplus"
 cask "visual-studio-code"
 cask "wkhtmltopdf"
 mas "Dato", id: 1470584107
+mas "Tag Editor Free", id: 984278082
 mas "Xcode", id: 497799835
