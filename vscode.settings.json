@@ -14,7 +14,6 @@
     }
   },
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "diffEditor.renderSideBySide": false,
   "git.confirmSync": false,
   "typescript.updateImportsOnFileMove.enabled": "never",
   "explorer.confirmDelete": false,
@@ -110,5 +109,6 @@
     "youneedabudget",
     "zxvf"
   ],
-  "svelte.enable-ts-plugin": true
+  "svelte.enable-ts-plugin": true,
+  "diffEditor.renderSideBySide": false
 }
