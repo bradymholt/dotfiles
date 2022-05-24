@@ -6,10 +6,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "shift+cmd+r",
-    "command": "workbench.action.tasks.runTask"
-  },
-  {
     "key": "cmd+k cmd+d",
     "command": "editor.action.formatDocument",
     "when":
@@ -79,5 +75,9 @@
   "key": "cmd+d",
   "command": "-editor.action.addSelectionToNextFindMatch",
   "when": "editorFocus"
+},
+{
+  "key": "shift+cmd+r",
+  "command": "workbench.action.tasks.runTask"
 }
 ]
