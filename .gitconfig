@@ -29,3 +29,5 @@
 	helper = osxkeychain
 [fetch]
 	prune = true
+[init]
+	defaultBranch = main

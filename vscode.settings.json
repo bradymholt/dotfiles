@@ -48,7 +48,7 @@
   // Extension settings
 
   "debug.javascript.usePreview": true,
-  "extensions.ignoreRecommendations": false,
+  "extensions.ignoreRecommendations": false,  
   "cSpell.userWords": [
     "Configurer",
     "DOCKERHUB",
@@ -110,5 +110,12 @@
     "zxvf"
   ],
   "svelte.enable-ts-plugin": true,
-  "diffEditor.renderSideBySide": false
+  "diffEditor.renderSideBySide": false,
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": true,
+    "markdown": false
+  }
 }
