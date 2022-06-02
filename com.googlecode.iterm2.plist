@@ -1213,6 +1213,8 @@
 			<false/>
 			<key>Shortcut</key>
 			<string></string>
+			<key>Show Timestamps</key>
+			<integer>2</integer>
 			<key>Silence Bell</key>
 			<false/>
 			<key>Sync Title</key>

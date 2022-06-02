@@ -5,7 +5,7 @@
   "explorer.openEditors.visible": 0,
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.renderWhitespace": "all",
+  "editor.renderWhitespace": "none",
   "editor.bracketPairColorization.enabled": true,
   "terminal.integrated.profiles.osx": {
     "zsh": {
