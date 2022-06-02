@@ -13,6 +13,8 @@ setopt HIST_IGNORE_SPACE  # prepend sensitive commands with a space so they are 
 # Misc settings
 setopt CORRECT
 bindkey -e          # Make zle use Emacs mode
+bindkey "^[[A" history-beginning-search-backward # Bind Up arrow to a backward history search based on what has already been entered at the prompt
+bindkey "^[[B" history-beginning-search-forward # Bind Up arrow to a forward history search based on what has already been entered at the prompt
 export WORDCHARS='' # When jumping backward-word and forward-word stop at characters like '-' and '/' which is more like bash.
 
 # Prompt (Pure - https://github.com/sindresorhus/pure)
