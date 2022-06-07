@@ -117,6 +117,7 @@ alias h='heroku'
 alias -s log="tail -f"
 
 # Other
+alias watch='(){ while sleep $1; do $(fc -ln -1); done ;}'
 alias ts='tig status'
 alias cdh='cd $HOME'
 alias l='ls -lAh'
