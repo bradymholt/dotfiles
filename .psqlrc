@@ -10,7 +10,7 @@
 \set HISTCONTROL ignorespace
 \set HISTCONTROL ignoredups
 -- Configure history file per db
-\set HISTFILE ~/.psql_history- :DBNAME
+\set HISTFILE ~/.psql_history- :USER - :HOST - :DBNAME
 -- Configure history size limit
 \set HISTSIZE 2000
 
