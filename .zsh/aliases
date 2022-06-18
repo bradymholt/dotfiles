@@ -98,7 +98,9 @@ alias ni='npm install'
 alias ns='npm run start'
 alias nb='npm run build'
 alias nt='npm test'
-alias nu='ncu'
+alias nu='npx npm-check-updates'
+alias ncu='npx npm-check-updates'
+
 
 # yarn
 alias yi='yarn install'
