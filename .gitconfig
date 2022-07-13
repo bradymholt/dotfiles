@@ -5,6 +5,7 @@
 	name = Brady Holt
 [push]
 	default = current
+	autoSetupRemote = true
 [core]
 	excludesfile = /Users/bholt/.gitignore_global
 	editor = vim
