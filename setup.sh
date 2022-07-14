@@ -45,9 +45,6 @@ ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/vscode.code-snippets" "${
 # SSH
 mkdir -p "${HOME}/.ssh"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/.ssh/config" "${HOME}/.ssh/config"
-ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/.secrets/id_rsa" "${HOME}/.ssh/id_rsa"
-chmod 600 "${HOME}/.ssh/id_rsa"
-ln -sv${LINK_TARGET_EXISTS_HANDLING} "${HOME}/.secrets/id_rsa.pub" "${HOME}/.ssh/id_rsa.pub"
 
 echo -e "\nSTEP 6: Misc other setup"
 echo "Running npm install in bin/ folder to install Node dependencies..."
