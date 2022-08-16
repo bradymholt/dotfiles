@@ -20,7 +20,7 @@
   "prettier.printWidth": 120,
   "explorer.confirmDragAndDrop": false,
   "security.workspace.trust.untrustedFiles": "open",
-  
+
   // Formatting
   "editor.formatOnSave": false,
   "[typescript]": {
@@ -48,7 +48,7 @@
   // Extension settings
 
   "debug.javascript.usePreview": true,
-  "extensions.ignoreRecommendations": false,  
+  "extensions.ignoreRecommendations": false,
   "cSpell.userWords": [
     "babyparse",
     "checkmark",
