@@ -19,6 +19,7 @@
 \echo '   :missing_indexes'
 \echo '   :seq_scans'
 \echo '   :cache_hit'
+\echo '   :create_progress'
 \echo 'Vacuum:'
 \echo '   :vacuum_stats'
 \echo 'Utility:'
@@ -50,6 +51,7 @@
 \set missing_indexes 'SELECT relname, seq_scan-idx_scan AS too_much_seq, case when seq_scan-idx_scan > 0 THEN ''Missing Index?'' ELSE ''OK'' END, pg_relation_size(relname::regclass) AS rel_size, seq_scan, idx_scan FROM pg_stat_all_tables WHERE schemaname=''public'' AND pg_relation_size(relname::regclass) > 80000 ORDER BY too_much_seq DESC;'
 \set seq_scans 'SELECT relname AS name, seq_scan as count FROM pg_stat_user_tables ORDER BY seq_scan DESC;'
 \set cache_hit 'SELECT ''index hit rate'' as name, (sum(idx_blks_hit)) / sum(idx_blks_hit + idx_blks_read) as ratio FROM pg_statio_user_indexes union all SELECT ''cache hit rate'' as name, sum(heap_blks_hit) / (sum(heap_blks_hit) + sum(heap_blks_read)) as ratio FROM pg_statio_user_tables;'
+\set create_progress  'SELECT now()::TIME(0), a.query, p.phase, round(p.blocks_done / p.blocks_total::numeric * 100, 2) AS "% done", p.blocks_total, p.blocks_done, p.tuples_total, p.tuples_done, ai.schemaname, ai.relname, ai.indexrelname FROM pg_stat_progress_create_index p JOIN pg_stat_activity a ON p.pid = a.pid LEFT JOIN pg_stat_all_indexes ai on ai.relid = p.relid AND ai.indexrelid = p.index_relid;'
 
 -- Vacuum
 \set vacuum_stats 'WITH table_opts AS (SELECT pg_class.oid, relname, nspname, array_to_string(reloptions, \'\') AS relopts FROM pg_class INNER JOIN pg_namespace ns ON relnamespace = ns.oid), vacuum_settings AS (SELECT oid, relname, nspname, CASE WHEN relopts LIKE \'%autovacuum_vacuum_threshold%\' THEN substring(relopts, \'.*autovacuum_vacuum_threshold=([0-9.]+).*\')::integer ELSE current_setting(\'autovacuum_vacuum_threshold\')::integer END AS autovacuum_vacuum_threshold, CASE WHEN relopts LIKE \'%autovacuum_vacuum_scale_factor%\' THEN substring(relopts, \'.*autovacuum_vacuum_scale_factor=([0-9.]+).*\')::real ELSE current_setting(\'autovacuum_vacuum_scale_factor\')::real END AS autovacuum_vacuum_scale_factor FROM table_opts) SELECT vacuum_settings.nspname AS schema,  vacuum_settings.relname AS table,  to_char(psut.last_vacuum, \'YYYY-MM-DD HH24:MI\') AS last_vacuum,  to_char(psut.last_autovacuum, \'YYYY-MM-DD HH24:MI\') AS last_autovacuum,  to_char(pg_class.reltuples, \'9G999G999G999\') AS rowcount,  to_char(psut.n_dead_tup, \'9G999G999G999\') AS dead_rowcount, to_char(autovacuum_vacuum_threshold + (autovacuum_vacuum_scale_factor::numeric * pg_class.reltuples), \'9G999G999G999\') AS autovacuum_threshold, CASE WHEN autovacuum_vacuum_threshold + (autovacuum_vacuum_scale_factor::numeric * pg_class.reltuples) < psut.n_dead_tup THEN \'yes\' END AS expect_autovacuum FROM pg_stat_user_tables psut INNER JOIN pg_class ON psut.relid = pg_class.oid INNER JOIN vacuum_settings ON pg_class.oid = vacuum_settings.oid ORDER BY 1;'
