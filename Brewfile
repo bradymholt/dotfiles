@@ -81,3 +81,7 @@ cask "slack"
 cask "tableplus"
 cask "visual-studio-code"
 cask "wkhtmltopdf"
+mas "Dato", id: 1470584107
+mas "Keynote", id: 409183694
+mas "Tag Editor Free", id: 984278082
+mas "Xcode", id: 497799835
