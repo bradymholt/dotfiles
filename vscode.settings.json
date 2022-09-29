@@ -51,6 +51,7 @@
   "extensions.ignoreRecommendations": false,
   "cSpell.userWords": [
     "babyparse",
+    "cheatsheet",
     "checkmark",
     "codegen",
     "Configurer",
@@ -119,5 +120,8 @@
     "yaml": false,
     "plaintext": true,
     "markdown": false
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "rebornix.ruby"
   }
 }

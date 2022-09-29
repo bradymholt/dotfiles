@@ -35,10 +35,6 @@
     "command": "workbench.view.scm"
   },  
   {
-    "key": "ctrl+cmd+r",
-    "command": "workbench.action.tasks.reRunTask"
-  },
-  {
     "key": "cmd+d",
     "command": "editor.action.revealDefinition",
     "when": "editorHasDefinitionProvider && editorTextFocus"
