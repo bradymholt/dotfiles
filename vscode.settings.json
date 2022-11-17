@@ -123,5 +123,6 @@
   },
   "[ruby]": {
     "editor.defaultFormatter": "rebornix.ruby"
-  }
+  },
+  "svelte.plugin.svelte.note-new-transformation": true
 }
