@@ -75,5 +75,13 @@
 {
   "key": "shift+cmd+r",
   "command": "workbench.action.tasks.runTask"
+},
+{
+  "key": "cmd+; l",
+  "command": "-testing.reRunLastRun"
+},
+{
+  "key": "ctrl+cmd+r",
+  "command": "workbench.action.tasks.reRunTask"
 }
 ]

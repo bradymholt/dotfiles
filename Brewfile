@@ -17,6 +17,7 @@ brew "asdf"
 brew "awscli"
 brew "bash"
 brew "berkeley-db", link: true
+brew "lz4"
 brew "glib"
 brew "python@3.9"
 brew "openldap"
@@ -42,7 +43,7 @@ brew "krb5"
 brew "libp11"
 brew "libpq"
 brew "mas"
-brew "mitmproxy", link: false
+brew "mitmproxy"
 brew "node"
 brew "openssl@3"
 brew "ossp-uuid"
@@ -79,13 +80,16 @@ cask "google-chrome"
 cask "iterm2"
 cask "keycastr"
 cask "monodraw"
+cask "ngrok"
 cask "rectangle"
 cask "slack"
 cask "tableplus"
 cask "visual-studio-code"
 cask "wkhtmltopdf"
 cask "xcodes"
+mas "1Password for Safari", id: 1569813296
 mas "Dato", id: 1470584107
 mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
 mas "Tag Editor Free", id: 984278082
 mas "Xcode", id: 497799835
