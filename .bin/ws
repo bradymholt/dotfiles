@@ -5,5 +5,4 @@ set -x
 
 # Open browser first b/c python blocks
 open http://localhost:9880
-# open /Applications/Google\ Chrome.app --args --disable-web-security
-python -m SimpleHTTPServer 9880
+npx http-server -p 9880
