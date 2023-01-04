@@ -46,8 +46,6 @@
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   // Extension settings
-
-  "debug.javascript.usePreview": true,
   "extensions.ignoreRecommendations": false,
   "cSpell.userWords": [
     "babyparse",
@@ -112,17 +110,29 @@
     "youneedabudget",
     "zxvf"
   ],
-  "svelte.enable-ts-plugin": true,
+  "cSpell.ignoreRegExpList": [
+    "\"(.*?)\"", // Ignore text inside of double quotes
+    "'(.*?)'" // Ignore text inside of single quotes
+  ],
   "diffEditor.renderSideBySide": false,
   "editor.inlineSuggest.enabled": true,
   "github.copilot.enable": {
     "*": true,
     "yaml": false,
     "plaintext": true,
-    "markdown": false
+    "markdown": true
   },
+
+  "svelte.enable-ts-plugin": true,
+  "svelte.plugin.svelte.note-new-transformation": false,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
   "[ruby]": {
     "editor.defaultFormatter": "rebornix.ruby"
   },
-  "svelte.plugin.svelte.note-new-transformation": true
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  }
 }
