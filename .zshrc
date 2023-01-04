@@ -43,6 +43,7 @@ source ~/.zsh/path
 source ~/.zsh/var
 source ~/.secrets/zsh
 source ~/.secrets/ynab.zsh
+source ~/.config/op/plugins.sh
 
 # Setup asdf
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
