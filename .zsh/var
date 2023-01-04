@@ -7,4 +7,5 @@ export ANSIBLE_HOST_KEY_CHECKING=false
 
 # Android
 export ANDROID_SDK=$HOME/Library/Android/sdk
+export ANDROID_HOME=$ANDROID_SDK
 export PATH=$ANDROID_SDK/emulator:$ANDROID_SDK/tools:$PATH
