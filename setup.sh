@@ -28,10 +28,15 @@ fi
 # [Re]create symbolic links from $HOME to ./*
 # Only top level files/directories will be symlinked
 echo -e "\nSTEP 4: symlink files from ${HOME} to ${DOTFILES_PATH}/"
-find $DOTFILES_PATH -maxdepth 1 -mindepth 1 -name '\.*' ! -iname ".git" -iname ".ssh" -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} $HOME ';'
+find $DOTFILES_PATH -maxdepth 1 -mindepth 1 -name '\.*' ! -iname ".git" -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} $HOME ';'
+
+# [Re]create symbolic links from $HOME to ./.secrets/*
+# Only top level files/directories will be symlinked
+echo -e "\nSTEP 5: symlink files from ${HOME} to ${SECRETS_FOLDER}/"
+find $SECRETS_FOLDER -maxdepth 1 -mindepth 1 -name '\.*' ! -iname ".git" -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} $SECRETS_FOLDER ';'
 
 # [Re]create specialized symbolic links
-echo -e "\nSTEP 5: specialized symlinks" 
+echo -e "\nSTEP 6: specialized symlinks" 
 # LaunchAgents and Services
 mkdir -p ~/Library/LaunchAgents
 find $DOTFILES_PATH/LaunchAgents -maxdepth 1 -mindepth 1 -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} ~/Library/LaunchAgents/ ';'
@@ -46,7 +51,7 @@ ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/vscode.code-snippets" "${
 mkdir -p "${HOME}/.ssh"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/.ssh/config" "${HOME}/.ssh/config"
 
-echo -e "\nSTEP 6: Misc other setup"
+echo -e "\nSTEP 7: Misc other setup"
 echo "Running npm install in bin/ folder to install Node dependencies..."
 npm --prefix "$DOTFILES_PATH/bin" install "$DOTFILES_PATH/bin" &>/dev/null
 echo "Importing Retangle settings"
