@@ -28,12 +28,12 @@ fi
 # [Re]create symbolic links from $HOME to ./*
 # Only top level files/directories will be symlinked
 echo -e "\nSTEP 4: symlink files from ${HOME} to ${DOTFILES_PATH}/"
-find $DOTFILES_PATH -maxdepth 1 -mindepth 1 -name '\.*' ! -iname ".git" -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} $HOME ';'
+find $DOTFILES_PATH -maxdepth 1 -mindepth 1 -name '\.*' ! -iname ".git" ! -iname ".secrets" -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} $HOME ';'
 
 # [Re]create symbolic links from $HOME to ./.secrets/*
 # Only top level files/directories will be symlinked
 echo -e "\nSTEP 5: symlink files from ${HOME} to ${SECRETS_FOLDER}/"
-find $SECRETS_FOLDER -maxdepth 1 -mindepth 1 -name '\.*' ! -iname ".git" -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} $SECRETS_FOLDER ';'
+find $SECRETS_FOLDER -maxdepth 1 -mindepth 1 -name '\.*' ! -iname ".git" -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} $HOME ';'
 
 # [Re]create specialized symbolic links
 echo -e "\nSTEP 6: specialized symlinks" 

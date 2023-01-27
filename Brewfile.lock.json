@@ -8,7 +8,7 @@
         "revision": "a2796b154bacabb94932a4812014b156c6271dc2"
       },
       "homebrew/cask": {
-        "revision": "c3e0e02345ef4dd50f18a76a46daf7a419a1cefc"
+        "revision": "97919073073222f64e97bdc40c64cd591f0fe0b5"
       },
       "homebrew/cask-fonts": {
         "revision": "24779a6f4ab59594eca96cbe59de52dea7a2cefe"
@@ -17,7 +17,7 @@
         "revision": "21b6745712a6b0871daff1a87590ea1cbbddb07b"
       },
       "homebrew/core": {
-        "revision": "8bcf0770086dd534826541a948c2f295dad7d51a"
+        "revision": "18796e8cf5b476f52054d87073a9982892e2bcbe"
       },
       "jakehilborn/jakehilborn": {
         "revision": "51a07af8d493a733f811ba16fe0782a39b8c4ea9"
@@ -3229,6 +3229,10 @@
       "WhatsApp": {
         "id": "1147396723",
         "version": "2.2301.6"
+      },
+      "iMovie": {
+        "id": "408981434",
+        "version": "10.3.5"
       }
     }
   },
@@ -3245,7 +3249,7 @@
       "ventura": {
         "HOMEBREW_VERSION": "3.6.20",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "8bcf0770086dd534826541a948c2f295dad7d51a",
+        "Homebrew/homebrew-core": "18796e8cf5b476f52054d87073a9982892e2bcbe",
         "CLT": "14.2.0.0.1.1668646533",
         "Xcode": "14.2",
         "macOS": "13.1"
