@@ -28,12 +28,12 @@ fi
 # [Re]create symbolic links from $HOME to ./*
 # Only top level files/directories will be symlinked
 echo -e "\nSTEP 4: symlink files from ${HOME} to ${DOTFILES_PATH}/"
-find $DOTFILES_PATH -maxdepth 1 -mindepth 1 -name '\.*' ! -iname ".git" ! -iname ".secrets" -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} $HOME ';'
+find $DOTFILES_PATH -maxdepth 1 -mindepth 1 -name '\.*' ! -iname ".git" ! -iname ".gitignore" ! -iname ".secrets" -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} $HOME ';'
 
 # [Re]create symbolic links from $HOME to ./.secrets/*
 # Only top level files/directories will be symlinked
 echo -e "\nSTEP 5: symlink files from ${HOME} to ${SECRETS_FOLDER}/"
-find $SECRETS_FOLDER -maxdepth 1 -mindepth 1 -name '\.*' ! -iname ".git" -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} $HOME ';'
+find $SECRETS_FOLDER -maxdepth 1 -mindepth 1 -name '\.*' ! -iname ".git" ! -iname ".gitignore" -exec ln -sv${LINK_TARGET_EXISTS_HANDLING} {} $HOME ';'
 
 # [Re]create specialized symbolic links
 echo -e "\nSTEP 6: specialized symlinks" 
@@ -47,9 +47,6 @@ ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/vscode.settings.json" "${
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/vscode.keybindings.json" "${HOME}/Library/Application Support/Code/User/keybindings.json"
 mkdir -p "${HOME}/Library/Application Support/Code/User/snippets"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/vscode.code-snippets" "${HOME}/Library/Application Support/Code/User/snippets/code-snippets.code-snippets"
-# SSH
-mkdir -p "${HOME}/.ssh"
-ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/.ssh/config" "${HOME}/.ssh/config"
 
 echo -e "\nSTEP 7: Misc other setup"
 echo "Running npm install in bin/ folder to install Node dependencies..."
