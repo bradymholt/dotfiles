@@ -119,6 +119,7 @@ alias h='heroku'
 alias -s log="tail -f"
 
 # Other
+alias dev='cd ~/dev'
 alias watch='(){ while sleep $1; do $(fc -ln -1); done ;}'
 alias ts='tig status'
 alias cdh='cd $HOME'
@@ -130,11 +131,12 @@ alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to cl
 alias psql2md=" sed 's/+/|/g' | sed 's/^/|/' | sed 's/$/|/' |  grep -v rows | grep -v '||'" # pg results to markdown table
 alias uuid="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]' | pbcopy | echo '=> New UUID copied to clipboard.'"        # generate UUID and send to clipboard
 alias dus='du -d 1 -h | sort -h'                                                            # file/directory size
-alias blog='cd ~/dev/geekytidbits.com && ./newpost.sh'                                      # create new blog post
+alias blog='cd ~/dev/geekytidbits.com && npx xertz new "TBD"'                               # create new blog post
 alias json=" jq -C '.' | less -R"                                                           # format piped JSON                                                           
 alias fixdisplay='displayplacer "id:15C48A1D-FCF9-CEC0-72A1-F00465DB28FA res:1920x1200 color_depth:4 scaling:on origin:(0,0) degree:0" "id:2B06791D-98D8-0CF5-A627-06393098A398 res:2560x1440 hz:60 color_depth:8 scaling:off origin:(-483,-1440) degree:0" "id:88733A9D-FD53-D657-26C2-44A5AE004DEC res:1440x2560 hz:60 color_depth:8 scaling:off origin:(2077,-1898) degree:90"'
 alias ip='curl -4 ifconfig.co' # && curl -6 ifconfig.co
 alias fast='networkQuality -s'
+
 compress-video() {
   set -x
   ffmpeg -i $1 -c:v libx264 -crf 23 ${1}_compressed.mp4

@@ -8,6 +8,3 @@ export PATH=$HOME/Library/Python/2.7/bin:$PATH
 
 # current directory
 export PATH=".:$PATH";
-
-# evergreen scripts
-export PATH="$HOME/dev/evergreen/scripts:$PATH"

@@ -1,5 +1,6 @@
 tap "crunchydata/brew"
 tap "dbt-labs/dbt"
+tap "hashicorp/tap"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -22,7 +23,11 @@ brew "glib"
 brew "python@3.9"
 brew "openldap"
 brew "curl"
+brew "deno"
 brew "docker", link: false
+brew "folly"
+brew "fizz"
+brew "wangle"
 brew "guile"
 brew "p11-kit"
 brew "unbound"
@@ -54,6 +59,7 @@ brew "perl"
 brew "pipenv"
 brew "postgresql@14"
 brew "pure"
+brew "ruby"
 brew "rust"
 brew "switchaudio-osx"
 brew "telnet"
@@ -84,6 +90,7 @@ cask "mks"
 cask "monodraw"
 cask "ngrok"
 cask "rectangle"
+cask "rocket"
 cask "slack"
 cask "tableplus"
 cask "visual-studio-code"
@@ -91,6 +98,7 @@ cask "wkhtmltopdf"
 cask "xcodes"
 mas "1Password for Safari", id: 1569813296
 mas "Dato", id: 1470584107
+mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pixelmator Pro", id: 1289583905
