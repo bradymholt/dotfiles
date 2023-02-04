@@ -2,3 +2,5 @@ node_modules/
 .vim/swaps/
 secrets/
 .secrets/
+.config/
+.psql/history/h-*
