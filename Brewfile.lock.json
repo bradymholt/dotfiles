@@ -8,7 +8,7 @@
         "revision": "65bde84265a3e9726d18323e390a15c45cdc8499"
       },
       "homebrew/cask": {
-        "revision": "e2c402dbcc9e5a12e71ae5e8caeea16a4768d5a8"
+        "revision": "b6d9487113261bd7fa067de2d94fa1701b00adbb"
       },
       "homebrew/cask-fonts": {
         "revision": "6bc9c3551d65670889639a4fbb3b0dc0484757ef"
@@ -17,7 +17,7 @@
         "revision": "bf996fc0c4232fff73fbbc82bd6b224557432b95"
       },
       "homebrew/core": {
-        "revision": "f07e0afc099e1467ff9044c9e1d334bb627d1707"
+        "revision": "a3d6d076ea120c0a552589bcde39883a7c6a9d10"
       },
       "jakehilborn/jakehilborn": {
         "revision": "51a07af8d493a733f811ba16fe0782a39b8c4ea9"
@@ -3252,7 +3252,7 @@
       "ventura": {
         "HOMEBREW_VERSION": "3.6.20",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "f07e0afc099e1467ff9044c9e1d334bb627d1707",
+        "Homebrew/homebrew-core": "a3d6d076ea120c0a552589bcde39883a7c6a9d10",
         "CLT": "14.2.0.0.1.1668646533",
         "Xcode": "14.2",
         "macOS": "13.2"

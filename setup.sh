@@ -49,8 +49,8 @@ mkdir -p "${HOME}/Library/Application Support/Code/User/snippets"
 ln -sv${LINK_TARGET_EXISTS_HANDLING} "${DOTFILES_PATH}/vscode.code-snippets" "${HOME}/Library/Application Support/Code/User/snippets/code-snippets.code-snippets"
 
 echo -e "\nSTEP 7: Misc other setup"
-echo "Running npm install in bin/ folder to install Node dependencies..."
-npm --prefix "$DOTFILES_PATH/bin" install "$DOTFILES_PATH/bin" &>/dev/null
+echo "Running npm install in .bin/ folder to install Node dependencies..."
+npm --prefix "$DOTFILES_PATH/.bin" install &>/dev/null
 echo "Importing Retangle settings"
 defaults import com.knollsoft.Rectangle "${DOTFILES_PATH}/com.knollsoft.Rectangle.defaults"
 echo "Importing Retangle settings"
