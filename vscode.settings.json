@@ -52,8 +52,7 @@
     "cheatsheet",
     "checkmark",
     "codegen",
-    "Configurer",
-    "crontogo",
+    "Configurer",    
     "Denormalization",
     "DOCKERHUB",
     "dyno",
@@ -61,10 +60,7 @@
     "Emberize",
     "endregion",
     "ENVAR",
-    "Evented",
-    "FTUE",
-    "helpscout",
-    "IYNAB",
+    "Evented",        
     "jbash",
     "maintenancemode",
     "Milli",
@@ -96,19 +92,10 @@
     "unformat",
     "unhide",
     "untar",
-    "untarred",
-    "USAA",
+    "untarred",    
     "victorops",
     "websql",
-    "workdir",
-    "xertz",
-    "YBOT",
-    "ynab",
-    "ynabbuild",
-    "ynabdev",
-    "YNABID",
-    "youneedabudget",
-    "zxvf"
+    "workdir"
   ],
   "cSpell.ignoreRegExpList": [
     "\"(.*?)\"", // Ignore text inside of double quotes
@@ -137,5 +124,6 @@
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "workbench.colorTheme": "GitHub Dark"
 }
