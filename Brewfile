@@ -59,8 +59,10 @@ brew "perl"
 brew "pipenv"
 brew "postgresql@14"
 brew "pure"
+brew "redis"
 brew "ruby"
 brew "rust"
+brew "stunnel"
 brew "switchaudio-osx"
 brew "telnet"
 brew "vim"
@@ -102,6 +104,6 @@ mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pixelmator Pro", id: 1289583905
-mas "Tag Editor Free", id: 984278082
+mas "Tag Editor Lite", id: 984278082
 mas "WhatsApp", id: 1147396723
 mas "Xcode", id: 497799835
