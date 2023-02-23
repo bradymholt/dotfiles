@@ -32,11 +32,6 @@ gacp() {
   gac $1 && git push -u
 } 
 
-git-first-commit-on-branch(){
-  if [ -z "$1" ]; then echo "You must supply the branch to compare against."; return 1; fi
-  git log --format=format:%H --cherry-pick --no-merges --left-only $(git branch --show-current)...$1 | tail -n1
-}
-
 gbc() { 
   if [ -z "$1" ]; then echo "You must supply the branch to compare against."; return 1; fi  
   echo "Showing commits on current branch that are not on the branch '$1'..."  
@@ -44,9 +39,9 @@ gbc() {
 }
 
 gsqa() {
+  # Squashes all commits on current branch into one commit
   if [ -z "$1" ]; then echo "You must supply the branch to compare against."; return 1; fi  
-  first_commit_on_branch=$(git-first-commit-on-branch $1)  
-  git reset --soft $first_commit_on_branch~1 && git commit
+  git reset --soft $1 && git commit --edit -m"$(git log --format=%B --reverse HEAD..HEAD@{1})"
 }
 
 gbpurge() {
