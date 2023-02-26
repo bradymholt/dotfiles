@@ -2,13 +2,11 @@
 
 This is my system configuration for macOS consisting of a Brewfile, config "dotfiles", and misc and shell scripts.
 
-## Setup
+## Initial Setup
 
-1. Install Homebrew - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && eval "$(/opt/homebrew/bin/brew shellenv)"`
-1. Setup 1Password
-    - Run `brew install --cask 1password`
-    - Open 1Password Desktop and login using Emergency Kit QR Code   
-1. Install Git: `brew install git`
+1. Install [Homebrew](https://brew.sh/) (using instructions on the homepage)
+1. Run `brew install --cask 1password`
+1. Open 1Password Desktop and login using Emergency Kit QR Code   
 1. Clone this repo: `TARGET_DIR=$HOME/dotfiles; git clone https://github.com/bradymholt/dotfiles.git $TARGET_DIR && cd $TARGET_DIR`
 1. Run setup script: `./setup.sh`
 
