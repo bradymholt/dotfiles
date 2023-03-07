@@ -113,7 +113,7 @@ alias -s log="tail -f"
 
 # Other
 alias dev='cd ~/dev'
-alias watch='(){ while sleep $1; do $(fc -ln -1); done ;}'
+alias watch='(){ while sleep $1; do $(fc -ln -1); done ;}' # runs the last command every $1 seconds (ex: `watch 5`)
 alias cdh='cd $HOME'
 alias l='ls -lAh'
 alias r='send-reminder-email'
