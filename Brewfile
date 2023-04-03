@@ -96,7 +96,6 @@ cask "tableplus"
 cask "visual-studio-code"
 cask "wkhtmltopdf"
 cask "xcodes"
-mas "1Password for Safari", id: 1569813296
 mas "Dato", id: 1470584107
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
