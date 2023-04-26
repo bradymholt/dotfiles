@@ -3,7 +3,7 @@
 [user]
 	email = brady.holt@gmail.com
 	name = Brady Holt
-	signingkey = /Users/bholt/.ssh/id_rsa
+	signingkey = /Users/bholt/.ssh/gh_signing
 [push]
 	default = current
 	autoSetupRemote = true
