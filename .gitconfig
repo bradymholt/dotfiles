@@ -3,7 +3,7 @@
 [user]
 	email = brady.holt@gmail.com
 	name = Brady Holt
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKIJWxpeDkN8WYdgR3cDCSeZOGhuSAFYLUui2TtFH57Z
+	signingkey = /Users/bholt/.ssh/id_rsa
 [push]
 	default = current
 	autoSetupRemote = true
@@ -35,8 +35,6 @@
 	autosquash = true
 [gpg]
 	format = ssh
-[gpg "ssh"]
-	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 [commit]
 	gpgsign = true
 [credential]
