@@ -126,5 +126,8 @@
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "GitHub Dark"
+  "workbench.colorTheme": "GitHub Dark",
+  "[python]": {
+    "editor.formatOnType": true
+  }
 }
