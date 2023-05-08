@@ -3,7 +3,7 @@
 [user]
 	email = brady.holt@gmail.com
 	name = Brady Holt
-	signingkey = /Users/bholt/.ssh/gh_signing
+	signingkey = /Users/bholt/.ssh/id_rsa
 [push]
 	default = current
 	autoSetupRemote = true
@@ -37,6 +37,5 @@
 	format = ssh
 [commit]
 	gpgsign = true
-[credential]
-	helper = 
+[credential]	
 	helper = /usr/local/share/gcm-core/git-credential-manager
