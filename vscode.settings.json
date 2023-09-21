@@ -26,27 +26,7 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[handlebars]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  // Extension settings
-  "extensions.ignoreRecommendations": false,
+  // Extension settings  
   "cSpell.userWords": [
     "babyparse",
     "cheatsheet",
@@ -111,18 +91,6 @@
     "markdown": true
   },
 
-  "svelte.enable-ts-plugin": true,  
-  "terminal.integrated.enableMultiLinePasteWarning": false,
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[python]": {
-    "editor.formatOnType": true
-  }
+  "svelte.enable-ts-plugin": true,
+  "terminal.integrated.enableMultiLinePasteWarning": false 
 }
