@@ -1,6 +1,6 @@
 # dotfiles
 
-This is my system configuration for macOS consisting of a Brewfile, config "dotfiles", and misc and shell scripts.
+This is my system configuration for macOS consisting of a Brewfile, config "dotfiles", and misc shell scripts.
 
 ## Initial Setup
 
