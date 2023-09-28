@@ -110,6 +110,7 @@ cask "tableplus"
 cask "visual-studio-code"
 cask "wkhtmltopdf"
 cask "xcodes"
+cask "zoom"
 mas "Dato", id: 1470584107
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
@@ -121,6 +122,7 @@ mas "Xcode", id: 497799835
 vscode "aliariff.vscode-erb-beautify"
 vscode "bradymholt.pgformatter"
 vscode "castwide.solargraph"
+vscode "dbaeumer.vscode-eslint"
 vscode "EditorConfig.EditorConfig"
 vscode "esbenp.prettier-vscode"
 vscode "GitHub.copilot"

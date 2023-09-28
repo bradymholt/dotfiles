@@ -9,7 +9,7 @@
 	autoSetupRemote = true
 [core]
 	excludesfile = /Users/bholt/.gitignore_global
-	editor = vim
+	editor = code --wait
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f

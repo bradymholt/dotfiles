@@ -1,5 +1,6 @@
 export EDITOR=code
-export GIT_EDITOR=vim
+export GIT_EDITOR="vim"
+export GIT_SEQUENCE_EDITOR="code --wait"
 
 export NODE_PATH=/usr/local/lib/node_modules
 export PSQL_EDITOR="code -w" # Use VSCode as psql editor (\e)
