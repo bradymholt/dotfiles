@@ -92,5 +92,5 @@
   },
 
   "svelte.enable-ts-plugin": true,
-  "terminal.integrated.enableMultiLinePasteWarning": false 
+  "terminal.integrated.enableMultiLinePasteWarning": false  
 }
