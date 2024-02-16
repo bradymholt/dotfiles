@@ -17,6 +17,7 @@
 	process = git-lfs filter-process
 [merge]
 	tool = bc3
+	conflictStyle = zdiff3
 [mergetool]
 	bc3 = trustExitCode
 	keepBackup = false
