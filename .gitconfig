@@ -4,12 +4,15 @@
 	email = brady.holt@gmail.com
 	name = Brady Holt
 	signingkey = /Users/bholt/.ssh/id_rsa
+[includeIf "hasconfig:remote.*.url:git@github.com:ynab/**"]
+	path = ./.secrets/ynab.gitconfig
 [push]
 	default = current
 	autoSetupRemote = true
 [core]
 	excludesfile = /Users/bholt/.gitignore_global
 	editor = code --wait
+	pager = diff-so-fancy | less --tabs=4 -RF
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
@@ -27,7 +30,6 @@
 	colorMoved = zebra
 [pull]
 	ff = true
-  rebase = true
 [fetch]
 	prune = true
 [init]
@@ -40,3 +42,20 @@
 	gpgsign = true
 [credential]	
 	helper = /usr/local/share/gcm-core/git-credential-manager
+[interactive]
+	diffFilter = diff-so-fancy --patch
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	func = 146 bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
