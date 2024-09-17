@@ -47,3 +47,4 @@ source ~/.config/op/plugins.sh
 
 # Setup asdf
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
+. "$HOME/.cargo/env"

@@ -17,7 +17,7 @@
 \echo '   :index_usage_adv'
 \echo '   :indexes_unused'
 \echo '   :indexes_missing'
-\echo '   :indexes_create_progress'
+\echo '   :indexes_create_progress' 
 \echo '   :seq_scans'
 \echo '   :cache_hit'
 \echo '   :null_frac' - Find indexed columns with high null_frac (% of NULL values)
