@@ -27,7 +27,7 @@ brew "python@3.11"
 brew "awscli"
 brew "bash"
 brew "berkeley-db", link: true
-brew "icu4c"
+brew "icu4c@76"
 brew "python@3.12"
 brew "glib"
 brew "cairo"
@@ -156,7 +156,7 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pixelmator Pro", id: 1289583905
 mas "Tag Editor Lite", id: 984278082
-mas "WhatsApp", id: 1147396723
+mas "WhatsApp (old)", id: 1147396723
 mas "Xcode", id: 497799835
 vscode "aliariff.vscode-erb-beautify"
 vscode "bradymholt.pgformatter"
