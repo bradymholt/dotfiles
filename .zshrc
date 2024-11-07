@@ -45,6 +45,8 @@ source ~/.secrets/zsh
 source ~/.secrets/ynab.zsh
 source ~/.config/op/plugins.sh
 
+# Setup LazyShell
+[ -f $HOME/.zsh/lazyshell ] && source $HOME/.zsh/lazyshell
+
 # Setup asdf
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
-. "$HOME/.cargo/env"

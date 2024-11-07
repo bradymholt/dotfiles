@@ -13,8 +13,6 @@ alias gmod='git merge origin/develop'
 alias gd='git diff'
 alias gdt='git difftool -y'
 alias gmt='git mergetool'
-# List branches with much better output format
-alias gb="git for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) (%(color:green)%(committerdate:relative)%(color:reset))'"
 
 # Stashing
 alias gst='git stash --include-untracked'
@@ -22,6 +20,23 @@ alias gstcf='git checkout stash@{0} --' # Checkout specific file(s) from the lat
 alias gstl='git stash list --stat'
 alias gstd='git stash list -p'
 alias gstp='git stash pop'
+
+# List branches with much better output format
+gb() {
+  echo -e "\033[34mBranches with a remote:\033[0m"
+  for branch in $(git for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/); do
+  if git branch -r | grep -q "origin/$branch"; then
+  git for-each-ref --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) (%(color:green)%(committerdate:relative)%(color:reset))' refs/heads/"$branch"
+  fi
+  done
+
+  echo -e "\033[34mBranches with NO remote:\033[0m"
+  for branch in $(git for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/); do
+  if ! git branch -r | grep -q "origin/$branch"; then
+  git for-each-ref --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) (%(color:green)%(committerdate:relative)%(color:reset))' refs/heads/"$branch"
+  fi
+  done
+}
 
 gac() { 
   echo "Adding and committing all changes..."
@@ -45,8 +60,8 @@ gsqa() {
 }
 
 gbpurge() {
-  echo "Pruning local branches that have already been merged into (master|develop|staging|production)..."
-  git branch --merged | grep -v "\*" | grep -Ev "(\*|master|develop|staging|production)" | xargs -n 1 git branch -d
+  echo "Pruning local branches that have have a deleted remote (origin)..."
+  git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D
 }
 
 gc() {
