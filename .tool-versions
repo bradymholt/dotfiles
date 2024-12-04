@@ -1,6 +1,7 @@
-nodejs 16.14.0
-ruby 2.7.6
-postgres 14.2
+nodejs 20.16.0
+ruby 3.3.1
+postgres 16.2
+redis 7.2.2
 python 3.9.10
 pnpm 7.21.0
 yarn 1.22.19
