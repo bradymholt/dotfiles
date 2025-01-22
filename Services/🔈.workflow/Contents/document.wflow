@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>492</string>
+	<string>526</string>
 	<key>AMApplicationVersion</key>
 	<string>2.10</string>
 	<key>AMDocumentVersion</key>
@@ -59,7 +59,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>/opt/homebrew/Cellar/switchaudio-osx/1.1.0/SwitchAudioSource -t 'output' -s 'MacBook Pro Speakers' &amp;&amp; /opt/homebrew/Cellar/switchaudio-osx/1.1.0/SwitchAudioSource -t 'input' -s 'MacBook Pro Microphone'</string>
+					<string>/opt/homebrew/Cellar/switchaudio-osx/1.2.2/SwitchAudioSource -t 'output' -s 'MacBook Pro Speakers' &amp;&amp; /opt/homebrew/Cellar/switchaudio-osx/1.2.2/SwitchAudioSource -t 'input' -s 'MacBook Pro Microphone'</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -172,7 +172,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>449.000000:305.000000</string>
+				<string>499.500000:305.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -195,17 +195,17 @@
 		<key>presentationMode</key>
 		<integer>11</integer>
 		<key>processesInput</key>
-		<integer>0</integer>
+		<false/>
 		<key>serviceInputTypeIdentifier</key>
 		<string>com.apple.Automator.nothing</string>
 		<key>serviceOutputTypeIdentifier</key>
 		<string>com.apple.Automator.nothing</string>
 		<key>serviceProcessesInput</key>
-		<integer>0</integer>
+		<false/>
 		<key>systemImageName</key>
 		<string>NSActionTemplate</string>
 		<key>useAutomaticInputType</key>
-		<integer>0</integer>
+		<false/>
 		<key>workflowTypeIdentifier</key>
 		<string>com.apple.Automator.servicesMenu</string>
 	</dict>
