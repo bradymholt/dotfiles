@@ -1,12 +1,12 @@
 # git / GitHub
 alias ghd='github' # Opens GitHub Desktop for current repo
-alias gco='git checkout'
-alias gcb='git checkout -b'
+alias gs='git switch'
+alias gc='git switch --create'
 alias gp='git push -u'
 alias gl='git pull'
 alias gf='git fetch --prune --no-tags'
 alias glg='git log'
-alias gs='git status'
+alias gst='git status -sb'
 alias grh='git reset --hard HEAD'
 alias grod='git rebase origin/develop'
 alias gmod='git merge origin/develop'
@@ -71,7 +71,7 @@ gbpurge() {
   git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D
 }
 
-gc() {
+gcomp() {
   # Compares two branches on GitHub UI
   URL="https://github.$(git config remote.origin.url | cut -f2 -d. | tr ':' /)/compare/${1}...${2}"
   echo $URL
