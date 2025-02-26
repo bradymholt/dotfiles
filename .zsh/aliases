@@ -1,12 +1,11 @@
 # git / GitHub
 alias ghd='github' # Opens GitHub Desktop for current repo
-alias gs='git switch'
-alias gc='git switch --create'
+alias gbc='git switch --create'
 alias gp='git push -u'
 alias gl='git pull'
 alias gf='git fetch --prune --no-tags'
 alias glg='git log'
-alias gst='git status -sb'
+alias gs='git status -sb'
 alias grh='git reset --hard HEAD'
 alias grod='git rebase origin/develop'
 alias gmod='git merge origin/develop'
@@ -22,7 +21,7 @@ alias gstd='git stash list -p'
 alias gstp='git stash pop'
 
 # List branches with much better output format
-gb() {
+gbranch() {
   with_remote=()
   without_remote=()
 
@@ -45,6 +44,20 @@ gb() {
   done
 }
 
+gb(){
+  
+  if [ -z "$1" ]; then 
+    # If no args then call gbranch and list all branches
+    gbranch; 
+  else 
+    # Otherwise switch to specified branch and pull from remote
+    BRANCH=$1
+    git switch $1
+    git pull --ff-only
+  fi
+}
+
+
 gac() { 
   echo "Adding and committing all changes..."
   git add --all :/ && git commit -m "${1}"
@@ -54,7 +67,7 @@ gacp() {
   gac $1 && git push -u
 } 
 
-gbc() { 
+gbcompare() { 
   if [ -z "$1" ]; then echo "You must supply the branch to compare against."; return 1; fi  
   echo "Showing commits on current branch that are not on the branch '$1'..."  
   git log --cherry-pick --no-merges --left-only $(git branch --show-current)...${1}  
@@ -112,9 +125,10 @@ gh-api() {
 
 # npm
 alias ni='npm install'
-alias ns='npm run start'
+alias nd='npm run dev'
 alias nb='npm run build'
 alias nt='npm test'
+alias nr='npm run'
 alias ncu='npx npm-check-updates'
 
 # yarn

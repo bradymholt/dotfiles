@@ -49,4 +49,4 @@ source ~/.config/op/plugins.sh
 [ -f $HOME/.zsh/lazyshell ] && source $HOME/.zsh/lazyshell
 
 # Setup asdf
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
