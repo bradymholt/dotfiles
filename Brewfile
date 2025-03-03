@@ -39,6 +39,7 @@ brew "deno"
 brew "diff-so-fancy"
 brew "dnsmasq"
 brew "docker", link: false
+brew "doctl"
 brew "docutils"
 brew "dog"
 brew "folly"
