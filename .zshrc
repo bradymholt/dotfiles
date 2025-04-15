@@ -41,6 +41,7 @@ autoload -Uz compinit; compinit
 source ~/.zsh/aliases
 source ~/.zsh/path
 source ~/.zsh/var
+source ~/.zsh/functions
 source ~/.secrets/zsh
 source ~/.secrets/ynab.zsh
 source ~/.config/op/plugins.sh
@@ -50,3 +51,5 @@ source ~/.config/op/plugins.sh
 
 # Setup asdf
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+# Created by `pipx` on 2025-03-28 13:44:40
+export PATH="$PATH:/Users/bholt/.local/bin"

@@ -1,0 +1,26 @@
+load_1pwd_secret() {
+  local SECRET_URI="$1"
+  local ACCOUNT="$2"
+
+  if [[ -z "$SECRET_URI" || -z "$ACCOUNT" ]]; then
+    echo "Usage: load_1pwd_secret <secret_URI> <account_id>"
+    return 1
+  fi
+
+  # Create a consistent filename based on the secret path and account
+  local TOKEN_FILE="/tmp/${ACCOUNT}_${SECRET_URI//\//_}"
+
+  if [[ -f "$TOKEN_FILE" ]]; then    
+    cat "$TOKEN_FILE"
+  else    
+    local SECRET=$(op read "$SECRET_URI" --account "$ACCOUNT")
+    if [[ $? -eq 0 ]]; then
+      echo "$SECRET" > "$TOKEN_FILE"
+      chmod 600 "$TOKEN_FILE"
+      echo "$SECRET"
+    else
+      echo "Failed to read secret from 1Password"
+      return 1
+    fi
+  fi
+}

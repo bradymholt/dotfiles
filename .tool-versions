@@ -1,8 +1,7 @@
 nodejs 20.16.0
 ruby 3.3.1
-postgres 16.2
+postgres 17.4
 redis 7.2.2
 python 3.9.10
-pnpm 7.21.0
 yarn 1.22.19
 sqlite 3.47.1
