@@ -1,10 +1,9 @@
 export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
 export PATH="/usr/local/share/dotnet:$PATH"
+#export PATH="$(npm config get prefix)/bin:$PATH"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$HOME/opt/apache-maven-3.3.9/bin:$PATH
-export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-export PATH=$HOME/Library/Python/2.7/bin:$PATH
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # current directory
 export PATH=".:$PATH";

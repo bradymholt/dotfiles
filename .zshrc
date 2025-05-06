@@ -34,7 +34,7 @@ source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.z
 source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
 # Turn on completions
-fpath+="$(brew --prefix)/share/zsh/site-functions"
+#fpath+="$(brew --prefix)/share/zsh/site-functions"
 autoload -Uz compinit; compinit
 
 # Source additional config
@@ -48,8 +48,3 @@ source ~/.config/op/plugins.sh
 
 # Setup LazyShell (shortcut: Option+G; docs: https://github.com/not-poma/lazyshell)
 [ -f $HOME/.zsh/lazyshell ] && source $HOME/.zsh/lazyshell
-
-# Setup asdf
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-# Created by `pipx` on 2025-03-28 13:44:40
-export PATH="$PATH:/Users/bholt/.local/bin"
