@@ -18,11 +18,12 @@ $DOTFILES_PATH/macOS-defaults.sh
 
 echo -e "\nSTEP 3: Initialize secrets repo"
 SECRETS_FOLDER="${DOTFILES_PATH}/.secrets"
-if [ -d "${SECRETS_FOLDER}" ]; then
+if [ -d "${SECRETS_FOLDER}" ]; then  
   echo "The secrets repo has already initialized!"
 else
   read -p "$(echo -e 'The secrets repo needs to be initialized.\nEnter the secrets HTTPS repo URL (i.e. https://gist.github.com/daec9fb6743NOT-REALe49f43a5.git): ')" SECRETS_REPO_URL
   git clone $SECRETS_REPO_URL $SECRETS_FOLDER
+  ln -sv${LINK_TARGET_EXISTS_HANDLING} "${SECRETS_FOLDER}" "${HOME}/.secrets"
 fi
 
 # [Re]create symbolic links from $HOME to ./*
@@ -56,5 +57,6 @@ defaults import com.knollsoft.Rectangle "${DOTFILES_PATH}/com.knollsoft.Rectangl
 echo "Importing Retangle settings"
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "${DOTFILES_PATH}"
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+chmod 600 ~/.ssh/id_rsa
 
 printf "\n\033[0;32mDone!\n"

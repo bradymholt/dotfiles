@@ -44,7 +44,3 @@ source ~/.zsh/var
 source ~/.zsh/functions
 source ~/.secrets/zsh
 source ~/.secrets/ynab.zsh
-source ~/.config/op/plugins.sh
-
-# Setup LazyShell (shortcut: Option+G; docs: https://github.com/not-poma/lazyshell)
-[ -f $HOME/.zsh/lazyshell ] && source $HOME/.zsh/lazyshell
