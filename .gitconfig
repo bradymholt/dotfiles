@@ -3,7 +3,7 @@
 [user]
 	email = brady.holt@gmail.com
 	name = Brady Holt
-	signingkey = /Users/bholt/.ssh/id_rsa
+	signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3iZmqq8zcEI6rzTb+LtKWa/JsdBLPFQr6sYB+Ra/nBaG14+tUmsceo8597x282aB+wFdFVR39LXOT1GW0L65SlyZ1AozvBO6MbhxEnjzRUOMmMEwbWSRGv/ctUGlnbf46b61YKtufhXMyf3tA79nDzAJySjWqCJVcft44qwWtQtUqpBg5ZQqgFr0bAKe65vo3YSKRwJ6WnCVScna4It3ThwIW+I0T7+eomfNMn6AfED1cZKI6vCQHGxXz8MaTZWdKnls/rpXqI9NdASTUL5qJqz69xQ3G1yyzDg/JXmzNUyhYvslZeJzHMuiC3jplclGTH8cxIjshupUQjl43AgcH
 [includeIf "hasconfig:remote.*.url:git@github.com:ynab/**"]
 	path = ./.secrets/ynab.gitconfig
 [push]
@@ -38,6 +38,8 @@
 	autosquash = true
 [gpg]
 	format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 [commit]
 	gpgsign = true
 [interactive]
