@@ -5,8 +5,10 @@ This is my system configuration for macOS consisting of a Brewfile, config "dotf
 ## Initial Setup
 
 1. Install [Homebrew](https://brew.sh/) (using instructions on the homepage)
-1. Run `brew install --cask 1password`
-1. Open 1Password Desktop and login using Emergency Kit QR Code   
+1. Setup 1Password
+  1. Run `brew install --cask 1password`
+  1. Open 1Password Desktop and login using Emergency Kit QR Code
+  1. In Settings > Developer, enable "Use the SSH Agent" and "Integrate with 1Password CLI"
 1. Clone this repo: `TARGET_DIR=$HOME/dotfiles; git clone https://github.com/bradymholt/dotfiles.git $TARGET_DIR && cd $TARGET_DIR`
 1. Run setup script: `./setup.sh`
 
