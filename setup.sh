@@ -57,6 +57,8 @@ defaults import com.knollsoft.Rectangle "${DOTFILES_PATH}/com.knollsoft.Rectangl
 echo "Importing Retangle settings"
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "${DOTFILES_PATH}"
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+echo "Configuring SSH private key"
 chmod 600 ~/.ssh/id_rsa
+ssh-add --apple-use-keychain ~/.ssh/id_rsa
 
 printf "\n\033[0;32mDone!\n"
