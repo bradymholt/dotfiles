@@ -92,5 +92,21 @@
   },
 
   "svelte.enable-ts-plugin": true,
-  "terminal.integrated.enableMultiLinePasteWarning": false  
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[erb]": {
+    "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
