@@ -1,8 +1,0 @@
-# YNAB OAuth Configuration
-# Create your OAuth app at: https://app.ynab.com/settings/developer
-
-# Your YNAB OAuth Client ID
-VITE_YNAB_CLIENT_ID=
-
-# Your OAuth Redirect URI (must match what you configured in YNAB)
-VITE_YNAB_REDIRECT_URI=http://localhost:5173

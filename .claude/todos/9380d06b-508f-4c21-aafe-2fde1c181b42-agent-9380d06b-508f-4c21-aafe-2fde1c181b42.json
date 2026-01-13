@@ -1,8 +1,0 @@
-[
-  {
-    "content": "Replace magic string '/dev/ampex' with proper route helper or config-based approach",
-    "status": "completed",
-    "priority": "high",
-    "id": "1"
-  }
-]
