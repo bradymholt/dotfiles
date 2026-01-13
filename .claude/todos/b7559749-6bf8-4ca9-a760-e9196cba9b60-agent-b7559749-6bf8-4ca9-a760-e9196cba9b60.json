@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Examine DataDog RUM implementation in 'datadog-rum' branch",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Review Insight Hub documentation and requirements",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Implement Insight Hub performance monitoring configuration",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Add Insight Hub initialization to the application",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Test the implementation",
+    "status": "completed",
+    "id": "5"
+  }
+]

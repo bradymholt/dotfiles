@@ -1,0 +1,8 @@
+[
+  {
+    "content": "Fix AmplitudeClient to use default server URLs when nil is passed",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  }
+]

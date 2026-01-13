@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Examine existing ampex_mock_controller.rb structure",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Find and examine Dev::TestingSupportController for integration",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Implement flag/experiment tracking in ampex_mock_controller",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Add runtime management actions to Dev::TestingSupportController",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Find existing specs for AnalyticsService and AmplitudeClient",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Find existing specs for ClientSideSettingsHelper",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Find existing specs for clientConstants.ts",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Update or create specs for new server URL configuration",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "4"
+  }
+]

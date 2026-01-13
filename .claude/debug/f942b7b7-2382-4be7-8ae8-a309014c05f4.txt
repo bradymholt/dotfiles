@@ -1,0 +1,140 @@
+2025-12-08T20:32:19.731Z [DEBUG] Watching for changes in setting files /Users/bholt/dev/ynab-mcp/.claude/settings.local.json...
+2025-12-08T20:32:19.774Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2025-12-08T20:32:19.774Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2025-12-08T20:32:19.774Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2025-12-08T20:32:19.774Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2025-12-08T20:32:19.774Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2025-12-08T20:32:19.776Z [DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Bash(python:*)"]
+2025-12-08T20:32:19.779Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2025-12-08T20:32:19.791Z [DEBUG] Total LSP servers loaded: 0
+2025-12-08T20:32:19.791Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2025-12-08T20:32:19.791Z [DEBUG] LSP manager initialized with 0 servers
+2025-12-08T20:32:19.791Z [DEBUG] LSP server manager initialized successfully
+2025-12-08T20:32:19.792Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2025-12-08T20:32:19.794Z [DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/bholt/.claude/skills, project=/Users/bholt/dev/ynab-mcp/.claude/skills
+2025-12-08T20:32:19.794Z [DEBUG] >>>>> getPluginSkills CALLED <<<<<
+2025-12-08T20:32:19.796Z [DEBUG] installed_plugins.json doesn't exist yet at /Users/bholt/.claude/plugins/installed_plugins.json, returning empty object
+2025-12-08T20:32:19.806Z [DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+2025-12-08T20:32:19.807Z [DEBUG] Looking for shell config file: /Users/bholt/.zshrc
+2025-12-08T20:32:19.807Z [DEBUG] Snapshots directory: /Users/bholt/.claude/shell-snapshots
+2025-12-08T20:32:19.807Z [DEBUG] Creating snapshot at: /Users/bholt/.claude/shell-snapshots/snapshot-zsh-1765225939807-v8l4nq.sh
+2025-12-08T20:32:19.807Z [DEBUG] Shell binary exists: true
+2025-12-08T20:32:19.807Z [DEBUG] Execution timeout: 10000ms
+2025-12-08T20:32:19.807Z [DEBUG] Writing to temp file: /Users/bholt/.claude/todos/f942b7b7-2382-4be7-8ae8-a309014c05f4-agent-f942b7b7-2382-4be7-8ae8-a309014c05f4.json.tmp.93136.1765225939807
+2025-12-08T20:32:19.812Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-12-08T20:32:19.813Z [DEBUG] Renaming /Users/bholt/.claude/todos/f942b7b7-2382-4be7-8ae8-a309014c05f4-agent-f942b7b7-2382-4be7-8ae8-a309014c05f4.json.tmp.93136.1765225939807 to /Users/bholt/.claude/todos/f942b7b7-2382-4be7-8ae8-a309014c05f4-agent-f942b7b7-2382-4be7-8ae8-a309014c05f4.json
+2025-12-08T20:32:19.813Z [DEBUG] File /Users/bholt/.claude/todos/f942b7b7-2382-4be7-8ae8-a309014c05f4-agent-f942b7b7-2382-4be7-8ae8-a309014c05f4.json written atomically
+2025-12-08T20:32:19.819Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.93136.1765225939819
+2025-12-08T20:32:19.819Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:32:19.823Z [DEBUG] Temp file written successfully, size: 63794 bytes
+2025-12-08T20:32:19.823Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:32:19.823Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.93136.1765225939819 to /Users/bholt/.claude.json
+2025-12-08T20:32:19.823Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:32:19.824Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2025-12-08T20:32:19.824Z [DEBUG] Total plugin skills loaded: 0
+2025-12-08T20:32:19.824Z [DEBUG] Total plugin commands loaded: 0
+2025-12-08T20:32:19.824Z [DEBUG] Registered 0 hooks from 0 plugins
+2025-12-08T20:32:19.824Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+2025-12-08T20:32:19.824Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills
+2025-12-08T20:32:19.825Z [DEBUG] Total plugin agents loaded: 0
+2025-12-08T20:32:19.844Z [DEBUG] MCP server "ynab": Initializing HTTP transport to https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp
+2025-12-08T20:32:19.844Z [DEBUG] MCP server "ynab": Node version: v22.14.0, Platform: darwin
+2025-12-08T20:32:19.844Z [DEBUG] MCP server "ynab": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+2025-12-08T20:32:19.848Z [DEBUG] MCP server "ynab": Proxy options: default
+2025-12-08T20:32:19.848Z [DEBUG] MCP server "ynab": HTTP transport options: {"url":"https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp","headers":{"User-Agent":"claude-code/2.0.61"},"hasAuthProvider":true,"timeoutMs":60000}
+2025-12-08T20:32:19.849Z [DEBUG] MCP server "ynab": HTTP transport created successfully
+2025-12-08T20:32:19.858Z [DEBUG] MCP server "ynab": Client created, setting up request handler
+2025-12-08T20:32:19.859Z [DEBUG] MCP server "ynab": Starting connection with timeout of 30000ms
+2025-12-08T20:32:19.859Z [DEBUG] MCP server "ynab": Testing basic HTTP connectivity to https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp
+2025-12-08T20:32:19.859Z [DEBUG] MCP server "ynab": Parsed URL: host=vast-beach-57647-0efe6389be1d.herokuapp.com, port=default, protocol=https:
+2025-12-08T20:32:19.860Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.93136.1765225939860
+2025-12-08T20:32:19.860Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:32:19.864Z [DEBUG] Temp file written successfully, size: 63794 bytes
+2025-12-08T20:32:19.864Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:32:19.864Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.93136.1765225939860 to /Users/bholt/.claude.json
+2025-12-08T20:32:19.865Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:32:19.867Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2025-12-08T20:32:19.867Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:32:19.867Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2025-12-08T20:32:19.884Z [DEBUG] MCP server "ynab": No token data found
+2025-12-08T20:32:19.890Z [DEBUG] Git remote URL: git@github.com:ynab/ynab-mcp.git
+2025-12-08T20:32:19.890Z [DEBUG] Parsed repository: ynab/ynab-mcp from git@github.com:ynab/ynab-mcp.git
+2025-12-08T20:32:19.890Z [DEBUG] Parsed repository: ynab/ynab-mcp from URL: git@github.com:ynab/ynab-mcp.git
+2025-12-08T20:32:19.890Z [DEBUG] Path /Users/bholt/dev/ynab-mcp already tracked for repo ynab/ynab-mcp
+2025-12-08T20:32:19.913Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.93136.1765225939913
+2025-12-08T20:32:19.913Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:32:19.917Z [DEBUG] Temp file written successfully, size: 63689 bytes
+2025-12-08T20:32:19.917Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:32:19.917Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.93136.1765225939913 to /Users/bholt/.claude.json
+2025-12-08T20:32:19.918Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:32:19.923Z [DEBUG] performStartupChecks called
+2025-12-08T20:32:19.924Z [DEBUG] Starting background plugin installations
+2025-12-08T20:32:19.924Z [DEBUG] performBackgroundPluginInstallations called
+2025-12-08T20:32:19.930Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2025-12-08T20:32:19.930Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2025-12-08T20:32:19.940Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2025-12-08T20:32:19.940Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:32:19.940Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2025-12-08T20:32:19.941Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2025-12-08T20:32:19.941Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:32:19.941Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2025-12-08T20:32:19.942Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/bholt/.asdf/installs/nodejs/22.14.0/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg)
+2025-12-08T20:32:19.987Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.93136.1765225939987
+2025-12-08T20:32:19.987Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:32:19.991Z [DEBUG] Temp file written successfully, size: 63689 bytes
+2025-12-08T20:32:19.991Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:32:19.991Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.93136.1765225939987 to /Users/bholt/.claude.json
+2025-12-08T20:32:19.992Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:32:19.993Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.93136.1765225939993
+2025-12-08T20:32:19.993Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:32:19.997Z [DEBUG] Temp file written successfully, size: 63689 bytes
+2025-12-08T20:32:19.997Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:32:19.997Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.93136.1765225939993 to /Users/bholt/.claude.json
+2025-12-08T20:32:19.998Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:32:19.999Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.93136.1765225939999
+2025-12-08T20:32:19.999Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:32:20.003Z [DEBUG] Temp file written successfully, size: 63689 bytes
+2025-12-08T20:32:20.004Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:32:20.004Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.93136.1765225939999 to /Users/bholt/.claude.json
+2025-12-08T20:32:20.004Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:32:20.005Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.93136.1765225940005
+2025-12-08T20:32:20.005Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:32:20.009Z [DEBUG] Temp file written successfully, size: 63689 bytes
+2025-12-08T20:32:20.009Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:32:20.009Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.93136.1765225940005 to /Users/bholt/.claude.json
+2025-12-08T20:32:20.009Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:32:20.010Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.93136.1765225940010
+2025-12-08T20:32:20.010Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:32:20.014Z [DEBUG] Temp file written successfully, size: 63794 bytes
+2025-12-08T20:32:20.014Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:32:20.014Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.93136.1765225940010 to /Users/bholt/.claude.json
+2025-12-08T20:32:20.015Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:32:20.035Z [DEBUG] Shell snapshot created successfully (48151 bytes)
+2025-12-08T20:32:20.035Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2025-12-08T20:32:20.761Z [DEBUG] Stream started - received first chunk
+2025-12-08T20:32:21.723Z [DEBUG] MCP server "ynab": No token data found
+2025-12-08T20:32:22.289Z [DEBUG] MCP server "ynab": HTTP Connection failed after 2445ms: Protected resource https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp/mcp does not match expected https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp (or origin) (code: none, errno: none)
+2025-12-08T20:32:22.290Z [ERROR] MCP server "ynab" Error: Protected resource https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp/mcp does not match expected https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp (or origin)
+2025-12-08T20:32:22.292Z [DEBUG] MCP server "ynab": Connection failed after 2448ms: Protected resource https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp/mcp does not match expected https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp (or origin)
+2025-12-08T20:32:22.293Z [ERROR] MCP server "ynab" Connection failed: Protected resource https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp/mcp does not match expected https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp (or origin)
+2025-12-08T20:32:22.300Z [DEBUG] Skills and commands included in Skill tool:
+2025-12-08T20:32:22.300Z [DEBUG] Slash commands included in SlashCommand tool:
+2025-12-08T20:32:22.338Z [DEBUG] MCP server "ynab": No token data found
+2025-12-08T20:32:22.641Z [DEBUG] Stream started - received first chunk
+2025-12-08T20:32:23.450Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-12-08T20:32:23.450Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:32:23.450Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-12-08T20:32:31.815Z [DEBUG] MCP server "ynab": Using redirect port: 54137
+2025-12-08T20:32:32.058Z [DEBUG] MCP server "ynab": Fetched OAuth metadata with scope: NONE
+2025-12-08T20:32:32.060Z [DEBUG] MCP server "ynab": Generated new OAuth state
+2025-12-08T20:32:32.062Z [DEBUG] MCP server "ynab": Starting SDK auth
+2025-12-08T20:32:32.063Z [DEBUG] MCP server "ynab": Server URL: https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp
+2025-12-08T20:32:32.245Z [DEBUG] MCP server "ynab": No client info found
+2025-12-08T20:32:32.284Z [DEBUG] MCP server "ynab": SDK auth error: xi: HTTP 404: Invalid OAuth error response: SyntaxError: Unexpected token 'N', "Not Found" is not valid JSON. Raw body: Not Found
+2025-12-08T20:32:32.285Z [DEBUG] MCP server "ynab": MCP OAuth server cleaned up
+2025-12-08T20:32:33.268Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-12-08T20:32:33.268Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:32:33.268Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-12-08T20:32:34.889Z [DEBUG] Getting matching hook commands for SessionEnd with query: other
+2025-12-08T20:32:34.889Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:32:34.889Z [DEBUG] Matched 0 unique hooks for query "other" (0 before deduplication)

@@ -1,0 +1,12 @@
+[
+  {
+    "content": "Fix import path issue in ynab_web window.d.ts",
+    "status": "completed",
+    "activeForm": "Fixing import path issue in ynab_web window.d.ts"
+  },
+  {
+    "content": "Fix globalThis type issue in shared library",
+    "status": "in_progress",
+    "activeForm": "Fixing globalThis type issue in shared library"
+  }
+]

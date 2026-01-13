@@ -1,0 +1,37 @@
+[
+  {
+    "content": "Examine the current Castle.js implementation in castle.ts",
+    "status": "completed",
+    "activeForm": "Examining the current Castle.js implementation in castle.ts"
+  },
+  {
+    "content": "Start development server to test Castle.js functionality",
+    "status": "completed",
+    "activeForm": "Starting development server to test Castle.js functionality"
+  },
+  {
+    "content": "Create test page to debug Castle.js functionality",
+    "status": "in_progress",
+    "activeForm": "Creating test page to debug Castle.js functionality"
+  },
+  {
+    "content": "Check if window.Castle.createRequestToken() is available and functioning",
+    "status": "pending",
+    "activeForm": "Checking if window.Castle.createRequestToken() is available and functioning"
+  },
+  {
+    "content": "Test the setCastleRequestToken function and header injection mechanism",
+    "status": "pending",
+    "activeForm": "Testing the setCastleRequestToken function and header injection mechanism"
+  },
+  {
+    "content": "Inspect network requests in browser dev tools for X-Castle-Request-Token headers",
+    "status": "pending",
+    "activeForm": "Inspecting network requests in browser dev tools for X-Castle-Request-Token headers"
+  },
+  {
+    "content": "Compare Castle.js 2.6.2 vs 2.8.0 behavior and identify breaking changes",
+    "status": "pending",
+    "activeForm": "Comparing Castle.js 2.6.2 vs 2.8.0 behavior and identifying breaking changes"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Examine the new_passwords_controller.ts file to understand its structure",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Check imports and dependencies for YNABAnalytics and AnalyticsEvents",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Add YNABAnalytics.trackEvent call to the controller on page load",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  }
+]

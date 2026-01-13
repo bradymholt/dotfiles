@@ -1,0 +1,339 @@
+2025-12-08T20:26:59.990Z [DEBUG] Watching for changes in setting files /Users/bholt/dev/ynab-mcp/.claude/settings.local.json...
+2025-12-08T20:27:00.037Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2025-12-08T20:27:00.037Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2025-12-08T20:27:00.037Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2025-12-08T20:27:00.037Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2025-12-08T20:27:00.037Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2025-12-08T20:27:00.040Z [DEBUG] Applying permission update: Adding 2 allow rule(s) to destination 'localSettings': ["Bash(python:*)","mcp__ynab__getBudgets"]
+2025-12-08T20:27:00.042Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2025-12-08T20:27:00.055Z [DEBUG] Total LSP servers loaded: 0
+2025-12-08T20:27:00.055Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2025-12-08T20:27:00.055Z [DEBUG] LSP manager initialized with 0 servers
+2025-12-08T20:27:00.055Z [DEBUG] LSP server manager initialized successfully
+2025-12-08T20:27:00.055Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2025-12-08T20:27:00.058Z [DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/bholt/.claude/skills, project=/Users/bholt/dev/ynab-mcp/.claude/skills
+2025-12-08T20:27:00.058Z [DEBUG] >>>>> getPluginSkills CALLED <<<<<
+2025-12-08T20:27:00.059Z [DEBUG] installed_plugins.json doesn't exist yet at /Users/bholt/.claude/plugins/installed_plugins.json, returning empty object
+2025-12-08T20:27:00.071Z [DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+2025-12-08T20:27:00.071Z [DEBUG] Looking for shell config file: /Users/bholt/.zshrc
+2025-12-08T20:27:00.071Z [DEBUG] Snapshots directory: /Users/bholt/.claude/shell-snapshots
+2025-12-08T20:27:00.071Z [DEBUG] Creating snapshot at: /Users/bholt/.claude/shell-snapshots/snapshot-zsh-1765225620071-eeqk6b.sh
+2025-12-08T20:27:00.071Z [DEBUG] Shell binary exists: true
+2025-12-08T20:27:00.071Z [DEBUG] Execution timeout: 10000ms
+2025-12-08T20:27:00.072Z [DEBUG] Writing to temp file: /Users/bholt/.claude/todos/45bd40a0-a65d-41f9-8d23-4f107ebeaf39-agent-45bd40a0-a65d-41f9-8d23-4f107ebeaf39.json.tmp.88118.1765225620072
+2025-12-08T20:27:00.078Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-12-08T20:27:00.078Z [DEBUG] Renaming /Users/bholt/.claude/todos/45bd40a0-a65d-41f9-8d23-4f107ebeaf39-agent-45bd40a0-a65d-41f9-8d23-4f107ebeaf39.json.tmp.88118.1765225620072 to /Users/bholt/.claude/todos/45bd40a0-a65d-41f9-8d23-4f107ebeaf39-agent-45bd40a0-a65d-41f9-8d23-4f107ebeaf39.json
+2025-12-08T20:27:00.078Z [DEBUG] File /Users/bholt/.claude/todos/45bd40a0-a65d-41f9-8d23-4f107ebeaf39-agent-45bd40a0-a65d-41f9-8d23-4f107ebeaf39.json written atomically
+2025-12-08T20:27:00.083Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.88118.1765225620083
+2025-12-08T20:27:00.083Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:27:00.087Z [DEBUG] Temp file written successfully, size: 63794 bytes
+2025-12-08T20:27:00.087Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:27:00.087Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.88118.1765225620083 to /Users/bholt/.claude.json
+2025-12-08T20:27:00.087Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:27:00.088Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2025-12-08T20:27:00.088Z [DEBUG] Total plugin skills loaded: 0
+2025-12-08T20:27:00.088Z [DEBUG] Total plugin commands loaded: 0
+2025-12-08T20:27:00.088Z [DEBUG] Registered 0 hooks from 0 plugins
+2025-12-08T20:27:00.089Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+2025-12-08T20:27:00.089Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills
+2025-12-08T20:27:00.089Z [DEBUG] Total plugin agents loaded: 0
+2025-12-08T20:27:00.109Z [DEBUG] MCP server "ynab": Initializing HTTP transport to https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp
+2025-12-08T20:27:00.109Z [DEBUG] MCP server "ynab": Node version: v22.14.0, Platform: darwin
+2025-12-08T20:27:00.109Z [DEBUG] MCP server "ynab": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+2025-12-08T20:27:00.113Z [DEBUG] MCP server "ynab": Proxy options: default
+2025-12-08T20:27:00.113Z [DEBUG] MCP server "ynab": HTTP transport options: {"url":"https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp","headers":{"User-Agent":"claude-code/2.0.61"},"hasAuthProvider":true,"timeoutMs":60000}
+2025-12-08T20:27:00.113Z [DEBUG] MCP server "ynab": HTTP transport created successfully
+2025-12-08T20:27:00.123Z [DEBUG] MCP server "ynab": Client created, setting up request handler
+2025-12-08T20:27:00.123Z [DEBUG] MCP server "ynab": Starting connection with timeout of 30000ms
+2025-12-08T20:27:00.123Z [DEBUG] MCP server "ynab": Testing basic HTTP connectivity to https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp
+2025-12-08T20:27:00.123Z [DEBUG] MCP server "ynab": Parsed URL: host=vast-beach-57647-0efe6389be1d.herokuapp.com, port=default, protocol=https:
+2025-12-08T20:27:00.125Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.88118.1765225620125
+2025-12-08T20:27:00.125Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:27:00.129Z [DEBUG] Temp file written successfully, size: 63794 bytes
+2025-12-08T20:27:00.129Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:27:00.129Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.88118.1765225620125 to /Users/bholt/.claude.json
+2025-12-08T20:27:00.129Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:27:00.133Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2025-12-08T20:27:00.133Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:27:00.133Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2025-12-08T20:27:00.150Z [DEBUG] MCP server "ynab": No token data found
+2025-12-08T20:27:00.155Z [DEBUG] Git remote URL: git@github.com:ynab/ynab-mcp.git
+2025-12-08T20:27:00.155Z [DEBUG] Parsed repository: ynab/ynab-mcp from git@github.com:ynab/ynab-mcp.git
+2025-12-08T20:27:00.155Z [DEBUG] Parsed repository: ynab/ynab-mcp from URL: git@github.com:ynab/ynab-mcp.git
+2025-12-08T20:27:00.155Z [DEBUG] Path /Users/bholt/dev/ynab-mcp already tracked for repo ynab/ynab-mcp
+2025-12-08T20:27:00.178Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.88118.1765225620178
+2025-12-08T20:27:00.178Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:27:00.182Z [DEBUG] Temp file written successfully, size: 63689 bytes
+2025-12-08T20:27:00.182Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:27:00.182Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.88118.1765225620178 to /Users/bholt/.claude.json
+2025-12-08T20:27:00.182Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:27:00.189Z [DEBUG] performStartupChecks called
+2025-12-08T20:27:00.189Z [DEBUG] Starting background plugin installations
+2025-12-08T20:27:00.189Z [DEBUG] performBackgroundPluginInstallations called
+2025-12-08T20:27:00.195Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2025-12-08T20:27:00.195Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2025-12-08T20:27:00.206Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2025-12-08T20:27:00.206Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:27:00.206Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2025-12-08T20:27:00.206Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2025-12-08T20:27:00.206Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:27:00.206Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2025-12-08T20:27:00.207Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/bholt/.asdf/installs/nodejs/22.14.0/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg)
+2025-12-08T20:27:00.207Z [DEBUG] Summarizing all 2 messages (~0 tokens)
+2025-12-08T20:27:00.239Z [DEBUG] Shell snapshot created successfully (48151 bytes)
+2025-12-08T20:27:00.269Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.88118.1765225620269
+2025-12-08T20:27:00.269Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:27:00.274Z [DEBUG] Temp file written successfully, size: 63689 bytes
+2025-12-08T20:27:00.274Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:27:00.274Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.88118.1765225620269 to /Users/bholt/.claude.json
+2025-12-08T20:27:00.274Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:27:00.275Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.88118.1765225620275
+2025-12-08T20:27:00.275Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:27:00.279Z [DEBUG] Temp file written successfully, size: 63689 bytes
+2025-12-08T20:27:00.279Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:27:00.279Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.88118.1765225620275 to /Users/bholt/.claude.json
+2025-12-08T20:27:00.279Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:27:00.280Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.88118.1765225620280
+2025-12-08T20:27:00.280Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:27:00.284Z [DEBUG] Temp file written successfully, size: 63689 bytes
+2025-12-08T20:27:00.284Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:27:00.284Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.88118.1765225620280 to /Users/bholt/.claude.json
+2025-12-08T20:27:00.285Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:27:00.285Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.88118.1765225620285
+2025-12-08T20:27:00.285Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:27:00.289Z [DEBUG] Temp file written successfully, size: 63689 bytes
+2025-12-08T20:27:00.289Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:27:00.289Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.88118.1765225620285 to /Users/bholt/.claude.json
+2025-12-08T20:27:00.289Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:27:00.290Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.88118.1765225620290
+2025-12-08T20:27:00.290Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:27:00.294Z [DEBUG] Temp file written successfully, size: 63794 bytes
+2025-12-08T20:27:00.294Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:27:00.294Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.88118.1765225620290 to /Users/bholt/.claude.json
+2025-12-08T20:27:00.294Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:27:00.317Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2025-12-08T20:27:00.511Z [DEBUG] MCP server "ynab": No token data found
+2025-12-08T20:27:00.654Z [DEBUG] MCP server "ynab": No token data found
+2025-12-08T20:27:00.654Z [DEBUG] MCP server "ynab": Successfully connected to http server in 545ms
+2025-12-08T20:27:00.655Z [DEBUG] MCP server "ynab": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"YNAB MCP Server","version":"2.13.1"}}
+2025-12-08T20:27:00.674Z [DEBUG] MCP server "ynab": No token data found
+2025-12-08T20:27:00.693Z [DEBUG] MCP server "ynab": No token data found
+2025-12-08T20:27:00.712Z [DEBUG] MCP server "ynab": No token data found
+2025-12-08T20:27:01.036Z [DEBUG] Stream started - received first chunk
+2025-12-08T20:27:01.147Z [DEBUG] Stream started - received first chunk
+2025-12-08T20:27:02.022Z [DEBUG] Skills and commands included in Skill tool:
+2025-12-08T20:27:02.022Z [DEBUG] Slash commands included in SlashCommand tool:
+2025-12-08T20:27:02.159Z [DEBUG] Stream started - received first chunk
+2025-12-08T20:27:02.675Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-12-08T20:27:02.675Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:27:02.675Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-12-08T20:27:03.649Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.88118.1765225623649
+2025-12-08T20:27:03.649Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:27:03.655Z [DEBUG] Temp file written successfully, size: 63794 bytes
+2025-12-08T20:27:03.655Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:27:03.655Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.88118.1765225623649 to /Users/bholt/.claude.json
+2025-12-08T20:27:03.657Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:27:05.456Z [DEBUG] MCP server "ynab": No token data found
+2025-12-08T20:27:05.528Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2025-12-08T20:27:09.749Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-12-08T20:27:09.749Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:27:09.749Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-12-08T20:27:11.371Z [DEBUG] MCP server "ynab": Using redirect port: 57437
+2025-12-08T20:27:11.674Z [DEBUG] MCP server "ynab": Generated new OAuth state
+2025-12-08T20:27:11.676Z [DEBUG] MCP server "ynab": Starting SDK auth
+2025-12-08T20:27:11.677Z [DEBUG] MCP server "ynab": Server URL: https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp
+2025-12-08T20:27:11.919Z [DEBUG] MCP server "ynab": No client info found
+2025-12-08T20:27:11.955Z [DEBUG] MCP server "ynab": SDK auth error: xi: HTTP 404: Invalid OAuth error response: SyntaxError: Unexpected token 'N', "Not Found" is not valid JSON. Raw body: Not Found
+2025-12-08T20:27:11.955Z [DEBUG] MCP server "ynab": MCP OAuth server cleaned up
+2025-12-08T20:27:21.380Z [DEBUG] MCP server "ynab": HTTP transport closed/disconnected, attempting automatic reconnection
+2025-12-08T20:27:21.382Z [DEBUG] MCP server "ynab": Initializing HTTP transport to https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp
+2025-12-08T20:27:21.383Z [DEBUG] MCP server "ynab": Node version: v22.14.0, Platform: darwin
+2025-12-08T20:27:21.383Z [DEBUG] MCP server "ynab": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+2025-12-08T20:27:21.384Z [DEBUG] MCP server "ynab": Proxy options: default
+2025-12-08T20:27:21.384Z [DEBUG] MCP server "ynab": HTTP transport options: {"url":"https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp","headers":{"User-Agent":"claude-code/2.0.61"},"hasAuthProvider":true,"timeoutMs":60000}
+2025-12-08T20:27:21.385Z [DEBUG] MCP server "ynab": HTTP transport created successfully
+2025-12-08T20:27:21.390Z [DEBUG] MCP server "ynab": Client created, setting up request handler
+2025-12-08T20:27:21.390Z [DEBUG] MCP server "ynab": Starting connection with timeout of 30000ms
+2025-12-08T20:27:21.390Z [DEBUG] MCP server "ynab": Testing basic HTTP connectivity to https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp
+2025-12-08T20:27:21.391Z [DEBUG] MCP server "ynab": Parsed URL: host=vast-beach-57647-0efe6389be1d.herokuapp.com, port=default, protocol=https:
+2025-12-08T20:27:21.391Z [DEBUG] MCP server "ynab": HTTP connection dropped after 20s uptime
+2025-12-08T20:27:21.391Z [DEBUG] MCP server "ynab": Connection error: SSE stream disconnected: AbortError: This operation was aborted
+2025-12-08T20:27:21.423Z [DEBUG] MCP server "ynab": No token data found
+2025-12-08T20:27:21.448Z [DEBUG] MCP server "ynab": No token data found
+2025-12-08T20:27:21.592Z [DEBUG] MCP server "ynab": No token data found
+2025-12-08T20:27:21.652Z [DEBUG] MCP server "ynab": No token data found
+2025-12-08T20:27:21.653Z [DEBUG] MCP server "ynab": Successfully connected to http server in 271ms
+2025-12-08T20:27:21.653Z [DEBUG] MCP server "ynab": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"YNAB MCP Server","version":"2.13.1"}}
+2025-12-08T20:27:21.676Z [DEBUG] MCP server "ynab": No token data found
+2025-12-08T20:27:21.698Z [DEBUG] MCP server "ynab": No token data found
+2025-12-08T20:27:21.720Z [DEBUG] MCP server "ynab": No token data found
+2025-12-08T20:27:22.004Z [DEBUG] MCP server "ynab": HTTP reconnection successful after 622ms (attempt 1)
+2025-12-08T20:27:22.007Z [DEBUG] FileHistory: Added snapshot for 7a69d218-ab3a-41a5-8742-b6b8fae944eb, tracking 0 files
+2025-12-08T20:27:22.009Z [DEBUG] UserCommandMessage rendering: "mcp" (args: "none")
+2025-12-08T20:27:22.009Z [DEBUG] isSkillFormat: false, prefix: "/"
+2025-12-08T20:27:22.032Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.88118.1765225642032
+2025-12-08T20:27:22.032Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:27:22.037Z [DEBUG] Temp file written successfully, size: 63794 bytes
+2025-12-08T20:27:22.037Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:27:22.037Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.88118.1765225642032 to /Users/bholt/.claude.json
+2025-12-08T20:27:22.038Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:27:22.118Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2025-12-08T20:27:24.832Z [DEBUG] MCP server "ynab": No token data found
+2025-12-08T20:27:24.901Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2025-12-08T20:27:26.895Z [DEBUG] MCP server "ynab": Using redirect port: 61506
+2025-12-08T20:27:27.216Z [DEBUG] MCP server "ynab": Generated new OAuth state
+2025-12-08T20:27:27.218Z [DEBUG] MCP server "ynab": Starting SDK auth
+2025-12-08T20:27:27.220Z [DEBUG] MCP server "ynab": Server URL: https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp
+2025-12-08T20:27:27.480Z [DEBUG] MCP server "ynab": No client info found
+2025-12-08T20:27:27.517Z [DEBUG] MCP server "ynab": SDK auth error: xi: HTTP 404: Invalid OAuth error response: SyntaxError: Unexpected token 'N', "Not Found" is not valid JSON. Raw body: Not Found
+2025-12-08T20:27:27.517Z [DEBUG] MCP server "ynab": MCP OAuth server cleaned up
+2025-12-08T20:28:04.200Z [DEBUG] MCP server "ynab": Using redirect port: 59373
+2025-12-08T20:28:04.461Z [DEBUG] MCP server "ynab": Fetched OAuth metadata with scope: NONE
+2025-12-08T20:28:04.462Z [DEBUG] MCP server "ynab": Generated new OAuth state
+2025-12-08T20:28:04.464Z [DEBUG] MCP server "ynab": Starting SDK auth
+2025-12-08T20:28:04.465Z [DEBUG] MCP server "ynab": Server URL: https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp
+2025-12-08T20:28:04.650Z [DEBUG] MCP server "ynab": No client info found
+2025-12-08T20:28:04.687Z [DEBUG] MCP server "ynab": SDK auth error: xi: HTTP 404: Invalid OAuth error response: SyntaxError: Unexpected token 'N', "Not Found" is not valid JSON. Raw body: Not Found
+2025-12-08T20:28:04.688Z [DEBUG] MCP server "ynab": MCP OAuth server cleaned up
+2025-12-08T20:28:10.047Z [DEBUG] MCP server "ynab": Using redirect port: 53632
+2025-12-08T20:28:10.279Z [DEBUG] MCP server "ynab": Fetched OAuth metadata with scope: NONE
+2025-12-08T20:28:10.279Z [DEBUG] MCP server "ynab": Generated new OAuth state
+2025-12-08T20:28:10.280Z [DEBUG] MCP server "ynab": Starting SDK auth
+2025-12-08T20:28:10.281Z [DEBUG] MCP server "ynab": Server URL: https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp
+2025-12-08T20:28:10.463Z [DEBUG] MCP server "ynab": No client info found
+2025-12-08T20:28:10.499Z [DEBUG] MCP server "ynab": SDK auth error: xi: HTTP 404: Invalid OAuth error response: SyntaxError: Unexpected token 'N', "Not Found" is not valid JSON. Raw body: Not Found
+2025-12-08T20:28:10.499Z [DEBUG] MCP server "ynab": MCP OAuth server cleaned up
+2025-12-08T20:28:17.644Z [DEBUG] MCP server "ynab": Using redirect port: 55391
+2025-12-08T20:28:17.881Z [DEBUG] MCP server "ynab": Fetched OAuth metadata with scope: NONE
+2025-12-08T20:28:17.883Z [DEBUG] MCP server "ynab": Generated new OAuth state
+2025-12-08T20:28:17.885Z [DEBUG] MCP server "ynab": Starting SDK auth
+2025-12-08T20:28:17.885Z [DEBUG] MCP server "ynab": Server URL: https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp
+2025-12-08T20:28:18.071Z [DEBUG] MCP server "ynab": No client info found
+2025-12-08T20:28:18.111Z [DEBUG] MCP server "ynab": SDK auth error: xi: HTTP 404: Invalid OAuth error response: SyntaxError: Unexpected token 'N', "Not Found" is not valid JSON. Raw body: Not Found
+2025-12-08T20:28:18.112Z [DEBUG] MCP server "ynab": MCP OAuth server cleaned up
+2025-12-08T20:28:37.196Z [DEBUG] MCP server "ynab": Using redirect port: 61546
+2025-12-08T20:28:37.436Z [DEBUG] MCP server "ynab": Fetched OAuth metadata with scope: NONE
+2025-12-08T20:28:37.437Z [DEBUG] MCP server "ynab": Generated new OAuth state
+2025-12-08T20:28:37.438Z [DEBUG] MCP server "ynab": Starting SDK auth
+2025-12-08T20:28:37.438Z [DEBUG] MCP server "ynab": Server URL: https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp
+2025-12-08T20:28:37.627Z [DEBUG] MCP server "ynab": No client info found
+2025-12-08T20:28:37.666Z [DEBUG] MCP server "ynab": SDK auth error: xi: HTTP 404: Invalid OAuth error response: SyntaxError: Unexpected token 'N', "Not Found" is not valid JSON. Raw body: Not Found
+2025-12-08T20:28:37.667Z [DEBUG] MCP server "ynab": MCP OAuth server cleaned up
+2025-12-08T20:30:12.940Z [DEBUG] MCP server "ynab": Using redirect port: 58076
+2025-12-08T20:30:13.239Z [DEBUG] MCP server "ynab": Fetched OAuth metadata with scope: NONE
+2025-12-08T20:30:13.240Z [DEBUG] MCP server "ynab": Generated new OAuth state
+2025-12-08T20:30:13.243Z [DEBUG] MCP server "ynab": Starting SDK auth
+2025-12-08T20:30:13.243Z [DEBUG] MCP server "ynab": Server URL: https://vast-beach-57647-0efe6389be1d.herokuapp.com/mcp
+2025-12-08T20:30:13.429Z [DEBUG] MCP server "ynab": No client info found
+2025-12-08T20:30:13.468Z [DEBUG] MCP server "ynab": SDK auth error: xi: HTTP 404: Invalid OAuth error response: SyntaxError: Unexpected token 'N', "Not Found" is not valid JSON. Raw body: Not Found
+2025-12-08T20:30:13.468Z [DEBUG] MCP server "ynab": MCP OAuth server cleaned up
+2025-12-08T20:31:00.353Z [DEBUG] UserCommandMessage rendering: "mcp" (args: "none")
+2025-12-08T20:31:00.353Z [DEBUG] isSkillFormat: false, prefix: "/"
+2025-12-08T20:31:00.464Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2025-12-08T20:31:08.265Z [DEBUG] [TeammateMailbox] getTeammateMailboxAttachments called: agentId=undefined, CLAUDE_CODE_AGENT_NAME=undefined, CLAUDE_CODE_AGENT_TYPE=undefined, resolved agentName=undefined, teamName=undefined
+2025-12-08T20:31:08.265Z [DEBUG] [TeammateMailbox] Not checking inbox - no agent name (neither CLAUDE_CODE_AGENT_NAME nor CLAUDE_CODE_AGENT_TYPE set)
+2025-12-08T20:31:08.265Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-08T20:31:08.265Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-08T20:31:08.265Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-08T20:31:08.265Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-08T20:31:08.280Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2025-12-08T20:31:08.280Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:31:08.280Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-12-08T20:31:08.281Z [DEBUG] FileHistory: Making snapshot for message b8a4354e-45b3-47b7-9a51-444b1e7b4342
+2025-12-08T20:31:08.281Z [DEBUG] FileHistory: Added snapshot for b8a4354e-45b3-47b7-9a51-444b1e7b4342, tracking 0 files
+2025-12-08T20:31:08.290Z [DEBUG] Total plugin output styles loaded: 0
+2025-12-08T20:31:09.429Z [DEBUG] Stream started - received first chunk
+2025-12-08T20:31:10.887Z [DEBUG] Stream started - received first chunk
+2025-12-08T20:31:18.508Z [DEBUG] executePreToolHooks called for tool: Read
+2025-12-08T20:31:18.508Z [DEBUG] executePreToolHooks called for tool: Read
+2025-12-08T20:31:18.512Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-12-08T20:31:18.512Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:31:18.512Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-12-08T20:31:18.512Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-12-08T20:31:18.512Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:31:18.512Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-12-08T20:31:18.537Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-12-08T20:31:18.537Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:31:18.537Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-12-08T20:31:18.537Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-12-08T20:31:18.537Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:31:18.537Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-12-08T20:31:18.543Z [DEBUG] [TeammateMailbox] getTeammateMailboxAttachments called: agentId=undefined, CLAUDE_CODE_AGENT_NAME=undefined, CLAUDE_CODE_AGENT_TYPE=undefined, resolved agentName=undefined, teamName=undefined
+2025-12-08T20:31:18.543Z [DEBUG] [TeammateMailbox] Not checking inbox - no agent name (neither CLAUDE_CODE_AGENT_NAME nor CLAUDE_CODE_AGENT_TYPE set)
+2025-12-08T20:31:18.543Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-08T20:31:18.543Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-08T20:31:18.544Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-08T20:31:18.544Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-08T20:31:21.397Z [DEBUG] Stream started - received first chunk
+2025-12-08T20:31:22.912Z [DEBUG] executePreToolHooks called for tool: Glob
+2025-12-08T20:31:22.912Z [DEBUG] executePreToolHooks called for tool: Glob
+2025-12-08T20:31:22.915Z [DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+2025-12-08T20:31:22.915Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:31:22.915Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2025-12-08T20:31:22.915Z [DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+2025-12-08T20:31:22.915Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:31:22.915Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2025-12-08T20:31:22.984Z [DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+2025-12-08T20:31:22.984Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:31:22.984Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2025-12-08T20:31:23.008Z [DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+2025-12-08T20:31:23.008Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:31:23.008Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2025-12-08T20:31:23.012Z [DEBUG] [TeammateMailbox] getTeammateMailboxAttachments called: agentId=undefined, CLAUDE_CODE_AGENT_NAME=undefined, CLAUDE_CODE_AGENT_TYPE=undefined, resolved agentName=undefined, teamName=undefined
+2025-12-08T20:31:23.012Z [DEBUG] [TeammateMailbox] Not checking inbox - no agent name (neither CLAUDE_CODE_AGENT_NAME nor CLAUDE_CODE_AGENT_TYPE set)
+2025-12-08T20:31:23.012Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-08T20:31:23.012Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-08T20:31:23.012Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-08T20:31:23.012Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-08T20:31:25.760Z [DEBUG] Stream started - received first chunk
+2025-12-08T20:31:28.056Z [DEBUG] executePreToolHooks called for tool: Glob
+2025-12-08T20:31:28.060Z [DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+2025-12-08T20:31:28.060Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:31:28.060Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2025-12-08T20:31:28.060Z [DEBUG] executePreToolHooks called for tool: Read
+2025-12-08T20:31:28.062Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-12-08T20:31:28.062Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:31:28.062Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-12-08T20:31:28.081Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-12-08T20:31:28.081Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:31:28.081Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-12-08T20:31:28.098Z [DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+2025-12-08T20:31:28.098Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:31:28.098Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2025-12-08T20:31:28.102Z [DEBUG] [TeammateMailbox] getTeammateMailboxAttachments called: agentId=undefined, CLAUDE_CODE_AGENT_NAME=undefined, CLAUDE_CODE_AGENT_TYPE=undefined, resolved agentName=undefined, teamName=undefined
+2025-12-08T20:31:28.102Z [DEBUG] [TeammateMailbox] Not checking inbox - no agent name (neither CLAUDE_CODE_AGENT_NAME nor CLAUDE_CODE_AGENT_TYPE set)
+2025-12-08T20:31:28.102Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-08T20:31:28.102Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-08T20:31:28.102Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-08T20:31:28.102Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-08T20:31:30.651Z [DEBUG] Stream started - received first chunk
+2025-12-08T20:31:33.029Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-12-08T20:31:33.033Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-12-08T20:31:33.033Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:31:33.033Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-12-08T20:31:33.041Z [DEBUG] tree-sitter: WASM files not found
+2025-12-08T20:31:33.917Z [DEBUG] Stream started - received first chunk
+2025-12-08T20:31:34.063Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "cat:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+2025-12-08T20:31:34.077Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2025-12-08T20:31:34.081Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Bash
+2025-12-08T20:31:34.081Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:31:34.081Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-12-08T20:31:35.696Z [DEBUG] Detected change to /Users/bholt/dev/ynab-mcp/.claude/settings.local.json
+2025-12-08T20:31:35.703Z [DEBUG] Settings changed from localSettings, updating AppState
+2025-12-08T20:31:35.705Z [DEBUG] Replacing all allow rules for destination 'localSettings' with 1 rule(s): ["Bash(python:*)"]
+2025-12-08T20:31:39.995Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2025-12-08T20:31:41.209Z [DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+2025-12-08T20:31:41.209Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:31:41.209Z [DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)

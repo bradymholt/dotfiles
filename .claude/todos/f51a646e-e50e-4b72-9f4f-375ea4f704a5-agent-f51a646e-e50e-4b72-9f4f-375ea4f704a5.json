@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Explore existing SDK routes and controllers to understand patterns",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create new route for /sdk/v2/vardata",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Create new controller for vardata endpoint",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  }
+]

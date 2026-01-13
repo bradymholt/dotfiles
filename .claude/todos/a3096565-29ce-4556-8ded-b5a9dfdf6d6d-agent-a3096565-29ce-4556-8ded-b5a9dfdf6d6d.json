@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Examine the failing test in reset_password_spec.rb",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Check the reset password implementation to understand session creation",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Identify why sessions are being created on mobile vs not locally",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "3"
+  }
+]

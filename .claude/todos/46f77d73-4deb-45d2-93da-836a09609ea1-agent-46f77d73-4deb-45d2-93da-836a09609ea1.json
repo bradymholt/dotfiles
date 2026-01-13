@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Update the controller to handle form submission and email lookup",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Update the view to include form for email input and results display",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Add proper route for form POST request",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Test the functionality works correctly",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  }
+]

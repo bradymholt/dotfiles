@@ -1,0 +1,34 @@
+2026-01-08T13:42:51.349Z [DEBUG] [SLOW OPERATION DETECTED] execSyncWithDefaults_DEPRECATED (15.8ms): security find-generic-password -a $USER -w -s "Claude Code"
+2026-01-08T13:42:51.371Z [DEBUG] [SLOW OPERATION DETECTED] execSyncWithDefaults_DEPRECATED (14.4ms): security find-generic-password -a "bholt" -w -s "Claude Code-credentials"
+2026-01-08T13:42:51.394Z [DEBUG] update: Starting update check
+2026-01-08T13:42:51.394Z [DEBUG] update: Running diagnostic
+2026-01-08T13:42:51.401Z [DEBUG] Git remote URL: null
+2026-01-08T13:42:51.401Z [DEBUG] No git remote URL found
+2026-01-08T13:42:51.401Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2026-01-08T13:42:51.521Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.35815.1767879771521
+2026-01-08T13:42:51.521Z [DEBUG] Preserving file permissions: 100644
+2026-01-08T13:42:51.527Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (5.4ms)
+2026-01-08T13:42:51.527Z [DEBUG] Temp file written successfully, size: 87961 bytes
+2026-01-08T13:42:51.527Z [DEBUG] Applied original permissions to temp file
+2026-01-08T13:42:51.527Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.35815.1767879771521 to /Users/bholt/.claude.json
+2026-01-08T13:42:51.527Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-08T13:42:51.667Z [DEBUG] update: Installation type: npm-global
+2026-01-08T13:42:51.667Z [DEBUG] update: Config install method: global
+2026-01-08T13:42:51.667Z [DEBUG] update: Checking npm registry for latest version
+2026-01-08T13:42:51.667Z [DEBUG] update: Package URL: @anthropic-ai/claude-code
+2026-01-08T13:42:51.667Z [DEBUG] update: Running: npm view @anthropic-ai/claude-code@latest version
+2026-01-08T13:42:51.684Z [DEBUG] Remote settings: No settings found (404)
+2026-01-08T13:42:51.684Z [DEBUG] Programmatic settings change notification for policySettings
+2026-01-08T13:42:52.081Z [DEBUG] update: Latest version from npm: 2.1.1
+2026-01-08T13:42:52.081Z [DEBUG] update: Update method determined: global
+2026-01-08T13:42:52.081Z [DEBUG] update: useLocalUpdate: false
+2026-01-08T13:42:52.081Z [DEBUG] update: Calling installGlobalPackage() for global update
+2026-01-08T13:43:11.099Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.35815.1767879791099
+2026-01-08T13:43:11.099Z [DEBUG] Preserving file permissions: 100644
+2026-01-08T13:43:11.115Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (16.1ms)
+2026-01-08T13:43:11.115Z [DEBUG] Temp file written successfully, size: 87961 bytes
+2026-01-08T13:43:11.115Z [DEBUG] Applied original permissions to temp file
+2026-01-08T13:43:11.115Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.35815.1767879791099 to /Users/bholt/.claude.json
+2026-01-08T13:43:11.115Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-08T13:43:11.115Z [DEBUG] update: Installation status: success
+2026-01-08T13:43:11.117Z [DEBUG] Skipping SessionEnd:other hook execution - workspace trust not accepted

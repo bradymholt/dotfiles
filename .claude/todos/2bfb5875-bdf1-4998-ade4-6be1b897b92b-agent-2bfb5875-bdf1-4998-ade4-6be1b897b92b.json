@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Examine the Rails controller and service structure to understand the nested call pattern",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Identify the ERB file change that triggers the issue",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Analyze potential Rails reloading/compilation conflicts",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Provide solution to prevent the timeout/hanging issue",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Find alternative solution without dev conditionals in main code",
+    "status": "completed",
+    "priority": "high",
+    "id": "5"
+  }
+]

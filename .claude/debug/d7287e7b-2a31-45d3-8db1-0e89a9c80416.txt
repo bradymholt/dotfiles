@@ -1,0 +1,275 @@
+2026-01-12T19:39:59.515Z [DEBUG] Watching for changes in setting files /Users/bholt/.claude, /Users/bholt/dev/evergreen/.claude...
+2026-01-12T19:39:59.543Z [DEBUG] [init] configureGlobalMTLS starting
+2026-01-12T19:39:59.543Z [DEBUG] [init] configureGlobalMTLS complete
+2026-01-12T19:39:59.543Z [DEBUG] [init] configureGlobalAgents starting
+2026-01-12T19:39:59.543Z [DEBUG] [init] configureGlobalAgents complete
+2026-01-12T19:39:59.563Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-01-12T19:39:59.563Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-01-12T19:39:59.563Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-01-12T19:39:59.566Z [DEBUG] Applying permission update: Adding 12 allow rule(s) to destination 'localSettings': ["Bash(git checkout:*)","Bash(bin/rails generate:*)","Bash(bundle exec rubocop:*)","Bash(psql:*)","Bash(yarn test:web:*)","Bash(yarn run:*)","Bash(gh run list:*)","Bash(gh run view:*)","Bash(git show:*)","Bash(yarn test_webdb:*)","Bash(git worktree add:*)","Bash(yarn test:*)"]
+2026-01-12T19:39:59.566Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-01-12T19:39:59.567Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-01-12T19:39:59.567Z [DEBUG] Total LSP servers loaded: 0
+2026-01-12T19:39:59.567Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-01-12T19:39:59.567Z [DEBUG] LSP manager initialized with 0 servers
+2026-01-12T19:39:59.567Z [DEBUG] [STARTUP] MCP configs loaded in 1ms
+2026-01-12T19:39:59.567Z [DEBUG] LSP server manager initialized successfully
+2026-01-12T19:39:59.567Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-01-12T19:39:59.568Z [DEBUG] [STARTUP] Running setup()...
+2026-01-12T19:39:59.570Z [DEBUG] Stats cache stale (2026-01-07), processing 2026-01-08 to 2026-01-11 in background
+2026-01-12T19:39:59.575Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/bholt/.claude/skills, project=[]
+2026-01-12T19:39:59.577Z [DEBUG] Loaded 0 installed plugins from /Users/bholt/.claude/plugins/installed_plugins.json
+2026-01-12T19:39:59.586Z [DEBUG] Writing to temp file: /Users/bholt/.claude/todos/d7287e7b-2a31-45d3-8db1-0e89a9c80416-agent-d7287e7b-2a31-45d3-8db1-0e89a9c80416.json.tmp.13353.1768246799586
+2026-01-12T19:39:59.586Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-12T19:39:59.586Z [DEBUG] Renaming /Users/bholt/.claude/todos/d7287e7b-2a31-45d3-8db1-0e89a9c80416-agent-d7287e7b-2a31-45d3-8db1-0e89a9c80416.json.tmp.13353.1768246799586 to /Users/bholt/.claude/todos/d7287e7b-2a31-45d3-8db1-0e89a9c80416-agent-d7287e7b-2a31-45d3-8db1-0e89a9c80416.json
+2026-01-12T19:39:59.586Z [DEBUG] File /Users/bholt/.claude/todos/d7287e7b-2a31-45d3-8db1-0e89a9c80416-agent-d7287e7b-2a31-45d3-8db1-0e89a9c80416.json written atomically
+2026-01-12T19:39:59.589Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-01-12T19:39:59.589Z [DEBUG] Total plugin skills loaded: 0
+2026-01-12T19:39:59.589Z [DEBUG] Total plugin commands loaded: 0
+2026-01-12T19:39:59.590Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-01-12T19:39:59.592Z [DEBUG] [STARTUP] setup() completed in 24ms
+2026-01-12T19:39:59.592Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-01-12T19:39:59.594Z [DEBUG] Total plugin agents loaded: 0
+2026-01-12T19:39:59.594Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, legacy commands: 0)
+2026-01-12T19:39:59.595Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills
+2026-01-12T19:39:59.595Z [DEBUG] [STARTUP] Commands and agents loaded in 3ms
+2026-01-12T19:39:59.595Z [DEBUG] [STARTUP] Running showSetupScreens()...
+2026-01-12T19:39:59.595Z [DEBUG] [render] initYoga starting
+2026-01-12T19:39:59.608Z [DEBUG] [render] initYoga complete
+2026-01-12T19:39:59.616Z [DEBUG] [STARTUP] showSetupScreens() completed in 21ms
+2026-01-12T19:39:59.624Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2026-01-12T19:39:59.626Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.13353.1768246799626
+2026-01-12T19:39:59.626Z [DEBUG] Preserving file permissions: 100644
+2026-01-12T19:39:59.626Z [DEBUG] Temp file written successfully, size: 94253 bytes
+2026-01-12T19:39:59.626Z [DEBUG] Applied original permissions to temp file
+2026-01-12T19:39:59.626Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.13353.1768246799626 to /Users/bholt/.claude.json
+2026-01-12T19:39:59.627Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-12T19:39:59.629Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-01-12T19:39:59.629Z [DEBUG] Found 0 hook matchers in settings
+2026-01-12T19:39:59.629Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-01-12T19:39:59.629Z [DEBUG] [render] initYoga starting
+2026-01-12T19:39:59.629Z [DEBUG] [render] initYoga complete
+2026-01-12T19:39:59.630Z [DEBUG] Git remote URL: git@github.com:ynab/evergreen.git
+2026-01-12T19:39:59.630Z [DEBUG] Parsed repository: ynab/evergreen from git@github.com:ynab/evergreen.git
+2026-01-12T19:39:59.630Z [DEBUG] Parsed repository: ynab/evergreen from URL: git@github.com:ynab/evergreen.git
+2026-01-12T19:39:59.630Z [DEBUG] Path /Users/bholt/dev/evergreen already tracked for repo ynab/evergreen
+2026-01-12T19:39:59.633Z [DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+2026-01-12T19:39:59.633Z [DEBUG] Looking for shell config file: /Users/bholt/.zshrc
+2026-01-12T19:39:59.633Z [DEBUG] Snapshots directory: /Users/bholt/.claude/shell-snapshots
+2026-01-12T19:39:59.634Z [DEBUG] Creating snapshot at: /Users/bholt/.claude/shell-snapshots/snapshot-zsh-1768246799633-zkyt3m.sh
+2026-01-12T19:39:59.634Z [DEBUG] Shell binary exists: true
+2026-01-12T19:39:59.634Z [DEBUG] Execution timeout: 10000ms
+2026-01-12T19:39:59.639Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.13353.1768246799639
+2026-01-12T19:39:59.639Z [DEBUG] Preserving file permissions: 100644
+2026-01-12T19:39:59.639Z [DEBUG] Temp file written successfully, size: 27236 bytes
+2026-01-12T19:39:59.639Z [DEBUG] Applied original permissions to temp file
+2026-01-12T19:39:59.639Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.13353.1768246799639 to /Users/bholt/.claude.json
+2026-01-12T19:39:59.639Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-12T19:39:59.668Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.13353.1768246799668
+2026-01-12T19:39:59.668Z [DEBUG] Preserving file permissions: 100644
+2026-01-12T19:39:59.669Z [DEBUG] Temp file written successfully, size: 27163 bytes
+2026-01-12T19:39:59.669Z [DEBUG] Applied original permissions to temp file
+2026-01-12T19:39:59.669Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.13353.1768246799668 to /Users/bholt/.claude.json
+2026-01-12T19:39:59.670Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-12T19:39:59.677Z [DEBUG] [REPL:mount] REPL mounted, disabled=false
+2026-01-12T19:39:59.683Z [DEBUG] Official marketplace auto-install skipped: already_attempted
+2026-01-12T19:39:59.683Z [DEBUG] performStartupChecks called
+2026-01-12T19:39:59.684Z [DEBUG] Starting background plugin installations
+2026-01-12T19:39:59.684Z [DEBUG] performBackgroundPluginInstallations called
+2026-01-12T19:39:59.687Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-12T19:39:59.688Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-12T19:39:59.693Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-12T19:39:59.694Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2026-01-12T19:39:59.694Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2026-01-12T19:39:59.733Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/bholt/.asdf/installs/nodejs/22.14.0/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg)
+2026-01-12T19:39:59.748Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.13353.1768246799748
+2026-01-12T19:39:59.748Z [DEBUG] Preserving file permissions: 100644
+2026-01-12T19:39:59.750Z [DEBUG] Temp file written successfully, size: 27163 bytes
+2026-01-12T19:39:59.750Z [DEBUG] Applied original permissions to temp file
+2026-01-12T19:39:59.750Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.13353.1768246799748 to /Users/bholt/.claude.json
+2026-01-12T19:39:59.751Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-12T19:39:59.758Z [DEBUG] Stats cache saved successfully (lastComputedDate: 2026-01-11)
+2026-01-12T19:39:59.758Z [DEBUG] Stats cache updated with 7 new sessions
+2026-01-12T19:39:59.776Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2026-01-12T19:39:59.776Z [DEBUG] Found 0 hook matchers in settings
+2026-01-12T19:39:59.776Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2026-01-12T19:39:59.776Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2026-01-12T19:39:59.776Z [DEBUG] Found 0 hook matchers in settings
+2026-01-12T19:39:59.776Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2026-01-12T19:39:59.776Z [DEBUG] Getting matching hook commands for SubagentStart with query: Bash
+2026-01-12T19:39:59.776Z [DEBUG] Found 0 hook matchers in settings
+2026-01-12T19:39:59.776Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-12T19:39:59.779Z [DEBUG] Skills and commands included in Skill tool:
+2026-01-12T19:39:59.783Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-12T19:39:59.783Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-12T19:39:59.783Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-12T19:39:59.796Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.13353.1768246799796
+2026-01-12T19:39:59.796Z [DEBUG] Preserving file permissions: 100644
+2026-01-12T19:39:59.796Z [DEBUG] Temp file written successfully, size: 27162 bytes
+2026-01-12T19:39:59.796Z [DEBUG] Applied original permissions to temp file
+2026-01-12T19:39:59.796Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.13353.1768246799796 to /Users/bholt/.claude.json
+2026-01-12T19:39:59.796Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-12T19:39:59.797Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.13353.1768246799797
+2026-01-12T19:39:59.797Z [DEBUG] Preserving file permissions: 100644
+2026-01-12T19:39:59.797Z [DEBUG] Temp file written successfully, size: 27163 bytes
+2026-01-12T19:39:59.797Z [DEBUG] Applied original permissions to temp file
+2026-01-12T19:39:59.797Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.13353.1768246799797 to /Users/bholt/.claude.json
+2026-01-12T19:39:59.797Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-12T19:39:59.816Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.13353.1768246799816
+2026-01-12T19:39:59.816Z [DEBUG] Preserving file permissions: 100644
+2026-01-12T19:39:59.816Z [DEBUG] Temp file written successfully, size: 27163 bytes
+2026-01-12T19:39:59.816Z [DEBUG] Applied original permissions to temp file
+2026-01-12T19:39:59.816Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.13353.1768246799816 to /Users/bholt/.claude.json
+2026-01-12T19:39:59.816Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-12T19:39:59.817Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.13353.1768246799817
+2026-01-12T19:39:59.817Z [DEBUG] Preserving file permissions: 100644
+2026-01-12T19:39:59.817Z [DEBUG] Temp file written successfully, size: 27236 bytes
+2026-01-12T19:39:59.817Z [DEBUG] Applied original permissions to temp file
+2026-01-12T19:39:59.817Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.13353.1768246799817 to /Users/bholt/.claude.json
+2026-01-12T19:39:59.817Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-12T19:39:59.818Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-12T19:39:59.818Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-01-12T19:39:59.818Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-01-12T19:39:59.822Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-12T19:39:59.822Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-12T19:39:59.826Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-12T19:39:59.834Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-12T19:39:59.834Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-12T19:39:59.834Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-12T19:39:59.834Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-12T19:39:59.835Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-12T19:39:59.835Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-12T19:39:59.857Z [DEBUG] Remote settings: No settings found (404)
+2026-01-12T19:39:59.857Z [DEBUG] Programmatic settings change notification for policySettings
+2026-01-12T19:39:59.857Z [DEBUG] Plugin hooks: reloading due to policySettings change
+2026-01-12T19:39:59.858Z [DEBUG] Settings changed from policySettings, updating AppState
+2026-01-12T19:39:59.859Z [DEBUG] Replacing all allow rules for destination 'localSettings' with 12 rule(s): ["Bash(git checkout:*)","Bash(bin/rails generate:*)","Bash(bundle exec rubocop:*)","Bash(psql:*)","Bash(yarn test:web:*)","Bash(yarn run:*)","Bash(gh run list:*)","Bash(gh run view:*)","Bash(git show:*)","Bash(yarn test_webdb:*)","Bash(git worktree add:*)","Bash(yarn test:*)"]
+2026-01-12T19:39:59.859Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-01-12T19:39:59.860Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-01-12T19:39:59.864Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.13353.1768246799864
+2026-01-12T19:39:59.864Z [DEBUG] Preserving file permissions: 100644
+2026-01-12T19:39:59.864Z [DEBUG] Temp file written successfully, size: 27236 bytes
+2026-01-12T19:39:59.864Z [DEBUG] Applied original permissions to temp file
+2026-01-12T19:39:59.864Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.13353.1768246799864 to /Users/bholt/.claude.json
+2026-01-12T19:39:59.864Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-12T19:39:59.877Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2026-01-12T19:39:59.890Z [DEBUG] Shell snapshot created successfully (48417 bytes)
+2026-01-12T19:40:00.401Z [DEBUG] AutoUpdater: Detected installation type: npm-global
+2026-01-12T19:40:00.401Z [DEBUG] AutoUpdater: Using global update method
+2026-01-12T19:40:00.678Z [DEBUG] Successfully refreshed marketplace: claude-plugins-official
+2026-01-12T19:40:00.678Z [DEBUG] Plugin autoupdate: checking installed plugins
+2026-01-12T19:40:00.679Z [DEBUG] Stream started - received first chunk
+2026-01-12T19:40:01.302Z [ERROR] Error streaming, falling back to non-streaming mode: {"type":"error","error":{"details":null,"type":"overloaded_error","message":"Overloaded"},"request_id":"req_011CX43wBeZbVt3vMVngd78T"}
+2026-01-12T19:40:01.302Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-12T19:40:01.302Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-12T19:40:01.302Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-12T19:40:01.598Z [ERROR] Error streaming, falling back to non-streaming mode: {"type":"error","error":{"details":null,"type":"overloaded_error","message":"Overloaded"},"request_id":"req_011CX43wCwwv3ZDwkySfWSvp"}
+2026-01-12T19:40:01.598Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-12T19:40:01.598Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-12T19:40:01.598Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-12T19:40:01.723Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.13353.1768246801723
+2026-01-12T19:40:01.723Z [DEBUG] Preserving file permissions: 100644
+2026-01-12T19:40:01.723Z [DEBUG] Temp file written successfully, size: 27236 bytes
+2026-01-12T19:40:01.723Z [DEBUG] Applied original permissions to temp file
+2026-01-12T19:40:01.723Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.13353.1768246801723 to /Users/bholt/.claude.json
+2026-01-12T19:40:01.723Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-12T19:40:02.885Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-01-12T19:40:02.885Z [DEBUG] Found 0 hook matchers in settings
+2026-01-12T19:40:02.885Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-12T19:40:08.627Z [ERROR] Error in non-streaming fallback: Repeated 529 Overloaded errors
+2026-01-12T19:40:08.628Z [ERROR] Error: Error: Repeated 529 Overloaded errors
+    at l31 (file:///Users/bholt/.asdf/installs/nodejs/22.14.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1077:36826)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async KD9 (file:///Users/bholt/.asdf/installs/nodejs/22.14.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:4551:6497)
+    at async file:///Users/bholt/.asdf/installs/nodejs/22.14.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:4549:3748
+    at async A70 (file:///Users/bholt/.asdf/installs/nodejs/22.14.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1562:1998)
+    at async jDA (file:///Users/bholt/.asdf/installs/nodejs/22.14.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:4549:3718)
+    at async yN (file:///Users/bholt/.asdf/installs/nodejs/22.14.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3437:11930)
+    at async f_ (file:///Users/bholt/.asdf/installs/nodejs/22.14.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3247:14762)
+    at async file:///Users/bholt/.asdf/installs/nodejs/22.14.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3247:21970
+2026-01-12T19:40:08.648Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-01-12T19:40:08.648Z [DEBUG] Found 0 hook matchers in settings
+2026-01-12T19:40:08.648Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-12T19:40:09.395Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-01-12T19:40:09.395Z [DEBUG] executePreToolHooks called for tool: Glob
+2026-01-12T19:40:09.396Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-01-12T19:40:09.396Z [DEBUG] Found 0 hook matchers in settings
+2026-01-12T19:40:09.396Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-12T19:40:09.396Z [DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+2026-01-12T19:40:09.396Z [DEBUG] Found 0 hook matchers in settings
+2026-01-12T19:40:09.396Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-01-12T19:40:09.418Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-01-12T19:40:09.420Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-12T19:40:09.420Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-12T19:40:09.421Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-12T19:40:10.814Z [ERROR] Error streaming, falling back to non-streaming mode: {"type":"error","error":{"details":null,"type":"overloaded_error","message":"Overloaded"},"request_id":"req_011CX43wtdA9U94jV7Daq8ms"}
+2026-01-12T19:40:10.814Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-12T19:40:10.814Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-12T19:40:10.814Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-12T19:40:20.482Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-01-12T19:40:20.482Z [DEBUG] Found 0 hook matchers in settings
+2026-01-12T19:40:20.482Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-12T19:40:21.541Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-12T19:40:21.541Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-12T19:40:21.541Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-12T19:40:21.541Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-12T19:40:21.556Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-01-12T19:40:21.556Z [DEBUG] Found 0 hook matchers in settings
+2026-01-12T19:40:21.556Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-12T19:40:21.556Z [DEBUG] FileHistory: Added snapshot for 4e81d75c-4184-4587-ab7e-a6bd260d3602, tracking 0 files
+2026-01-12T19:40:21.566Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-01-12T19:40:21.566Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-12T19:40:21.566Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-12T19:40:21.566Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-12T19:40:21.567Z [DEBUG] Total plugin output styles loaded: 0
+2026-01-12T19:40:21.573Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-12T19:40:21.576Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-12T19:40:21.576Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-12T19:40:21.576Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-12T19:40:21.995Z [DEBUG] Stream started - received first chunk
+2026-01-12T19:40:23.835Z [ERROR] Error streaming, falling back to non-streaming mode: {"type":"error","error":{"details":null,"type":"overloaded_error","message":"Overloaded"},"request_id":"req_011CX43xncn9h4ca8GsKkzTD"}
+2026-01-12T19:40:23.835Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-12T19:40:23.835Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-12T19:40:23.835Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-12T19:40:37.731Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-12T19:40:37.736Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-12T19:40:37.736Z [DEBUG] Found 0 hook matchers in settings
+2026-01-12T19:40:37.736Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-12T19:40:37.754Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-12T19:40:37.754Z [DEBUG] Found 0 hook matchers in settings
+2026-01-12T19:40:37.754Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-12T19:40:37.759Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-12T19:40:37.759Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-12T19:40:37.759Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-12T19:40:37.759Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-12T19:40:37.765Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-12T19:40:37.769Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-12T19:40:37.769Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-12T19:40:37.769Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-12T19:40:40.531Z [DEBUG] Stream started - received first chunk
+2026-01-12T19:40:44.665Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-01-12T19:40:44.665Z [DEBUG] Found 0 hook matchers in settings
+2026-01-12T19:40:44.665Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-12T19:40:44.665Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-01-12T19:40:44.673Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-12T19:40:44.673Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-12T19:40:44.673Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-12T19:40:44.681Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.13353.1768246844681
+2026-01-12T19:40:44.681Z [DEBUG] Preserving file permissions: 100644
+2026-01-12T19:40:44.681Z [DEBUG] Temp file written successfully, size: 27236 bytes
+2026-01-12T19:40:44.681Z [DEBUG] Applied original permissions to temp file
+2026-01-12T19:40:44.681Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.13353.1768246844681 to /Users/bholt/.claude.json
+2026-01-12T19:40:44.681Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-12T19:40:44.682Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.13353.1768246844682
+2026-01-12T19:40:44.682Z [DEBUG] Preserving file permissions: 100644
+2026-01-12T19:40:44.682Z [DEBUG] Temp file written successfully, size: 27236 bytes
+2026-01-12T19:40:44.682Z [DEBUG] Applied original permissions to temp file
+2026-01-12T19:40:44.682Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.13353.1768246844682 to /Users/bholt/.claude.json
+2026-01-12T19:40:44.682Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-12T19:40:49.500Z [DEBUG] Stream started - received first chunk
+2026-01-12T19:40:52.472Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-01-12T19:40:52.472Z [DEBUG] Found 0 hook matchers in settings
+2026-01-12T19:40:52.472Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-12T19:41:17.866Z [DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+2026-01-12T19:41:17.867Z [DEBUG] Found 0 hook matchers in settings
+2026-01-12T19:41:17.867Z [DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)

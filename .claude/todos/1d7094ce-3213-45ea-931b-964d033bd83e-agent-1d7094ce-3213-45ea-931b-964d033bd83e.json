@@ -1,0 +1,50 @@
+[
+  {
+    "content": "Examine current testing_support controller and routes structure",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create dev namespace directory structure",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Move testing_support_controller.rb to controllers/dev/",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Move testing_support views to views/dev/testing_support/",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Update routes to use /dev/testing_support namespace",
+    "status": "completed",
+    "priority": "high",
+    "id": "5"
+  },
+  {
+    "content": "Update controller class to be namespaced under Dev module",
+    "status": "completed",
+    "priority": "high",
+    "id": "6"
+  },
+  {
+    "content": "Update all references to the new namespaced paths",
+    "status": "completed",
+    "priority": "medium",
+    "id": "7"
+  },
+  {
+    "content": "Update tests to use new namespaced paths and controller",
+    "status": "completed",
+    "priority": "medium",
+    "id": "8"
+  }
+]

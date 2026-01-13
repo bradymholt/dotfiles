@@ -1,0 +1,232 @@
+import { useState } from 'react'
+import * as ynab from 'ynab'
+import './App.css'
+
+function App() {
+  const [accessToken, setAccessToken] = useState('')
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
+  const [budgets, setBudgets] = useState([])
+  const [selectedBudget, setSelectedBudget] = useState('')
+  const [recurringCharges, setRecurringCharges] = useState([])
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
+
+  const handleLogin = async () => {
+    if (!accessToken.trim()) {
+      setError('Please enter your YNAB Personal Access Token')
+      return
+    }
+
+    setLoading(true)
+    setError('')
+
+    try {
+      const ynabAPI = new ynab.API(accessToken)
+      const budgetsResponse = await ynabAPI.budgets.getBudgets()
+      setBudgets(budgetsResponse.data.budgets)
+      setIsAuthenticated(true)
+    } catch (err) {
+      setError('Failed to authenticate. Please check your access token.')
+      console.error(err)
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  const analyzeRecurringCharges = (transactions) => {
+    const payeeGroups = {}
+
+    transactions.forEach(transaction => {
+      if (transaction.amount >= 0) return // Skip income
+      if (transaction.transfer_account_id) return // Skip transfers
+      if (!transaction.payee_name || transaction.payee_name === 'Starting Balance') return
+
+      const payeeName = transaction.payee_name
+      if (!payeeGroups[payeeName]) {
+        payeeGroups[payeeName] = []
+      }
+
+      payeeGroups[payeeName].push({
+        date: transaction.date,
+        amount: transaction.amount,
+        memo: transaction.memo,
+        account_name: transaction.account_name
+      })
+    })
+
+    const recurring = []
+
+    Object.entries(payeeGroups).forEach(([payeeName, transactions]) => {
+      if (transactions.length < 2) return
+
+      transactions.sort((a, b) => new Date(a.date) - new Date(b.date))
+
+      const amounts = transactions.map(t => t.amount)
+      const avgAmount = amounts.reduce((sum, amt) => sum + amt, 0) / amounts.length
+      const amountVariance = amounts.some(amt => Math.abs(amt - avgAmount) / Math.abs(avgAmount) > 0.2)
+
+      const intervals = []
+      for (let i = 1; i < transactions.length; i++) {
+        const daysDiff = (new Date(transactions[i].date) - new Date(transactions[i-1].date)) / (1000 * 60 * 60 * 24)
+        intervals.push(daysDiff)
+      }
+
+      const avgInterval = intervals.reduce((sum, int) => sum + int, 0) / intervals.length
+      const hasRegularInterval = avgInterval > 7 && avgInterval < 400
+
+      if (hasRegularInterval) {
+        recurring.push({
+          payeeName,
+          count: transactions.length,
+          avgAmount: avgAmount / -1000,
+          avgIntervalDays: Math.round(avgInterval),
+          lastDate: transactions[transactions.length - 1].date,
+          transactions: transactions.map(t => ({
+            ...t,
+            amount: t.amount / -1000
+          }))
+        })
+      }
+    })
+
+    recurring.sort((a, b) => b.avgAmount - a.avgAmount)
+    return recurring
+  }
+
+  const handleAnalyze = async () => {
+    if (!selectedBudget) {
+      setError('Please select a budget')
+      return
+    }
+
+    setLoading(true)
+    setError('')
+
+    try {
+      const ynabAPI = new ynab.API(accessToken)
+      const transactionsResponse = await ynabAPI.transactions.getTransactions(selectedBudget)
+      const recurring = analyzeRecurringCharges(transactionsResponse.data.transactions)
+      setRecurringCharges(recurring)
+    } catch (err) {
+      setError('Failed to fetch transactions. Please try again.')
+      console.error(err)
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  if (!isAuthenticated) {
+    return (
+      <div className="container">
+        <h1>YNAB Recurring Charges Finder</h1>
+        <p>Find recurring subscriptions and charges in your budget</p>
+
+        <div className="login-form">
+          <label htmlFor="token">Personal Access Token:</label>
+          <input
+            id="token"
+            type="password"
+            value={accessToken}
+            onChange={(e) => setAccessToken(e.target.value)}
+            placeholder="Enter your YNAB token"
+            onKeyPress={(e) => e.key === 'Enter' && handleLogin()}
+          />
+          <button onClick={handleLogin} disabled={loading}>
+            {loading ? 'Connecting...' : 'Connect to YNAB'}
+          </button>
+
+          <div className="help-text">
+            <p>Get your token from YNAB Account Settings → Developer Settings → Personal Access Tokens</p>
+            <a href="https://app.ynab.com/settings/developer" target="_blank" rel="noopener noreferrer">
+              Open YNAB Developer Settings
+            </a>
+          </div>
+        </div>
+
+        {error && <div className="error">{error}</div>}
+      </div>
+    )
+  }
+
+  return (
+    <div className="container">
+      <h1>YNAB Recurring Charges Finder</h1>
+
+      <div className="budget-selector">
+        <label htmlFor="budget">Select Budget:</label>
+        <select
+          id="budget"
+          value={selectedBudget}
+          onChange={(e) => setSelectedBudget(e.target.value)}
+        >
+          <option value="">Choose a budget...</option>
+          {budgets.map(budget => (
+            <option key={budget.id} value={budget.id}>
+              {budget.name}
+            </option>
+          ))}
+        </select>
+        <button onClick={handleAnalyze} disabled={loading || !selectedBudget}>
+          {loading ? 'Analyzing...' : 'Find Recurring Charges'}
+        </button>
+      </div>
+
+      {error && <div className="error">{error}</div>}
+
+      {recurringCharges.length > 0 && (
+        <div className="results">
+          <h2>Found {recurringCharges.length} Recurring Charges</h2>
+
+          {recurringCharges.map((charge, idx) => (
+            <div key={idx} className="charge-card">
+              <div className="charge-header">
+                <h3>{charge.payeeName}</h3>
+                <div className="charge-stats">
+                  <span className="amount">${charge.avgAmount.toFixed(2)}</span>
+                  <span className="frequency">Every ~{charge.avgIntervalDays} days</span>
+                  <span className="count">{charge.count} transactions</span>
+                </div>
+              </div>
+
+              <div className="last-charge">
+                Last charge: {new Date(charge.lastDate).toLocaleDateString()}
+              </div>
+
+              <details>
+                <summary>View all transactions</summary>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Date</th>
+                      <th>Amount</th>
+                      <th>Account</th>
+                      <th>Memo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {charge.transactions.map((txn, i) => (
+                      <tr key={i}>
+                        <td>{new Date(txn.date).toLocaleDateString()}</td>
+                        <td>${txn.amount.toFixed(2)}</td>
+                        <td>{txn.account_name}</td>
+                        <td>{txn.memo || '-'}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </details>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {!loading && recurringCharges.length === 0 && selectedBudget && (
+        <div className="no-results">
+          <p>No recurring charges found. Try analyzing your budget!</p>
+        </div>
+      )}
+    </div>
+  )
+}
+
+export default App

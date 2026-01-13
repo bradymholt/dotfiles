@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Check if AMPEX_API_KEY and AMPEX_SERVER_URL are configured",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Debug if ampex service fetch() is being called and what data it returns",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Verify if 'ampex-testing' experiment exists and has correct variant values",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  }
+]

@@ -1,0 +1,336 @@
+2025-12-11T20:44:57.229Z [DEBUG] Watching for changes in setting files /Users/bholt/dev/evergreen/.claude/settings.local.json...
+2025-12-11T20:44:57.252Z [DEBUG] [SLOW OPERATION DETECTED] execSyncWithDefaults (21.5ms): security find-generic-password -a $USER -w -s "Claude Code"
+2025-12-11T20:44:57.273Z [DEBUG] [SLOW OPERATION DETECTED] execSyncWithDefaults (21.0ms): security find-generic-password -a "bholt" -w -s "Claude Code-credentials"
+2025-12-11T20:44:57.283Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2025-12-11T20:44:57.283Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2025-12-11T20:44:57.283Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2025-12-11T20:44:57.283Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2025-12-11T20:44:57.283Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2025-12-11T20:44:57.286Z [DEBUG] Applying permission update: Adding 4 allow rule(s) to destination 'localSettings': ["Bash(git checkout:*)","Bash(bin/rails generate:*)","Bash(bundle exec rubocop:*)","Bash(psql:*)"]
+2025-12-11T20:44:57.289Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2025-12-11T20:44:57.304Z [DEBUG] Total LSP servers loaded: 0
+2025-12-11T20:44:57.304Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2025-12-11T20:44:57.304Z [DEBUG] LSP manager initialized with 0 servers
+2025-12-11T20:44:57.304Z [DEBUG] LSP server manager initialized successfully
+2025-12-11T20:44:57.304Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2025-12-11T20:44:57.307Z [DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/bholt/.claude/skills, project=[]
+2025-12-11T20:44:57.307Z [DEBUG] >>>>> getPluginSkills CALLED <<<<<
+2025-12-11T20:44:57.309Z [DEBUG] installed_plugins.json doesn't exist yet at /Users/bholt/.claude/plugins/installed_plugins.json, returning empty object
+2025-12-11T20:44:57.326Z [DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+2025-12-11T20:44:57.326Z [DEBUG] Looking for shell config file: /Users/bholt/.zshrc
+2025-12-11T20:44:57.326Z [DEBUG] Snapshots directory: /Users/bholt/.claude/shell-snapshots
+2025-12-11T20:44:57.326Z [DEBUG] Creating snapshot at: /Users/bholt/.claude/shell-snapshots/snapshot-zsh-1765485897326-hfpdmw.sh
+2025-12-11T20:44:57.326Z [DEBUG] Shell binary exists: true
+2025-12-11T20:44:57.326Z [DEBUG] Execution timeout: 10000ms
+2025-12-11T20:44:57.327Z [DEBUG] Writing to temp file: /Users/bholt/.claude/todos/23fb44eb-bc8e-4cee-b1aa-6b5fcbae92fc-agent-23fb44eb-bc8e-4cee-b1aa-6b5fcbae92fc.json.tmp.82578.1765485897327
+2025-12-11T20:44:57.340Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (13.1ms)
+2025-12-11T20:44:57.340Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-12-11T20:44:57.340Z [DEBUG] Renaming /Users/bholt/.claude/todos/23fb44eb-bc8e-4cee-b1aa-6b5fcbae92fc-agent-23fb44eb-bc8e-4cee-b1aa-6b5fcbae92fc.json.tmp.82578.1765485897327 to /Users/bholt/.claude/todos/23fb44eb-bc8e-4cee-b1aa-6b5fcbae92fc-agent-23fb44eb-bc8e-4cee-b1aa-6b5fcbae92fc.json
+2025-12-11T20:44:57.340Z [DEBUG] File /Users/bholt/.claude/todos/23fb44eb-bc8e-4cee-b1aa-6b5fcbae92fc-agent-23fb44eb-bc8e-4cee-b1aa-6b5fcbae92fc.json written atomically
+2025-12-11T20:44:57.355Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2025-12-11T20:44:57.355Z [DEBUG] Total plugin skills loaded: 0
+2025-12-11T20:44:57.355Z [DEBUG] Total plugin commands loaded: 0
+2025-12-11T20:44:57.355Z [DEBUG] Registered 0 hooks from 0 plugins
+2025-12-11T20:44:57.364Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+2025-12-11T20:44:57.364Z [DEBUG] Attempting to auto-install official marketplace
+2025-12-11T20:44:57.366Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills
+2025-12-11T20:44:57.381Z [DEBUG] Git remote URL: git@github.com:ynab/evergreen.git
+2025-12-11T20:44:57.381Z [DEBUG] Parsed repository: ynab/evergreen from git@github.com:ynab/evergreen.git
+2025-12-11T20:44:57.381Z [DEBUG] Parsed repository: ynab/evergreen from URL: git@github.com:ynab/evergreen.git
+2025-12-11T20:44:57.383Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.82578.1765485897383
+2025-12-11T20:44:57.383Z [DEBUG] Preserving file permissions: 100644
+2025-12-11T20:44:57.387Z [DEBUG] Temp file written successfully, size: 67358 bytes
+2025-12-11T20:44:57.387Z [DEBUG] Applied original permissions to temp file
+2025-12-11T20:44:57.387Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.82578.1765485897383 to /Users/bholt/.claude.json
+2025-12-11T20:44:57.388Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-11T20:44:57.390Z [DEBUG] Added /Users/bholt/dev/evergreen to tracked paths for repo ynab/evergreen
+2025-12-11T20:44:57.417Z [DEBUG] Total plugin agents loaded: 0
+2025-12-11T20:44:57.442Z [DEBUG] Creating installed_plugins_v2.json from V1 and settings.json files
+2025-12-11T20:44:57.447Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (5.1ms)
+2025-12-11T20:44:57.447Z [DEBUG] Saved 0 installed plugins to V2 file at /Users/bholt/.claude/plugins/installed_plugins_v2.json
+2025-12-11T20:44:57.447Z [DEBUG] Sync completed: 0 added, 0 updated in installed_plugins_v2.json
+2025-12-11T20:44:57.454Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (6.4ms)
+2025-12-11T20:44:57.454Z [DEBUG] Saved 0 installed plugins to /Users/bholt/.claude/plugins/installed_plugins.json (schema version 1)
+2025-12-11T20:44:57.454Z [DEBUG] V1 file updated with 0 user-scope plugins
+2025-12-11T20:44:57.457Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2025-12-11T20:44:57.458Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.82578.1765485897458
+2025-12-11T20:44:57.458Z [DEBUG] Preserving file permissions: 100644
+2025-12-11T20:44:57.465Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (6.6ms)
+2025-12-11T20:44:57.465Z [DEBUG] Temp file written successfully, size: 67358 bytes
+2025-12-11T20:44:57.465Z [DEBUG] Applied original permissions to temp file
+2025-12-11T20:44:57.465Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.82578.1765485897458 to /Users/bholt/.claude.json
+2025-12-11T20:44:57.465Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-11T20:44:57.467Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2025-12-11T20:44:57.467Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:44:57.467Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2025-12-11T20:44:57.489Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.82578.1765485897489
+2025-12-11T20:44:57.489Z [DEBUG] Preserving file permissions: 100644
+2025-12-11T20:44:57.495Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (5.8ms)
+2025-12-11T20:44:57.495Z [DEBUG] Temp file written successfully, size: 67253 bytes
+2025-12-11T20:44:57.495Z [DEBUG] Applied original permissions to temp file
+2025-12-11T20:44:57.495Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.82578.1765485897489 to /Users/bholt/.claude.json
+2025-12-11T20:44:57.496Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-11T20:44:57.497Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.82578.1765485897497
+2025-12-11T20:44:57.497Z [DEBUG] Preserving file permissions: 100644
+2025-12-11T20:44:57.501Z [DEBUG] Temp file written successfully, size: 67253 bytes
+2025-12-11T20:44:57.501Z [DEBUG] Applied original permissions to temp file
+2025-12-11T20:44:57.501Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.82578.1765485897497 to /Users/bholt/.claude.json
+2025-12-11T20:44:57.501Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-11T20:44:57.506Z [DEBUG] performStartupChecks called
+2025-12-11T20:44:57.506Z [DEBUG] Starting background plugin installations
+2025-12-11T20:44:57.506Z [DEBUG] performBackgroundPluginInstallations called
+2025-12-11T20:44:57.512Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2025-12-11T20:44:57.512Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2025-12-11T20:44:57.518Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2025-12-11T20:44:57.518Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:44:57.518Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2025-12-11T20:44:57.520Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2025-12-11T20:44:57.520Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:44:57.520Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2025-12-11T20:44:57.532Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (5.3ms)
+2025-12-11T20:44:57.544Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (5.1ms)
+2025-12-11T20:44:57.549Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.82578.1765485897549
+2025-12-11T20:44:57.549Z [DEBUG] Preserving file permissions: 100644
+2025-12-11T20:44:57.553Z [DEBUG] Temp file written successfully, size: 67252 bytes
+2025-12-11T20:44:57.553Z [DEBUG] Applied original permissions to temp file
+2025-12-11T20:44:57.553Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.82578.1765485897549 to /Users/bholt/.claude.json
+2025-12-11T20:44:57.554Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-11T20:44:57.555Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.82578.1765485897555
+2025-12-11T20:44:57.555Z [DEBUG] Preserving file permissions: 100644
+2025-12-11T20:44:57.559Z [DEBUG] Temp file written successfully, size: 67296 bytes
+2025-12-11T20:44:57.560Z [DEBUG] Applied original permissions to temp file
+2025-12-11T20:44:57.560Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.82578.1765485897555 to /Users/bholt/.claude.json
+2025-12-11T20:44:57.560Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-11T20:44:57.562Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.82578.1765485897562
+2025-12-11T20:44:57.562Z [DEBUG] Preserving file permissions: 100644
+2025-12-11T20:44:57.566Z [DEBUG] Temp file written successfully, size: 67321 bytes
+2025-12-11T20:44:57.566Z [DEBUG] Applied original permissions to temp file
+2025-12-11T20:44:57.566Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.82578.1765485897562 to /Users/bholt/.claude.json
+2025-12-11T20:44:57.567Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-11T20:44:57.568Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.82578.1765485897568
+2025-12-11T20:44:57.568Z [DEBUG] Preserving file permissions: 100644
+2025-12-11T20:44:57.572Z [DEBUG] Temp file written successfully, size: 67426 bytes
+2025-12-11T20:44:57.572Z [DEBUG] Applied original permissions to temp file
+2025-12-11T20:44:57.572Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.82578.1765485897568 to /Users/bholt/.claude.json
+2025-12-11T20:44:57.572Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-11T20:44:57.573Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.82578.1765485897573
+2025-12-11T20:44:57.573Z [DEBUG] Preserving file permissions: 100644
+2025-12-11T20:44:57.578Z [DEBUG] Temp file written successfully, size: 67474 bytes
+2025-12-11T20:44:57.578Z [DEBUG] Applied original permissions to temp file
+2025-12-11T20:44:57.578Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.82578.1765485897573 to /Users/bholt/.claude.json
+2025-12-11T20:44:57.578Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-11T20:44:57.639Z [DEBUG] Shell snapshot created successfully (48151 bytes)
+2025-12-11T20:44:57.643Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.82578.1765485897643
+2025-12-11T20:44:57.643Z [DEBUG] Preserving file permissions: 100644
+2025-12-11T20:44:57.649Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (5.8ms)
+2025-12-11T20:44:57.649Z [DEBUG] Temp file written successfully, size: 67655 bytes
+2025-12-11T20:44:57.649Z [DEBUG] Applied original permissions to temp file
+2025-12-11T20:44:57.649Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.82578.1765485897643 to /Users/bholt/.claude.json
+2025-12-11T20:44:57.651Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-11T20:44:57.651Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/bholt/.asdf/installs/nodejs/22.14.0/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg)
+2025-12-11T20:44:57.660Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.82578.1765485897660
+2025-12-11T20:44:57.660Z [DEBUG] Preserving file permissions: 100644
+2025-12-11T20:44:57.666Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (6.5ms)
+2025-12-11T20:44:57.666Z [DEBUG] Temp file written successfully, size: 67730 bytes
+2025-12-11T20:44:57.666Z [DEBUG] Applied original permissions to temp file
+2025-12-11T20:44:57.666Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.82578.1765485897660 to /Users/bholt/.claude.json
+2025-12-11T20:44:57.667Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-11T20:44:57.673Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.82578.1765485897673
+2025-12-11T20:44:57.673Z [DEBUG] Preserving file permissions: 100644
+2025-12-11T20:44:57.677Z [DEBUG] Temp file written successfully, size: 67730 bytes
+2025-12-11T20:44:57.677Z [DEBUG] Applied original permissions to temp file
+2025-12-11T20:44:57.677Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.82578.1765485897673 to /Users/bholt/.claude.json
+2025-12-11T20:44:57.678Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-11T20:44:57.682Z [DEBUG] Skills and commands included in Skill tool:
+2025-12-11T20:44:57.682Z [DEBUG] Slash commands included in SlashCommand tool:
+2025-12-11T20:44:57.717Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2025-12-11T20:44:57.802Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.82578.1765485897802
+2025-12-11T20:44:57.802Z [DEBUG] Preserving file permissions: 100644
+2025-12-11T20:44:57.807Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (5.2ms)
+2025-12-11T20:44:57.807Z [DEBUG] Temp file written successfully, size: 67730 bytes
+2025-12-11T20:44:57.807Z [DEBUG] Applied original permissions to temp file
+2025-12-11T20:44:57.807Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.82578.1765485897802 to /Users/bholt/.claude.json
+2025-12-11T20:44:57.807Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-11T20:44:58.239Z [DEBUG] Stream started - received first chunk
+2025-12-11T20:44:58.271Z [DEBUG] AutoUpdater: Detected installation type: npm-global
+2025-12-11T20:44:58.271Z [DEBUG] AutoUpdater: Using global update method
+2025-12-11T20:44:58.834Z [DEBUG] [SLOW OPERATION DETECTED] fs.rmSync (17.4ms)
+2025-12-11T20:44:58.834Z [ERROR] Failed to auto-install official marketplace: Invalid schema: name: Marketplace name cannot impersonate official Anthropic/Claude marketplaces. Names containing "official", "anthropic", or "claude" in official-sounding combinations are reserved.
+2025-12-11T20:44:58.834Z [ERROR] ConfigParseError: ConfigParseError: Invalid schema: name: Marketplace name cannot impersonate official Anthropic/Claude marketplaces. Names containing "official", "anthropic", or "claude" in official-sounding combinations are reserved.
+    at WFB (file:///Users/bholt/.asdf/installs/nodejs/22.14.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1412:842)
+    at Ud1 (file:///Users/bholt/.asdf/installs/nodejs/22.14.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1412:2880)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Ff (file:///Users/bholt/.asdf/installs/nodejs/22.14.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1414:592)
+    at async ju2 (file:///Users/bholt/.asdf/installs/nodejs/22.14.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:4535:5768)
+2025-12-11T20:44:58.835Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.82578.1765485898835
+2025-12-11T20:44:58.835Z [DEBUG] Preserving file permissions: 100644
+2025-12-11T20:44:58.845Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (9.5ms)
+2025-12-11T20:44:58.845Z [DEBUG] Temp file written successfully, size: 67883 bytes
+2025-12-11T20:44:58.845Z [DEBUG] Applied original permissions to temp file
+2025-12-11T20:44:58.845Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.82578.1765485898835 to /Users/bholt/.claude.json
+2025-12-11T20:44:58.845Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-11T20:44:59.536Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.82578.1765485899536
+2025-12-11T20:44:59.536Z [DEBUG] Preserving file permissions: 100644
+2025-12-11T20:44:59.543Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (6.3ms)
+2025-12-11T20:44:59.543Z [DEBUG] Temp file written successfully, size: 67883 bytes
+2025-12-11T20:44:59.543Z [DEBUG] Applied original permissions to temp file
+2025-12-11T20:44:59.543Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.82578.1765485899536 to /Users/bholt/.claude.json
+2025-12-11T20:44:59.543Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-11T20:45:00.160Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-12-11T20:45:00.160Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:45:00.160Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-12-11T20:45:00.230Z [DEBUG] Stream started - received first chunk
+2025-12-11T20:45:04.938Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-12-11T20:45:04.938Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:45:04.938Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-12-11T20:45:06.677Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-11T20:45:06.677Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-11T20:45:06.677Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-11T20:45:06.677Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-11T20:45:06.680Z [DEBUG] [TeammateMailbox] getTeammateMailboxAttachments called: envAgentName=undefined, isTeamLead=false, resolved agentName=undefined, teamName=undefined
+2025-12-11T20:45:06.680Z [DEBUG] [TeammateMailbox] Not checking inbox - not a teammate or team lead
+2025-12-11T20:45:06.694Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2025-12-11T20:45:06.694Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:45:06.694Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-12-11T20:45:06.695Z [DEBUG] FileHistory: Added snapshot for 7ba44710-71c3-4ae0-9922-092a9730f5b5, tracking 0 files
+2025-12-11T20:45:06.704Z [DEBUG] Total plugin output styles loaded: 0
+2025-12-11T20:45:07.450Z [DEBUG] Stream started - received first chunk
+2025-12-11T20:45:09.451Z [DEBUG] Stream started - received first chunk
+2025-12-11T20:45:16.435Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-12-11T20:45:16.435Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-12-11T20:45:16.438Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-12-11T20:45:16.438Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:45:16.438Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-12-11T20:45:16.438Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-12-11T20:45:16.438Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:45:16.438Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-12-11T20:45:16.446Z [DEBUG] tree-sitter: WASM files not found
+2025-12-11T20:45:16.455Z [DEBUG] No session environment scripts found
+2025-12-11T20:45:16.535Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2025-12-11T20:45:16.535Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:45:16.535Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-12-11T20:45:16.553Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2025-12-11T20:45:16.553Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:45:16.553Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-12-11T20:45:16.560Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-11T20:45:16.560Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-11T20:45:16.560Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-11T20:45:16.560Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-11T20:45:16.563Z [DEBUG] [TeammateMailbox] getTeammateMailboxAttachments called: envAgentName=undefined, isTeamLead=false, resolved agentName=undefined, teamName=undefined
+2025-12-11T20:45:16.563Z [DEBUG] [TeammateMailbox] Not checking inbox - not a teammate or team lead
+2025-12-11T20:45:16.978Z [DEBUG] Stream started - received first chunk
+2025-12-11T20:45:17.206Z [DEBUG] Stream started - received first chunk
+2025-12-11T20:45:18.976Z [DEBUG] Stream started - received first chunk
+2025-12-11T20:45:22.031Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-12-11T20:45:22.036Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-12-11T20:45:22.036Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:45:22.036Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-12-11T20:45:22.121Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2025-12-11T20:45:22.121Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:45:22.121Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-12-11T20:45:22.126Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-11T20:45:22.126Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-11T20:45:22.126Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-11T20:45:22.126Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-11T20:45:22.129Z [DEBUG] [TeammateMailbox] getTeammateMailboxAttachments called: envAgentName=undefined, isTeamLead=false, resolved agentName=undefined, teamName=undefined
+2025-12-11T20:45:22.129Z [DEBUG] [TeammateMailbox] Not checking inbox - not a teammate or team lead
+2025-12-11T20:45:22.654Z [DEBUG] Stream started - received first chunk
+2025-12-11T20:45:24.338Z [DEBUG] Stream started - received first chunk
+2025-12-11T20:45:39.294Z [DEBUG] executePreToolHooks called for tool: Read
+2025-12-11T20:45:39.297Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-12-11T20:45:39.297Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:45:39.297Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-12-11T20:45:39.312Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-12-11T20:45:39.312Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:45:39.312Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-12-11T20:45:39.318Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-11T20:45:39.318Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-11T20:45:39.318Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-11T20:45:39.318Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-11T20:45:39.325Z [DEBUG] [TeammateMailbox] getTeammateMailboxAttachments called: envAgentName=undefined, isTeamLead=false, resolved agentName=undefined, teamName=undefined
+2025-12-11T20:45:39.325Z [DEBUG] [TeammateMailbox] Not checking inbox - not a teammate or team lead
+2025-12-11T20:45:43.305Z [DEBUG] Stream started - received first chunk
+2025-12-11T20:45:45.263Z [DEBUG] executePreToolHooks called for tool: Read
+2025-12-11T20:45:45.267Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-12-11T20:45:45.267Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:45:45.267Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-12-11T20:45:45.281Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-12-11T20:45:45.281Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:45:45.281Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-12-11T20:45:45.287Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-11T20:45:45.287Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-11T20:45:45.287Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-11T20:45:45.287Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-11T20:45:45.292Z [DEBUG] [TeammateMailbox] getTeammateMailboxAttachments called: envAgentName=undefined, isTeamLead=false, resolved agentName=undefined, teamName=undefined
+2025-12-11T20:45:45.292Z [DEBUG] [TeammateMailbox] Not checking inbox - not a teammate or team lead
+2025-12-11T20:45:47.539Z [DEBUG] Stream started - received first chunk
+2025-12-11T20:45:50.124Z [DEBUG] executePreToolHooks called for tool: Grep
+2025-12-11T20:45:50.128Z [DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+2025-12-11T20:45:50.128Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:45:50.128Z [DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+2025-12-11T20:45:50.312Z [DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+2025-12-11T20:45:50.312Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:45:50.312Z [DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+2025-12-11T20:45:50.319Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-11T20:45:50.319Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-11T20:45:50.319Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-11T20:45:50.319Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-11T20:45:50.322Z [DEBUG] [TeammateMailbox] getTeammateMailboxAttachments called: envAgentName=undefined, isTeamLead=false, resolved agentName=undefined, teamName=undefined
+2025-12-11T20:45:50.322Z [DEBUG] [TeammateMailbox] Not checking inbox - not a teammate or team lead
+2025-12-11T20:45:52.419Z [DEBUG] Stream started - received first chunk
+2025-12-11T20:45:53.914Z [DEBUG] executePreToolHooks called for tool: Grep
+2025-12-11T20:45:53.918Z [DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+2025-12-11T20:45:53.918Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:45:53.918Z [DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+2025-12-11T20:45:53.938Z [DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+2025-12-11T20:45:53.938Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:45:53.938Z [DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+2025-12-11T20:45:53.943Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-11T20:45:53.943Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-11T20:45:53.943Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-11T20:45:53.943Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-11T20:45:53.946Z [DEBUG] [TeammateMailbox] getTeammateMailboxAttachments called: envAgentName=undefined, isTeamLead=false, resolved agentName=undefined, teamName=undefined
+2025-12-11T20:45:53.946Z [DEBUG] [TeammateMailbox] Not checking inbox - not a teammate or team lead
+2025-12-11T20:45:56.297Z [DEBUG] Stream started - received first chunk
+2025-12-11T20:46:01.223Z [DEBUG] executePreToolHooks called for tool: Grep
+2025-12-11T20:46:01.226Z [DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+2025-12-11T20:46:01.226Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:46:01.226Z [DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+2025-12-11T20:46:01.243Z [DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+2025-12-11T20:46:01.243Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:46:01.243Z [DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+2025-12-11T20:46:01.248Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-11T20:46:01.248Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-11T20:46:01.248Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-11T20:46:01.248Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-11T20:46:01.252Z [DEBUG] [TeammateMailbox] getTeammateMailboxAttachments called: envAgentName=undefined, isTeamLead=false, resolved agentName=undefined, teamName=undefined
+2025-12-11T20:46:01.252Z [DEBUG] [TeammateMailbox] Not checking inbox - not a teammate or team lead
+2025-12-11T20:46:04.006Z [DEBUG] Stream started - received first chunk
+2025-12-11T20:46:21.261Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2025-12-11T20:46:21.261Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:46:21.261Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-12-11T20:46:21.272Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.82578.1765485981272
+2025-12-11T20:46:21.272Z [DEBUG] Preserving file permissions: 100644
+2025-12-11T20:46:21.277Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (5.2ms)
+2025-12-11T20:46:21.277Z [DEBUG] Temp file written successfully, size: 67915 bytes
+2025-12-11T20:46:21.277Z [DEBUG] Applied original permissions to temp file
+2025-12-11T20:46:21.277Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.82578.1765485981272 to /Users/bholt/.claude.json
+2025-12-11T20:46:21.278Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-11T20:46:21.282Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.82578.1765485981282
+2025-12-11T20:46:21.282Z [DEBUG] Preserving file permissions: 100644
+2025-12-11T20:46:21.287Z [DEBUG] Temp file written successfully, size: 67915 bytes
+2025-12-11T20:46:21.287Z [DEBUG] Applied original permissions to temp file
+2025-12-11T20:46:21.287Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.82578.1765485981282 to /Users/bholt/.claude.json
+2025-12-11T20:46:21.287Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-11T20:47:21.269Z [DEBUG] Getting matching hook commands for Notification with query: idle_prompt
+2025-12-11T20:47:21.269Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T20:47:21.269Z [DEBUG] Matched 0 unique hooks for query "idle_prompt" (0 before deduplication)
+2025-12-11T20:49:57.458Z [DEBUG] Metrics opt-out API response: enabled=true, vcsLinking=false
+2025-12-11T20:49:57.659Z [DEBUG] BigQuery metrics exported successfully
+2025-12-11T20:49:57.659Z [DEBUG] BigQuery API Response: {
+  "accepted_count": 13,
+  "rejected_count": 0
+}
+2025-12-11T21:08:00.982Z [DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+2025-12-11T21:08:00.982Z [DEBUG] Found 0 hook matchers in settings
+2025-12-11T21:08:00.982Z [DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)

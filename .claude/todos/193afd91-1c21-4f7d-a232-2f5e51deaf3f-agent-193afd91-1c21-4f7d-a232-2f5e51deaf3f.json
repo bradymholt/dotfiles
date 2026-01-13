@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Examine current AmpexService implementation",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Modify active_flags_and_experiments_for_user to accept device_id parameter",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Create ApplicationController concern for device_id extraction",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Add active_flags_and_experiments_for_device method to concern",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Run linting and tests to verify changes",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  }
+]

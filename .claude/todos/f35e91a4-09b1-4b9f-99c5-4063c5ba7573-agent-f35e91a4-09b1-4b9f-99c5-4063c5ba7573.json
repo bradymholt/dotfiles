@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Read the new Analytics Amplitude EventsClient implementation",
+    "status": "completed",
+    "activeForm": "Reading the Analytics Amplitude EventsClient implementation"
+  },
+  {
+    "content": "Read the clients documentation to understand requirements",
+    "status": "completed",
+    "activeForm": "Reading the clients documentation"
+  },
+  {
+    "content": "Compare implementation with working client examples",
+    "status": "in_progress",
+    "activeForm": "Comparing implementation with working client examples"
+  },
+  {
+    "content": "Identify missing configuration or method implementations",
+    "status": "pending",
+    "activeForm": "Identifying missing configuration or method implementations"
+  }
+]

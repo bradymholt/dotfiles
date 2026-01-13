@@ -1,0 +1,67 @@
+2026-01-07T17:37:08.602Z [DEBUG] [SLOW OPERATION DETECTED] execSyncWithDefaults (23.2ms): security find-generic-password -a $USER -w -s "Claude Code"
+2026-01-07T17:37:08.622Z [DEBUG] [SLOW OPERATION DETECTED] execSyncWithDefaults (19.6ms): security find-generic-password -a "bholt" -w -s "Claude Code-credentials"
+2026-01-07T17:37:08.631Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-01-07T17:37:08.631Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-01-07T17:37:08.631Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-01-07T17:37:08.631Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2026-01-07T17:37:08.631Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2026-01-07T17:37:08.636Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-01-07T17:37:08.649Z [DEBUG] Total LSP servers loaded: 0
+2026-01-07T17:37:08.649Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-01-07T17:37:08.649Z [DEBUG] LSP manager initialized with 0 servers
+2026-01-07T17:37:08.649Z [DEBUG] LSP server manager initialized successfully
+2026-01-07T17:37:08.649Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-01-07T17:37:08.653Z [DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/bholt/.claude/skills, project=[]
+2026-01-07T17:37:08.653Z [DEBUG] >>>>> getPluginSkills CALLED <<<<<
+2026-01-07T17:37:08.655Z [DEBUG] Loaded 0 installed plugins from /Users/bholt/.claude/plugins/installed_plugins.json (schema version 1)
+2026-01-07T17:37:08.655Z [DEBUG] Official marketplace auto-install already attempted, skipping
+2026-01-07T17:37:08.665Z [DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+2026-01-07T17:37:08.665Z [DEBUG] Looking for shell config file: /Users/bholt/.zshrc
+2026-01-07T17:37:08.665Z [DEBUG] Snapshots directory: /Users/bholt/.claude/shell-snapshots
+2026-01-07T17:37:08.665Z [DEBUG] Creating snapshot at: /Users/bholt/.claude/shell-snapshots/snapshot-zsh-1767807428665-2h69sg.sh
+2026-01-07T17:37:08.665Z [DEBUG] Shell binary exists: true
+2026-01-07T17:37:08.665Z [DEBUG] Execution timeout: 10000ms
+2026-01-07T17:37:08.666Z [DEBUG] Writing to temp file: /Users/bholt/.claude/todos/1ab95eaf-5869-4bc5-b9d1-521760a2586d-agent-1ab95eaf-5869-4bc5-b9d1-521760a2586d.json.tmp.99998.1767807428666
+2026-01-07T17:37:08.672Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (6.1ms)
+2026-01-07T17:37:08.672Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-07T17:37:08.672Z [DEBUG] Renaming /Users/bholt/.claude/todos/1ab95eaf-5869-4bc5-b9d1-521760a2586d-agent-1ab95eaf-5869-4bc5-b9d1-521760a2586d.json.tmp.99998.1767807428666 to /Users/bholt/.claude/todos/1ab95eaf-5869-4bc5-b9d1-521760a2586d-agent-1ab95eaf-5869-4bc5-b9d1-521760a2586d.json
+2026-01-07T17:37:08.672Z [DEBUG] File /Users/bholt/.claude/todos/1ab95eaf-5869-4bc5-b9d1-521760a2586d-agent-1ab95eaf-5869-4bc5-b9d1-521760a2586d.json written atomically
+2026-01-07T17:37:08.676Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-01-07T17:37:08.676Z [DEBUG] Total plugin skills loaded: 0
+2026-01-07T17:37:08.676Z [DEBUG] Total plugin commands loaded: 0
+2026-01-07T17:37:08.676Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-01-07T17:37:08.678Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+2026-01-07T17:37:08.678Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills
+2026-01-07T17:37:08.680Z [DEBUG] Total plugin agents loaded: 0
+2026-01-07T17:37:08.715Z [DEBUG] Git remote URL: null
+2026-01-07T17:37:08.715Z [DEBUG] No git remote URL found
+2026-01-07T17:37:08.715Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2026-01-07T17:37:08.755Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.99998.1767807428755
+2026-01-07T17:37:08.755Z [DEBUG] Preserving file permissions: 100644
+2026-01-07T17:37:08.760Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (5.3ms)
+2026-01-07T17:37:08.760Z [DEBUG] Temp file written successfully, size: 76224 bytes
+2026-01-07T17:37:08.760Z [DEBUG] Applied original permissions to temp file
+2026-01-07T17:37:08.760Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.99998.1767807428755 to /Users/bholt/.claude.json
+2026-01-07T17:37:08.760Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-07T17:37:08.803Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.99998.1767807428803
+2026-01-07T17:37:08.803Z [DEBUG] Preserving file permissions: 100644
+2026-01-07T17:37:08.809Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (5.8ms)
+2026-01-07T17:37:08.809Z [DEBUG] Temp file written successfully, size: 76364 bytes
+2026-01-07T17:37:08.809Z [DEBUG] Applied original permissions to temp file
+2026-01-07T17:37:08.809Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.99998.1767807428803 to /Users/bholt/.claude.json
+2026-01-07T17:37:08.809Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-07T17:37:08.827Z [DEBUG] Shell snapshot created successfully (48417 bytes)
+2026-01-07T17:37:08.875Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.99998.1767807428875
+2026-01-07T17:37:08.875Z [DEBUG] Preserving file permissions: 100644
+2026-01-07T17:37:08.880Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (5.4ms)
+2026-01-07T17:37:08.880Z [DEBUG] Temp file written successfully, size: 76438 bytes
+2026-01-07T17:37:08.880Z [DEBUG] Applied original permissions to temp file
+2026-01-07T17:37:08.880Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.99998.1767807428875 to /Users/bholt/.claude.json
+2026-01-07T17:37:08.880Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-07T17:37:08.882Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.99998.1767807428882
+2026-01-07T17:37:08.882Z [DEBUG] Preserving file permissions: 100644
+2026-01-07T17:37:08.887Z [DEBUG] Temp file written successfully, size: 76474 bytes
+2026-01-07T17:37:08.887Z [DEBUG] Applied original permissions to temp file
+2026-01-07T17:37:08.887Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.99998.1767807428882 to /Users/bholt/.claude.json
+2026-01-07T17:37:08.887Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-07T17:37:15.242Z [DEBUG] Skipping SessionEnd:other hook execution - workspace trust not accepted

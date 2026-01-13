@@ -1,0 +1,180 @@
+2025-12-08T20:12:01.069Z [DEBUG] Watching for changes in setting files /Users/bholt/dev/ynab-mcp/.claude/settings.local.json...
+2025-12-08T20:12:01.112Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2025-12-08T20:12:01.112Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2025-12-08T20:12:01.112Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2025-12-08T20:12:01.112Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2025-12-08T20:12:01.112Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2025-12-08T20:12:01.147Z [DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Bash(python:*)"]
+2025-12-08T20:12:01.152Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2025-12-08T20:12:01.154Z [DEBUG] Total LSP servers loaded: 0
+2025-12-08T20:12:01.157Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2025-12-08T20:12:01.157Z [DEBUG] LSP manager initialized with 0 servers
+2025-12-08T20:12:01.170Z [DEBUG] LSP server manager initialized successfully
+2025-12-08T20:12:01.170Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2025-12-08T20:12:01.172Z [DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/bholt/.claude/skills, project=/Users/bholt/dev/ynab-mcp/.claude/skills
+2025-12-08T20:12:01.172Z [DEBUG] >>>>> getPluginSkills CALLED <<<<<
+2025-12-08T20:12:01.201Z [DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+2025-12-08T20:12:01.201Z [DEBUG] Looking for shell config file: /Users/bholt/.zshrc
+2025-12-08T20:12:01.201Z [DEBUG] Snapshots directory: /Users/bholt/.claude/shell-snapshots
+2025-12-08T20:12:01.202Z [DEBUG] Creating snapshot at: /Users/bholt/.claude/shell-snapshots/snapshot-zsh-1765224721201-92owxi.sh
+2025-12-08T20:12:01.202Z [DEBUG] Shell binary exists: true
+2025-12-08T20:12:01.202Z [DEBUG] Execution timeout: 10000ms
+2025-12-08T20:12:01.202Z [DEBUG] Writing to temp file: /Users/bholt/.claude/todos/8f1eb59d-1fe3-49a5-8cc0-6659428b9e81-agent-8f1eb59d-1fe3-49a5-8cc0-6659428b9e81.json.tmp.75086.1765224721202
+2025-12-08T20:12:01.210Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-12-08T20:12:01.210Z [DEBUG] Renaming /Users/bholt/.claude/todos/8f1eb59d-1fe3-49a5-8cc0-6659428b9e81-agent-8f1eb59d-1fe3-49a5-8cc0-6659428b9e81.json.tmp.75086.1765224721202 to /Users/bholt/.claude/todos/8f1eb59d-1fe3-49a5-8cc0-6659428b9e81-agent-8f1eb59d-1fe3-49a5-8cc0-6659428b9e81.json
+2025-12-08T20:12:01.210Z [DEBUG] File /Users/bholt/.claude/todos/8f1eb59d-1fe3-49a5-8cc0-6659428b9e81-agent-8f1eb59d-1fe3-49a5-8cc0-6659428b9e81.json written atomically
+2025-12-08T20:12:01.215Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2025-12-08T20:12:01.215Z [DEBUG] Total plugin skills loaded: 0
+2025-12-08T20:12:01.215Z [DEBUG] Total plugin commands loaded: 0
+2025-12-08T20:12:01.215Z [DEBUG] Registered 0 hooks from 0 plugins
+2025-12-08T20:12:01.215Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+2025-12-08T20:12:01.215Z [DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 0 plugin skills
+2025-12-08T20:12:01.244Z [DEBUG] Total plugin agents loaded: 0
+2025-12-08T20:12:01.294Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.75086.1765224721294
+2025-12-08T20:12:01.294Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:12:01.300Z [DEBUG] Temp file written successfully, size: 63076 bytes
+2025-12-08T20:12:01.300Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:12:01.300Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.75086.1765224721294 to /Users/bholt/.claude.json
+2025-12-08T20:12:01.300Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:12:01.349Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.75086.1765224721349
+2025-12-08T20:12:01.349Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:12:01.356Z [DEBUG] Temp file written successfully, size: 63076 bytes
+2025-12-08T20:12:01.357Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:12:01.357Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.75086.1765224721349 to /Users/bholt/.claude.json
+2025-12-08T20:12:01.358Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:12:01.359Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.75086.1765224721359
+2025-12-08T20:12:01.359Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:12:01.366Z [DEBUG] Temp file written successfully, size: 63106 bytes
+2025-12-08T20:12:01.366Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:12:01.366Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.75086.1765224721359 to /Users/bholt/.claude.json
+2025-12-08T20:12:01.366Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:12:01.398Z [DEBUG] Shell snapshot created successfully (48151 bytes)
+2025-12-08T20:12:01.406Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/bholt/.asdf/installs/nodejs/22.14.0/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg)
+2025-12-08T20:12:02.615Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.75086.1765224722615
+2025-12-08T20:12:02.615Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:12:02.621Z [DEBUG] Temp file written successfully, size: 63105 bytes
+2025-12-08T20:12:02.621Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:12:02.621Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.75086.1765224722615 to /Users/bholt/.claude.json
+2025-12-08T20:12:02.621Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:12:02.634Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.75086.1765224722634
+2025-12-08T20:12:02.634Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:12:02.638Z [DEBUG] Temp file written successfully, size: 63105 bytes
+2025-12-08T20:12:02.638Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:12:02.639Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.75086.1765224722634 to /Users/bholt/.claude.json
+2025-12-08T20:12:02.639Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:12:02.646Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2025-12-08T20:12:02.646Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:12:02.646Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2025-12-08T20:12:02.667Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.75086.1765224722667
+2025-12-08T20:12:02.667Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:12:02.672Z [DEBUG] Temp file written successfully, size: 63106 bytes
+2025-12-08T20:12:02.672Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:12:02.672Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.75086.1765224722667 to /Users/bholt/.claude.json
+2025-12-08T20:12:02.672Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:12:02.673Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.75086.1765224722673
+2025-12-08T20:12:02.673Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:12:02.677Z [DEBUG] Temp file written successfully, size: 63106 bytes
+2025-12-08T20:12:02.677Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:12:02.677Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.75086.1765224722673 to /Users/bholt/.claude.json
+2025-12-08T20:12:02.678Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:12:02.683Z [DEBUG] performStartupChecks called
+2025-12-08T20:12:02.683Z [DEBUG] Starting background plugin installations
+2025-12-08T20:12:02.683Z [DEBUG] performBackgroundPluginInstallations called
+2025-12-08T20:12:02.690Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.75086.1765224722690
+2025-12-08T20:12:02.690Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:12:02.695Z [DEBUG] Temp file written successfully, size: 63211 bytes
+2025-12-08T20:12:02.695Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:12:02.695Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.75086.1765224722690 to /Users/bholt/.claude.json
+2025-12-08T20:12:02.695Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:12:02.700Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2025-12-08T20:12:02.704Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2025-12-08T20:12:02.716Z [DEBUG] Summarizing all 48 messages (~8204 tokens)
+2025-12-08T20:12:02.724Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2025-12-08T20:12:02.724Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:12:02.724Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2025-12-08T20:12:02.724Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2025-12-08T20:12:02.724Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:12:02.724Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2025-12-08T20:12:02.727Z [DEBUG] Skills and commands included in Skill tool:
+2025-12-08T20:12:02.727Z [DEBUG] Slash commands included in SlashCommand tool:
+2025-12-08T20:12:02.737Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.75086.1765224722737
+2025-12-08T20:12:02.737Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:12:02.741Z [DEBUG] Temp file written successfully, size: 63211 bytes
+2025-12-08T20:12:02.742Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:12:02.742Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.75086.1765224722737 to /Users/bholt/.claude.json
+2025-12-08T20:12:02.742Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:12:02.822Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2025-12-08T20:12:03.325Z [DEBUG] AutoUpdater: Detected installation type: npm-global
+2025-12-08T20:12:03.326Z [DEBUG] AutoUpdater: Using global update method
+2025-12-08T20:12:03.370Z [DEBUG] Stream started - received first chunk
+2025-12-08T20:12:03.950Z [DEBUG] Stream started - received first chunk
+2025-12-08T20:12:04.670Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.75086.1765224724670
+2025-12-08T20:12:04.670Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:12:04.683Z [DEBUG] Temp file written successfully, size: 63211 bytes
+2025-12-08T20:12:04.683Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:12:04.683Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.75086.1765224724670 to /Users/bholt/.claude.json
+2025-12-08T20:12:04.683Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:12:05.258Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-12-08T20:12:05.258Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:12:05.258Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-12-08T20:12:05.455Z [DEBUG] Stream started - received first chunk
+2025-12-08T20:12:07.739Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-12-08T20:12:07.739Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:12:07.739Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-12-08T20:12:08.115Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.75086.1765224728115
+2025-12-08T20:12:08.115Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:12:08.123Z [DEBUG] Temp file written successfully, size: 63240 bytes
+2025-12-08T20:12:08.123Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:12:08.123Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.75086.1765224728115 to /Users/bholt/.claude.json
+2025-12-08T20:12:08.123Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:12:11.485Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2025-12-08T20:12:11.864Z [DEBUG] AutoUpdater: Detected installation type: npm-global
+2025-12-08T20:12:11.864Z [DEBUG] AutoUpdater: Using global update method
+2025-12-08T20:12:12.153Z [DEBUG] FileHistory: Added snapshot for 4fd33124-6b80-4ae6-ba61-618259d31966, tracking 0 files
+2025-12-08T20:12:12.155Z [DEBUG] Rendering user message with 1 content blocks
+2025-12-08T20:12:12.155Z [DEBUG] Block 0: <command-name>/mcp</command-name>
+            <command-message>mcp</command-message>
+            <co...
+2025-12-08T20:12:12.155Z [DEBUG] UserCommandMessage rendering: "mcp" (args: "add")
+2025-12-08T20:12:12.155Z [DEBUG] isSkillFormat: false, prefix: "/"
+2025-12-08T20:12:12.167Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.75086.1765224732167
+2025-12-08T20:12:12.167Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:12:12.172Z [DEBUG] Temp file written successfully, size: 63269 bytes
+2025-12-08T20:12:12.172Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:12:12.172Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.75086.1765224732167 to /Users/bholt/.claude.json
+2025-12-08T20:12:12.173Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:12:12.236Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2025-12-08T20:12:12.406Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.75086.1765224732406
+2025-12-08T20:12:12.406Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:12:12.413Z [DEBUG] Temp file written successfully, size: 63269 bytes
+2025-12-08T20:12:12.413Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:12:12.414Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.75086.1765224732406 to /Users/bholt/.claude.json
+2025-12-08T20:12:12.414Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:12:12.827Z [DEBUG] AutoUpdater: Detected installation type: npm-global
+2025-12-08T20:12:12.827Z [DEBUG] AutoUpdater: Using global update method
+2025-12-08T20:12:13.353Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.75086.1765224733353
+2025-12-08T20:12:13.353Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:12:13.361Z [DEBUG] Temp file written successfully, size: 63269 bytes
+2025-12-08T20:12:13.361Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:12:13.361Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.75086.1765224733353 to /Users/bholt/.claude.json
+2025-12-08T20:12:13.362Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:12:18.419Z [DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+2025-12-08T20:12:18.420Z [DEBUG] Found 0 hook matchers in settings
+2025-12-08T20:12:18.420Z [DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)
+2025-12-08T20:12:18.422Z [DEBUG] Cleaned up session snapshot: /Users/bholt/.claude/shell-snapshots/snapshot-zsh-1765224721201-92owxi.sh
+2025-12-08T20:12:18.422Z [DEBUG] LSP server manager shut down successfully
+2025-12-08T20:12:18.605Z [DEBUG] Metrics opt-out API response: enabled=true, vcsLinking=false
+2025-12-08T20:12:18.794Z [DEBUG] BigQuery metrics exported successfully
+2025-12-08T20:12:18.795Z [DEBUG] BigQuery API Response: {
+  "accepted_count": 13,
+  "rejected_count": 0
+}
+2025-12-08T20:12:18.799Z [DEBUG] BigQuery metrics exporter flush complete
+2025-12-08T20:12:18.800Z [DEBUG] BigQuery metrics exporter flush complete
+2025-12-08T20:12:18.800Z [DEBUG] BigQuery metrics exporter shutdown complete
+2025-12-08T20:12:18.805Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.75086.1765224738805
+2025-12-08T20:12:18.805Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:12:18.811Z [DEBUG] Temp file written successfully, size: 63704 bytes
+2025-12-08T20:12:18.812Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:12:18.812Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.75086.1765224738805 to /Users/bholt/.claude.json
+2025-12-08T20:12:18.812Z [DEBUG] File /Users/bholt/.claude.json written atomically

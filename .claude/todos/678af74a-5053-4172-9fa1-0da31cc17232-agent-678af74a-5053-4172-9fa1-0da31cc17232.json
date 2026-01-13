@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Read the current castle.ts file to understand current implementation",
+    "status": "completed",
+    "activeForm": "Reading the current castle.ts file to understand current implementation"
+  },
+  {
+    "content": "Examine Castle.js 2.6.2 source code",
+    "status": "completed",
+    "activeForm": "Examining Castle.js 2.6.2 source code"
+  },
+  {
+    "content": "Check current Castle.js version in package.json",
+    "status": "completed",
+    "activeForm": "Checking current Castle.js version in package.json"
+  },
+  {
+    "content": "Compare versions to identify breaking changes",
+    "status": "in_progress",
+    "activeForm": "Comparing versions to identify breaking changes"
+  },
+  {
+    "content": "Propose solution for header injection",
+    "status": "pending",
+    "activeForm": "Proposing solution for header injection"
+  }
+]

@@ -1,0 +1,61 @@
+2025-12-08T20:14:03.866Z [DEBUG] Watching for changes in setting files /Users/bholt/dev/ynab-mcp/.claude/settings.local.json...
+2025-12-08T20:14:03.911Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2025-12-08T20:14:03.911Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2025-12-08T20:14:03.911Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2025-12-08T20:14:03.911Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2025-12-08T20:14:03.911Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2025-12-08T20:14:03.914Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2025-12-08T20:14:03.916Z [DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/bholt/.claude/skills, project=/Users/bholt/dev/ynab-mcp/.claude/skills
+2025-12-08T20:14:03.916Z [DEBUG] >>>>> getPluginSkills CALLED <<<<<
+2025-12-08T20:14:03.918Z [DEBUG] installed_plugins.json doesn't exist yet at /Users/bholt/.claude/plugins/installed_plugins.json, returning empty object
+2025-12-08T20:14:03.929Z [DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+2025-12-08T20:14:03.929Z [DEBUG] Looking for shell config file: /Users/bholt/.zshrc
+2025-12-08T20:14:03.929Z [DEBUG] Snapshots directory: /Users/bholt/.claude/shell-snapshots
+2025-12-08T20:14:03.929Z [DEBUG] Creating snapshot at: /Users/bholt/.claude/shell-snapshots/snapshot-zsh-1765224843929-zq8p97.sh
+2025-12-08T20:14:03.929Z [DEBUG] Shell binary exists: true
+2025-12-08T20:14:03.929Z [DEBUG] Execution timeout: 10000ms
+2025-12-08T20:14:03.929Z [DEBUG] Writing to temp file: /Users/bholt/.claude/todos/54c87485-3e8d-4c4f-bcee-f2bba4932bd5-agent-54c87485-3e8d-4c4f-bcee-f2bba4932bd5.json.tmp.77093.1765224843929
+2025-12-08T20:14:03.936Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-12-08T20:14:03.936Z [DEBUG] Renaming /Users/bholt/.claude/todos/54c87485-3e8d-4c4f-bcee-f2bba4932bd5-agent-54c87485-3e8d-4c4f-bcee-f2bba4932bd5.json.tmp.77093.1765224843929 to /Users/bholt/.claude/todos/54c87485-3e8d-4c4f-bcee-f2bba4932bd5-agent-54c87485-3e8d-4c4f-bcee-f2bba4932bd5.json
+2025-12-08T20:14:03.936Z [DEBUG] File /Users/bholt/.claude/todos/54c87485-3e8d-4c4f-bcee-f2bba4932bd5-agent-54c87485-3e8d-4c4f-bcee-f2bba4932bd5.json written atomically
+2025-12-08T20:14:03.955Z [DEBUG] Total LSP servers loaded: 0
+2025-12-08T20:14:03.955Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2025-12-08T20:14:03.955Z [DEBUG] Total plugin skills loaded: 0
+2025-12-08T20:14:03.955Z [DEBUG] Total plugin commands loaded: 0
+2025-12-08T20:14:03.955Z [DEBUG] Registered 0 hooks from 0 plugins
+2025-12-08T20:14:03.957Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2025-12-08T20:14:03.957Z [DEBUG] LSP manager initialized with 0 servers
+2025-12-08T20:14:03.957Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+2025-12-08T20:14:03.957Z [DEBUG] LSP server manager initialized successfully
+2025-12-08T20:14:03.957Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2025-12-08T20:14:03.957Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills
+2025-12-08T20:14:03.963Z [DEBUG] Git remote URL: git@github.com:ynab/ynab-mcp.git
+2025-12-08T20:14:03.963Z [DEBUG] Parsed repository: ynab/ynab-mcp from git@github.com:ynab/ynab-mcp.git
+2025-12-08T20:14:03.963Z [DEBUG] Parsed repository: ynab/ynab-mcp from URL: git@github.com:ynab/ynab-mcp.git
+2025-12-08T20:14:03.963Z [DEBUG] Path /Users/bholt/dev/ynab-mcp already tracked for repo ynab/ynab-mcp
+2025-12-08T20:14:03.976Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.77093.1765224843976
+2025-12-08T20:14:03.976Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:14:03.981Z [DEBUG] Temp file written successfully, size: 63764 bytes
+2025-12-08T20:14:03.981Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:14:03.981Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.77093.1765224843976 to /Users/bholt/.claude.json
+2025-12-08T20:14:03.981Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:14:03.988Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/bholt/.asdf/installs/nodejs/22.14.0/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg)
+2025-12-08T20:14:03.995Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.77093.1765224843995
+2025-12-08T20:14:03.995Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:14:04.000Z [DEBUG] Temp file written successfully, size: 63764 bytes
+2025-12-08T20:14:04.000Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:14:04.000Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.77093.1765224843995 to /Users/bholt/.claude.json
+2025-12-08T20:14:04.000Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:14:04.043Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.77093.1765224844043
+2025-12-08T20:14:04.043Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:14:04.048Z [DEBUG] Temp file written successfully, size: 63764 bytes
+2025-12-08T20:14:04.048Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:14:04.048Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.77093.1765224844043 to /Users/bholt/.claude.json
+2025-12-08T20:14:04.048Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:14:04.049Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.77093.1765224844049
+2025-12-08T20:14:04.049Z [DEBUG] Preserving file permissions: 100644
+2025-12-08T20:14:04.054Z [DEBUG] Temp file written successfully, size: 63764 bytes
+2025-12-08T20:14:04.054Z [DEBUG] Applied original permissions to temp file
+2025-12-08T20:14:04.054Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.77093.1765224844049 to /Users/bholt/.claude.json
+2025-12-08T20:14:04.054Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2025-12-08T20:14:04.088Z [DEBUG] Shell snapshot created successfully (48151 bytes)

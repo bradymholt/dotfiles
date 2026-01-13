@@ -1,0 +1,12 @@
+[
+  {
+    "content": "Update tests to include proper x-zm-signature and x-zm-request-timestamp headers",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Add test for invalid signature rejection",
+    "status": "completed",
+    "id": "2"
+  }
+]

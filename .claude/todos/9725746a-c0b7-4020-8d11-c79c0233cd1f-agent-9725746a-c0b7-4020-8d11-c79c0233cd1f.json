@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Examine AmpEx service implementation to understand caching",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Review existing AmpEx service spec structure",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Add caching specs to spec/services/ampex_service_spec.rb",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  }
+]

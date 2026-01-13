@@ -1,0 +1,357 @@
+2026-01-07T17:37:21.328Z [DEBUG] Watching for changes in setting files /Users/bholt/dev/evergreen/.claude/settings.local.json...
+2026-01-07T17:37:21.346Z [DEBUG] [SLOW OPERATION DETECTED] execSyncWithDefaults (16.5ms): security find-generic-password -a $USER -w -s "Claude Code"
+2026-01-07T17:37:21.360Z [DEBUG] [SLOW OPERATION DETECTED] execSyncWithDefaults (14.5ms): security find-generic-password -a "bholt" -w -s "Claude Code-credentials"
+2026-01-07T17:37:21.366Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-01-07T17:37:21.366Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-01-07T17:37:21.366Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-01-07T17:37:21.366Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2026-01-07T17:37:21.366Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2026-01-07T17:37:21.369Z [DEBUG] Applying permission update: Adding 10 allow rule(s) to destination 'localSettings': ["Bash(git checkout:*)","Bash(bin/rails generate:*)","Bash(bundle exec rubocop:*)","Bash(psql:*)","Bash(yarn test:web:*)","Bash(yarn run:*)","Bash(gh run list:*)","Bash(gh run view:*)","Bash(git show:*)","Bash(yarn test_webdb:*)"]
+2026-01-07T17:37:21.371Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-01-07T17:37:21.385Z [DEBUG] Total LSP servers loaded: 0
+2026-01-07T17:37:21.385Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-01-07T17:37:21.385Z [DEBUG] LSP manager initialized with 0 servers
+2026-01-07T17:37:21.385Z [DEBUG] LSP server manager initialized successfully
+2026-01-07T17:37:21.385Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-01-07T17:37:21.388Z [DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/bholt/.claude/skills, project=[]
+2026-01-07T17:37:21.389Z [DEBUG] >>>>> getPluginSkills CALLED <<<<<
+2026-01-07T17:37:21.390Z [DEBUG] Loaded 0 installed plugins from /Users/bholt/.claude/plugins/installed_plugins.json (schema version 1)
+2026-01-07T17:37:21.390Z [DEBUG] Official marketplace auto-install already attempted, skipping
+2026-01-07T17:37:21.406Z [DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+2026-01-07T17:37:21.406Z [DEBUG] Looking for shell config file: /Users/bholt/.zshrc
+2026-01-07T17:37:21.406Z [DEBUG] Snapshots directory: /Users/bholt/.claude/shell-snapshots
+2026-01-07T17:37:21.406Z [DEBUG] Creating snapshot at: /Users/bholt/.claude/shell-snapshots/snapshot-zsh-1767807441406-1n7p0t.sh
+2026-01-07T17:37:21.406Z [DEBUG] Shell binary exists: true
+2026-01-07T17:37:21.406Z [DEBUG] Execution timeout: 10000ms
+2026-01-07T17:37:21.407Z [DEBUG] Writing to temp file: /Users/bholt/.claude/todos/d385a3e4-c335-4c48-bd0a-8662018e3475-agent-d385a3e4-c335-4c48-bd0a-8662018e3475.json.tmp.447.1767807441407
+2026-01-07T17:37:21.413Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (5.4ms)
+2026-01-07T17:37:21.413Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-07T17:37:21.413Z [DEBUG] Renaming /Users/bholt/.claude/todos/d385a3e4-c335-4c48-bd0a-8662018e3475-agent-d385a3e4-c335-4c48-bd0a-8662018e3475.json.tmp.447.1767807441407 to /Users/bholt/.claude/todos/d385a3e4-c335-4c48-bd0a-8662018e3475-agent-d385a3e4-c335-4c48-bd0a-8662018e3475.json
+2026-01-07T17:37:21.413Z [DEBUG] File /Users/bholt/.claude/todos/d385a3e4-c335-4c48-bd0a-8662018e3475-agent-d385a3e4-c335-4c48-bd0a-8662018e3475.json written atomically
+2026-01-07T17:37:21.418Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-01-07T17:37:21.418Z [DEBUG] Total plugin skills loaded: 0
+2026-01-07T17:37:21.418Z [DEBUG] Total plugin commands loaded: 0
+2026-01-07T17:37:21.418Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-01-07T17:37:21.419Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+2026-01-07T17:37:21.421Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills
+2026-01-07T17:37:21.427Z [DEBUG] Git remote URL: git@github.com:ynab/evergreen.git
+2026-01-07T17:37:21.427Z [DEBUG] Parsed repository: ynab/evergreen from git@github.com:ynab/evergreen.git
+2026-01-07T17:37:21.427Z [DEBUG] Parsed repository: ynab/evergreen from URL: git@github.com:ynab/evergreen.git
+2026-01-07T17:37:21.427Z [DEBUG] Path /Users/bholt/dev/evergreen already tracked for repo ynab/evergreen
+2026-01-07T17:37:21.455Z [DEBUG] Total plugin agents loaded: 0
+2026-01-07T17:37:21.481Z [DEBUG] Loaded 0 installed plugins from V2 file at /Users/bholt/.claude/plugins/installed_plugins_v2.json
+2026-01-07T17:37:21.481Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2026-01-07T17:37:21.483Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.447.1767807441483
+2026-01-07T17:37:21.483Z [DEBUG] Preserving file permissions: 100644
+2026-01-07T17:37:21.489Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (5.4ms)
+2026-01-07T17:37:21.489Z [DEBUG] Temp file written successfully, size: 76474 bytes
+2026-01-07T17:37:21.489Z [DEBUG] Applied original permissions to temp file
+2026-01-07T17:37:21.489Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.447.1767807441483 to /Users/bholt/.claude.json
+2026-01-07T17:37:21.490Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-07T17:37:21.493Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-01-07T17:37:21.493Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:37:21.493Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-01-07T17:37:21.519Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.447.1767807441519
+2026-01-07T17:37:21.519Z [DEBUG] Preserving file permissions: 100644
+2026-01-07T17:37:21.525Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (5.8ms)
+2026-01-07T17:37:21.525Z [DEBUG] Temp file written successfully, size: 76401 bytes
+2026-01-07T17:37:21.525Z [DEBUG] Applied original permissions to temp file
+2026-01-07T17:37:21.525Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.447.1767807441519 to /Users/bholt/.claude.json
+2026-01-07T17:37:21.525Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-07T17:37:21.528Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.447.1767807441528
+2026-01-07T17:37:21.528Z [DEBUG] Preserving file permissions: 100644
+2026-01-07T17:37:21.533Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (5.1ms)
+2026-01-07T17:37:21.533Z [DEBUG] Temp file written successfully, size: 76401 bytes
+2026-01-07T17:37:21.533Z [DEBUG] Applied original permissions to temp file
+2026-01-07T17:37:21.533Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.447.1767807441528 to /Users/bholt/.claude.json
+2026-01-07T17:37:21.534Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-07T17:37:21.541Z [DEBUG] performStartupChecks called
+2026-01-07T17:37:21.541Z [DEBUG] Starting background plugin installations
+2026-01-07T17:37:21.541Z [DEBUG] performBackgroundPluginInstallations called
+2026-01-07T17:37:21.555Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2026-01-07T17:37:21.555Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2026-01-07T17:37:21.562Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2026-01-07T17:37:21.562Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:37:21.562Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2026-01-07T17:37:21.567Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2026-01-07T17:37:21.567Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:37:21.567Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2026-01-07T17:37:21.584Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.447.1767807441584
+2026-01-07T17:37:21.584Z [DEBUG] Preserving file permissions: 100644
+2026-01-07T17:37:21.591Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (6.8ms)
+2026-01-07T17:37:21.591Z [DEBUG] Temp file written successfully, size: 76401 bytes
+2026-01-07T17:37:21.591Z [DEBUG] Applied original permissions to temp file
+2026-01-07T17:37:21.591Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.447.1767807441584 to /Users/bholt/.claude.json
+2026-01-07T17:37:21.593Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-07T17:37:21.602Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.447.1767807441602
+2026-01-07T17:37:21.602Z [DEBUG] Preserving file permissions: 100644
+2026-01-07T17:37:21.609Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (6.5ms)
+2026-01-07T17:37:21.609Z [DEBUG] Temp file written successfully, size: 76474 bytes
+2026-01-07T17:37:21.609Z [DEBUG] Applied original permissions to temp file
+2026-01-07T17:37:21.609Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.447.1767807441602 to /Users/bholt/.claude.json
+2026-01-07T17:37:21.611Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-07T17:37:21.642Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/bholt/.asdf/installs/nodejs/22.14.0/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg)
+2026-01-07T17:37:21.675Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.447.1767807441675
+2026-01-07T17:37:21.675Z [DEBUG] Preserving file permissions: 100644
+2026-01-07T17:37:21.680Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (5.1ms)
+2026-01-07T17:37:21.680Z [DEBUG] Temp file written successfully, size: 76474 bytes
+2026-01-07T17:37:21.680Z [DEBUG] Applied original permissions to temp file
+2026-01-07T17:37:21.680Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.447.1767807441675 to /Users/bholt/.claude.json
+2026-01-07T17:37:21.681Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-07T17:37:21.684Z [DEBUG] Shell snapshot created successfully (48417 bytes)
+2026-01-07T17:37:21.690Z [DEBUG] Summarizing all 37 messages (~37924 tokens)
+2026-01-07T17:37:21.696Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.447.1767807441696
+2026-01-07T17:37:21.696Z [DEBUG] Preserving file permissions: 100644
+2026-01-07T17:37:21.701Z [DEBUG] Temp file written successfully, size: 76474 bytes
+2026-01-07T17:37:21.701Z [DEBUG] Applied original permissions to temp file
+2026-01-07T17:37:21.701Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.447.1767807441696 to /Users/bholt/.claude.json
+2026-01-07T17:37:21.701Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-07T17:37:21.702Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.447.1767807441702
+2026-01-07T17:37:21.702Z [DEBUG] Preserving file permissions: 100644
+2026-01-07T17:37:21.706Z [DEBUG] Temp file written successfully, size: 76474 bytes
+2026-01-07T17:37:21.706Z [DEBUG] Applied original permissions to temp file
+2026-01-07T17:37:21.706Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.447.1767807441702 to /Users/bholt/.claude.json
+2026-01-07T17:37:21.707Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-07T17:37:21.712Z [DEBUG] Skills and commands included in Skill tool:
+2026-01-07T17:37:21.712Z [DEBUG] Slash commands included in SlashCommand tool:
+2026-01-07T17:37:21.741Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2026-01-07T17:37:21.835Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.447.1767807441835
+2026-01-07T17:37:21.835Z [DEBUG] Preserving file permissions: 100644
+2026-01-07T17:37:21.840Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (5.5ms)
+2026-01-07T17:37:21.840Z [DEBUG] Temp file written successfully, size: 76474 bytes
+2026-01-07T17:37:21.840Z [DEBUG] Applied original permissions to temp file
+2026-01-07T17:37:21.840Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.447.1767807441835 to /Users/bholt/.claude.json
+2026-01-07T17:37:21.840Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-07T17:37:22.243Z [DEBUG] AutoUpdater: Detected installation type: npm-global
+2026-01-07T17:37:22.243Z [DEBUG] AutoUpdater: Using global update method
+2026-01-07T17:37:23.142Z [DEBUG] Stream started - received first chunk
+2026-01-07T17:37:23.681Z [DEBUG] Summarizing all 158 messages (~73749 tokens)
+2026-01-07T17:37:23.949Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.447.1767807443949
+2026-01-07T17:37:23.949Z [DEBUG] Preserving file permissions: 100644
+2026-01-07T17:37:23.959Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (10.5ms)
+2026-01-07T17:37:23.959Z [DEBUG] Temp file written successfully, size: 76474 bytes
+2026-01-07T17:37:23.960Z [DEBUG] Applied original permissions to temp file
+2026-01-07T17:37:23.960Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.447.1767807443949 to /Users/bholt/.claude.json
+2026-01-07T17:37:23.960Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-07T17:37:24.490Z [DEBUG] Stream started - received first chunk
+2026-01-07T17:37:24.811Z [DEBUG] Stream started - received first chunk
+2026-01-07T17:37:26.100Z [DEBUG] Stream started - received first chunk
+2026-01-07T17:37:29.782Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-01-07T17:37:29.782Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:37:29.782Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-07T17:37:30.955Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-01-07T17:37:30.955Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:37:30.955Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-07T17:37:40.020Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-07T17:37:40.020Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-07T17:37:40.020Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-07T17:37:40.020Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-07T17:37:40.027Z [DEBUG] [TeammateMailbox] getTeammateMailboxAttachments called: envAgentName=undefined, isTeamLead=false, resolved agentName=undefined, teamName=undefined
+2026-01-07T17:37:40.027Z [DEBUG] [TeammateMailbox] Not checking inbox - not a teammate or team lead
+2026-01-07T17:37:40.038Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-01-07T17:37:40.038Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:37:40.038Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-07T17:37:40.039Z [DEBUG] FileHistory: Added snapshot for 37c3be22-cbdb-4d13-b0fd-5cf482b6f88c, tracking 0 files
+2026-01-07T17:37:40.048Z [DEBUG] Total plugin output styles loaded: 0
+2026-01-07T17:37:42.181Z [DEBUG] Stream started - received first chunk
+2026-01-07T17:37:42.811Z [DEBUG] Stream started - received first chunk
+2026-01-07T17:37:47.325Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-01-07T17:37:47.328Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-01-07T17:37:47.328Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:37:47.328Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-07T17:37:47.337Z [DEBUG] tree-sitter: WASM files not found
+2026-01-07T17:37:48.157Z [DEBUG] Stream started - received first chunk
+2026-01-07T17:37:48.487Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "git worktree add:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+2026-01-07T17:37:48.500Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2026-01-07T17:37:48.500Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Bash
+2026-01-07T17:37:48.500Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:37:48.500Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-07T17:37:54.499Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2026-01-07T17:37:54.499Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:37:54.499Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2026-01-07T17:37:55.000Z [DEBUG] Persisting permission update: addRules to source 'localSettings'
+2026-01-07T17:37:55.000Z [DEBUG] Persisting 1 allow rule(s) to localSettings
+2026-01-07T17:37:55.003Z [DEBUG] Writing to temp file: /Users/bholt/dev/evergreen/.claude/settings.local.json.tmp.447.1767807475003
+2026-01-07T17:37:55.003Z [DEBUG] Preserving file permissions: 100644
+2026-01-07T17:37:55.009Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (6.0ms)
+2026-01-07T17:37:55.009Z [DEBUG] Temp file written successfully, size: 411 bytes
+2026-01-07T17:37:55.009Z [DEBUG] Applied original permissions to temp file
+2026-01-07T17:37:55.009Z [DEBUG] Renaming /Users/bholt/dev/evergreen/.claude/settings.local.json.tmp.447.1767807475003 to /Users/bholt/dev/evergreen/.claude/settings.local.json
+2026-01-07T17:37:55.010Z [DEBUG] File /Users/bholt/dev/evergreen/.claude/settings.local.json written atomically
+2026-01-07T17:37:55.013Z [DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Bash(git worktree add:*)"]
+2026-01-07T17:37:55.017Z [DEBUG] No session environment scripts found
+2026-01-07T17:37:55.121Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2026-01-07T17:37:55.541Z [DEBUG] AutoUpdater: Detected installation type: npm-global
+2026-01-07T17:37:55.541Z [DEBUG] AutoUpdater: Using global update method
+2026-01-07T17:37:56.140Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.447.1767807476140
+2026-01-07T17:37:56.140Z [DEBUG] Preserving file permissions: 100644
+2026-01-07T17:37:56.159Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (18.9ms)
+2026-01-07T17:37:56.159Z [DEBUG] Temp file written successfully, size: 76474 bytes
+2026-01-07T17:37:56.159Z [DEBUG] Applied original permissions to temp file
+2026-01-07T17:37:56.159Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.447.1767807476140 to /Users/bholt/.claude.json
+2026-01-07T17:37:56.159Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-07T17:37:56.287Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-01-07T17:37:56.287Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:37:56.287Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-07T17:37:56.291Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-07T17:37:56.291Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-07T17:37:56.291Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-07T17:37:56.291Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-07T17:37:56.293Z [DEBUG] [TeammateMailbox] getTeammateMailboxAttachments called: envAgentName=undefined, isTeamLead=false, resolved agentName=undefined, teamName=undefined
+2026-01-07T17:37:56.293Z [DEBUG] [TeammateMailbox] Not checking inbox - not a teammate or team lead
+2026-01-07T17:37:57.695Z [DEBUG] Stream started - received first chunk
+2026-01-07T17:38:01.162Z [DEBUG] Stream started - received first chunk
+2026-01-07T17:38:09.541Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-01-07T17:38:09.541Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-01-07T17:38:09.545Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-01-07T17:38:09.545Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:38:09.545Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-07T17:38:09.545Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-01-07T17:38:09.545Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:38:09.545Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-07T17:38:09.556Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Read",
+        "ruleContent": "//Users/bholt/dev/evergreen-ek-api-requested-version/**"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "session"
+  }
+]
+2026-01-07T17:38:09.556Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Read",
+        "ruleContent": "//Users/bholt/dev/evergreen-ek-api-requested-version/**"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "session"
+  }
+]
+2026-01-07T17:38:09.567Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2026-01-07T17:38:09.568Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2026-01-07T17:38:09.568Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Bash
+2026-01-07T17:38:09.568Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:38:09.568Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-07T17:38:09.573Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Bash
+2026-01-07T17:38:09.573Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:38:09.573Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-07T17:38:15.568Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2026-01-07T17:38:15.568Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:38:15.568Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2026-01-07T17:39:03.892Z [DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'session': ["Read(//Users/bholt/dev/evergreen-ek-api-requested-version/**)"]
+2026-01-07T17:39:03.997Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-01-07T17:39:03.997Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:39:03.997Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-07T17:39:04.040Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2026-01-07T17:39:04.139Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-01-07T17:39:04.139Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:39:04.139Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-07T17:39:04.145Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-07T17:39:04.145Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-07T17:39:04.145Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-07T17:39:04.145Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-07T17:39:04.149Z [DEBUG] [TeammateMailbox] getTeammateMailboxAttachments called: envAgentName=undefined, isTeamLead=false, resolved agentName=undefined, teamName=undefined
+2026-01-07T17:39:04.149Z [DEBUG] [TeammateMailbox] Not checking inbox - not a teammate or team lead
+2026-01-07T17:39:04.443Z [DEBUG] AutoUpdater: Detected installation type: npm-global
+2026-01-07T17:39:04.443Z [DEBUG] AutoUpdater: Using global update method
+2026-01-07T17:39:04.548Z [DEBUG] Stream started - received first chunk
+2026-01-07T17:39:04.596Z [DEBUG] Stream started - received first chunk
+2026-01-07T17:39:04.999Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.447.1767807544999
+2026-01-07T17:39:04.999Z [DEBUG] Preserving file permissions: 100644
+2026-01-07T17:39:05.015Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (15.1ms)
+2026-01-07T17:39:05.015Z [DEBUG] Temp file written successfully, size: 76474 bytes
+2026-01-07T17:39:05.015Z [DEBUG] Applied original permissions to temp file
+2026-01-07T17:39:05.015Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.447.1767807544999 to /Users/bholt/.claude.json
+2026-01-07T17:39:05.015Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-07T17:39:06.914Z [DEBUG] Stream started - received first chunk
+2026-01-07T17:39:08.761Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-01-07T17:39:08.764Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-01-07T17:39:08.764Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:39:08.764Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-07T17:39:08.960Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-01-07T17:39:08.960Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:39:08.960Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-01-07T17:39:08.967Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-07T17:39:08.967Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-07T17:39:08.967Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-07T17:39:08.967Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-07T17:39:08.970Z [DEBUG] [TeammateMailbox] getTeammateMailboxAttachments called: envAgentName=undefined, isTeamLead=false, resolved agentName=undefined, teamName=undefined
+2026-01-07T17:39:08.970Z [DEBUG] [TeammateMailbox] Not checking inbox - not a teammate or team lead
+2026-01-07T17:39:10.264Z [DEBUG] Stream started - received first chunk
+2026-01-07T17:39:14.555Z [DEBUG] Stream started - received first chunk
+2026-01-07T17:39:31.306Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-07T17:39:31.307Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-07T17:39:31.307Z [DEBUG] executePreToolHooks called for tool: Read
+2026-01-07T17:39:31.311Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-07T17:39:31.311Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:39:31.311Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-07T17:39:31.311Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-07T17:39:31.311Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:39:31.311Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-07T17:39:31.311Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-01-07T17:39:31.311Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:39:31.311Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-07T17:39:31.340Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-07T17:39:31.340Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:39:31.340Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-07T17:39:31.340Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-07T17:39:31.340Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:39:31.340Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-07T17:39:31.340Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-01-07T17:39:31.340Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:39:31.340Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-01-07T17:39:31.347Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-07T17:39:31.347Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-07T17:39:31.347Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-07T17:39:31.347Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-07T17:39:31.358Z [DEBUG] [TeammateMailbox] getTeammateMailboxAttachments called: envAgentName=undefined, isTeamLead=false, resolved agentName=undefined, teamName=undefined
+2026-01-07T17:39:31.358Z [DEBUG] [TeammateMailbox] Not checking inbox - not a teammate or team lead
+2026-01-07T17:39:36.065Z [DEBUG] Stream started - received first chunk
+2026-01-07T17:39:55.606Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-01-07T17:39:55.606Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:39:55.606Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-07T17:39:55.621Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.447.1767807595621
+2026-01-07T17:39:55.621Z [DEBUG] Preserving file permissions: 100644
+2026-01-07T17:39:55.628Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (6.8ms)
+2026-01-07T17:39:55.628Z [DEBUG] Temp file written successfully, size: 76474 bytes
+2026-01-07T17:39:55.628Z [DEBUG] Applied original permissions to temp file
+2026-01-07T17:39:55.628Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.447.1767807595621 to /Users/bholt/.claude.json
+2026-01-07T17:39:55.628Z [DEBUG] File /Users/bholt/.claude.json written atomically
+2026-01-07T17:40:55.615Z [DEBUG] Getting matching hook commands for Notification with query: idle_prompt
+2026-01-07T17:40:55.616Z [DEBUG] Found 0 hook matchers in settings
+2026-01-07T17:40:55.616Z [DEBUG] Matched 0 unique hooks for query "idle_prompt" (0 before deduplication)
+2026-01-07T17:42:21.647Z [DEBUG] Metrics opt-out API response: enabled=true, vcsLinking=false
+2026-01-07T17:42:21.791Z [DEBUG] BigQuery metrics exported successfully
+2026-01-07T17:42:21.791Z [DEBUG] BigQuery API Response: {
+  "accepted_count": 13,
+  "rejected_count": 0
+}
+2026-01-07T18:09:04.718Z [DEBUG] AutoUpdater: Detected installation type: npm-global
+2026-01-07T18:09:04.718Z [DEBUG] AutoUpdater: Using global update method
+2026-01-07T18:09:05.588Z [DEBUG] Writing to temp file: /Users/bholt/.claude.json.tmp.447.1767809345588
+2026-01-07T18:09:05.588Z [DEBUG] Preserving file permissions: 100644
+2026-01-07T18:09:05.595Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (6.7ms)
+2026-01-07T18:09:05.595Z [DEBUG] Temp file written successfully, size: 76474 bytes
+2026-01-07T18:09:05.595Z [DEBUG] Applied original permissions to temp file
+2026-01-07T18:09:05.595Z [DEBUG] Renaming /Users/bholt/.claude.json.tmp.447.1767809345588 to /Users/bholt/.claude.json
+2026-01-07T18:09:05.595Z [DEBUG] File /Users/bholt/.claude.json written atomically

@@ -1,0 +1,37 @@
+[
+  {
+    "content": "Set up Node.js project structure with package.json and dependencies",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Create Express.js server with basic routing",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Build home page with 3D animation using Three.js",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Create about me page with personal information",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Build blog system with posts listing and individual post pages",
+    "status": "completed",
+    "id": "5"
+  },
+  {
+    "content": "Add CSS styling and responsive design",
+    "status": "completed",
+    "id": "6"
+  },
+  {
+    "content": "Test the application and ensure all routes work",
+    "status": "completed",
+    "id": "7"
+  }
+]

@@ -1,0 +1,272 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  color: #34495e;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.login-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #495057;
+  text-align: left;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-form button:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+.login-form button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.help-text {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #dee2e6;
+  font-size: 0.9rem;
+  color: #6c757d;
+  text-align: left;
+}
+
+.help-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.help-text a:hover {
+  text-decoration: underline;
+}
+
+.budget-selector {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.budget-selector label {
+  font-weight: 600;
+  color: #495057;
+}
+
+.budget-selector select {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: white;
+}
+
+.budget-selector button {
+  padding: 0.75rem 1.5rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.budget-selector button:hover:not(:disabled) {
+  background: #218838;
+}
+
+.budget-selector button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.error {
+  padding: 1rem;
+  margin: 1rem 0;
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+}
+
+.results {
+  margin-top: 2rem;
+}
+
+.charge-card {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.charge-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+  gap: 1rem;
+}
+
+.charge-header h3 {
+  margin: 0;
+  color: #2c3e50;
+  flex: 1;
+}
+
+.charge-stats {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.charge-stats span {
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.amount {
+  background: #d4edda;
+  color: #155724;
+  font-weight: 600;
+}
+
+.frequency {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.count {
+  background: #e2e3e5;
+  color: #383d41;
+}
+
+.last-charge {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+details {
+  margin-top: 1rem;
+}
+
+summary {
+  cursor: pointer;
+  color: #007bff;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  user-select: none;
+}
+
+summary:hover {
+  color: #0056b3;
+}
+
+table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th {
+  background: #f8f9fa;
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+  color: #495057;
+}
+
+td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+tr:hover {
+  background: #f8f9fa;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .budget-selector {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .budget-selector button {
+    width: 100%;
+  }
+
+  .charge-header {
+    flex-direction: column;
+  }
+
+  .charge-stats {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
