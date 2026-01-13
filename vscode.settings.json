@@ -108,5 +108,17 @@
   "github.copilot.nextEditSuggestions.enabled": true,
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "[handlebars]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "chat.tools.terminal.autoApprove": {
+    "find": true,
+    "}": true,
+    "psql": true,
+    "\"method\":": true,
+    "}}'": true
+  },
+  "chat.mcp.gallery.enabled": true,
+  "claude-code.selectedModel": "opus"
 }
