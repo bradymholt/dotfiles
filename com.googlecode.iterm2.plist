@@ -1570,13 +1570,13 @@ The script should do this: \(ai.prompt)</string>
 			<key>Guid</key>
 			<string>154B622F-B1E6-4ADB-A6FF-89B611646FDF</string>
 			<key>Has Hotkey</key>
-			<true/>
+			<false/>
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
 			<key>HotKey Activated By Modifier</key>
-			<true/>
+			<false/>
 			<key>HotKey Alternate Shortcuts</key>
 			<array/>
 			<key>HotKey Characters</key>
