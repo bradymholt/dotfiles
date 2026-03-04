@@ -90,7 +90,6 @@
     "plaintext": true,
     "markdown": true
   },
-
   "svelte.enable-ts-plugin": true,
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "[javascript]": {
@@ -120,5 +119,6 @@
     "}}'": true
   },
   "chat.mcp.gallery.enabled": true,
-  "claude-code.selectedModel": "opus"
+  "claudeCode.preferredLocation": "panel",
+  "claudeCode.selectedModel": "claude-opus-4-6",  
 }

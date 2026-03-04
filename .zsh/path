@@ -4,6 +4,7 @@ export PATH="/usr/local/share/dotnet:$PATH"
 #export PATH="$(npm config get prefix)/bin:$PATH"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+export PATH="$HOME/.local/bin:$PATH" # Needed for Claude Code
 
 # current directory
 export PATH=".:$PATH";

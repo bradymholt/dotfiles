@@ -83,5 +83,14 @@
 {
   "key": "ctrl+cmd+r",
   "command": "workbench.action.tasks.reRunTask"
+},
+{
+  "key": "shift+cmd+c",
+  "command": "claude-vscode.editor.openLast",
+  "when": "!config.claudeCode.useTerminal"
+},
+{
+  "key": "shift+cmd+c",
+  "command": "workbench.view.extension.claude-sidebar-secondary"
 }
 ]
