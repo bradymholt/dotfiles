@@ -109,6 +109,47 @@ gmove() {
   git branch ${1} && git reset --hard origin/${CURRENT_BRANCH} && git checkout ${1}
 }
 
+git-claude-merge() {
+  # Git mergetool driver using Claude Code to resolve conflicts.
+  # Called by git as: git-claude-merge $BASE $LOCAL $REMOTE $MERGED
+  local BASE="$1" LOCAL="$2" REMOTE="$3" MERGED="$4"
+  local FILEPATH="${MERGED}"
+
+  local SYSTEM_PROMPT="You are resolving a merge conflict in \`$FILEPATH\`. \
+Your working directory is the root of the repository, so you can browse and edit \
+other files if needed (e.g. if code moved between files).
+
+Three versions of the file are provided as temporary files: the base (common ancestor), \
+left (ours), and right (theirs). Read all three, understand what each side changed \
+relative to the base, and write a resolved version to the output path. \
+If changes are compatible, merge them cleanly. \
+If they genuinely conflict, use your best judgment and explain your reasoning."
+
+  local USER_PROMPT="Resolve the merge conflict in \`$FILEPATH\`.
+
+Read these three versions of the file:
+- Base (common ancestor): $BASE
+- Left (ours): $LOCAL
+- Right (theirs): $REMOTE
+
+Write the resolved file to: $MERGED"
+
+  local -a DIRS
+  DIRS=($(dirname "$BASE" "$LOCAL" "$REMOTE" "$MERGED" | sort -u))
+
+  local -a CLAUDE_ARGS
+  CLAUDE_ARGS=(--print
+               --permission-mode=acceptEdits
+               --append-system-prompt "$SYSTEM_PROMPT"
+               "$USER_PROMPT")
+
+  for dir in "${DIRS[@]}"; do
+    [[ -n "$dir" && "$dir" != "." ]] && CLAUDE_ARGS+=(--add-dir "$dir")
+  done
+
+  claude "${CLAUDE_ARGS[@]}"
+}
+
 gh-api() {
   # Calls the GitHub API ($1 is repo name and $2 is data to POST)    
   if [ -z "$1" ]; then echo "Example usage:\n  gh-api bradymholt/myrepo/statuses\n  gh-api bradymholt/myrepo/statuses/ed94da '{\"state\":\"success\",\"description\":\"Tests\",\"context\":\"Tests\"}'"; return 1; fi

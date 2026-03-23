@@ -7,15 +7,7 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "none",
   "editor.bracketPairColorization.enabled": true,
-  "terminal.integrated.profiles.osx": {
-    "zsh": {
-      "path": "zsh",
-      "args": ["-l"]
-    }
-  },
-  "terminal.integrated.defaultProfile.osx": "zsh",
   "git.confirmSync": false,
-  "typescript.updateImportsOnFileMove.enabled": "never",
   "explorer.confirmDelete": false,
   "prettier.printWidth": 120,
   "explorer.confirmDragAndDrop": false,
@@ -24,9 +16,9 @@
   // Formatting
   "editor.formatOnSave": false,
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
-  // Extension settings  
+  // Extension settings
   "cSpell.userWords": [
     "babyparse",
     "cheatsheet",
@@ -76,11 +68,11 @@
     "untarred",
     "victorops",
     "websql",
-    "workdir"
+    "workdir",
   ],
   "cSpell.ignoreRegExpList": [
     "\"(.*?)\"", // Ignore text inside of double quotes
-    "'(.*?)'" // Ignore text inside of single quotes
+    "'(.*?)'", // Ignore text inside of single quotes
   ],
   "diffEditor.renderSideBySide": false,
   "editor.inlineSuggest.enabled": true,
@@ -88,37 +80,37 @@
     "*": true,
     "yaml": true,
     "plaintext": true,
-    "markdown": true
+    "markdown": true,
   },
   "svelte.enable-ts-plugin": true,
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[erb]": {
-    "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
+    "editor.defaultFormatter": "aliariff.vscode-erb-beautify",
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "github.copilot.nextEditSuggestions.enabled": true,
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[handlebars]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "chat.tools.terminal.autoApprove": {
     "find": true,
     "}": true,
     "psql": true,
     "\"method\":": true,
-    "}}'": true
+    "}}'": true,
   },
   "chat.mcp.gallery.enabled": true,
   "claudeCode.preferredLocation": "panel",
-  "claudeCode.selectedModel": "claude-opus-4-6",  
+  "claudeCode.selectedModel": "opus[1m]",
 }

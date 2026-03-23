@@ -19,11 +19,15 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 [merge]
-	tool = bc3
+	tool = claude
 	conflictStyle = zdiff3
 [mergetool]
-	bc3 = trustExitCode
-	keepBackup = false
+  keepBackup = false	
+[mergetool "claude"]
+	cmd = zsh -c 'source ~/.zsh/aliases && git-claude-merge "$1" "$2" "$3" "$4"' zsh "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+	trustExitCode = true
+[mergetool "bc3"]
+  trustExitCode = true
 [diff]
 	tool = bc3
 	compactionHeuristic = true
