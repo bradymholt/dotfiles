@@ -111,6 +111,5 @@
     "}}'": true,
   },
   "chat.mcp.gallery.enabled": true,
-  "claudeCode.preferredLocation": "panel",
-  "claudeCode.selectedModel": "opus[1m]",
+  "claudeCode.preferredLocation": "panel"
 }
