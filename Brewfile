@@ -126,6 +126,7 @@ mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
+mas "Pages", id: 361309726
 mas "Pages", id: 409201541
 mas "Pixelmator Pro", id: 1289583905
 mas "Tag Editor 2", id: 984278082
@@ -142,6 +143,7 @@ vscode "embertooling.vscode-ember"
 vscode "esbenp.prettier-vscode"
 vscode "fabiospampinato.vscode-open-in-github"
 vscode "github.codespaces"
+vscode "github.copilot-chat"
 vscode "github.vscode-github-actions"
 vscode "google.gemini-cli-vscode-ide-companion"
 vscode "koichisasada.vscode-rdbg"
@@ -155,8 +157,10 @@ vscode "ms-python.vscode-python-envs"
 vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode.remote-explorer"
 vscode "ms-vscode.remote-server"
+vscode "ms-vscode.vscode-chat-customizations-evaluations"
 vscode "ms-vscode.vscode-speech"
 vscode "openai.chatgpt"
+vscode "rubocop.vscode-rubocop"
 vscode "shopify.ruby-lsp"
 vscode "streetsidesoftware.code-spell-checker"
 vscode "svelte.svelte-vscode"
@@ -165,3 +169,7 @@ vscode "testdouble.vscode-standard-ruby"
 vscode "thisismanta.stylus-supremacy"
 vscode "typed-ember.glint-vscode"
 cargo "claude-mergetool"
+npm "@dbml/cli"
+npm "@google/gemini-cli"
+npm "@scalar/cli"
+npm "corepack"
