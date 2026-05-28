@@ -126,8 +126,8 @@ mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
-mas "Pages", id: 361309726
 mas "Pages", id: 409201541
+mas "Pages", id: 361309726
 mas "Pixelmator Pro", id: 1289583905
 mas "Tag Editor 2", id: 984278082
 mas "TestFlight", id: 899247664
@@ -143,7 +143,6 @@ vscode "embertooling.vscode-ember"
 vscode "esbenp.prettier-vscode"
 vscode "fabiospampinato.vscode-open-in-github"
 vscode "github.codespaces"
-vscode "github.copilot-chat"
 vscode "github.vscode-github-actions"
 vscode "google.gemini-cli-vscode-ide-companion"
 vscode "koichisasada.vscode-rdbg"
