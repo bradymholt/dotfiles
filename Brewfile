@@ -200,8 +200,6 @@ cask "beyond-compare"
 cask "chatgpt"
 # Screen capturing tool
 cask "cleanshot"
-# OpenAI's coding agent that runs in your terminal
-cask "codex"
 # Browser for SQLite databases
 cask "db-browser-for-sqlite"
 cask "font-meslo-lg"
