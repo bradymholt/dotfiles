@@ -47,7 +47,7 @@ brew "diff-so-fancy"
 # Lightweight DNS forwarder and DHCP server
 brew "dnsmasq"
 # Pack, ship and run any application as a lightweight container
-brew "docker", link: false
+brew "docker"
 # Command-line tool for DigitalOcean
 brew "doctl"
 # Text processing system for reStructuredText
@@ -203,6 +203,8 @@ cask "cleanshot"
 # Browser for SQLite databases
 cask "db-browser-for-sqlite"
 cask "font-meslo-lg"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "gcloud-cli"
 # Cross-platform Git credential storage for multiple hosting providers
 cask "git-credential-manager"
 # Web browser
